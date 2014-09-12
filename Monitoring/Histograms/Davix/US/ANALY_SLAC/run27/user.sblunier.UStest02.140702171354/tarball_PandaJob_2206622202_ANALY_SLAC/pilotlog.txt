@@ -1,0 +1,1462 @@
+02 Jul 15:20:19|pilot.py    | 
+
+Entered multi-job loop. Current work dir: /scratch/Panda_Pilot_12183_1404314412
+
+02 Jul 15:20:19|pilot.py    | Panda Pilot, version SULU 58m
+02 Jul 15:20:19|pilot.py    | Version tag = PR
+02 Jul 15:20:19|pilot.py    | PilotId = http://gridui19.usatlas.bnl.gov:25880/2014-07-02/ANALY_SLAC/4137564.27.out, jobSchedulerId = BNL-gridui19-jhover
+02 Jul 15:20:19|pilot.py    | Current time: 2014-07-02T08:20:19-0800
+02 Jul 15:20:19|pilot.py    | Run by Python 2.6.6 (r266:84292, Nov 21 2013, 10:50:32) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-4)]
+02 Jul 15:20:19|pilot.py    | 64 bit OS
+02 Jul 15:20:19|pilot.py    | Pilot init dir: /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT
+02 Jul 15:20:19|pilot.py    | All output written to file: /scratch/Panda_Pilot_12183_1404314412/pilotlog.txt
+02 Jul 15:20:19|pilot.py    | Pilot executed by: osgatlas01
+02 Jul 15:20:19|pilot.py    | Pilot options:................................................
+02 Jul 15:20:19|pilot.py    | appdir: 
+02 Jul 15:20:19|pilot.py    | debugLevel: 0
+02 Jul 15:20:19|pilot.py    | dq2url: 
+02 Jul 15:20:19|pilot.py    | jobrec: False
+02 Jul 15:20:19|pilot.py    | jobRequestFlag: True
+02 Jul 15:20:19|pilot.py    | jobSchedulerId: BNL-gridui19-jhover
+02 Jul 15:20:19|pilot.py    | maxjobrec: 20
+02 Jul 15:20:19|pilot.py    | maxNumberOfRecoveryAttempts: 15
+02 Jul 15:20:19|pilot.py    | pilotId: http://gridui19.usatlas.bnl.gov:25880/2014-07-02/ANALY_SLAC/4137564.27.out
+02 Jul 15:20:19|pilot.py    | pshttpurl: https://pandaserver.cern.ch
+02 Jul 15:20:19|pilot.py    | psport: 25443
+02 Jul 15:20:19|pilot.py    | queuename: ANALY_SLAC-lsf
+02 Jul 15:20:19|pilot.py    | rmwkdir: None
+02 Jul 15:20:19|pilot.py    | sitename: ANALY_SLAC
+02 Jul 15:20:19|pilot.py    | stageinretry: 2
+02 Jul 15:20:19|pilot.py    | stageoutretry: 2
+02 Jul 15:20:19|pilot.py    | uflag: user
+02 Jul 15:20:19|pilot.py    | workdir: /scratch/Panda_Pilot_12183_1404314412
+02 Jul 15:20:19|pilot.py    | logFileDir: 
+02 Jul 15:20:19|pilot.py    | ..............................................................
+02 Jul 15:20:19|pilot.py    | Entering main pilot loop: multi job enabled (number of processed jobs: 0)
+02 Jul 15:20:19|SiteMover.py| Executing command: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy;. /cvmfs/atlas.cern.ch/repo/sw/arc/client/latest/slc6/x86_64/setup.sh;arcproxy -i vomsACvalidityLeft
+02 Jul 15:20:19|SiteMover.py| ec=0 output=308970
+02 Jul 15:20:19|SiteMover.py| Voms proxy verified (308970s)
+02 Jul 15:20:19|SiteMover.py| Voms proxy verified using arcproxy
+02 Jul 15:20:19|pilot.py    | Collecting WN info from: /scratch/Panda_Pilot_12183_1404314412 (again)
+02 Jul 15:20:19|pilot.py    | Got max memory limit: 4000 MB (from queuedata)
+02 Jul 15:20:19|pilot.py    | Max memory limit set to: 4194304000 B
+02 Jul 15:20:19|pilot.py    | Executing command: ulimit -a
+02 Jul 15:20:19|pilot.py    | 
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 127427
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) 232495
+max user processes              (-u) 127427
+virtual memory          (kbytes, -v) 4096000
+file locks                      (-x) unlimited
+02 Jul 15:20:19|pilot.py    | Local space limit: 5368709120 B
+02 Jul 15:20:19|pilot.py    | Remaining local disk space: 373541568512 B
+02 Jul 15:20:19|pilot.py    | Verifying that pilot TCP server is still alive...
+02 Jul 15:20:19|pilot.py    | ...Pilot TCP server is still running
+02 Jul 15:20:19|pilot.py    | Pilot will attempt single job download for a maximum of 180 seconds
+02 Jul 15:20:19|pilot.py    | Connected from ('127.0.0.1', 40755)
+02 Jul 15:20:19|pilot.py    | --- TCPServer: Message received from child is : ['']
+02 Jul 15:20:19|pUtil.py    | Max input size = 14336 MB (pilot default)
+02 Jul 15:20:19|pilot.py    | Available WN disk space: 356237 MB
+02 Jul 15:20:19|pilot.py    | Sending disk space 14336 MB to dispatcher
+02 Jul 15:20:19|pilot.py    | Node name: fell0098
+02 Jul 15:20:19|pilot.py    | No country group selected
+02 Jul 15:20:19|pilot.py    | No working group selected
+02 Jul 15:20:19|pilot.py    | prodSourceLabel: user
+02 Jul 15:20:19|pilot.py    | Looking for a primary job (contacting server at https://pandaserver.cern.ch:25443/server/panda)
+02 Jul 15:20:19|pUtil.py    | Will not send attemptNr for cmd=getJob
+02 Jul 15:20:19|pUtil.py    | toServer: cmd = getJob
+02 Jul 15:20:19|pUtil.py    | toServer: len(data) = 9
+02 Jul 15:20:19|pUtil.py    | data = {'node': 'fell0098', 'mem': 4000, 'getProxyKey': 'False', 'computingElement': 'ANALY_SLAC-lsf', 'diskSpace': 14336, 'siteName': 'ANALY_SLAC', 'workingGroup': '', 'cpu': 2666.6640000000002, 'prodSourceLabel': 'user'}
+02 Jul 15:20:19|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --config /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT/curl.config https://pandaserver.cern.ch:25443/server/panda/getJob
+02 Jul 15:20:21|pUtil.py    | Elapsed seconds: 1
+02 Jul 15:20:21|pUtil.py    | Dispatcher response: [('jobsetID', '4520'), ('logGUID', '259e2595-1eeb-429e-8780-c0f2ca4d1e78'), ('cmtConfig', 'x86_64-slc6-gcc48-opt'), ('dispatchDBlockTokenForOut', 'NULL,NULL'), ('destinationDBlockToken', 'NULL,NULL'), ('destinationSE', 'ANALY_SLAC'), ('realDatasets', 'user.sblunier.UStest02/,user.sblunier.UStest02/'), ('prodUserID', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy'), ('GUID', '65c573ab-73b0-4336-8d30-2cec814650bc'), ('realDatasetsIn', 'user.sblunier.0702151354.709915.lib._004520'), ('nSent', '0'), ('cloud', 'US'), ('StatusCode', '0'), ('homepackage', 'NULL'), ('inFiles', 'user.sblunier.0702151354.709915.lib._004520.lib.tgz'), ('processingType', 'prun'), ('fsize', '26131'), ('fileDestinationSE', 'ANALY_SLAC,ANALY_SLAC'), ('scopeOut', 'user.sblunier'), ('minRamCount', '0'), ('jobDefinitionID', '4521'), ('scopeLog', 'user.sblunier'), ('transformation', 'http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02'), ('maxDiskCount', '0'), ('coreCount', 'NULL'), ('prodDBlockToken', 'NULL'), ('transferType', 'NULL'), ('destinationDblock', 'user.sblunier.UStest02.140702171354_sub0172562066,user.sblunier.UStest02.140702171354_sub0172562066'), ('dispatchDBlockToken', 'NULL'), ('jobPars', '-j "" --sourceURL https://aipanda011.cern.ch:25443 --rootVer 5.34.18-davix_p6a -p "./main.sh%20US%20ANALY_SLAC" -l user.sblunier.0702151354.709915.lib._004520.lib.tgz -o "{\'ANALY_SLAC.root\': \'user.sblunier.004520._00001.ANALY_SLAC.root\'}" -r . '), ('attemptNr', '0'), ('swRelease', 'NULL'), ('maxCpuCount', '0'), ('outFiles', 'user.sblunier.004520._00001.ANALY_SLAC.root,user.sblunier.004520._2206622202.log.tgz'), ('currentPriority', '993'), ('scopeIn', 'user.sblunier'), ('PandaID', '2206622202'), ('dispatchDblock', 'user.sblunier.0702151354.709915.lib._004520'), ('prodSourceLabel', 'user'), ('checksum', 'ad:c51ca454'), ('jobName', 'prun.fc6e286a-0bf2-460a-92e8-b3c08d03a3d2'), ('taskID', '3'), ('logFile', 'user.sblunier.004520._2206622202.log.tgz')]
+02 Jul 15:20:21|pUtil.py    | Wrote string "0" to file: /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT/STATUSCODE
+02 Jul 15:20:21|pilot.py    | Attempt number from server: 0
+02 Jul 15:20:21|pilot.py    | Job recovery is still switched off after job download
+02 Jul 15:20:21|pilot.py    | Received nSent: 0
+02 Jul 15:20:21|pilot.py    | Job definition stored (for later backup): jobsetID=4520&logGUID=259e2595-1eeb-429e-8780-c0f2ca4d1e78&cmtConfig=x86_64-slc6-gcc48-opt&dispatchDBlockTokenForOut=NULL%2CNULL&destinationDBlockToken=NULL%2CNULL&destinationSE=ANALY_SLAC&realDatasets=user.sblunier.UStest02%2F%2Cuser.sblunier.UStest02%2F&prodUserID=%2FDC%3Dch%2FDC%3Dcern%2FOU%3DOrganic+Units%2FOU%3DUsers%2FCN%3Dsblunier%2FCN%3D757276%2FCN%3DSylvain+Blunier%2FCN%3Dproxy&GUID=65c573ab-73b0-4336-8d30-2cec814650bc&realDatasetsIn=user.sblunier.0702151354.709915.lib._004520&nSent=0&cloud=US&StatusCode=0&homepackage=NULL&inFiles=user.sblunier.0702151354.709915.lib._004520.lib.tgz&processingType=prun&fsize=26131&fileDestinationSE=ANALY_SLAC%2CANALY_SLAC&scopeOut=user.sblunier&minRamCount=0&jobDefinitionID=4521&scopeLog=user.sblunier&transformation=http%3A%2F%2Fpandaserver.cern.ch%3A25080%2Ftrf%2Fuser%2FrunGen-00-00-02&maxDiskCount=0&coreCount=NULL&prodDBlockToken=NULL&transferType=NULL&destinationDblock=user.sblunier.UStest02.140702171354_sub0172562066%2Cuser.sblunier.UStest02.140702171354_sub0172562066&dispatchDBlockToken=NULL&jobPars=-j+%22%22+--sourceURL+https%3A%2F%2Faipanda011.cern.ch%3A25443+--rootVer+5.34.18-davix_p6a+-p+%22.%2Fmain.sh%2520US%2520ANALY_SLAC%22+-l+user.sblunier.0702151354.709915.lib._004520.lib.tgz+-o+%22%7B%27ANALY_SLAC.root%27%3A+%27user.sblunier.004520._00001.ANALY_SLAC.root%27%7D%22+-r+.+&attemptNr=0&swRelease=NULL&maxCpuCount=0&outFiles=user.sblunier.004520._00001.ANALY_SLAC.root%2Cuser.sblunier.004520._2206622202.log.tgz&currentPriority=993&scopeIn=user.sblunier&PandaID=2206622202&dispatchDblock=user.sblunier.0702151354.709915.lib._004520&prodSourceLabel=user&checksum=ad%3Ac51ca454&jobName=prun.fc6e286a-0bf2-460a-92e8-b3c08d03a3d2&taskID=3&logFile=user.sblunier.004520._2206622202.log.tgz
+02 Jul 15:20:21|pilot.py    | prodSourceLabel already set in job def data: user
+02 Jul 15:20:21|SiteInformat| called updateQueuedataFromJobParameters with: -j "" --sourceURL https://aipanda011.cern.ch:25443 --rootVer 5.34.18-davix_p6a -p "./main.sh%20US%20ANALY_SLAC" -l user.sblunier.0702151354.709915.lib._004520.lib.tgz -o "{'ANALY_SLAC.root': 'user.sblunier.004520._00001.ANALY_SLAC.root'}" -r . 
+02 Jul 15:20:21|Job.py      | outfList = ['user.sblunier.004520._00001.ANALY_SLAC.root', 'user.sblunier.004520._2206622202.log.tgz']
+02 Jul 15:20:21|Job.py      | outfdbList = ['user.sblunier.UStest02.140702171354_sub0172562066', 'user.sblunier.UStest02.140702171354_sub0172562066']
+02 Jul 15:20:21|Job.py      | destinationDBlockToken = ['NULL', 'NULL']
+02 Jul 15:20:21|Job.py      | dispatchDBlockTokenForOut = ['NULL', 'NULL']
+02 Jul 15:20:21|Job.py      | logFileDblock = user.sblunier.UStest02.140702171354_sub0172562066
+02 Jul 15:20:21|pilot.py    | Got logGUID from server: 259e2595-1eeb-429e-8780-c0f2ca4d1e78
+02 Jul 15:20:21|pilot.py    | New job has prodSourceLabel=user
+02 Jul 15:20:21|pilot.py    | Increased job counter to 1
+02 Jul 15:20:21|pilot.py    | Task ID set to: 3
+02 Jul 15:20:21|pilot.py    | Using job definition id: 4521
+02 Jul 15:20:21|ATLASExperim| Using core count values: None (job definition), None (schedconfig)
+02 Jul 15:20:21|pilot.py    | postGetJobActions: OK
+02 Jul 15:20:21|ATLASSiteInf| Set site.appdir to /cvmfs/atlas.cern.ch/repo/sw
+02 Jul 15:20:21|ATLASSiteInf| Software directory /cvmfs/atlas.cern.ch/repo/sw exists
+02 Jul 15:20:21|SiteInformat| Successfully changed appdir to: /cvmfs/atlas.cern.ch/repo/sw
+02 Jul 15:20:21|JobRecovery.| Successfully updated job state file with state: startup
+02 Jul 15:20:22|pUtil.py    | Pilot modules have been copied to /scratch/Panda_Pilot_12183_1404314412
+02 Jul 15:20:22|pilot.py    | Current time :2014-07-02T08:20:22-0800
+02 Jul 15:20:22|pilot.py    | The site this pilot runs on: ANALY_SLAC
+02 Jul 15:20:22|pilot.py    | Pilot executing on host: fell0098
+02 Jul 15:20:22|pilot.py    | The workdir this pilot runs on:/scratch/Panda_Pilot_12183_1404314412
+02 Jul 15:20:22|pilot.py    | The dq2url for this site is: 
+02 Jul 15:20:22|pilot.py    | The DQ2 SE has 999999 GB space left (NB: dCache is defaulted to 999999)
+02 Jul 15:20:22|pilot.py    | New job has prodSourceLabel: user
+02 Jul 15:20:22|pilot.py    | Using looping job limit: 10800 s
+02 Jul 15:20:22|pilot.py    | maxCpuCount: 0 s
+02 Jul 15:20:22|pilot.py    | Pilot executing job for user: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy
+02 Jul 15:20:22|pilot.py    | Created job workdir at /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:22|pUtil.py    | Creating job setup script with stage-in and payload execution commands: job_setup.sh
+02 Jul 15:20:22|pUtil.py    | Updated /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/job_setup.sh: #!/bin/bash
+# job_setup.sh 02 Jul 2014 15:20:22
+
+export VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+if [ -f $VO_ATLAS_SW_DIR/local/setup.sh ]; then
+  source $VO_ATLAS_SW_DIR/local/setup.sh
+fi
+02 Jul 15:20:22|FileState.py| File does not exist: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle (will be created)
+02 Jul 15:20:22|FileState.py| Resetting file list: ['user.sblunier.004520._00001.ANALY_SLAC.root', 'user.sblunier.004520._2206622202.log.tgz']
+02 Jul 15:20:22|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle
+02 Jul 15:20:22|FileState.py| File name  /  File state  /  Registration state
+02 Jul 15:20:22|FileState.py| ----------------------------------------------------------------------------------------------------
+02 Jul 15:20:22|FileState.py| 1. user.sblunier.004520._00001.ANALY_SLAC.root	not_created	not_registered
+02 Jul 15:20:22|FileState.py| 2. user.sblunier.004520._2206622202.log.tgz	not_created	not_registered
+02 Jul 15:20:22|FileState.py| File does not exist: /scratch/Panda_Pilot_12183_1404314412/fileState-input-2206622202.pickle (will be created)
+02 Jul 15:20:22|FileState.py| Resetting file list: ['user.sblunier.0702151354.709915.lib._004520.lib.tgz']
+02 Jul 15:20:22|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-input-2206622202.pickle
+02 Jul 15:20:22|FileState.py| File name  /  File state  /  Transfer mode
+02 Jul 15:20:22|FileState.py| ----------------------------------------------------------------------------------------------------
+02 Jul 15:20:22|FileState.py| 1. user.sblunier.0702151354.709915.lib._004520.lib.tgz	not_transferred	copy_to_scratch
+02 Jul 15:20:22|pUtil.py    | LFN length verified for file user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:20:22|pUtil.py    | LFN length verified for file user.sblunier.004520._2206622202.log.tgz
+02 Jul 15:20:22|pilot.py    | LFN length(s) verified, within allowed limit
+02 Jul 15:20:22|Job.py      | Dumping job specifics
+02 Jul 15:20:22|Job.py      | 
+PandaID=2206622202
+AtlasRelease=NULL
+homePackage=NULL
+trfName=http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02
+inputFiles=['user.sblunier.0702151354.709915.lib._004520.lib.tgz']
+realDatasetsIn=['user.sblunier.0702151354.709915.lib._004520']
+filesizeIn=['26131']
+checksumIn=['ad:c51ca454']
+prodDBlockToken=['NULL']
+dispatchDblock=['user.sblunier.0702151354.709915.lib._004520']
+dispatchDBlockToken=['NULL']
+dispatchDBlockTokenForOut=['NULL', 'NULL']
+destinationDBlockToken=['NULL', 'NULL']
+outputFiles=['user.sblunier.004520._00001.ANALY_SLAC.root', 'user.sblunier.004520._2206622202.log.tgz']
+destinationDblock=['user.sblunier.UStest02.140702171354_sub0172562066']
+logFile=user.sblunier.004520._2206622202.log.tgz
+logFileDblock=user.sblunier.UStest02.140702171354_sub0172562066
+jobPars=-j "" --sourceURL https://aipanda011.cern.ch:25443 --rootVer 5.34.18-davix_p6a -p "./main.sh%20US%20ANALY_SLAC" -l user.sblunier.0702151354.709915.lib._004520.lib.tgz -o "{'ANALY_SLAC.root': 'user.sblunier.004520._00001.ANALY_SLAC.root'}" -r . 
+The job state=['starting', 0, 0]
+Job workdir=/scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+TarFileGuid=259e2595-1eeb-429e-8780-c0f2ca4d1e78
+outFilesGuids=[]
+destinationSE=ANALY_SLAC
+fileDestinationSE=ANALY_SLAC,ANALY_SLAC
+prodSourceLabel=user
+spsetup=(not defined)
+credname=None
+myproxy=None
+cloud=US
+taskID=3
+prodUserID=/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy
+debug=False
+transferType=NULL
+02 Jul 15:20:22|PandaServerC| Updating job status in updatePandaServer(): PandaId=2206622202, result=['starting', 0, 0], time=2014-07-02T08:20:22-0800
+02 Jul 15:20:22|PandaServerC| job.prodSourceLabel=user
+02 Jul 15:20:22|PandaServerC| Batch system: LSF
+02 Jul 15:20:22|PandaServerC| Batch system job ID: 397727
+02 Jul 15:20:22|PandaServerC| Will send batchID: 397727 and pilotID: http://gridui19.usatlas.bnl.gov:25880/2014-07-02/ANALY_SLAC/4137564.27.out|397727|LSF|PR|SULU 58m
+02 Jul 15:20:22|PandaServerC| pilotId: http://gridui19.usatlas.bnl.gov:25880/2014-07-02/ANALY_SLAC/4137564.27.out
+02 Jul 15:20:22|PandaServerC| No job metrics (all values are zero)
+02 Jul 15:20:22|PandaServerC| getXML called
+02 Jul 15:20:22|PandaServerC| Stdout tail will not be sent (debug=False)
+02 Jul 15:20:22|pUtil.py    | Successfully updated job state file at: /scratch/Panda_Pilot_12183_1404314412/jobState-2206622202.pickle
+02 Jul 15:20:22|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+02 Jul 15:20:22|pUtil.py    | Sending attemptNr=0 for cmd=updateJob
+02 Jul 15:20:22|pUtil.py    | toServer: cmd = updateJob
+02 Jul 15:20:22|pUtil.py    | toServer: len(data) = 15
+02 Jul 15:20:22|pUtil.py    | data = {'node': 'fell0098', 'xml': '', 'workdir': '/scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422', 'jobMetrics': '', 'messageLevel': 'info', 'siteName': 'ANALY_SLAC', 'timestamp': '2014-07-02T08:20:22-0800', 'attemptNr': 0, 'jobId': 2206622202, 'batchID': '397727', 'remainingSpace': 999999, 'state': 'starting', 'schedulerID': 'BNL-gridui19-jhover', 'pilotID': 'http://gridui19.usatlas.bnl.gov:25880/2014-07-02/ANALY_SLAC/4137564.27.out|397727|LSF|PR|SULU 58m', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           X5355  @ 2.66GHz 4096 KB'}
+02 Jul 15:20:22|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --config /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT/curl.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+02 Jul 15:20:23|pUtil.py    | Elapsed seconds: 1
+02 Jul 15:20:23|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+02 Jul 15:20:23|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+02 Jul 15:20:23|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+02 Jul 15:20:23|PandaServerC| jobDispatcher acknowledged with 0
+02 Jul 15:20:23|pilot.py    | Successfully updated panda server at 2014-07-02T08:20:23-0800
+02 Jul 15:20:23|pilot.py    | Starting child process in dir: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:23|pUtil.py    | Wrote string "15434" to file: /scratch/Panda_Pilot_12183_1404314412/PROCESSID
+02 Jul 15:20:23|pilot.py    | Launching runJob with options: ['/usr/bin/python', 'runJob.py', '-a', '/cvmfs/atlas.cern.ch/repo/sw', '-d', '/scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422', '-l', '/nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT', '-q', '', '-p', '9266', '-s', 'ANALY_SLAC', '-o', '/scratch/Panda_Pilot_12183_1404314412', '-h', 'ANALY_SLAC-lsf', '-i', '259e2595-1eeb-429e-8780-c0f2ca4d1e78', '-b', '0', '-t', 'True', '-k', '/scratch/Panda_Pilot_12183_1404314412/pilotlog.txt', '-x', '2', '-v', '0', '-g', '/nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT', '-m', '/nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT', '-B', 'False', '-E', '2', '-F', 'ATLAS']
+02 Jul 15:20:23|PandaServerC| Updating job status in updatePandaServer(): PandaId=2206622202, result=['running', 0, 0], time=2014-07-02T08:20:23-0800
+02 Jul 15:20:23|PandaServerC| job.prodSourceLabel=user
+02 Jul 15:20:23|PandaServerC| Batch system: LSF
+02 Jul 15:20:23|PandaServerC| Batch system job ID: 397727
+02 Jul 15:20:23|PandaServerC| Will send batchID: 397727 and pilotID: http://gridui19.usatlas.bnl.gov:25880/2014-07-02/ANALY_SLAC/4137564.27.out|397727|LSF|PR|SULU 58m
+02 Jul 15:20:23|PandaServerC| pilotId: http://gridui19.usatlas.bnl.gov:25880/2014-07-02/ANALY_SLAC/4137564.27.out
+02 Jul 15:20:23|PandaServerC| No job metrics (all values are zero)
+02 Jul 15:20:23|PandaServerC| getXML called
+02 Jul 15:20:23|PandaServerC| Stdout tail will not be sent (debug=False)
+02 Jul 15:20:23|pUtil.py    | Successfully updated job state file at: /scratch/Panda_Pilot_12183_1404314412/jobState-2206622202.pickle
+02 Jul 15:20:23|pUtil.py    | Pilot modules have been copied to /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:23|pilot.py    | Copying job definition (pandaJobData.out) to /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:23|pilot.py    | Copying job definition (pandaJobData.out) to /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT/pandaJobData_1.out
+02 Jul 15:20:23|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+02 Jul 15:20:23|pUtil.py    | Sending attemptNr=0 for cmd=updateJob
+02 Jul 15:20:23|pUtil.py    | toServer: cmd = updateJob
+02 Jul 15:20:23|pUtil.py    | toServer: len(data) = 13
+02 Jul 15:20:23|pUtil.py    | data = {'node': 'fell0098', 'xml': '', 'workdir': '/scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422', 'jobMetrics': '', 'siteName': 'ANALY_SLAC', 'timestamp': '2014-07-02T08:20:23-0800', 'attemptNr': 0, 'jobId': 2206622202, 'batchID': '397727', 'state': 'running', 'schedulerID': 'BNL-gridui19-jhover', 'pilotID': 'http://gridui19.usatlas.bnl.gov:25880/2014-07-02/ANALY_SLAC/4137564.27.out|397727|LSF|PR|SULU 58m', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           X5355  @ 2.66GHz 4096 KB'}
+02 Jul 15:20:23|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/etc/grid-security/certificates --cert /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --cacert /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --key /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy --config /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT/curl.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+02 Jul 15:20:23|pUtil.py    | chdir to: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:23|pUtil.py    | current dir: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:24|Node.py     | corecount not an integer in queuedata
+02 Jul 15:20:24|Node.py     | Will not set ATHENA_PROC_NUMBER
+02 Jul 15:20:24|Node.py     | Collecting machine features
+02 Jul 15:20:24|Node.py     | $MACHINEFEATURES not defined locally
+02 Jul 15:20:24|Node.py     | $JOBFEATURES not defined locally
+02 Jul 15:20:24|Node.py     | Executing command: hostname -i
+02 Jul 15:20:24|Node.py     | IP number of worker node: 134.79.168.108
+02 Jul 15:20:24|runJob.py   | Current job workdir is: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:24|runJob.py   | Site workdir is: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:24|runJob.py   | runJob will serve experiment: ATLAS
+02 Jul 15:20:24|Job.py      | outfList = ['user.sblunier.004520._00001.ANALY_SLAC.root', 'user.sblunier.004520._2206622202.log.tgz']
+02 Jul 15:20:24|Job.py      | outfdbList = ['user.sblunier.UStest02.140702171354_sub0172562066', 'user.sblunier.UStest02.140702171354_sub0172562066']
+02 Jul 15:20:24|Job.py      | destinationDBlockToken = ['NULL', 'NULL']
+02 Jul 15:20:24|Job.py      | dispatchDBlockTokenForOut = ['NULL', 'NULL']
+02 Jul 15:20:24|Job.py      | logFileDblock = user.sblunier.UStest02.140702171354_sub0172562066
+02 Jul 15:20:24|runJob.py   | User analysis job
+02 Jul 15:20:24|runJob.py   | runJob received a job with prodSourceLabel=user
+02 Jul 15:20:24|JobRecovery.| Successfully updated job state file with state: setup
+02 Jul 15:20:24|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+02 Jul 15:20:24|RunJobUtilit| filesAltStageOut not set
+02 Jul 15:20:24|RunJobUtilit| filesNormalStageOut not set
+02 Jul 15:20:24|RunJobUtilit| About to send TCP message to main pilot thread of length = 303
+02 Jul 15:20:24|RunJobUtilit| (Sent)
+02 Jul 15:20:24|pilot.py    | Connected from ('127.0.0.1', 40759)
+02 Jul 15:20:24|pilot.py    | --- TCPServer: Message received from child is : ['jobState=setup', 'pid=15434', 'timeStageIn=0', 'timeExe=0', 'cpuConversionFactor=0', 'vmPeakMax=0', 'cpuUnit=None', 'vmPeakMean=0', 'pilotErrorDiag=None', 'status=setup', 'timeStageOut=0', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=0', 'jobid=2206622202', 'pgrp=15434', 'transecode=0', '']
+02 Jul 15:20:24|pilot.py    | Process groups: 12105 (pilot), 15434 (sub process)
+02 Jul 15:20:24|pUtil.py    | Decoding: None
+02 Jul 15:20:24|pUtil.py    | Empty URL encoded string (Nothing to decode)
+02 Jul 15:20:24|RunJobUtilit| (Received)
+02 Jul 15:20:24|RunJobUtilit| Successfully sent and received TCP message
+02 Jul 15:20:24|RunJobUtilit| Successfully updated local pilot TCP server at 2014-07-02T08:20:24-0800 (Trial 1/2)
+02 Jul 15:20:24|runJob.py   | Number of transformations to process: 1
+02 Jul 15:20:24|RunJobUtilit| Multi-trf verification succeeded (single job)
+02 Jul 15:20:24|runJob.py   | Current job workdir is /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:20:24|runJob.py   | Preparing setup 1/1
+02 Jul 15:20:24|Experiment.p| INDS unknown
+02 Jul 15:20:24|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+02 Jul 15:20:24|pUtil.py    | Detected unset (NULL) release/homepackage string
+02 Jul 15:20:24|pUtil.py    | Got a plain appdir from queuedata: /cvmfs/atlas.cern.ch/repo/sw
+02 Jul 15:20:24|ATLASExperim| Local software path: swbase = /cvmfs/atlas.cern.ch/repo/sw/software
+02 Jul 15:20:24|ATLASExperim| Found alternatives to cmtconfig: ['x86_64-slc6-gcc48-opt', 'i686-slc5-gcc43-opt', 'x86_64-slc5-gcc43-opt', 'x86_64-slc6-gcc46-opt', 'x86_64-slc6-gcc47-opt'] (the first item is the default cmtconfig value)
+02 Jul 15:20:24|ATLASExperim| Generic job
+02 Jul 15:20:24|ATLASExperim| Warning: $SITEROOT unknown at this stage (3)
+02 Jul 15:20:24|ATLASExperim| Will use $SITEROOT:  (3)
+02 Jul 15:20:24|pUtil.py    | Detected unset (NULL) release/homepackage string
+02 Jul 15:20:24|ATLASExperim| Using /usr/bin/python
+02 Jul 15:20:24|Experiment.p| trfName = runGen-00-00-02
+02 Jul 15:20:24|Experiment.p| getValidBaseURLs will return: ['http://www.usatlas.bnl.gov', 'https://www.usatlas.bnl.gov', 'http://pandaserver.cern.ch', 'http://atlpan.web.cern.ch/atlpan', 'https://atlpan.web.cern.ch/atlpan', 'http://common-analysis-framework.cern.ch', 'http://classis01.roma1.infn.it', 'http://atlas-install.roma1.infn.it', 'http://homepages.physik.uni-muenchen.de/~Johannes.Ebke']
+02 Jul 15:20:24|Experiment.p| Verified the trf base URL: http://pandaserver.cern.ch
+02 Jul 15:20:24|Experiment.p| getValidBaseURLs will return: ['http://pandaserver.cern.ch', 'http://www.usatlas.bnl.gov', 'https://www.usatlas.bnl.gov', 'http://atlpan.web.cern.ch/atlpan', 'https://atlpan.web.cern.ch/atlpan', 'http://common-analysis-framework.cern.ch', 'http://classis01.roma1.infn.it', 'http://atlas-install.roma1.infn.it', 'http://homepages.physik.uni-muenchen.de/~Johannes.Ebke']
+02 Jul 15:20:24|Experiment.p| Attempting to download trf: http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02
+02 Jul 15:20:24|Experiment.p| Executing command [Trial 1/3]: wget http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02
+02 Jul 15:20:25|Experiment.p| wget command returned: --2014-07-02 08:20:24--  http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02
+Resolving pandaserver.cern.ch... 128.142.202.112, 188.184.140.203, 128.142.166.98, ...
+Connecting to pandaserver.cern.ch|128.142.202.112|:25080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 64847 (63K) [text/plain]
+Saving to: `runGen-00-00-02'
+
+     0K .......... .......... .......... .......... .......... 78%  143K 0s
+    50K .......... ...                                        100% 17.1M=0.4s
+
+2014-07-02 08:20:25 (181 KB/s) - `runGen-00-00-02' saved [64847/64847]
+
+02 Jul 15:20:25|Experiment.p| Successfully downloaded trf
+02 Jul 15:20:25|Experiment.p| Changing permission of runGen-00-00-02 to 0755
+02 Jul 15:20:25|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlssd01.slac.stanford.edu:2094//atlas/xrootd'}
+02 Jul 15:20:25|Experiment.p| Forced usePFCTurl (reset old/newPrefix)
+02 Jul 15:20:25|Experiment.p| Setup file exists: /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh
+02 Jul 15:20:25|Experiment.p| reset old/newPrefix (forced TURL mode (1))
+02 Jul 15:20:25|pUtil.py    | getSiteInformation: got experiment=ATLAS
+02 Jul 15:20:25|ATLASExperim| JEM is not allowed
+02 Jul 15:20:25|ATLASExperim| 
+Command to run the job is: 
+export FRONTIER_ID="[2206622202]";export CMSSW_VERSION=$FRONTIER_ID;export RUCIO_APPID="prun";export RUCIO_ACCOUNT="pilot";source /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh;export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy;./runGen-00-00-02 -j "" --sourceURL https://aipanda011.cern.ch:25443 --rootVer 5.34.18-davix_p6a -p "./main.sh%20US%20ANALY_SLAC" -l user.sblunier.0702151354.709915.lib._004520.lib.tgz -o "{'ANALY_SLAC.root': 'user.sblunier.004520._00001.ANALY_SLAC.root'}" -r .  --usePFCTurl --directIn --inputGUIDs "[]" 1>prun_stdout.txt 2>prun_stderr.txt
+02 Jul 15:20:25|ATLASExperim| ATLAS_PYTHON_PILOT = /usr/bin/python
+02 Jul 15:20:25|runJob.py   | Total setup time: 0 s
+02 Jul 15:20:25|runJob.py   | Setup has finished successfully
+02 Jul 15:20:25|Job.py      | Dumping job specifics
+02 Jul 15:20:25|Job.py      | 
+PandaID=2206622202
+AtlasRelease=NULL
+homePackage=NULL
+trfName=http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02
+inputFiles=['user.sblunier.0702151354.709915.lib._004520.lib.tgz']
+realDatasetsIn=['user.sblunier.0702151354.709915.lib._004520']
+filesizeIn=['26131']
+checksumIn=['ad:c51ca454']
+prodDBlockToken=['NULL']
+dispatchDblock=['user.sblunier.0702151354.709915.lib._004520']
+dispatchDBlockToken=['NULL']
+dispatchDBlockTokenForOut=['NULL', 'NULL']
+destinationDBlockToken=['NULL', 'NULL']
+outputFiles=['user.sblunier.004520._00001.ANALY_SLAC.root']
+destinationDblock=['user.sblunier.UStest02.140702171354_sub0172562066']
+logFile=user.sblunier.004520._2206622202.log.tgz
+logFileDblock=user.sblunier.UStest02.140702171354_sub0172562066
+jobPars=-j "" --sourceURL https://aipanda011.cern.ch:25443 --rootVer 5.34.18-davix_p6a -p "./main.sh%20US%20ANALY_SLAC" -l user.sblunier.0702151354.709915.lib._004520.lib.tgz -o "{'ANALY_SLAC.root': 'user.sblunier.004520._00001.ANALY_SLAC.root'}" -r . 
+The job state=['setup', 0, 0]
+Job workdir=/scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+TarFileGuid=0877c348-9ef4-4e76-9913-fa798e4c94db
+outFilesGuids=[]
+destinationSE=ANALY_SLAC
+fileDestinationSE=ANALY_SLAC,ANALY_SLAC
+prodSourceLabel=user
+spsetup=(not defined)
+credname=None
+myproxy=None
+cloud=US
+taskID=3
+prodUserID=/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy
+debug=False
+transferType=NULL
+02 Jul 15:20:25|runJob.py   | Setting stage-in state until all input files have been copied
+02 Jul 15:20:25|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+02 Jul 15:20:25|RunJobUtilit| filesAltStageOut not set
+02 Jul 15:20:25|RunJobUtilit| filesNormalStageOut not set
+02 Jul 15:20:25|RunJobUtilit| About to send TCP message to main pilot thread of length = 304
+02 Jul 15:20:25|pUtil.py    | Elapsed seconds: 1
+02 Jul 15:20:25|RunJobUtilit| (Sent)
+02 Jul 15:20:25|pilot.py    | Connected from ('127.0.0.1', 40761)
+02 Jul 15:20:25|pilot.py    | --- TCPServer: Message received from child is : ['jobState=setup', 'pid=15434', 'timeStageIn=0', 'timeExe=0', 'cpuConversionFactor=0', 'vmPeakMax=0', 'cpuUnit=None', 'vmPeakMean=0', 'pilotErrorDiag=^!^', 'status=stagein', 'timeStageOut=0', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=0', 'jobid=2206622202', 'pgrp=15434', 'transecode=0', '']
+02 Jul 15:20:25|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+02 Jul 15:20:25|pilot.py    | Process groups: 12105 (pilot), 15434 (sub process)
+02 Jul 15:20:25|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+02 Jul 15:20:25|pUtil.py    | Decoding: ^!^
+02 Jul 15:20:25|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+02 Jul 15:20:25|PandaServerC| jobDispatcher acknowledged with 0
+02 Jul 15:20:25|pUtil.py    | Empty URL encoded string (Nothing to decode)
+02 Jul 15:20:25|RunJobUtilit| (Received)
+02 Jul 15:20:25|RunJobUtilit| Successfully sent and received TCP message
+02 Jul 15:20:25|pilot.py    | Successfully updated panda server at 2014-07-02T08:20:25-0800
+02 Jul 15:20:25|RunJobUtilit| Successfully updated local pilot TCP server at 2014-07-02T08:20:25-0800 (Trial 1/2)
+02 Jul 15:20:25|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:stagein, iteration 1)
+02 Jul 15:20:25|JobRecovery.| Successfully updated job state file with state: stagein
+02 Jul 15:20:25|runJob.py   | Executing command: ls -lF /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT
+02 Jul 15:20:25|runJob.py   | total 1871
+-rwxr-xr-x 1 osgatlas01 OG 107141 May 22 01:21 ATLASExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG  67107 Jul  2 08:20 ATLASExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG  25106 Apr 29 07:21 ATLASSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG  18099 Jul  2 08:20 ATLASSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24663 Jul 12  2013 BNLdCacheSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  15803 Jul  2 08:20 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG   2535 May  9 11:34 CHANGELOG
+-rwxr-xr-x 1 osgatlas01 OG  24247 Jul 15  2013 CMSExperiment.py*
+-rwxr-xr-x 1 osgatlas01 OG   8348 Jul 15  2013 CMSSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   8103 Jul  2 08:20 CMSSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8427 Jul 12  2013 COGSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   6998 Jul  2 08:20 COGSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG     37 Jul  2 08:20 CURRENT_SITEWORKDIR
+-rwxr-xr-x 1 osgatlas01 OG  18770 Jul 12  2013 CastorSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  11687 Jul  2 08:20 CastorSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  12709 Jul 12  2013 ChirpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8964 Jul  2 08:20 ChirpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  13233 Oct 31  2013 Cleaner.py*
+-rw-r--r-- 1 osgatlas01 OG   9286 Jul  2 08:20 Cleaner.pyc
+-rwxr-xr-x 1 osgatlas01 OG  12301 Jul 12  2013 DBReleaseHandler.py*
+-rwxr-xr-x 1 osgatlas01 OG    647 Jul 12  2013 Diagnosis.py*
+-rw-r--r-- 1 osgatlas01 OG    826 Jul  2 08:20 Diagnosis.pyc
+-rwxr-xr-x 1 osgatlas01 OG   3120 Jul 15  2013 ErrorDiagnosis.py*
+-rw-r--r-- 1 osgatlas01 OG   2813 Jul  2 08:20 ErrorDiagnosis.pyc
+-rwxr-xr-x 1 osgatlas01 OG  28842 Apr 29 07:21 Experiment.py*
+-rw-r--r-- 1 osgatlas01 OG  16807 Jul  2 08:20 Experiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2304 Jul 12  2013 ExperimentFactory.py*
+-rw-r--r-- 1 osgatlas01 OG   1948 Jul  2 08:20 ExperimentFactory.pyc
+-rwxr-xr-x 1 osgatlas01 OG  18312 Dec 10  2013 FAXSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  13215 Jul  2 08:20 FAXSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   5148 Jul 12  2013 FileRegistration.py*
+-rwxr-xr-x 1 osgatlas01 OG   9699 Jul 12  2013 FileState.py*
+-rw-r--r-- 1 osgatlas01 OG   9175 Jul  2 08:20 FileState.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2391 Jul 12  2013 FileStateClient.py*
+-rw-r--r-- 1 osgatlas01 OG   2594 Jul  2 08:20 FileStateClient.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24485 Jul 12  2013 GOSiteMover.py*
+-rwxr-xr-x 1 osgatlas01 OG  11236 Jul 12  2013 GSIftpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8945 Jul  2 08:20 GSIftpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  11706 Jul 12  2013 HUSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8541 Jul  2 08:20 HUSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  28964 Jan 28 08:21 JEMstub.py*
+-rwxr-xr-x 1 osgatlas01 OG  18506 May 22 01:21 Job.py*
+-rw-r--r-- 1 osgatlas01 OG  10452 Jul  2 08:20 Job.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2043 Jul 12  2013 JobInfoXML.py*
+-rwxr-xr-x 1 osgatlas01 OG  54989 Apr 29 07:21 JobLog.py*
+-rw-r--r-- 1 osgatlas01 OG  33776 Jul  2 08:20 JobLog.pyc
+-rwxr-xr-x 1 osgatlas01 OG  29371 Jul 12  2013 JobRecovery.py*
+-rw-r--r-- 1 osgatlas01 OG  20508 Jul  2 08:20 JobRecovery.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10634 Jul 12  2013 JobState.py*
+-rw-r--r-- 1 osgatlas01 OG   7976 Jul  2 08:20 JobState.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14046 Jul 12  2013 LocalSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   9804 Jul  2 08:20 LocalSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG 174158 May 22 01:21 Mover.py*
+-rw-r--r-- 1 osgatlas01 OG 102601 Jul  2 08:20 Mover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   9274 Apr 29 07:21 Node.py*
+-rw-r--r-- 1 osgatlas01 OG   8089 Jul  2 08:20 Node.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8066 Jul 12  2013 NordugridATLASExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG   6341 Jul  2 08:20 NordugridATLASExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2038 Jul 12  2013 NordugridATLASSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   2124 Jul  2 08:20 NordugridATLASSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2678 Jul 12  2013 OtherExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG   3450 Jul  2 08:20 OtherExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   1991 Jul 12  2013 OtherSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   2493 Jul  2 08:20 OtherSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2311 Jul 12  2013 OtherSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG      8 May 22 01:21 PILOTVERSION
+-rwxr-xr-x 1 osgatlas01 OG  32933 Apr 29 07:21 PandaServerClient.py*
+-rw-r--r-- 1 osgatlas01 OG  19695 Jul  2 08:20 PandaServerClient.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14102 Apr 29 07:21 PilotErrors.py*
+-rw-r--r-- 1 osgatlas01 OG  12630 Jul  2 08:20 PilotErrors.pyc
+-rwxr-xr-x 1 osgatlas01 OG   1717 Jul 12  2013 PilotTCPServer.py*
+-rw-r--r-- 1 osgatlas01 OG   2156 Jul  2 08:20 PilotTCPServer.pyc
+-rwxr-xr-x 1 osgatlas01 OG  13549 Jul 12  2013 PilotUtils.py*
+-rwxr-xr-x 1 osgatlas01 OG   4281 Jul 12  2013 ProxyGuard.py*
+-rw-r--r-- 1 osgatlas01 OG   4953 Jul  2 08:20 ProxyGuard.pyc
+-rw-r--r-- 1 osgatlas01 OG     25 Jul 12  2013 README
+-rwxr-xr-x 1 osgatlas01 OG  30467 Feb 13 07:21 RunJobUtilities.py*
+-rw-r--r-- 1 osgatlas01 OG  23692 Jul  2 08:20 RunJobUtilities.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14524 Jul 12  2013 SRMSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  10319 Jul  2 08:20 SRMSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG      1 Jul  2 08:20 STATUSCODE
+-rwxr-xr-x 1 osgatlas01 OG    998 Jul 12  2013 Site.py*
+-rw-r--r-- 1 osgatlas01 OG   1315 Jul  2 08:20 Site.pyc
+-rwxr-xr-x 1 osgatlas01 OG  33806 Apr 29 07:21 SiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG  21821 Jul  2 08:20 SiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2892 Jul 12  2013 SiteInformationFactory.py*
+-rw-r--r-- 1 osgatlas01 OG   2208 Jul  2 08:20 SiteInformationFactory.pyc
+-rwxr-xr-x 1 osgatlas01 OG 137286 Feb 19 01:21 SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  91502 Jul  2 08:20 SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8583 Jul 12  2013 SiteMoverFarm.py*
+-rw-r--r-- 1 osgatlas01 OG   6286 Jul  2 08:20 SiteMoverFarm.pyc
+-rwxr-xr-x 1 osgatlas01 OG  23435 Jul 12  2013 UberftpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  14485 Jul  2 08:20 UberftpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   3453 Aug 15  2013 VmPeak.py*
+-rwxr-xr-x 1 osgatlas01 OG      0 Jul 12  2013 __init__.py*
+-rwxr-xr-x 1 osgatlas01 OG  31534 May 22 01:21 aria2cSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  20372 Jul  2 08:20 aria2cSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  31374 Oct 31  2013 atlasProdPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG  16969 Jul 12  2013 castorSvcClassSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  11515 Jul  2 08:20 castorSvcClassSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG    401 Jul 12  2013 config.py*
+-rw-r--r-- 1 osgatlas01 OG    590 Jul  2 08:20 config.pyc
+-rw-r--r-- 1 osgatlas01 OG    567 Jul  2 08:20 curl.config
+-rwxr-xr-x 1 osgatlas01 OG  30366 Jul 15  2013 curlSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  17243 Jul  2 08:20 curlSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10846 Jul 12  2013 dCacheLFCSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8571 Jul  2 08:20 dCacheLFCSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  30965 Jul 12  2013 dCacheSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  20374 Jul  2 08:20 dCacheSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  34155 Jul 12  2013 dataPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG   9189 Jul 12  2013 dq2SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   6118 Jul  2 08:20 dq2SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   5451 Jul 12  2013 futil.py*
+-rw-r--r-- 1 osgatlas01 OG   6470 Jul  2 08:20 futil.pyc
+-rwxr-xr-x 1 osgatlas01 OG  26864 Jul 12  2013 globusPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG  28025 Jul 12  2013 lcgcp2SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  15535 Jul  2 08:20 lcgcp2SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  33494 Jul 12  2013 lcgcpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  18848 Jul  2 08:20 lcgcpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  11096 Jul 12  2013 mvSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8688 Jul  2 08:20 mvSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   9674 Jul 12  2013 myproxyUtils.py*
+-rwxr-xr-x 1 osgatlas01 OG 129128 Feb 13 07:21 pUtil.py*
+-rw-r--r-- 1 osgatlas01 OG 100148 Jul  2 08:20 pUtil.pyc
+-rw-r--r-- 1 osgatlas01 OG   1755 Jul  2 08:20 pandaJobData_1.out
+-rwxr-xr-x 1 osgatlas01 OG 269443 May 22 01:21 pilot.py*
+-rw-r--r-- 1 osgatlas01 OG 125864 Jul  2 08:20 pilot.pyc
+-rw-r--r-- 1 osgatlas01 OG  30205 Jul  2 08:20 pilotlog.out
+-rw-r--r-- 1 osgatlas01 OG   6072 May  9 11:34 plugins.conf
+-rw-r--r-- 1 osgatlas01 OG   2681 Jul  2 08:20 queuedata.json
+-rwxr-xr-x 1 osgatlas01 OG  20033 Jul 12  2013 rfcpLFCSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  13505 Jul  2 08:20 rfcpLFCSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  51399 May 22 01:21 runJob.py*
+-rwxr-xr-x 1 osgatlas01 OG   4597 Jul 12  2013 stormSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   3641 Jul  2 08:20 stormSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8743 Jul 12  2013 timed_command.py*
+-rw-r--r-- 1 osgatlas01 OG   6487 Jul  2 08:20 timed_command.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10755 May  9 11:34 wrapper.py*
+-rwxr-xr-x 1 osgatlas01 OG    213 May  9 11:34 wrapperexceptions.py*
+-rw-r--r-- 1 osgatlas01 OG    857 Jul  2 08:19 wrapperexceptions.pyc
+drwxr-xr-x 2 osgatlas01 OG     13 Jul  2 08:19 wrapperplugins/
+-rwxr-xr-x 1 osgatlas01 OG  15839 May  9 11:34 wrapperutils.py*
+-rw-r--r-- 1 osgatlas01 OG  14103 Jul  2 08:19 wrapperutils.pyc
+-rwxr-xr-x 1 osgatlas01 OG  36996 Apr 29 07:21 xrdcpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  23868 Jul  2 08:20 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  32697 Feb 19 01:21 xrootdSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  21300 Jul  2 08:20 xrootdSiteMover.pyc
+02 Jul 15:20:25|RunJobUtilit| Input file(s): (1 in total)
+02 Jul 15:20:25|pUtil.py    | 1. user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:20:25|runJob.py   | Preparing for get command
+02 Jul 15:20:25|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlssd01.slac.stanford.edu:2094//atlas/xrootd'}
+02 Jul 15:20:25|pUtil.py    | Direct access mode: Copy tool will not be used for stage-in of root files
+02 Jul 15:20:25|Mover.py    | Created dictionary: {'user.sblunier.0702151354.709915.lib._004520.lib.tgz': 'NULL'}
+02 Jul 15:20:25|Mover.py    | Created dictionary: {'user.sblunier.0702151354.709915.lib._004520.lib.tgz': 'user.sblunier'}
+02 Jul 15:20:25|DBReleaseHan| Local DBRelease path verified: /cvmfs/atlas.cern.ch/repo/sw/database/DBRelease (will attempt to skip DBRelease stage-in)
+02 Jul 15:20:25|Mover.py    | Calling get function with dsname=user.sblunier.0702151354.709915.lib._004520, dsdict={'user.sblunier.0702151354.709915.lib._004520': ['user.sblunier.0702151354.709915.lib._004520.lib.tgz']}
+02 Jul 15:20:25|Mover.py    | Mover get data started
+02 Jul 15:20:25|Mover.py    | No DBRelease info found in job parameters
+02 Jul 15:20:25|Mover.py    | Job parameters did not specify a DBRelease version (can not verify local availability)
+02 Jul 15:20:25|Mover.py    | Number of locally available DBRelease files = 0 (1 files in total), continue with stage-in
+02 Jul 15:20:25|Mover.py    | Using job definition id: 4521
+02 Jul 15:20:25|Mover.py    | Trying to add additional info to tracing report
+02 Jul 15:20:25|Mover.py    | Tracing report initialised with: {'protocol': None, 'duid': None, 'eventType': 'get_sm_a', 'suspicious': '0', 'timeEnd': None, 'dataset': 'user.sblunier.0702151354.709915.lib._004520', 'catStart': None, 'guid': None, 'transferStart': None, 'hostname': 'fell0098.slac.stanford.edu', 'remoteSite': 'ANALY_SLAC', 'filename': None, 'version': None, 'filesize': None, 'ip': '134.79.168.108', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy', 'usr': '9d8070ae17f48c391f97ded494642209', 'eventVersion': 'pilot3', 'localSite': 'ANALY_SLAC', 'validateStart': None, 'uuid': 'bba76290d56c3775ee5f197f4bc022e7', 'timeStart': 1404314425.181607, 'relativeStart': None, 'appid': 2206622202, 'clientState': 'INIT_REPORT'}
+02 Jul 15:20:25|Mover.py    | Got copytool lsm from queuedata file
+02 Jul 15:20:25|Mover.py    | copysetup is: /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh (file access verified)
+02 Jul 15:20:25|SiteMoverFar| Looking for site mover lsm, setup:/afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh, ar:(), kw:{}
+02 Jul 15:20:25|SiteMoverFar| Returning site mover <class 'LocalSiteMover.LocalSiteMover'> (setup: /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh)
+02 Jul 15:20:25|Mover.py    | Preparing to build paths for input files
+02 Jul 15:20:25|pUtil.py    | getSiteInformation: got experiment=ATLAS
+02 Jul 15:20:25|Mover.py    | Guids:
+02 Jul 15:20:25|pUtil.py    | 1. 65c573ab-73b0-4336-8d30-2cec814650bc
+02 Jul 15:20:25|ATLASExperim| Will do file lookups in the LFC
+02 Jul 15:20:25|ATLASExperim| Using file catalog: rucio://atlas-rucio.cern.ch:/grid/atlas
+02 Jul 15:20:25|Mover.py    | Will extend file catalog host list
+02 Jul 15:20:25|ATLASExperim| catalogsTopology=['rucio://atlas-rucio.cern.ch:/grid/atlas']
+02 Jul 15:20:25|ATLASExperim| Extracted file catalog hosts: ['rucio://atlas-rucio.cern.ch:/grid/atlas']
+02 Jul 15:20:25|Mover.py    | File catalog host list: ['rucio://atlas-rucio.cern.ch:/grid/atlas']
+02 Jul 15:20:25|Mover.py    | Attempting replica lookup from host rucio://atlas-rucio.cern.ch:/grid/atlas (#1/1)
+02 Jul 15:20:25|Mover.py    | copyprefixin is not set, trying to use copyprefix instead
+02 Jul 15:20:25|Mover.py    | Read copyprefix: ^srm://osgserv04.slac.stanford.edu
+02 Jul 15:20:25|Mover.py    | SE list:
+02 Jul 15:20:25|pUtil.py    | 1. token:ATLASUSERDISK:srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+02 Jul 15:20:25|Mover.py    | SE list has been stripped to:
+02 Jul 15:20:25|pUtil.py    | 1. srm://osgserv04.slac.stanford.edu
+02 Jul 15:20:25|ATLASExperim| Using alternative file catalog lookups
+02 Jul 15:20:25|Mover.py    | lfn_dict={'65c573ab-73b0-4336-8d30-2cec814650bc': 'user.sblunier.0702151354.709915.lib._004520.lib.tgz'}
+02 Jul 15:20:25|Mover.py    | scope_dict={'user.sblunier.0702151354.709915.lib._004520.lib.tgz': 'user.sblunier'}
+02 Jul 15:20:25|Mover.py    | file_dictionary={'65c573ab-73b0-4336-8d30-2cec814650bc': 'user.sblunier:user.sblunier.0702151354.709915.lib._004520.lib.tgz'}
+02 Jul 15:20:27|Mover.py    | rucio_replica_dictionary={'65c573ab-73b0-4336-8d30-2cec814650bc': {'checksum': u'ad:c51ca454', 'surls': [u'srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz'], 'lfn': u'user.sblunier:user.sblunier.0702151354.709915.lib._004520.lib.tgz', 'fsize': 26131}}
+02 Jul 15:20:27|Mover.py    | surl_guid_dictionary={'65c573ab-73b0-4336-8d30-2cec814650bc': [u'srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz']}
+02 Jul 15:20:27|Mover.py    | Verifying SURLs
+02 Jul 15:20:27|Mover.py    | GUID=65c573ab-73b0-4336-8d30-2cec814650bc has a valid (set) SURL list
+02 Jul 15:20:27|Mover.py    | guid=65c573ab-73b0-4336-8d30-2cec814650bc
+02 Jul 15:20:27|Mover.py    | surl=srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:20:27|Mover.py    | replicas_dic={'65c573ab-73b0-4336-8d30-2cec814650bc': [<Mover.replica instance at 0x1e77b48>]}
+02 Jul 15:20:27|Mover.py    | Copyprefix lists: ['dummy'], ['srm://osgserv04.slac.stanford.edu']
+02 Jul 15:20:27|Mover.py    | Processing guid 65c573ab-73b0-4336-8d30-2cec814650bc
+02 Jul 15:20:27|Mover.py    | No space token matching
+02 Jul 15:20:27|Mover.py    | Sorted replica list:
+02 Jul 15:20:27|Mover.py    | 1. srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz (fsize: 26131 fchecksum: ad:c51ca454)
+02 Jul 15:20:27|Mover.py    | Checking replica srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz for guid 65c573ab-73b0-4336-8d30-2cec814650bc
+02 Jul 15:20:27|Mover.py    | Checking list of SEs
+02 Jul 15:20:27|Mover.py    | Found matched replica: srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz at srm://osgserv04.slac.stanford.edu
+02 Jul 15:20:27|Mover.py    | Matched replica list:
+02 Jul 15:20:27|pUtil.py    | 1. srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:20:27|Mover.py    | Will use primary replica: srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:20:27|Mover.py    | Creating initial replica dictionary
+02 Jul 15:20:27|Mover.py    | Successfully dumped replica dictionary to file /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/matched_replicas.json for guid: 65c573ab-73b0-4336-8d30-2cec814650bc
+02 Jul 15:20:27|Mover.py    | Found all replicas, aborting loop over catalog hosts
+02 Jul 15:20:27|Mover.py    | file_dict = {'65c573ab-73b0-4336-8d30-2cec814650bc': u'srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz'}
+02 Jul 15:20:27|pUtil.py    | <?xml version="1.0" ?>
+<!-- Edited By Panda Pilot3 -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="65c573ab-73b0-4336-8d30-2cec814650bc">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>
+
+02 Jul 15:20:27|pUtil.py    | Created /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/PoolFileCatalog.xml
+02 Jul 15:20:27|Mover.py    | . replicas_dict={'65c573ab-73b0-4336-8d30-2cec814650bc': [<Mover.replica instance at 0x1e77b48>, <Mover.replica instance at 0x1e77b48>]}
+02 Jul 15:20:27|Mover.py    | Using XML source LFC
+02 Jul 15:20:27|Mover.py    | lfn=user.sblunier.0702151354.709915.lib._004520.lib.tgz, fsize=26131, fchecksum=c51ca454
+02 Jul 15:20:27|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlssd01.slac.stanford.edu:2094//atlas/xrootd'}
+02 Jul 15:20:27|pUtil.py    | Direct access mode: Copy tool will not be used for stage-in of root files
+02 Jul 15:20:27|Mover.py    | Reset old/newPrefix (forced TURL mode)
+02 Jul 15:20:27|Mover.py    | use copytool = False (should be false for file stager)
+02 Jul 15:20:27|Mover.py    | useFileStager = False (should be true for file stager)
+02 Jul 15:20:27|Mover.py    | directIn = True (should be true for file stager)
+02 Jul 15:20:27|Mover.py    | oldPrefix =  (should be empty if TURL based PFC is required)
+02 Jul 15:20:27|Mover.py    | newPrefix =  (should be empty if TURL based PFC is required)
+02 Jul 15:20:27|Mover.py    | TURL based PFC required
+02 Jul 15:20:27|Mover.py    | Performing automatic configuration
+02 Jul 15:20:27|Mover.py    | Built a thinner file dictionary with 1 file(s)
+02 Jul 15:20:27|Mover.py    | Will create a PFC with TURL(s) for the following file(s)
+02 Jul 15:20:27|pUtil.py    | 1. srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:20:27|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlssd01.slac.stanford.edu:2094//atlas/xrootd'}
+02 Jul 15:20:27|pUtil.py    | Direct access mode: Copy tool will not be used for stage-in of root files
+02 Jul 15:20:27|Mover.py    | Will use oldPrefix=srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas and newPrefix=root://atlssd01.slac.stanford.edu:2094//atlas/xrootd for SURL to TURL conversion
+02 Jul 15:20:27|Mover.py    | No need to convert SURLs with lcg-getturls (no root files)
+02 Jul 15:20:27|Mover.py    | getTURL returned dictionary: {}
+02 Jul 15:20:27|Mover.py    | PFC cannot be created since no TURL based file dictionary was returned by getTURLs() (not needed)
+02 Jul 15:20:27|Mover.py    | PFC created with TURLs
+02 Jul 15:20:27|Mover.py    | Files will be transferred one by one
+02 Jul 15:20:27|Mover.py    | Will process 1 file(s)
+02 Jul 15:20:27|Mover.py    | Extracted (guid, gpfn, fsize, fchecksum) = (65c573ab-73b0-4336-8d30-2cec814650bc, srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz, 26131, c51ca454)
+02 Jul 15:20:27|Mover.py    | File user.sblunier.0702151354.709915.lib._004520.lib.tgz belongs to dataset/container user.sblunier.0702151354.709915.lib._004520
+02 Jul 15:20:27|Mover.py    | DQ2 site name: SLACXRD_USERDISK
+02 Jul 15:20:27|Mover.py    | (Not a DBRelease file)
+02 Jul 15:20:27|Mover.py    | Mover is preparing to copy file 1/1 (lfn: user.sblunier.0702151354.709915.lib._004520.lib.tgz guid: 65c573ab-73b0-4336-8d30-2cec814650bc dsname: user.sblunier.0702151354.709915.lib._004520)
+02 Jul 15:20:27|Mover.py    | Copying srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz to /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422 (LFC checksum: "c51ca454", fsize: 26131) using lsm (/afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh)
+02 Jul 15:20:27|Mover.py    | No special file access
+02 Jul 15:20:27|Mover.py    | Get attempt 1/2
+02 Jul 15:20:27|SiteMover.py| Using envsetup since envsetupin is not set
+02 Jul 15:20:27|pUtil.py    | Will verify: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy;
+02 Jul 15:20:27|pUtil.py    | Nothing to verify in setup: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy; (either empty string or no source command)
+02 Jul 15:20:27|pUtil.py    | directAccess: {'oldPrefix': 'srm://osgserv04.slac.stanford.edu(.)*/xrootd/atlas', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlssd01.slac.stanford.edu:2094//atlas/xrootd'}
+02 Jul 15:20:27|LocalSiteMov| Direct access mode has been switched off for this file (will be transferred with the copy tool)
+02 Jul 15:20:27|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-input-2206622202.pickle
+02 Jul 15:20:27|LocalSiteMov| Executing command: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy; lsm-get  --size 26131 --checksum adler32:c51ca454 --guid 65c573ab-73b0-4336-8d30-2cec814650bc srm://osgserv04.slac.stanford.edu/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/c7/a6/user.sblunier.0702151354.709915.lib._004520.lib.tgz /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:20:28|LocalSiteMov| Elapsed time: 1
+02 Jul 15:20:28|LocalSiteMov| Command output:
+
+02 Jul 15:20:28|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-input-2206622202.pickle
+02 Jul 15:20:28|LocalSiteMov| Updated tracing report: {'protocol': 'local', 'duid': None, 'eventType': 'get_sm_a', 'suspicious': '0', 'timeEnd': 1404314428.8689439, 'dataset': 'user.sblunier.0702151354.709915.lib._004520', 'catStart': 1404314427.2910359, 'guid': '65c573ab73b043368d302cec814650bc', 'transferStart': 1404314427.305074, 'hostname': 'fell0098.slac.stanford.edu', 'remoteSite': 'SLACXRD_USERDISK', 'filename': 'user.sblunier.0702151354.709915.lib._004520.lib.tgz', 'version': None, 'filesize': '26131', 'ip': '134.79.168.108', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy', 'usr': '9d8070ae17f48c391f97ded494642209', 'eventVersion': 'pilot3', 'localSite': 'SLACXRD_USERDISK', 'validateStart': 1404314428.8678269, 'uuid': 'bba76290d56c3775ee5f197f4bc022e7', 'timeStart': 1404314425.181607, 'relativeStart': None, 'appid': 2206622202, 'clientState': 'DONE'}
+02 Jul 15:20:28|SiteMover.py| Tracing server: https://atlas-ddmtracer.cern.ch:443/dq2/ws_tracer/rpc
+02 Jul 15:20:28|SiteMover.py| Sending tracing report: {'protocol': 'local', 'duid': None, 'eventType': 'get_sm_a', 'suspicious': '0', 'timeEnd': 1404314428.8689439, 'dataset': 'user.sblunier.0702151354.709915.lib._004520', 'catStart': 1404314427.2910359, 'guid': '65c573ab73b043368d302cec814650bc', 'transferStart': 1404314427.305074, 'hostname': 'fell0098.slac.stanford.edu', 'remoteSite': 'SLACXRD_USERDISK', 'filename': 'user.sblunier.0702151354.709915.lib._004520.lib.tgz', 'version': None, 'filesize': '26131', 'ip': '134.79.168.108', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy', 'usr': '9d8070ae17f48c391f97ded494642209', 'eventVersion': 'pilot3', 'localSite': 'SLACXRD_USERDISK', 'validateStart': 1404314428.8678269, 'uuid': 'bba76290d56c3775ee5f197f4bc022e7', 'timeStart': 1404314425.181607, 'relativeStart': None, 'appid': 2206622202, 'clientState': 'DONE'}
+02 Jul 15:20:28|SiteMover.py| Executing command: curl --connect-timeout 20 --max-time 120 --cacert /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy -v -k -d "report=%7B%27protocol%27%3A+%27local%27%2C+%27duid%27%3A+None%2C+%27eventType%27%3A+%27get_sm_a%27%2C+%27suspicious%27%3A+%270%27%2C+%27timeEnd%27%3A+1404314428.8689439%2C+%27dataset%27%3A+%27user.sblunier.0702151354.709915.lib._004520%27%2C+%27catStart%27%3A+1404314427.2910359%2C+%27guid%27%3A+%2765c573ab73b043368d302cec814650bc%27%2C+%27transferStart%27%3A+1404314427.305074%2C+%27hostname%27%3A+%27fell0098.slac.stanford.edu%27%2C+%27remoteSite%27%3A+%27SLACXRD_USERDISK%27%2C+%27filename%27%3A+%27user.sblunier.0702151354.709915.lib._004520.lib.tgz%27%2C+%27version%27%3A+None%2C+%27filesize%27%3A+%2726131%27%2C+%27ip%27%3A+%27134.79.168.108%27%2C+%27usrdn%27%3A+%27%2FDC%3Dch%2FDC%3Dcern%2FOU%3DOrganic+Units%2FOU%3DUsers%2FCN%3Dsblunier%2FCN%3D757276%2FCN%3DSylvain+Blunier%2FCN%3Dproxy%27%2C+%27usr%27%3A+%279d8070ae17f48c391f97ded494642209%27%2C+%27eventVersion%27%3A+%27pilot3%27%2C+%27localSite%27%3A+%27SLACXRD_USERDISK%27%2C+%27validateStart%27%3A+1404314428.8678269%2C+%27uuid%27%3A+%27bba76290d56c3775ee5f197f4bc022e7%27%2C+%27timeStart%27%3A+1404314425.181607%2C+%27relativeStart%27%3A+None%2C+%27appid%27%3A+2206622202%2C+%27clientState%27%3A+%27DONE%27%7D&operation=addReport&API=0_3_0" https://atlas-ddmtracer.cern.ch:443/dq2/ws_tracer/rpc
+02 Jul 15:20:30|SiteMover.py| Tracing report sent
+02 Jul 15:20:30|Mover.py    | File transfer finished correctly
+02 Jul 15:20:30|Mover.py    | filelist_fromlfns = ['user.sblunier.0702151354.709915.lib._004520.lib.tgz']
+02 Jul 15:20:30|Mover.py    | filelist_fromxml = ['user.sblunier.0702151354.709915.lib._004520.lib.tgz']
+02 Jul 15:20:30|Mover.py    | Verified: PoolFileCatalog.xml contains at least as many files as the initial list
+02 Jul 15:20:30|Mover.py    | Moving /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/PoolFileCatalog.xml to /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/PoolFileCatalog.xml.MOVER
+02 Jul 15:20:30|Mover.py    | Backed up old PFC file used by mover: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/PoolFileCatalog.xml.MOVER
+02 Jul 15:20:30|Mover.py    | !!WARNING!!2997!! Could not rename TURL based PFC: [Errno 2] No such file or directory
+02 Jul 15:20:30|Mover.py    | Creating /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/PoolFileCatalog.xml
+02 Jul 15:20:30|Mover.py    | Processing file: user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:20:30|Mover.py    | Created PFC for trf/runAthena: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/PoolFileCatalog.xml
+02 Jul 15:20:30|pUtil.py    | Dumping file: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/PoolFileCatalog.xml
+02 Jul 15:20:30|pUtil.py    | <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+02 Jul 15:20:30|pUtil.py    | <!-- Edited By POOL -->
+02 Jul 15:20:30|pUtil.py    | <!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+02 Jul 15:20:30|pUtil.py    | <POOLFILECATALOG>
+02 Jul 15:20:30|pUtil.py    | 
+02 Jul 15:20:30|pUtil.py    |   <File ID="65c573ab-73b0-4336-8d30-2cec814650bc">
+02 Jul 15:20:30|pUtil.py    |     <physical>
+02 Jul 15:20:30|pUtil.py    |       <pfn filetype="ROOT_All" name="user.sblunier.0702151354.709915.lib._004520.lib.tgz"/>
+02 Jul 15:20:30|pUtil.py    |     </physical>
+02 Jul 15:20:30|pUtil.py    |     <logical/>
+02 Jul 15:20:30|pUtil.py    |   </File>
+02 Jul 15:20:30|pUtil.py    | 
+02 Jul 15:20:30|pUtil.py    | </POOLFILECATALOG>
+02 Jul 15:20:30|pUtil.py    | Dumped 13 lines from file /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/PoolFileCatalog.xml
+02 Jul 15:20:30|Mover.py    | Number of identified root files     : 0
+02 Jul 15:20:30|Mover.py    | Number of transferred non-root files: 1
+02 Jul 15:20:30|Mover.py    | Get successful
+02 Jul 15:20:30|Mover.py    | Mover get_data finished
+02 Jul 15:20:30|Mover.py    | Will return exit code = 0, pilotErrorDiag = 
+02 Jul 15:20:30|Mover.py    | Get function finished with exit code 0
+02 Jul 15:20:30|Mover.py    | Input file(s):
+02 Jul 15:20:30|Mover.py    | -rw-r--r-- 1 osgatlas01 OG 26131 Jul  2 08:20 /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:20:30|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-input-2206622202.pickle
+02 Jul 15:20:30|FileState.py| File name  /  File state  /  Transfer mode
+02 Jul 15:20:30|FileState.py| ----------------------------------------------------------------------------------------------------
+02 Jul 15:20:30|FileState.py| 1. user.sblunier.0702151354.709915.lib._004520.lib.tgz	transferred	copy_to_scratch
+02 Jul 15:20:30|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-input-2206622202.pickle
+02 Jul 15:20:30|FileState.py| filename=user.sblunier.0702151354.709915.lib._004520.lib.tgz states=['transferred', 'copy_to_scratch']
+02 Jul 15:20:30|RunJobUtilit| There are only copy_to_scratch transfer modes in file state dictionary
+02 Jul 15:20:30|RunJobUtilit| (Removing --directIn instruction from run command since it is not needed)
+02 Jul 15:20:30|RunJobUtilit| Updated run command: export FRONTIER_ID="[2206622202]";export CMSSW_VERSION=$FRONTIER_ID;export RUCIO_APPID="prun";export RUCIO_ACCOUNT="pilot";source /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh;export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy;./runGen-00-00-02 -j "" --sourceURL https://aipanda011.cern.ch:25443 --rootVer 5.34.18-davix_p6a -p "./main.sh%20US%20ANALY_SLAC" -l user.sblunier.0702151354.709915.lib._004520.lib.tgz -o "{'ANALY_SLAC.root': 'user.sblunier.004520._00001.ANALY_SLAC.root'}" -r .  --usePFCTurl  --inputGUIDs "[]" 1>prun_stdout.txt 2>prun_stderr.txt
+02 Jul 15:20:30|RunJobUtilit| Dumping final input file states
+02 Jul 15:20:30|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-input-2206622202.pickle
+02 Jul 15:20:30|FileState.py| File name  /  File state  /  Transfer mode
+02 Jul 15:20:30|FileState.py| ----------------------------------------------------------------------------------------------------
+02 Jul 15:20:30|FileState.py| 1. user.sblunier.0702151354.709915.lib._004520.lib.tgz	transferred	copy_to_scratch
+02 Jul 15:20:30|runJob.py   | Changing to running state since all input files have been staged
+02 Jul 15:20:30|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+02 Jul 15:20:30|RunJobUtilit| filesAltStageOut not set
+02 Jul 15:20:30|pilot.py    | Connected from ('127.0.0.1', 40768)
+02 Jul 15:20:30|RunJobUtilit| filesNormalStageOut not set
+02 Jul 15:20:30|RunJobUtilit| About to send TCP message to main pilot thread of length = 346
+02 Jul 15:20:30|RunJobUtilit| (Sent)
+02 Jul 15:20:30|pilot.py    | --- TCPServer: Message received from child is : ['jobState=stagein', 'pid=15434', 'bytesWithoutFAX=26131', 'timeStageIn=5', 'filesWithoutFAX=1', 'timeExe=0', 'cpuConversionFactor=0', 'vmPeakMax=0', 'cpuUnit=None', 'vmPeakMean=0', 'pilotErrorDiag=^!^', 'status=running', 'timeStageOut=0', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=0', 'jobid=2206622202', 'pgrp=15434', 'transecode=0', '']
+02 Jul 15:20:30|pilot.py    | Process groups: 12105 (pilot), 15434 (sub process)
+02 Jul 15:20:30|pUtil.py    | Decoding: ^!^
+02 Jul 15:20:30|pUtil.py    | Empty URL encoded string (Nothing to decode)
+02 Jul 15:20:30|RunJobUtilit| (Received)
+02 Jul 15:20:30|RunJobUtilit| Successfully sent and received TCP message
+02 Jul 15:20:30|RunJobUtilit| Successfully updated local pilot TCP server at 2014-07-02T08:20:30-0800 (Trial 1/2)
+02 Jul 15:20:30|JobRecovery.| Successfully updated job state file with state: running
+02 Jul 15:20:30|RunJobUtilit| Note: ATLAS_CONDDB was not set by the pilot wrapper script
+02 Jul 15:20:30|RunJobUtilit| The pilot has set ATLAS_CONDDB to: osgserv02.slac.stanford.edu
+02 Jul 15:20:30|RunJobUtilit| Set PANDA_SITE_NAME = ANALY_SLAC
+02 Jul 15:20:30|RunJobUtilit| Set COPY_TOOL = lsm
+02 Jul 15:20:30|pUtil.py    | Updated /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/job_setup.sh: export FRONTIER_ID="[2206622202]";
+export CMSSW_VERSION=$FRONTIER_ID;
+export RUCIO_APPID="prun";
+export RUCIO_ACCOUNT="pilot";
+source /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh;
+export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy;
+./runGen-00-00-02 -j "" --sourceURL https://aipanda011.cern.ch:25443 --rootVer 5.34.18-davix_p6a -p "./main.sh%20US%20ANALY_SLAC" -l user.sblunier.0702151354.709915.lib._004520.lib.tgz -o "{'ANALY_SLAC.root': 'user.sblunier.004520._00001.ANALY_SLAC.root'}" -r .  --usePFCTurl  --inputGUIDs "[]" 1>prun_stdout.txt 2>prun_stderr.txt
+02 Jul 15:20:30|runJob.py   | Executing job command 1/1: export FRONTIER_ID="[2206622202]";export CMSSW_VERSION=$FRONTIER_ID;export RUCIO_APPID="prun";export RUCIO_ACCOUNT="pilot";source /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh;export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy;./runGen-00-00-02 -j "" --sourceURL https://aipanda011.cern.ch:25443 --rootVer 5.34.18-davix_p6a -p "./main.sh%20US%20ANALY_SLAC" -l user.sblunier.0702151354.709915.lib._004520.lib.tgz -o "{'ANALY_SLAC.root': 'user.sblunier.004520._00001.ANALY_SLAC.root'}" -r .  --usePFCTurl  --inputGUIDs "[]" 1>prun_stdout.txt 2>prun_stderr.txt
+02 Jul 15:21:25|pilot.py    | Created soft link to prun_stdout.txt in sitedir: /scratch/Panda_Pilot_12183_1404314412/prun_stdout.txt
+02 Jul 15:21:26|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 2)
+02 Jul 15:22:27|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 3)
+02 Jul 15:23:28|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 4)
+02 Jul 15:24:29|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 5)
+02 Jul 15:25:29|pilot.py    | Number of running processes: 9
+02 Jul 15:25:29|pilot.py    | Time passed since pilot startup = 317 s (maximum allowed batch system time = 999999 s)
+02 Jul 15:25:30|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 6)
+02 Jul 15:26:31|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 7)
+02 Jul 15:27:33|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 8)
+02 Jul 15:28:34|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 9)
+02 Jul 15:29:35|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 10)
+02 Jul 15:30:35|pilot.py    | Payload stdout (prun_stdout.txt) within allowed size limit (2147483648 B): 17682 B
+02 Jul 15:30:35|pilot.py    | Remaining local disk space: 374427615232 B
+02 Jul 15:30:35|pilot.py    | Work directory size check will use 17129537536 B as a max limit (maxwdirsize)
+02 Jul 15:30:35|pilot.py    | Checked size of user analysis work directory /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422: 4141056 B (within 17129537536 B limit)
+02 Jul 15:30:35|pilot.py    | Number of running processes: 9
+02 Jul 15:30:35|pilot.py    | Time passed since pilot startup = 623 s (maximum allowed batch system time = 999999 s)
+02 Jul 15:30:35|pilot.py    | Verifying output file sizes
+02 Jul 15:30:35|pilot.py    | Could not access file user.sblunier.004520._00001.ANALY_SLAC.root: 
+02 Jul 15:30:35|pilot.py    | Completed output file size verification
+02 Jul 15:30:36|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 11)
+02 Jul 15:31:37|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 12)
+02 Jul 15:32:38|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 13)
+02 Jul 15:33:39|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 14)
+02 Jul 15:34:41|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 15)
+02 Jul 15:35:41|pilot.py    | Number of running processes: 9
+02 Jul 15:35:41|pilot.py    | Time passed since pilot startup = 929 s (maximum allowed batch system time = 999999 s)
+02 Jul 15:35:42|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 16)
+02 Jul 15:36:43|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 17)
+02 Jul 15:37:44|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 18)
+02 Jul 15:38:45|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 19)
+02 Jul 15:39:46|pilot.py    | --- Main pilot monitoring loop (job id 2206622202, state:running, iteration 20)
+02 Jul 15:40:23|runJob.py   | Job command 1/1 finished
+02 Jul 15:40:23|runJob.py   | Job CPU usage: 129 s
+02 Jul 15:40:23|runJob.py   | Job CPU conversion factor: 1.0000000000
+02 Jul 15:40:23|runJob.py   | Original exit code: 0
+02 Jul 15:40:23|runJob.py   | Exit code: 0 (returned from OS)
+02 Jul 15:40:23|runJob.py   | Job report not found: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/jobReport.json
+02 Jul 15:40:23|runJob.py   | NOTE: For prun output, see files prun_stdout.txt, prun_stderr.txt
+02 Jul 15:40:24|pUtil.py    | Removed file: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/user.sblunier.0702151354.709915.lib._004520.lib.tgz
+02 Jul 15:40:24|pUtil.py    | Removed 1/1 file(s)
+02 Jul 15:40:24|runJob.py   | sys.path=['/scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422', '/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/externals/kerberos/lib.slc6-x86_64-2.6', '/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/externals/kerberos/lib.slc6-i686-2.6', '/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/lib/python2.6/site-packages', '/cvmfs/atlas.cern.ch/repo/sw/ddm/2.5.0/DQ2Clients/opt/dq2/lib', '/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/lib/python2.6/site-packages', '/afs/slac.stanford.edu/package/vdt/vol3/amd64_rhel60/usr/lib64/python2.6/site-packages', '/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.6', '/usr/lib64/python26.zip', '/usr/lib64/python2.6', '/usr/lib64/python2.6/plat-linux2', '/usr/lib64/python2.6/lib-tk', '/usr/lib64/python2.6/lib-old', '/usr/lib64/python2.6/lib-dynload', '/usr/lib64/python2.6/site-packages', '/usr/lib64/python2.6/site-packages/gtk-2.0', '/usr/lib/python2.6/site-packages', '/usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info', '/var/tmp/.dq2osgatlas01/']
+02 Jul 15:40:24|runJob.py   | Executing command: pwd;ls -lF /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT;ls -lF
+02 Jul 15:40:24|runJob.py   | /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+total 1909
+-rwxr-xr-x 1 osgatlas01 OG 107141 May 22 01:21 ATLASExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG  67107 Jul  2 08:20 ATLASExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG  25106 Apr 29 07:21 ATLASSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG  18099 Jul  2 08:20 ATLASSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24663 Jul 12  2013 BNLdCacheSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  15803 Jul  2 08:20 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG   2535 May  9 11:34 CHANGELOG
+-rwxr-xr-x 1 osgatlas01 OG  24247 Jul 15  2013 CMSExperiment.py*
+-rwxr-xr-x 1 osgatlas01 OG   8348 Jul 15  2013 CMSSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   8103 Jul  2 08:20 CMSSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8427 Jul 12  2013 COGSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   6998 Jul  2 08:20 COGSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG     37 Jul  2 08:20 CURRENT_SITEWORKDIR
+-rwxr-xr-x 1 osgatlas01 OG  18770 Jul 12  2013 CastorSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  11687 Jul  2 08:20 CastorSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  12709 Jul 12  2013 ChirpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8964 Jul  2 08:20 ChirpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  13233 Oct 31  2013 Cleaner.py*
+-rw-r--r-- 1 osgatlas01 OG   9286 Jul  2 08:20 Cleaner.pyc
+-rwxr-xr-x 1 osgatlas01 OG  12301 Jul 12  2013 DBReleaseHandler.py*
+-rwxr-xr-x 1 osgatlas01 OG    647 Jul 12  2013 Diagnosis.py*
+-rw-r--r-- 1 osgatlas01 OG    826 Jul  2 08:20 Diagnosis.pyc
+-rwxr-xr-x 1 osgatlas01 OG   3120 Jul 15  2013 ErrorDiagnosis.py*
+-rw-r--r-- 1 osgatlas01 OG   2813 Jul  2 08:20 ErrorDiagnosis.pyc
+-rwxr-xr-x 1 osgatlas01 OG  28842 Apr 29 07:21 Experiment.py*
+-rw-r--r-- 1 osgatlas01 OG  16807 Jul  2 08:20 Experiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2304 Jul 12  2013 ExperimentFactory.py*
+-rw-r--r-- 1 osgatlas01 OG   1948 Jul  2 08:20 ExperimentFactory.pyc
+-rwxr-xr-x 1 osgatlas01 OG  18312 Dec 10  2013 FAXSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  13215 Jul  2 08:20 FAXSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   5148 Jul 12  2013 FileRegistration.py*
+-rwxr-xr-x 1 osgatlas01 OG   9699 Jul 12  2013 FileState.py*
+-rw-r--r-- 1 osgatlas01 OG   9175 Jul  2 08:20 FileState.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2391 Jul 12  2013 FileStateClient.py*
+-rw-r--r-- 1 osgatlas01 OG   2594 Jul  2 08:20 FileStateClient.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24485 Jul 12  2013 GOSiteMover.py*
+-rwxr-xr-x 1 osgatlas01 OG  11236 Jul 12  2013 GSIftpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8945 Jul  2 08:20 GSIftpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  11706 Jul 12  2013 HUSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8541 Jul  2 08:20 HUSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  28964 Jan 28 08:21 JEMstub.py*
+-rwxr-xr-x 1 osgatlas01 OG  18506 May 22 01:21 Job.py*
+-rw-r--r-- 1 osgatlas01 OG  10452 Jul  2 08:20 Job.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2043 Jul 12  2013 JobInfoXML.py*
+-rwxr-xr-x 1 osgatlas01 OG  54989 Apr 29 07:21 JobLog.py*
+-rw-r--r-- 1 osgatlas01 OG  33776 Jul  2 08:20 JobLog.pyc
+-rwxr-xr-x 1 osgatlas01 OG  29371 Jul 12  2013 JobRecovery.py*
+-rw-r--r-- 1 osgatlas01 OG  20508 Jul  2 08:20 JobRecovery.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10634 Jul 12  2013 JobState.py*
+-rw-r--r-- 1 osgatlas01 OG   7976 Jul  2 08:20 JobState.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14046 Jul 12  2013 LocalSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   9804 Jul  2 08:20 LocalSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG 174158 May 22 01:21 Mover.py*
+-rw-r--r-- 1 osgatlas01 OG 102601 Jul  2 08:20 Mover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   9274 Apr 29 07:21 Node.py*
+-rw-r--r-- 1 osgatlas01 OG   8089 Jul  2 08:20 Node.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8066 Jul 12  2013 NordugridATLASExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG   6341 Jul  2 08:20 NordugridATLASExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2038 Jul 12  2013 NordugridATLASSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   2124 Jul  2 08:20 NordugridATLASSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2678 Jul 12  2013 OtherExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG   3450 Jul  2 08:20 OtherExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   1991 Jul 12  2013 OtherSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   2493 Jul  2 08:20 OtherSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2311 Jul 12  2013 OtherSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG      8 May 22 01:21 PILOTVERSION
+-rwxr-xr-x 1 osgatlas01 OG  32933 Apr 29 07:21 PandaServerClient.py*
+-rw-r--r-- 1 osgatlas01 OG  19695 Jul  2 08:20 PandaServerClient.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14102 Apr 29 07:21 PilotErrors.py*
+-rw-r--r-- 1 osgatlas01 OG  12630 Jul  2 08:20 PilotErrors.pyc
+-rwxr-xr-x 1 osgatlas01 OG   1717 Jul 12  2013 PilotTCPServer.py*
+-rw-r--r-- 1 osgatlas01 OG   2156 Jul  2 08:20 PilotTCPServer.pyc
+-rwxr-xr-x 1 osgatlas01 OG  13549 Jul 12  2013 PilotUtils.py*
+-rwxr-xr-x 1 osgatlas01 OG   4281 Jul 12  2013 ProxyGuard.py*
+-rw-r--r-- 1 osgatlas01 OG   4953 Jul  2 08:20 ProxyGuard.pyc
+-rw-r--r-- 1 osgatlas01 OG     25 Jul 12  2013 README
+-rwxr-xr-x 1 osgatlas01 OG  30467 Feb 13 07:21 RunJobUtilities.py*
+-rw-r--r-- 1 osgatlas01 OG  23692 Jul  2 08:20 RunJobUtilities.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14524 Jul 12  2013 SRMSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  10319 Jul  2 08:20 SRMSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG      1 Jul  2 08:20 STATUSCODE
+-rwxr-xr-x 1 osgatlas01 OG    998 Jul 12  2013 Site.py*
+-rw-r--r-- 1 osgatlas01 OG   1315 Jul  2 08:20 Site.pyc
+-rwxr-xr-x 1 osgatlas01 OG  33806 Apr 29 07:21 SiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG  21821 Jul  2 08:20 SiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2892 Jul 12  2013 SiteInformationFactory.py*
+-rw-r--r-- 1 osgatlas01 OG   2208 Jul  2 08:20 SiteInformationFactory.pyc
+-rwxr-xr-x 1 osgatlas01 OG 137286 Feb 19 01:21 SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  91502 Jul  2 08:20 SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8583 Jul 12  2013 SiteMoverFarm.py*
+-rw-r--r-- 1 osgatlas01 OG   6286 Jul  2 08:20 SiteMoverFarm.pyc
+-rwxr-xr-x 1 osgatlas01 OG  23435 Jul 12  2013 UberftpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  14485 Jul  2 08:20 UberftpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   3453 Aug 15  2013 VmPeak.py*
+-rwxr-xr-x 1 osgatlas01 OG      0 Jul 12  2013 __init__.py*
+-rwxr-xr-x 1 osgatlas01 OG  31534 May 22 01:21 aria2cSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  20372 Jul  2 08:20 aria2cSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  31374 Oct 31  2013 atlasProdPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG  16969 Jul 12  2013 castorSvcClassSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  11515 Jul  2 08:20 castorSvcClassSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG    401 Jul 12  2013 config.py*
+-rw-r--r-- 1 osgatlas01 OG    590 Jul  2 08:20 config.pyc
+-rw-r--r-- 1 osgatlas01 OG    567 Jul  2 08:20 curl.config
+-rwxr-xr-x 1 osgatlas01 OG  30366 Jul 15  2013 curlSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  17243 Jul  2 08:20 curlSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10846 Jul 12  2013 dCacheLFCSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8571 Jul  2 08:20 dCacheLFCSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  30965 Jul 12  2013 dCacheSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  20374 Jul  2 08:20 dCacheSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  34155 Jul 12  2013 dataPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG   9189 Jul 12  2013 dq2SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   6118 Jul  2 08:20 dq2SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   5451 Jul 12  2013 futil.py*
+-rw-r--r-- 1 osgatlas01 OG   6470 Jul  2 08:20 futil.pyc
+-rwxr-xr-x 1 osgatlas01 OG  26864 Jul 12  2013 globusPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG  28025 Jul 12  2013 lcgcp2SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  15535 Jul  2 08:20 lcgcp2SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  33494 Jul 12  2013 lcgcpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  18848 Jul  2 08:20 lcgcpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  11096 Jul 12  2013 mvSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8688 Jul  2 08:20 mvSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   9674 Jul 12  2013 myproxyUtils.py*
+-rwxr-xr-x 1 osgatlas01 OG 129128 Feb 13 07:21 pUtil.py*
+-rw-r--r-- 1 osgatlas01 OG 100148 Jul  2 08:20 pUtil.pyc
+-rw-r--r-- 1 osgatlas01 OG   1755 Jul  2 08:20 pandaJobData_1.out
+-rwxr-xr-x 1 osgatlas01 OG 269443 May 22 01:21 pilot.py*
+-rw-r--r-- 1 osgatlas01 OG 125864 Jul  2 08:20 pilot.pyc
+-rw-r--r-- 1 osgatlas01 OG  30205 Jul  2 08:20 pilotlog.out
+-rw-r--r-- 1 osgatlas01 OG   6072 May  9 11:34 plugins.conf
+-rw-r--r-- 1 osgatlas01 OG   2681 Jul  2 08:20 queuedata.json
+-rwxr-xr-x 1 osgatlas01 OG  20033 Jul 12  2013 rfcpLFCSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  13505 Jul  2 08:20 rfcpLFCSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  51399 May 22 01:21 runJob.py*
+-rwxr-xr-x 1 osgatlas01 OG   4597 Jul 12  2013 stormSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   3641 Jul  2 08:20 stormSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8743 Jul 12  2013 timed_command.py*
+-rw-r--r-- 1 osgatlas01 OG   6487 Jul  2 08:20 timed_command.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10755 May  9 11:34 wrapper.py*
+-rwxr-xr-x 1 osgatlas01 OG    213 May  9 11:34 wrapperexceptions.py*
+-rw-r--r-- 1 osgatlas01 OG    857 Jul  2 08:19 wrapperexceptions.pyc
+drwxr-xr-x 2 osgatlas01 OG     13 Jul  2 08:19 wrapperplugins/
+-rwxr-xr-x 1 osgatlas01 OG  15839 May  9 11:34 wrapperutils.py*
+-rw-r--r-- 1 osgatlas01 OG  14103 Jul  2 08:19 wrapperutils.pyc
+-rwxr-xr-x 1 osgatlas01 OG  36996 Apr 29 07:21 xrdcpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  23868 Jul  2 08:20 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  32697 Feb 19 01:21 xrootdSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  21300 Jul  2 08:20 xrootdSiteMover.pyc
+total 3588
+-rwxr-xr-x 1 osgatlas01 OG 107141 May 22 01:21 ATLASExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG  68146 Jul  2 08:20 ATLASExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG  25106 Apr 29 07:21 ATLASSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG  18519 Jul  2 08:20 ATLASSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24663 Jul 12  2013 BNLdCacheSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  15923 Jul  2 08:20 BNLdCacheSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24247 Jul 15  2013 CMSExperiment.py*
+-rwxr-xr-x 1 osgatlas01 OG   8348 Jul 15  2013 CMSSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   8343 Jul  2 08:20 CMSSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8427 Jul 12  2013 COGSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   7133 Jul  2 08:20 COGSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  18770 Jul 12  2013 CastorSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  11807 Jul  2 08:20 CastorSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  12709 Jul 12  2013 ChirpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   9054 Jul  2 08:20 ChirpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  13233 Oct 31  2013 Cleaner.py*
+-rwxr-xr-x 1 osgatlas01 OG  12301 Jul 12  2013 DBReleaseHandler.py*
+-rw-r--r-- 1 osgatlas01 OG  10715 Jul  2 08:20 DBReleaseHandler.pyc
+-rwxr-xr-x 1 osgatlas01 OG    647 Jul 12  2013 Diagnosis.py*
+-rw-r--r-- 1 osgatlas01 OG    871 Jul  2 08:20 Diagnosis.pyc
+-rwxr-xr-x 1 osgatlas01 OG   3120 Jul 15  2013 ErrorDiagnosis.py*
+-rw-r--r-- 1 osgatlas01 OG   2903 Jul  2 08:20 ErrorDiagnosis.pyc
+-rwxr-xr-x 1 osgatlas01 OG  28842 Apr 29 07:21 Experiment.py*
+-rw-r--r-- 1 osgatlas01 OG  17272 Jul  2 08:20 Experiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2304 Jul 12  2013 ExperimentFactory.py*
+-rw-r--r-- 1 osgatlas01 OG   1993 Jul  2 08:20 ExperimentFactory.pyc
+-rwxr-xr-x 1 osgatlas01 OG  18312 Dec 10  2013 FAXSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  13425 Jul  2 08:20 FAXSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   5148 Jul 12  2013 FileRegistration.py*
+-rwxr-xr-x 1 osgatlas01 OG   9699 Jul 12  2013 FileState.py*
+-rw-r--r-- 1 osgatlas01 OG   9370 Jul  2 08:20 FileState.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2391 Jul 12  2013 FileStateClient.py*
+-rw-r--r-- 1 osgatlas01 OG   2699 Jul  2 08:20 FileStateClient.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24485 Jul 12  2013 GOSiteMover.py*
+-rwxr-xr-x 1 osgatlas01 OG  11236 Jul 12  2013 GSIftpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   9095 Jul  2 08:20 GSIftpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  11706 Jul 12  2013 HUSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8676 Jul  2 08:20 HUSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  28964 Jan 28 08:21 JEMstub.py*
+-rw-r--r-- 1 osgatlas01 OG  26715 Jul  2 08:40 JEMstub.pyc
+-rwxr-xr-x 1 osgatlas01 OG  18506 May 22 01:21 Job.py*
+-rw-r--r-- 1 osgatlas01 OG  10587 Jul  2 08:20 Job.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2043 Jul 12  2013 JobInfoXML.py*
+-rwxr-xr-x 1 osgatlas01 OG  54989 Apr 29 07:21 JobLog.py*
+-rwxr-xr-x 1 osgatlas01 OG  29371 Jul 12  2013 JobRecovery.py*
+-rw-r--r-- 1 osgatlas01 OG  20853 Jul  2 08:20 JobRecovery.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10634 Jul 12  2013 JobState.py*
+-rw-r--r-- 1 osgatlas01 OG   8141 Jul  2 08:20 JobState.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14046 Jul 12  2013 LocalSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   9909 Jul  2 08:20 LocalSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG 174158 May 22 01:21 Mover.py*
+-rw-r--r-- 1 osgatlas01 OG 104041 Jul  2 08:20 Mover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   9274 Apr 29 07:21 Node.py*
+-rw-r--r-- 1 osgatlas01 OG   8299 Jul  2 08:20 Node.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8066 Jul 12  2013 NordugridATLASExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG   6521 Jul  2 08:20 NordugridATLASExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2038 Jul 12  2013 NordugridATLASSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   2199 Jul  2 08:20 NordugridATLASSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2678 Jul 12  2013 OtherExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG   3630 Jul  2 08:20 OtherExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   1991 Jul 12  2013 OtherSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   2628 Jul  2 08:20 OtherSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2311 Jul 12  2013 OtherSiteMover.py*
+-rwxr-xr-x 1 osgatlas01 OG  32933 Apr 29 07:21 PandaServerClient.py*
+-rwxr-xr-x 1 osgatlas01 OG  14102 Apr 29 07:21 PilotErrors.py*
+-rw-r--r-- 1 osgatlas01 OG  12765 Jul  2 08:20 PilotErrors.pyc
+-rwxr-xr-x 1 osgatlas01 OG   1717 Jul 12  2013 PilotTCPServer.py*
+-rwxr-xr-x 1 osgatlas01 OG  13549 Jul 12  2013 PilotUtils.py*
+-rw-r--r-- 1 osgatlas01 OG    163 Jul  2 08:40 PoolFileCatalog.xml
+-rw-r--r-- 1 osgatlas01 OG    424 Jul  2 08:20 PoolFileCatalog.xml.MOVER
+-rwxr-xr-x 1 osgatlas01 OG   4281 Jul 12  2013 ProxyGuard.py*
+-rw-r--r-- 1 osgatlas01 OG   5133 Jul  2 08:20 ProxyGuard.pyc
+-rwxr-xr-x 1 osgatlas01 OG  30467 Feb 13 07:21 RunJobUtilities.py*
+-rw-r--r-- 1 osgatlas01 OG  24037 Jul  2 08:20 RunJobUtilities.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14524 Jul 12  2013 SRMSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  10469 Jul  2 08:20 SRMSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG    998 Jul 12  2013 Site.py*
+-rw-r--r-- 1 osgatlas01 OG   1375 Jul  2 08:20 Site.pyc
+-rwxr-xr-x 1 osgatlas01 OG  33806 Apr 29 07:21 SiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG  22226 Jul  2 08:20 SiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2892 Jul 12  2013 SiteInformationFactory.py*
+-rw-r--r-- 1 osgatlas01 OG   2253 Jul  2 08:20 SiteInformationFactory.pyc
+-rwxr-xr-x 1 osgatlas01 OG 137286 Feb 19 01:21 SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  93152 Jul  2 08:20 SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8583 Jul 12  2013 SiteMoverFarm.py*
+-rw-r--r-- 1 osgatlas01 OG   6391 Jul  2 08:20 SiteMoverFarm.pyc
+-rwxr-xr-x 1 osgatlas01 OG  23435 Jul 12  2013 UberftpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  14605 Jul  2 08:20 UberftpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   3453 Aug 15  2013 VmPeak.py*
+-rwxr-xr-x 1 osgatlas01 OG      0 Jul 12  2013 __init__.py*
+-rwxr-xr-x 1 osgatlas01 OG  31534 May 22 01:21 aria2cSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  20567 Jul  2 08:20 aria2cSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  31374 Oct 31  2013 atlasProdPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG  16969 Jul 12  2013 castorSvcClassSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  11650 Jul  2 08:20 castorSvcClassSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG    401 Jul 12  2013 config.py*
+-rw-r--r-- 1 osgatlas01 OG    620 Jul  2 08:20 config.pyc
+-rwxr-xr-x 1 osgatlas01 OG  30366 Jul 15  2013 curlSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  17378 Jul  2 08:20 curlSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10846 Jul 12  2013 dCacheLFCSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8691 Jul  2 08:20 dCacheLFCSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  30965 Jul 12  2013 dCacheSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  20554 Jul  2 08:20 dCacheSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  34155 Jul 12  2013 dataPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG   9189 Jul 12  2013 dq2SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   6208 Jul  2 08:20 dq2SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   5451 Jul 12  2013 futil.py*
+-rw-r--r-- 1 osgatlas01 OG   6665 Jul  2 08:20 futil.pyc
+-rwxr-xr-x 1 osgatlas01 OG  26864 Jul 12  2013 globusPilot.py*
+-rw-r--r-- 1 osgatlas01 OG   4358 Jul  2 08:20 jobState-2206622202-test.pickle
+-rw-r--r-- 1 osgatlas01 OG    876 Jul  2 08:20 job_setup.sh
+-rwxr-xr-x 1 osgatlas01 OG  28025 Jul 12  2013 lcgcp2SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  15640 Jul  2 08:20 lcgcp2SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  33494 Jul 12  2013 lcgcpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  18998 Jul  2 08:20 lcgcpSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG    184 Jul  2 08:20 matched_replicas.json
+-rwxr-xr-x 1 osgatlas01 OG  11096 Jul 12  2013 mvSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8823 Jul  2 08:20 mvSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   9674 Jul 12  2013 myproxyUtils.py*
+-rw-r--r-- 1 osgatlas01 OG   1920 Jul  2 08:20 newJobDef.py
+-rw-r--r-- 1 osgatlas01 OG   2306 Jul  2 08:20 newJobDef.pyc
+-rwxr-xr-x 1 osgatlas01 OG 129128 Feb 13 07:21 pUtil.py*
+-rw-r--r-- 1 osgatlas01 OG 102068 Jul  2 08:20 pUtil.pyc
+-rw-r--r-- 1 osgatlas01 OG   1755 Jul  2 08:20 pandaJobData.out
+-rw-r--r-- 1 osgatlas01 OG 107476 Jul  2 08:40 pandatracerlog.txt
+drwxr-xr-x 7 osgatlas01 OG   4096 Jul  2 08:20 pandawnutil/
+-rwxr-xr-x 1 osgatlas01 OG 269443 May 22 01:21 pilot.py*
+-rw-r--r-- 1 osgatlas01 OG      0 Jul  2 08:20 prun_stderr.txt
+-rw-r--r-- 1 osgatlas01 OG 251216 Jul  2 08:40 prun_stdout.txt
+-rwxr-xr-x 1 osgatlas01 OG  20033 Jul 12  2013 rfcpLFCSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  13640 Jul  2 08:20 rfcpLFCSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  64847 Jun 30 10:14 runGen-00-00-02*
+-rwxr-xr-x 1 osgatlas01 OG  30746 Dec  8  2013 runGen.py*
+-rwxr-xr-x 1 osgatlas01 OG  51399 May 22 01:21 runJob.py*
+-rw-r--r-- 1 osgatlas01 OG      0 Jul  2 08:20 runjob.stderr
+drwxr-xr-x 8 osgatlas01 OG   4096 Jul  2 08:20 src/
+-rwxr-xr-x 1 osgatlas01 OG   4597 Jul 12  2013 stormSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   3686 Jul  2 08:20 stormSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8743 Jul 12  2013 timed_command.py*
+-rw-r--r-- 1 osgatlas01 OG   6577 Jul  2 08:20 timed_command.pyc
+-rw-r--r-- 1 osgatlas01 OG   5014 Jul  2 08:40 user.sblunier.004520._00001.ANALY_SLAC.root
+-rwxr-xr-x 1 osgatlas01 OG  10755 May  9 11:34 wrapper.py*
+-rwxr-xr-x 1 osgatlas01 OG    213 May  9 11:34 wrapperexceptions.py*
+-rwxr-xr-x 1 osgatlas01 OG  15839 May  9 11:34 wrapperutils.py*
+-rwxr-xr-x 1 osgatlas01 OG  36996 Apr 29 07:21 xrdcpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  24123 Jul  2 08:20 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  32697 Feb 19 01:21 xrootdSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  21555 Jul  2 08:20 xrootdSiteMover.pyc
+02 Jul 15:40:24|runJob.py   | Attempting to import ErrorDiagnosis
+02 Jul 15:40:24|runJob.py   | Succeeded
+02 Jul 15:40:24|ATLASExperim| Looking for number of processed events (pass 0: metadata.xml)
+02 Jul 15:40:24|ATLASExperim| /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/metadata.xml does not exist
+02 Jul 15:40:24|ATLASExperim| Looking for number of processed events (pass 1: Athena summary file(s))
+02 Jul 15:40:24|ATLASExperim| Did not find any athena summary files
+02 Jul 15:40:24|ATLASExperim| Looking for number of processed events (pass 2: Resorting to brute force grepping of payload stdout)
+02 Jul 15:40:24|ATLASExperim| Processing stdout file: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/prun_stdout.txt
+02 Jul 15:40:24|ATLASExperim| Checking for memory errors in stderr
+02 Jul 15:40:24|ATLASExperim| Processing stderr file: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/prun_stderr.txt
+02 Jul 15:40:24|ATLASExperim| Checking for memory errors in stdout..
+02 Jul 15:40:24|ATLASExperim| Processing stdout file: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/prun_stdout.txt
+02 Jul 15:40:24|pUtil.py    | Executing command: source /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh; python VmPeak.py >Pilot_VmPeak.txt (protected by timed_command, timeout: 500 s)
+02 Jul 15:40:24|pUtil.py    | Elapsed time: 0
+02 Jul 15:40:24|RunJobUtilit| Note: File /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/VmPeak_values.txt does not exist
+02 Jul 15:40:24|RunJobUtilit| [VmPeak] vmPeakMax=0
+02 Jul 15:40:24|RunJobUtilit| [VmPeak] vmPeakMean=0
+02 Jul 15:40:24|RunJobUtilit| [VmPeak] RSSMean=0
+02 Jul 15:40:24|JobRecovery.| Successfully updated job state file with state: stageout
+02 Jul 15:40:24|SiteMover.py| Mod time for file /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/user.sblunier.004520._00001.ANALY_SLAC.root: 2014-07-02 08:40:22
+02 Jul 15:40:24|RunJobUtilit| Output file(s):
+02 Jul 15:40:24|RunJobUtilit| -rw-r--r-- 1 osgatlas01 OG 5014 Jul  2 08:40 /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:24|runJob.py   | outsDict: {'user.sblunier.004520._2206622202.log.tgz': '', 'user.sblunier.004520._00001.ANALY_SLAC.root': '2014-07-02 08:40:22'}
+02 Jul 15:40:24|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle
+02 Jul 15:40:24|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle
+02 Jul 15:40:24|FileState.py| File name  /  File state  /  Registration state
+02 Jul 15:40:24|FileState.py| ----------------------------------------------------------------------------------------------------
+02 Jul 15:40:24|FileState.py| 1. user.sblunier.004520._00001.ANALY_SLAC.root	created	not_registered
+02 Jul 15:40:24|FileState.py| 2. user.sblunier.004520._2206622202.log.tgz	not_created	not_registered
+02 Jul 15:40:24|runJob.py   | Dataset dictionary has been verified
+02 Jul 15:40:24|runJob.py   | Warning: Could not open the original /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/metadata.xml file, but harmless, pass it
+02 Jul 15:40:24|runJob.py   | outFiles=['user.sblunier.004520._00001.ANALY_SLAC.root']
+02 Jul 15:40:24|SiteMoverFar| Looking for site mover lsm, setup:, ar:(), kw:{}
+02 Jul 15:40:24|SiteMoverFar| Returning site mover <class 'LocalSiteMover.LocalSiteMover'> (setup: )
+02 Jul 15:40:24|pUtil.py    | setting ec=0 (-1)
+02 Jul 15:40:24|SiteMover.py| Executing getsize() for file: user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:24|SiteMover.py| Got file size: 5014
+02 Jul 15:40:24|SiteMover.py| Executing adler32() for file: user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:24|SiteMover.py| Got adler32 checksum: 4c075bae
+02 Jul 15:40:24|pUtil.py    | Adding 5014,4c075bae for file user.sblunier.004520._00001.ANALY_SLAC.root using adler32
+02 Jul 15:40:24|pUtil.py    | going to return 0,,['', '5014'],['', '4c075bae']
+02 Jul 15:40:24|pUtil.py    | Nothing for prepareMetadata() to do
+02 Jul 15:40:24|pUtil.py    | fnlist = ['user.sblunier.004520._00001.ANALY_SLAC.root']
+02 Jul 15:40:24|pUtil.py    | fguids = [None]
+02 Jul 15:40:24|pUtil.py    | Could not locate file: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/metadata-2206622202.xml.PAYLOAD
+02 Jul 15:40:24|pUtil.py    | Generated guid: a9eab3ea-b9f6-490a-a2c0-23117b07a953
+02 Jul 15:40:24|pUtil.py    | Found guid for file: user.sblunier.004520._00001.ANALY_SLAC.root (a9eab3ea-b9f6-490a-a2c0-23117b07a953)
+02 Jul 15:40:24|pUtil.py    | Dumping file: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/metadata-2206622202.xml
+02 Jul 15:40:24|pUtil.py    | Dumped 21 lines from file /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/metadata-2206622202.xml
+02 Jul 15:40:24|runJob.py   | ..............................................................................................................
+02 Jul 15:40:24|runJob.py   | Created /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/metadata-2206622202.xml with:
+02 Jul 15:40:24|runJob.py   | .. log            : user.sblunier.004520._2206622202.log.tgz (to be transferred)
+02 Jul 15:40:24|runJob.py   | .. log guid       : 259e2595-1eeb-429e-8780-c0f2ca4d1e78
+02 Jul 15:40:24|runJob.py   | .. out files      : ['user.sblunier.004520._00001.ANALY_SLAC.root']
+02 Jul 15:40:24|runJob.py   | .. out file guids : ['a9eab3ea-b9f6-490a-a2c0-23117b07a953']
+02 Jul 15:40:24|runJob.py   | .. fsize          : ['', '5014']
+02 Jul 15:40:24|runJob.py   | .. checksum       : ['', '4c075bae']
+02 Jul 15:40:24|runJob.py   | ..............................................................................................................
+02 Jul 15:40:24|runJob.py   | Output file info dictionary created: {'user.sblunier.004520._00001.ANALY_SLAC.root': ('5014', '4c075bae')}
+02 Jul 15:40:24|runJob.py   | Setting stage-out state until all output files have been copied
+02 Jul 15:40:24|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+02 Jul 15:40:24|RunJobUtilit| filesAltStageOut not set
+02 Jul 15:40:24|RunJobUtilit| filesNormalStageOut not set
+02 Jul 15:40:24|RunJobUtilit| About to send TCP message to main pilot thread of length = 352
+02 Jul 15:40:24|RunJobUtilit| (Sent)
+02 Jul 15:40:24|pilot.py    | Connected from ('127.0.0.1', 42266)
+02 Jul 15:40:24|pilot.py    | --- TCPServer: Message received from child is : ['jobState=stageout', 'pid=15434', 'bytesWithoutFAX=26131', 'timeStageIn=5', 'filesWithoutFAX=1', 'timeExe=1193', 'cpuConversionFactor=1.0', 'vmPeakMax=0', 'cpuUnit=s', 'vmPeakMean=0', 'pilotErrorDiag=^!^', 'status=stageout', 'timeStageOut=0', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=129', 'jobid=2206622202', 'pgrp=15434', 'transecode=0', '']
+02 Jul 15:40:24|pilot.py    | Process groups: 12105 (pilot), 15434 (sub process)
+02 Jul 15:40:24|pUtil.py    | Decoding: ^!^
+02 Jul 15:40:24|pUtil.py    | Empty URL encoded string (Nothing to decode)
+02 Jul 15:40:24|RunJobUtilit| (Received)
+02 Jul 15:40:24|RunJobUtilit| Successfully sent and received TCP message
+02 Jul 15:40:24|RunJobUtilit| Successfully updated local pilot TCP server at 2014-07-02T08:40:24-0800 (Trial 1/2)
+02 Jul 15:40:24|pUtil.py    | fnlist = ['user.sblunier.004520._00001.ANALY_SLAC.root']
+02 Jul 15:40:24|pUtil.py    | fguids = ['a9eab3ea-b9f6-490a-a2c0-23117b07a953']
+02 Jul 15:40:24|pUtil.py    | Dumping file: OutPutFileCatalog.xml
+02 Jul 15:40:24|pUtil.py    | Dumped 10 lines from file OutPutFileCatalog.xml
+02 Jul 15:40:24|runJob.py   | Using the newly-generated /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/OutPutFileCatalog.xml for put operation
+02 Jul 15:40:24|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+02 Jul 15:40:24|Mover.py    | Using job definition id: 4521
+02 Jul 15:40:24|Mover.py    | Trying to add additional info to tracing report
+02 Jul 15:40:24|Mover.py    | Tracing report initialised with: {'protocol': None, 'duid': None, 'eventType': 'put_sm_a', 'suspicious': '0', 'timeEnd': None, 'dataset': 'user.sblunier.UStest02.140702171354_sub0172562066', 'catStart': None, 'guid': None, 'transferStart': None, 'hostname': 'fell0098.slac.stanford.edu', 'remoteSite': 'ANALY_SLAC', 'filename': None, 'version': None, 'filesize': None, 'ip': '134.79.168.108', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy', 'usr': '9d8070ae17f48c391f97ded494642209', 'eventVersion': 'pilot3', 'localSite': 'ANALY_SLAC', 'validateStart': None, 'uuid': 'bba76290d56c3775ee5f197f4bc022e7', 'timeStart': 1404315624.2939949, 'relativeStart': None, 'appid': 2206622202, 'clientState': 'INIT_REPORT'}
+02 Jul 15:40:24|Mover.py    | SE list: ['token:ATLASUSERDISK:srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=']
+02 Jul 15:40:24|Mover.py    | getDDMStorage() will return: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio
+02 Jul 15:40:24|Mover.py    | Got ddm_storage from queuedata file: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio
+02 Jul 15:40:24|Mover.py    | Put function using storage: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio
+02 Jul 15:40:24|Mover.py    | Got copytool lsm from queuedata file
+02 Jul 15:40:24|Mover.py    | copysetup is: /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh (file access verified)
+02 Jul 15:40:24|Mover.py    | Copy command: lsm
+02 Jul 15:40:24|Mover.py    | Setup: /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh
+02 Jul 15:40:24|SiteMoverFar| Looking for site mover lsm, setup:/afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh, ar:(), kw:{}
+02 Jul 15:40:24|SiteMoverFar| Returning site mover <class 'LocalSiteMover.LocalSiteMover'> (setup: /afs/slac.stanford.edu/package/xrootd/atlasutils/setup.sh)
+02 Jul 15:40:24|Mover.py    | Got site mover: <LocalSiteMover.LocalSiteMover object at 0x209db50>
+02 Jul 15:40:24|pUtil.py    | getSiteInformation: got experiment=ATLAS
+02 Jul 15:40:24|Mover.py    | Initial space token list:
+02 Jul 15:40:24|pUtil.py    | 1. NULL
+02 Jul 15:40:24|pUtil.py    | 2. NULL
+02 Jul 15:40:24|Mover.py    | Found default space token in schedconfig.se: ATLASUSERDISK
+02 Jul 15:40:24|Mover.py    | Replaced NULL value with default space token (ATLASUSERDISK) for output file 1
+02 Jul 15:40:24|Mover.py    | Replaced NULL value with default space token (ATLASUSERDISK) for log file
+02 Jul 15:40:24|Mover.py    | Verified space token: ATLASUSERDISK
+02 Jul 15:40:24|Mover.py    | Verified space token: ATLASUSERDISK
+02 Jul 15:40:24|Mover.py    | Proper space token list:
+02 Jul 15:40:24|pUtil.py    | 1. ATLASUSERDISK
+02 Jul 15:40:24|pUtil.py    | 2. ATLASUSERDISK
+02 Jul 15:40:24|Mover.py    | Preparing copy for /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/user.sblunier.004520._00001.ANALY_SLAC.root to srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio using lsm
+02 Jul 15:40:24|Mover.py    | Using scope 'user.sblunier' for file number 0
+02 Jul 15:40:24|Mover.py    | scope=user.sblunier
+02 Jul 15:40:24|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle
+02 Jul 15:40:24|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle
+02 Jul 15:40:24|FileState.py| File name  /  File state  /  Registration state
+02 Jul 15:40:24|FileState.py| ----------------------------------------------------------------------------------------------------
+02 Jul 15:40:24|FileState.py| 1. user.sblunier.004520._00001.ANALY_SLAC.root	not_transferred	not_registered
+02 Jul 15:40:24|FileState.py| 2. user.sblunier.004520._2206622202.log.tgz	not_created	not_registered
+02 Jul 15:40:24|SiteMover.py| Updated dataset name (removed _sub0172562066): user.sblunier.UStest02.140702171354
+02 Jul 15:40:24|Mover.py    | File user.sblunier.004520._00001.ANALY_SLAC.root will go to dataset user.sblunier.UStest02.140702171354
+02 Jul 15:40:24|Mover.py    | Mover is preparing to copy file 1/1 to space token: ATLASUSERDISK
+02 Jul 15:40:24|Mover.py    | outputFileInfo={'user.sblunier.004520._00001.ANALY_SLAC.root': ('5014', '4c075bae')}
+02 Jul 15:40:24|Mover.py    | Extracted file size 5014 and checksum 4c075bae for file user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:24|Mover.py    | Number of stage-out tries: 2
+02 Jul 15:40:24|Mover.py    | Put attempt 1/2
+02 Jul 15:40:24|pUtil.py    | getSiteInformation: got experiment=ATLAS
+02 Jul 15:40:24|pUtil.py    | Will verify: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy;
+02 Jul 15:40:24|pUtil.py    | Nothing to verify in setup: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy; (either empty string or no source command)
+02 Jul 15:40:24|SiteMover.py| Will use default SE endpoint
+02 Jul 15:40:24|SiteMover.py| Using SE: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+02 Jul 15:40:24|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+02 Jul 15:40:24|ATLASSiteInf| Going to store job output at: /xrootd/atlas/atlasuserdisk/rucio
+02 Jul 15:40:24|ATLASSiteInf| LFC path = /grid/atlas/users/pathena
+02 Jul 15:40:24|SiteMover.py| SE destination: /xrootd/atlas/atlasuserdisk/rucio/user/sblunier/UStest02
+02 Jul 15:40:24|SiteMover.py| LFC dir: /grid/atlas/users/pathena/user/sblunier/UStest02/user.sblunier.UStest02.140702171354
+02 Jul 15:40:24|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+02 Jul 15:40:24|SiteMover.py| Extracted spacetoken=ATLASUSERDISK, se=srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+02 Jul 15:40:24|SiteMover.py| Full path will use SE: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=
+02 Jul 15:40:24|SiteMover.py| Full path will use space token descriptor: ATLASUSERDISK
+02 Jul 15:40:24|SiteMover.py| Space token ATLASUSERDISK corresponds to path /xrootd/atlas/atlasuserdisk/rucio
+02 Jul 15:40:24|SiteMover.py| Full path will use source/destination: /xrootd/atlas/atlasuserdisk/rucio
+02 Jul 15:40:24|SiteMover.py| Full path will use path from scope: rucio/user/sblunier/91/67/user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:24|ATLASSiteInf| SURL = srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/91/67/user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:24|ATLASSiteInf| dst_gpfn = /xrootd/atlas/atlasuserdisk/rucio/user/sblunier/91/67/user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:24|ATLASSiteInf| lfcdir = /grid/atlas/users/pathena/user/sblunier/UStest02/user.sblunier.UStest02.140702171354
+02 Jul 15:40:24|LocalSiteMov| dst_gpfn: srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/91/67/user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:24|LocalSiteMov| DQ2 site name: SLACXRD_USERDISK
+02 Jul 15:40:24|LocalSiteMov| Executing command: export X509_USER_PROXY=/nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy; lsm-put -t ATLASUSERDISK --size 5014 --checksum adler32:4c075bae --guid a9eab3ea-b9f6-490a-a2c0-23117b07a953 /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/user.sblunier.004520._00001.ANALY_SLAC.root srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/91/67/user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:29|LocalSiteMov| Elapsed time: 5
+02 Jul 15:40:29|LocalSiteMov| Command output:
+
+02 Jul 15:40:29|LocalSiteMov| Updated tracing report: {'protocol': 'local', 'duid': None, 'eventType': 'put_sm_a', 'suspicious': '0', 'timeEnd': 1404315629.8621421, 'dataset': 'user.sblunier.UStest02.140702171354_sub0172562066', 'catStart': None, 'guid': 'a9eab3eab9f6490aa2c023117b07a953', 'transferStart': 1404315624.541883, 'hostname': 'fell0098.slac.stanford.edu', 'remoteSite': 'SLACXRD_USERDISK', 'filename': 'user.sblunier.004520._00001.ANALY_SLAC.root', 'version': None, 'filesize': '5014', 'ip': '134.79.168.108', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy', 'usr': '9d8070ae17f48c391f97ded494642209', 'eventVersion': 'pilot3', 'localSite': 'SLACXRD_USERDISK', 'validateStart': 1404315629.8621271, 'uuid': 'bba76290d56c3775ee5f197f4bc022e7', 'timeStart': 1404315624.2939949, 'relativeStart': 1404315624.3376651, 'appid': 2206622202, 'clientState': 'DONE'}
+02 Jul 15:40:29|SiteMover.py| Tracing server: https://atlas-ddmtracer.cern.ch:443/dq2/ws_tracer/rpc
+02 Jul 15:40:29|SiteMover.py| Sending tracing report: {'protocol': 'local', 'duid': None, 'eventType': 'put_sm_a', 'suspicious': '0', 'timeEnd': 1404315629.8621421, 'dataset': 'user.sblunier.UStest02.140702171354_sub0172562066', 'catStart': None, 'guid': 'a9eab3eab9f6490aa2c023117b07a953', 'transferStart': 1404315624.541883, 'hostname': 'fell0098.slac.stanford.edu', 'remoteSite': 'SLACXRD_USERDISK', 'filename': 'user.sblunier.004520._00001.ANALY_SLAC.root', 'version': None, 'filesize': '5014', 'ip': '134.79.168.108', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy', 'usr': '9d8070ae17f48c391f97ded494642209', 'eventVersion': 'pilot3', 'localSite': 'SLACXRD_USERDISK', 'validateStart': 1404315629.8621271, 'uuid': 'bba76290d56c3775ee5f197f4bc022e7', 'timeStart': 1404315624.2939949, 'relativeStart': 1404315624.3376651, 'appid': 2206622202, 'clientState': 'DONE'}
+02 Jul 15:40:29|SiteMover.py| Executing command: curl --connect-timeout 20 --max-time 120 --cacert /nfs/slac/g/grid/osg/u/osgatlas01/.globus/osgatlas01/.globus/job/osgserv02/16434192497685279316.16372851839882915988/x509_user_proxy -v -k -d "report=%7B%27protocol%27%3A+%27local%27%2C+%27duid%27%3A+None%2C+%27eventType%27%3A+%27put_sm_a%27%2C+%27suspicious%27%3A+%270%27%2C+%27timeEnd%27%3A+1404315629.8621421%2C+%27dataset%27%3A+%27user.sblunier.UStest02.140702171354_sub0172562066%27%2C+%27catStart%27%3A+None%2C+%27guid%27%3A+%27a9eab3eab9f6490aa2c023117b07a953%27%2C+%27transferStart%27%3A+1404315624.541883%2C+%27hostname%27%3A+%27fell0098.slac.stanford.edu%27%2C+%27remoteSite%27%3A+%27SLACXRD_USERDISK%27%2C+%27filename%27%3A+%27user.sblunier.004520._00001.ANALY_SLAC.root%27%2C+%27version%27%3A+None%2C+%27filesize%27%3A+%275014%27%2C+%27ip%27%3A+%27134.79.168.108%27%2C+%27usrdn%27%3A+%27%2FDC%3Dch%2FDC%3Dcern%2FOU%3DOrganic+Units%2FOU%3DUsers%2FCN%3Dsblunier%2FCN%3D757276%2FCN%3DSylvain+Blunier%2FCN%3Dproxy%27%2C+%27usr%27%3A+%279d8070ae17f48c391f97ded494642209%27%2C+%27eventVersion%27%3A+%27pilot3%27%2C+%27localSite%27%3A+%27SLACXRD_USERDISK%27%2C+%27validateStart%27%3A+1404315629.8621271%2C+%27uuid%27%3A+%27bba76290d56c3775ee5f197f4bc022e7%27%2C+%27timeStart%27%3A+1404315624.2939949%2C+%27relativeStart%27%3A+1404315624.3376651%2C+%27appid%27%3A+2206622202%2C+%27clientState%27%3A+%27DONE%27%7D&operation=addReport&API=0_3_0" https://atlas-ddmtracer.cern.ch:443/dq2/ws_tracer/rpc
+02 Jul 15:40:31|SiteMover.py| Tracing report sent
+02 Jul 15:40:31|Mover.py    | Stage-out returned: s=0, r_gpfn=srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/91/67/user.sblunier.004520._00001.ANALY_SLAC.root, r_fsize=5014, r_fchecksum=4c075bae, r_farch=, pilotErrorDiag=
+02 Jul 15:40:31|SiteMover.py| Adding GUID (a9eab3ea-b9f6-490a-a2c0-23117b07a953) and SURL (srm://osgserv04.slac.stanford.edu:8443/srm/v2/server?SFN=/xrootd/atlas/atlasuserdisk/rucio/user/sblunier/91/67/user.sblunier.004520._00001.ANALY_SLAC.root) to dictionary
+02 Jul 15:40:31|SiteMover.py| SURL dictionary does not exist: /scratch/Panda_Pilot_12183_1404314412/surlDictionary-2206622202.json (will be created)
+02 Jul 15:40:31|SiteMover.py| Successfully updated SURL dictionary (which currectly has 1 key(s))
+02 Jul 15:40:31|Mover.py    | Skipped chirp transfer
+02 Jul 15:40:31|Mover.py    | Return code: 0
+02 Jul 15:40:31|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle
+02 Jul 15:40:31|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle
+02 Jul 15:40:31|FileState.py| Using file state dictionary: /scratch/Panda_Pilot_12183_1404314412/fileState-output-2206622202.pickle
+02 Jul 15:40:31|FileState.py| File name  /  File state  /  Registration state
+02 Jul 15:40:31|FileState.py| ----------------------------------------------------------------------------------------------------
+02 Jul 15:40:31|FileState.py| 1. user.sblunier.004520._00001.ANALY_SLAC.root	transferred	registered
+02 Jul 15:40:31|FileState.py| 2. user.sblunier.004520._2206622202.log.tgz	not_created	not_registered
+02 Jul 15:40:31|Mover.py    | No LFC registration by the pilot
+02 Jul 15:40:31|Mover.py    | Put successful
+02 Jul 15:40:31|runJob.py   | Put function returned code: 0
+02 Jul 15:40:31|pUtil.py    | Lock file created: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/ALLFILESTRANSFERRED
+02 Jul 15:40:31|pUtil.py    | Lock file created: /scratch/Panda_Pilot_12183_1404314412/ALLFILESTRANSFERRED
+02 Jul 15:40:31|runJob.py   | No LRC file registration since lfchost is set
+02 Jul 15:40:31|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+02 Jul 15:40:31|RunJobUtilit| filesAltStageOut not set
+02 Jul 15:40:31|pilot.py    | Connected from ('127.0.0.1', 42278)
+02 Jul 15:40:31|RunJobUtilit| filesNormalStageOut=1
+02 Jul 15:40:31|RunJobUtilit| Final payload state set to: finished
+02 Jul 15:40:31|RunJobUtilit| About to send TCP message to main pilot thread of length = 415
+02 Jul 15:40:31|RunJobUtilit| (Sent)
+02 Jul 15:40:31|pilot.py    | --- TCPServer: Message received from child is : ['jobState=stageout', 'pid=15434', 'bytesWithoutFAX=26131', 'timeStageIn=5', 'output_latereg=False', 'filesWithoutFAX=1', 'timeExe=1193', 'cpuConversionFactor=1.0', 'vmPeakMax=0', 'cpuUnit=s', 'finalstate=finished', 'vmPeakMean=0', 'pilotErrorDiag=^!^', 'filesNormalStageOut=1', 'status=finished', 'timeStageOut=7', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=129', 'jobid=2206622202', 'pgrp=15434', 'transecode=0', '']
+02 Jul 15:40:31|pilot.py    | Process groups: 12105 (pilot), 15434 (sub process)
+02 Jul 15:40:31|pUtil.py    | Decoding: ^!^
+02 Jul 15:40:31|pUtil.py    | Empty URL encoded string (Nothing to decode)
+02 Jul 15:40:31|pilot.py    | got filesNormalStageOut=1
+02 Jul 15:40:31|RunJobUtilit| (Received)
+02 Jul 15:40:31|RunJobUtilit| Successfully sent and received TCP message
+02 Jul 15:40:31|RunJobUtilit| Successfully updated local pilot TCP server at 2014-07-02T08:40:31-0800 (Trial 1/10)
+02 Jul 15:40:31|runJob.py   | ********************************************************
+02 Jul 15:40:31|runJob.py   |  This job ended with (trf,pilot) exit code of (0,0)
+02 Jul 15:40:31|runJob.py   | ********************************************************
+02 Jul 15:40:31|runJob.py   | Executing command: ls -lF /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT
+02 Jul 15:40:31|runJob.py   | total 1909
+-rwxr-xr-x 1 osgatlas01 OG 107141 May 22 01:21 ATLASExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG  67107 Jul  2 08:20 ATLASExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG  25106 Apr 29 07:21 ATLASSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG  18099 Jul  2 08:20 ATLASSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24663 Jul 12  2013 BNLdCacheSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  15803 Jul  2 08:20 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG   2535 May  9 11:34 CHANGELOG
+-rwxr-xr-x 1 osgatlas01 OG  24247 Jul 15  2013 CMSExperiment.py*
+-rwxr-xr-x 1 osgatlas01 OG   8348 Jul 15  2013 CMSSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   8103 Jul  2 08:20 CMSSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8427 Jul 12  2013 COGSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   6998 Jul  2 08:20 COGSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG     37 Jul  2 08:20 CURRENT_SITEWORKDIR
+-rwxr-xr-x 1 osgatlas01 OG  18770 Jul 12  2013 CastorSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  11687 Jul  2 08:20 CastorSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  12709 Jul 12  2013 ChirpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8964 Jul  2 08:20 ChirpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  13233 Oct 31  2013 Cleaner.py*
+-rw-r--r-- 1 osgatlas01 OG   9286 Jul  2 08:20 Cleaner.pyc
+-rwxr-xr-x 1 osgatlas01 OG  12301 Jul 12  2013 DBReleaseHandler.py*
+-rwxr-xr-x 1 osgatlas01 OG    647 Jul 12  2013 Diagnosis.py*
+-rw-r--r-- 1 osgatlas01 OG    826 Jul  2 08:20 Diagnosis.pyc
+-rwxr-xr-x 1 osgatlas01 OG   3120 Jul 15  2013 ErrorDiagnosis.py*
+-rw-r--r-- 1 osgatlas01 OG   2813 Jul  2 08:20 ErrorDiagnosis.pyc
+-rwxr-xr-x 1 osgatlas01 OG  28842 Apr 29 07:21 Experiment.py*
+-rw-r--r-- 1 osgatlas01 OG  16807 Jul  2 08:20 Experiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2304 Jul 12  2013 ExperimentFactory.py*
+-rw-r--r-- 1 osgatlas01 OG   1948 Jul  2 08:20 ExperimentFactory.pyc
+-rwxr-xr-x 1 osgatlas01 OG  18312 Dec 10  2013 FAXSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  13215 Jul  2 08:20 FAXSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   5148 Jul 12  2013 FileRegistration.py*
+-rwxr-xr-x 1 osgatlas01 OG   9699 Jul 12  2013 FileState.py*
+-rw-r--r-- 1 osgatlas01 OG   9175 Jul  2 08:20 FileState.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2391 Jul 12  2013 FileStateClient.py*
+-rw-r--r-- 1 osgatlas01 OG   2594 Jul  2 08:20 FileStateClient.pyc
+-rwxr-xr-x 1 osgatlas01 OG  24485 Jul 12  2013 GOSiteMover.py*
+-rwxr-xr-x 1 osgatlas01 OG  11236 Jul 12  2013 GSIftpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8945 Jul  2 08:20 GSIftpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  11706 Jul 12  2013 HUSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8541 Jul  2 08:20 HUSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  28964 Jan 28 08:21 JEMstub.py*
+-rwxr-xr-x 1 osgatlas01 OG  18506 May 22 01:21 Job.py*
+-rw-r--r-- 1 osgatlas01 OG  10452 Jul  2 08:20 Job.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2043 Jul 12  2013 JobInfoXML.py*
+-rwxr-xr-x 1 osgatlas01 OG  54989 Apr 29 07:21 JobLog.py*
+-rw-r--r-- 1 osgatlas01 OG  33776 Jul  2 08:20 JobLog.pyc
+-rwxr-xr-x 1 osgatlas01 OG  29371 Jul 12  2013 JobRecovery.py*
+-rw-r--r-- 1 osgatlas01 OG  20508 Jul  2 08:20 JobRecovery.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10634 Jul 12  2013 JobState.py*
+-rw-r--r-- 1 osgatlas01 OG   7976 Jul  2 08:20 JobState.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14046 Jul 12  2013 LocalSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   9804 Jul  2 08:20 LocalSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG 174158 May 22 01:21 Mover.py*
+-rw-r--r-- 1 osgatlas01 OG 102601 Jul  2 08:20 Mover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   9274 Apr 29 07:21 Node.py*
+-rw-r--r-- 1 osgatlas01 OG   8089 Jul  2 08:20 Node.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8066 Jul 12  2013 NordugridATLASExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG   6341 Jul  2 08:20 NordugridATLASExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2038 Jul 12  2013 NordugridATLASSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   2124 Jul  2 08:20 NordugridATLASSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2678 Jul 12  2013 OtherExperiment.py*
+-rw-r--r-- 1 osgatlas01 OG   3450 Jul  2 08:20 OtherExperiment.pyc
+-rwxr-xr-x 1 osgatlas01 OG   1991 Jul 12  2013 OtherSiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG   2493 Jul  2 08:20 OtherSiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2311 Jul 12  2013 OtherSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG      8 May 22 01:21 PILOTVERSION
+-rwxr-xr-x 1 osgatlas01 OG  32933 Apr 29 07:21 PandaServerClient.py*
+-rw-r--r-- 1 osgatlas01 OG  19695 Jul  2 08:20 PandaServerClient.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14102 Apr 29 07:21 PilotErrors.py*
+-rw-r--r-- 1 osgatlas01 OG  12630 Jul  2 08:20 PilotErrors.pyc
+-rwxr-xr-x 1 osgatlas01 OG   1717 Jul 12  2013 PilotTCPServer.py*
+-rw-r--r-- 1 osgatlas01 OG   2156 Jul  2 08:20 PilotTCPServer.pyc
+-rwxr-xr-x 1 osgatlas01 OG  13549 Jul 12  2013 PilotUtils.py*
+-rwxr-xr-x 1 osgatlas01 OG   4281 Jul 12  2013 ProxyGuard.py*
+-rw-r--r-- 1 osgatlas01 OG   4953 Jul  2 08:20 ProxyGuard.pyc
+-rw-r--r-- 1 osgatlas01 OG     25 Jul 12  2013 README
+-rwxr-xr-x 1 osgatlas01 OG  30467 Feb 13 07:21 RunJobUtilities.py*
+-rw-r--r-- 1 osgatlas01 OG  23692 Jul  2 08:20 RunJobUtilities.pyc
+-rwxr-xr-x 1 osgatlas01 OG  14524 Jul 12  2013 SRMSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  10319 Jul  2 08:20 SRMSiteMover.pyc
+-rw-r--r-- 1 osgatlas01 OG      1 Jul  2 08:20 STATUSCODE
+-rwxr-xr-x 1 osgatlas01 OG    998 Jul 12  2013 Site.py*
+-rw-r--r-- 1 osgatlas01 OG   1315 Jul  2 08:20 Site.pyc
+-rwxr-xr-x 1 osgatlas01 OG  33806 Apr 29 07:21 SiteInformation.py*
+-rw-r--r-- 1 osgatlas01 OG  21821 Jul  2 08:20 SiteInformation.pyc
+-rwxr-xr-x 1 osgatlas01 OG   2892 Jul 12  2013 SiteInformationFactory.py*
+-rw-r--r-- 1 osgatlas01 OG   2208 Jul  2 08:20 SiteInformationFactory.pyc
+-rwxr-xr-x 1 osgatlas01 OG 137286 Feb 19 01:21 SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  91502 Jul  2 08:20 SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8583 Jul 12  2013 SiteMoverFarm.py*
+-rw-r--r-- 1 osgatlas01 OG   6286 Jul  2 08:20 SiteMoverFarm.pyc
+-rwxr-xr-x 1 osgatlas01 OG  23435 Jul 12  2013 UberftpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  14485 Jul  2 08:20 UberftpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   3453 Aug 15  2013 VmPeak.py*
+-rwxr-xr-x 1 osgatlas01 OG      0 Jul 12  2013 __init__.py*
+-rwxr-xr-x 1 osgatlas01 OG  31534 May 22 01:21 aria2cSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  20372 Jul  2 08:20 aria2cSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  31374 Oct 31  2013 atlasProdPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG  16969 Jul 12  2013 castorSvcClassSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  11515 Jul  2 08:20 castorSvcClassSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG    401 Jul 12  2013 config.py*
+-rw-r--r-- 1 osgatlas01 OG    590 Jul  2 08:20 config.pyc
+-rw-r--r-- 1 osgatlas01 OG    567 Jul  2 08:20 curl.config
+-rwxr-xr-x 1 osgatlas01 OG  30366 Jul 15  2013 curlSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  17243 Jul  2 08:20 curlSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10846 Jul 12  2013 dCacheLFCSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8571 Jul  2 08:20 dCacheLFCSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  30965 Jul 12  2013 dCacheSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  20374 Jul  2 08:20 dCacheSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  34155 Jul 12  2013 dataPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG   9189 Jul 12  2013 dq2SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   6118 Jul  2 08:20 dq2SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   5451 Jul 12  2013 futil.py*
+-rw-r--r-- 1 osgatlas01 OG   6470 Jul  2 08:20 futil.pyc
+-rwxr-xr-x 1 osgatlas01 OG  26864 Jul 12  2013 globusPilot.py*
+-rwxr-xr-x 1 osgatlas01 OG  28025 Jul 12  2013 lcgcp2SiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  15535 Jul  2 08:20 lcgcp2SiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  33494 Jul 12  2013 lcgcpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  18848 Jul  2 08:20 lcgcpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  11096 Jul 12  2013 mvSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   8688 Jul  2 08:20 mvSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   9674 Jul 12  2013 myproxyUtils.py*
+-rwxr-xr-x 1 osgatlas01 OG 129128 Feb 13 07:21 pUtil.py*
+-rw-r--r-- 1 osgatlas01 OG 100148 Jul  2 08:20 pUtil.pyc
+-rw-r--r-- 1 osgatlas01 OG   1755 Jul  2 08:20 pandaJobData_1.out
+-rwxr-xr-x 1 osgatlas01 OG 269443 May 22 01:21 pilot.py*
+-rw-r--r-- 1 osgatlas01 OG 125864 Jul  2 08:20 pilot.pyc
+-rw-r--r-- 1 osgatlas01 OG  30205 Jul  2 08:20 pilotlog.out
+-rw-r--r-- 1 osgatlas01 OG   6072 May  9 11:34 plugins.conf
+-rw-r--r-- 1 osgatlas01 OG   2681 Jul  2 08:20 queuedata.json
+-rwxr-xr-x 1 osgatlas01 OG  20033 Jul 12  2013 rfcpLFCSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  13505 Jul  2 08:20 rfcpLFCSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  51399 May 22 01:21 runJob.py*
+-rwxr-xr-x 1 osgatlas01 OG   4597 Jul 12  2013 stormSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG   3641 Jul  2 08:20 stormSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG   8743 Jul 12  2013 timed_command.py*
+-rw-r--r-- 1 osgatlas01 OG   6487 Jul  2 08:20 timed_command.pyc
+-rwxr-xr-x 1 osgatlas01 OG  10755 May  9 11:34 wrapper.py*
+-rwxr-xr-x 1 osgatlas01 OG    213 May  9 11:34 wrapperexceptions.py*
+-rw-r--r-- 1 osgatlas01 OG    857 Jul  2 08:19 wrapperexceptions.pyc
+drwxr-xr-x 2 osgatlas01 OG     13 Jul  2 08:19 wrapperplugins/
+-rwxr-xr-x 1 osgatlas01 OG  15839 May  9 11:34 wrapperutils.py*
+-rw-r--r-- 1 osgatlas01 OG  14103 Jul  2 08:19 wrapperutils.pyc
+-rwxr-xr-x 1 osgatlas01 OG  36996 Apr 29 07:21 xrdcpSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  23868 Jul  2 08:20 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 osgatlas01 OG  32697 Feb 19 01:21 xrootdSiteMover.py*
+-rw-r--r-- 1 osgatlas01 OG  21300 Jul  2 08:20 xrootdSiteMover.pyc
+02 Jul 15:40:31|runJob.py   | Lingering output file removed: user.sblunier.004520._00001.ANALY_SLAC.root
+02 Jul 15:40:31|runJob.py   | Payload cleanup has finished
+02 Jul 15:40:31|runJob.py   | runJob (payload wrapper) has finished
+02 Jul 15:40:46|pilot.py    | Payload stdout (prun_stdout.txt) within allowed size limit (2147483648 B): 251216 B
+02 Jul 15:40:46|pilot.py    | Remaining local disk space: 374424469504 B
+02 Jul 15:40:46|pilot.py    | Work directory size check will use 17129537536 B as a max limit (maxwdirsize)
+02 Jul 15:40:46|pilot.py    | Checked size of user analysis work directory /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422: 815104 B (within 17129537536 B limit)
+02 Jul 15:40:46|pilot.py    | Number of running processes: 1
+02 Jul 15:40:46|pilot.py    | Time passed since pilot startup = 1234 s (maximum allowed batch system time = 999999 s)
+02 Jul 15:40:46|pilot.py    | Verifying output file sizes
+02 Jul 15:40:46|pilot.py    | Could not access file user.sblunier.004520._00001.ANALY_SLAC.root: 
+02 Jul 15:40:46|pilot.py    | Completed output file size verification
+02 Jul 15:40:46|pilot.py    | Production job is done
+02 Jul 15:40:46|pilot.py    | Clean up the ended job: [15434, <Job.Job instance at 0x20d5f80>, 12105]
+02 Jul 15:40:46|pilot.py    | Refreshing tail stdout dictinary prior to finishing the job(s)
+02 Jul 15:40:46|pilot.py    | Returning tail stdout dictionary with 1 entries
+02 Jul 15:40:46|pilot.py    | (2a) Executing command: stat /scratch/Panda_Pilot_12183_1404314412
+02 Jul 15:40:46|pilot.py    | 
+  File: `/scratch/Panda_Pilot_12183_1404314412'
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: fd06h/64774d	Inode: 11665409    Links: 3
+Access: (0770/drwxrwx---)  Uid: (1102872/osgatlas01)   Gid: ( 2222/      OG)
+Access: 2014-07-02 08:20:18.583471742 -0700
+Modify: 2014-07-02 08:40:31.756389688 -0700
+Change: 2014-07-02 08:40:31.756389688 -0700
+02 Jul 15:40:46|pilot.py    | (2b) Executing command: stat /nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT
+02 Jul 15:40:46|pilot.py    | 
+  File: `/nfs/slac/g/grid/osg/u/osgatlas01/gram_scratch_uRF8mT'
+  Size: 149       	Blocks: 47         IO Block: 1048576 directory
+Device: 500078h/5243000d	Inode: 103322315   Links: 3
+Access: (0700/drwx------)  Uid: (1102872/osgatlas01)   Gid: ( 2222/      OG)
+Access: 2014-07-02 08:20:25.155615127 -0700
+Modify: 2014-07-02 08:20:23.685651663 -0700
+Change: 2014-07-02 08:20:23.685651663 -0700
+02 Jul 15:40:46|JobLog.py   | Post job task (normal mode) using dir: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:40:46|pUtil.py    | Trying to read metadata-2206622202.xml from dir: /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:40:46|pUtil.py    | Found metadata
+02 Jul 15:40:46|JobLog.py   | Building log extracts..
+02 Jul 15:40:46|JobLog.py   | !!WARNING!!1010!! PandaID=2206622202 had outbound connections
+02 Jul 15:40:46|ATLASExperim| Removing redundant files prior to log creation
+02 Jul 15:40:46|ATLASExperim| To be removed: ['/scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/runGen.py']
+02 Jul 15:40:47|ATLASExperim| To be removed: ['/scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422/jobState-2206622202-test.pickle']
+02 Jul 15:40:47|JobLog.py   | Removed soft link: /scratch/Panda_Pilot_12183_1404314412/prun_stdout.txt
+02 Jul 15:40:47|pUtil.py    | chdir to: /scratch/Panda_Pilot_12183_1404314412
+02 Jul 15:40:47|pUtil.py    | current dir: /scratch/Panda_Pilot_12183_1404314412
+02 Jul 15:40:47|pUtil.py    | Could not find trf error file jobInfo.xml in search path /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:40:47|pUtil.py    | ..Job report..................................................................................................
+02 Jul 15:40:47|pUtil.py    | . Pilot version             : SULU 58m
+02 Jul 15:40:47|pUtil.py    | . Job id                    : 2206622202
+02 Jul 15:40:47|pUtil.py    | . Current job status        : finished
+02 Jul 15:40:47|pUtil.py    | . Trf job type              : Single trf job
+02 Jul 15:40:47|pUtil.py    | . Final job state           : finished
+02 Jul 15:40:47|pUtil.py    | . All out files transferred : Yes
+02 Jul 15:40:47|pUtil.py    | . Pilot error code          : 0, (no pilot error)
+02 Jul 15:40:47|pUtil.py    | . Length pilot error diag   : 0
+02 Jul 15:40:47|pUtil.py    | . Pilot error diag          : Empty
+02 Jul 15:40:47|pUtil.py    | . Pilot produced stderr     : No
+02 Jul 15:40:47|pUtil.py    | . runJob produced stderr    : No
+02 Jul 15:40:47|pUtil.py    | . Trf error code            : 0
+02 Jul 15:40:47|pUtil.py    | . Trf error diagnosis       : 
+02 Jul 15:40:47|pUtil.py    | . Length log extracts       : 108081 (will be truncated to 2048)
+02 Jul 15:40:47|pUtil.py    | . Payload produced stderr   : No (empty prun_stderr.txt)
+02 Jul 15:40:47|pUtil.py    | . Found core dump in workdir: No
+02 Jul 15:40:47|pUtil.py    | . Job was executed in dir   : /scratch/Panda_Pilot_12183_1404314412/PandaJob_2206622202_1404314422
+02 Jul 15:40:47|pUtil.py    | . Error report produced at  : 2014-07-02T08:40:47-0800
+02 Jul 15:40:47|pUtil.py    | ..Time report.................................................................................................
+02 Jul 15:40:47|pUtil.py    | . CPU consumption time      : 129 s
+02 Jul 15:40:47|pUtil.py    | . Payload execution time    : 1193 s
+02 Jul 15:40:47|pUtil.py    | . GetJob consumption time   : 2 s
+02 Jul 15:40:47|pUtil.py    | . Stage-in consumption time : 5 s
+02 Jul 15:40:47|pUtil.py    | . Stage-out consumption time: 7 s
+02 Jul 15:40:47|pUtil.py    | ..............................................................................................................
+02 Jul 15:40:47|pUtil.py    | !!FINISHED!!0!!Job successfully completed
+02 Jul 15:40:47|JobLog.py   | Removing unwanted files prior to job log creation
+02 Jul 15:40:47|JobLog.py   | No skipped input files (non DBRelease)
+02 Jul 15:40:47|JobLog.py   | Preparing to create log file

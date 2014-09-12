@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="6af3661e-b8f4-43d7-8791-3ed25e714e7a">
+    <physical>
+      <pfn filetype="ROOT_All" name="user.sblunier.004072._00001.ANALY_IFAE.root"/>
+    </physical>
+  </File>
+</POOLFILECATALOG>

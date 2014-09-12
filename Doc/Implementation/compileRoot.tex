@@ -1,0 +1,125 @@
+
+\subsection{Davix integration in ROOT}
+
+The integration of Davix in ROOT was done on lxplus. Explanation are given to built root for cvmfs, the ROOT and Davix folders will be separated.\\
+
+\subsubsection{Get Root}
+
+In a folder where you will want to build your project, get the right version of ROOT:
+
+\begin{lstlisting}
+	> git clone http://root.cern.ch/git/root.git
+\end{lstlisting}
+
+To select the needed version, it is useful to know which one are available with:
+
+\begin{lstlisting}
+	> cd root
+	> git tag -l
+\end{lstlisting}
+
+then to get the right version:
+
+\begin{lstlisting}
+	> git checkout v5-34-19
+\end{lstlisting}
+
+replacing "v5-34-19" by the version you want.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Get and compile Davix}
+
+Out of the recent downloaded ROOT folder download git from the public repository (here we will give the commands assuming that davix/ and root/ are in the same directory):
+
+\begin{lstlisting}
+	> (cd ..)
+	> git clone http://git.cern.ch/pub/davix
+\end{lstlisting}
+
+Just like we did for look at the version you want with:
+
+
+\begin{lstlisting}
+	> cd davix
+	> git tag -l
+\end{lstlisting}
+
+and select the right version:
+
+
+\begin{lstlisting}
+	> git checkout R_0_3_4
+\end{lstlisting}
+
+Now we will build Davix, to do that you can follow the steps here or you can also look at \textit{README} where there are different ways to compile Davix, here we detail our way to compile Davix in embedded mode.
+
+
+\begin{lstlisting}
+	> mkdir -p build
+	> git submodule update --recursive --init
+	> cd build
+	> cmake -D BOOST_EXTERNAL=NO -D CMAKE_INSTALL_PREFIX=/ ..
+	> make
+\end{lstlisting}
+
+Now we will get the libraries to make possible integration in Root (still in the \textit{build} folder):
+
+
+\begin{lstlisting}
+	> mkdir -p root
+	> make install DESTDIR=root/
+\end{lstlisting}
+
+Now you should have the libraries in davix/build/root/lib64/
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Build ROOT}
+
+The first step is to configure ROOT, then go first in your root folder and configure it with:
+
+\begin{lstlisting}
+	> (cd ../../../root)
+	> ./configure --with-xrootd=/afs/cern.ch/sw/lcg/external/xrootd/3.2.7/x86_64-slc6-gcc48-opt --enable-davix --with-davix-incdir=../davix/include/davix/ --with-davix-libdir=../davix/build/root/lib64/
+\end{lstlisting}
+
+the first argument of \textit{configure} can be set only on cvmfs, if you only want root+davix without xrootd replace it by \textit{--disable-xrootd}. Make sure davix and xroot appear in the list of \textit{Enable support} that is printed at the end of the output of \textit{./configure}, obviously if you don't want to integrate xrootd it should be in the list.\\
+
+Now compile root:
+
+\begin{lstlisting}
+	> make
+\end{lstlisting}
+
+Uncomment the two following lines in the file etc/system.rootrc:
+
+\begin{lstlisting}
+	709 Davix.GSI.CACheck: y
+	717 Davix.GSI.GridMode: y
+\end{lstlisting}
+
+and finally, \underline{only if you don't want this version to be propagated on cvmfs} copy the compiled libraries of Davix in the lib folder of root:
+
+\begin{lstlisting}
+	> cd ..
+	> cp davix/build/root/lib64/* root/lib/
+\end{lstlisting}
+
+Select the recent build patch with:
+
+\begin{lstlisting}
+	> source root/bin/thisroot.sh
+\end{lstlisting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Direct building from ROOT}
+
+It is possible not to do the second part. Run the script \textit{installDavix.sh}:
+
+\begin{lstlisting}
+	> cd root/
+	> ./build/installDavix.sh
+\end{lstlisting}
+
+It will download direclty Davix but you will have no choice on its version. You can also to that with xrootd in fact with \textit{installXrootd.sh}. The compilation of Davix will also have to be done separatly.

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- Edited By Panda Pilot3 -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="19781dea-7895-43b2-a27b-38efd0d94dff">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>

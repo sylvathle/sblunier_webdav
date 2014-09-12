@@ -1,0 +1,92 @@
+%Report of master graduation
+%
+% by Sylvain Blunier 
+%
+%main page for compilation
+
+\documentclass[a4paper,11pt]{article}
+
+%\usepackage{graphicx,epsfig,color,rotating}
+\usepackage[dvips]{graphicx}% Include figure files
+\usepackage{wrapfig}
+\usepackage{xspace}
+%\usepackage{dcolumn}% Align table columns on decimal point
+%\usepackage{bm}% bold math
+\usepackage[T1]{fontenc} % Encodage des caractères en sortie.
+%\usepackage{textcomp} % Jeu de symboles complémentaires.
+\usepackage[USenglish]{babel} % Support de la langue anglaise.
+\usepackage{amsmath}
+\usepackage{pstricks}
+\usepackage{color}
+
+\usepackage{hyperref}
+
+\usepackage{enumitem}
+\usepackage{pifont}
+
+\usepackage{listings}
+
+\definecolor{jaunecasse}{RGB}{255,255,153}
+
+\lstset{
+frame=single,
+framerule=0pt,
+language=bash,
+basicstyle=\ttfamily\small, %
+identifierstyle=\color{red}, %
+keywordstyle=\color{blue}, %
+stringstyle=\color{black!60}, %
+commentstyle=\it\color{green!95!yellow!1}, %
+columns=flexible, %
+tabsize=2, %
+extendedchars=true, %
+showspaces=false, %
+showstringspaces=false, %
+%numbers=left, %
+%numberstyle=\tiny, %
+breaklines=true, %
+breakautoindent=true, %
+captionpos=b,
+backgroundcolor=\color{jaunecasse}
+}
+
+
+%\usepackage[tikz]{bclogo}
+
+%\usepackage{axodraw} 
+
+\graphicspath{{Img/}}
+
+\renewcommand{\arraystretch}{1.4}
+
+%%%% debut macro %%%%
+\newenvironment{changemargin}[2]{\begin{list}{}{%
+\addtolength{\leftmargin}{#1}%
+\addtolength{\textwidth}{#2}%
+}\item }{\end{list}}
+%%%% fin macro %%%%
+
+\addtolength{\hoffset}{-1.5cm}
+\addtolength{\textwidth}{3cm}
+
+%\addtolength{\topmargin}{-.875in}
+
+\addtolength{\textheight}{3cm}
+\setcounter{secnumdepth}{5}
+
+\begin{document}
+
+
+\title{Report of CERN Internship} %\\ force le passage a la ligne
+
+\author{Sylvain Blunier}
+
+\maketitle
+\input{context}
+\input{Objectives/objectives}
+\input{Implementation/implementation}
+\input{stillToDo}
+
+\end{document}
+%
+% ****** End of file report.tex ******

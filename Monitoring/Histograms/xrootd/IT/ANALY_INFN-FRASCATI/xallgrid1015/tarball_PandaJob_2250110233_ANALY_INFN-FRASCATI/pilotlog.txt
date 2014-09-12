@@ -1,0 +1,1819 @@
+25 Aug 08:56:28|pilot.py    | 
+
+Entered multi-job loop. Current work dir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987
+
+25 Aug 08:56:28|pilot.py    | Panda Pilot, version SULU 58o
+25 Aug 08:56:28|pilot.py    | Version tag = PR
+25 Aug 08:56:28|pilot.py    | PilotId = http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out, jobSchedulerId = aipanda023
+25 Aug 08:56:28|pilot.py    | Current time: 2014-08-25T10:56:28+-100
+25 Aug 08:56:28|pilot.py    | Run by Python 2.6.6 (r266:84292, Nov 21 2013, 12:39:37) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-3)]
+25 Aug 08:56:28|pilot.py    | 64 bit OS
+25 Aug 08:56:28|pilot.py    | Pilot init dir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3
+25 Aug 08:56:28|pilot.py    | All output written to file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/pilotlog.txt
+25 Aug 08:56:28|pilot.py    | Pilot executed by: pilatlas008
+25 Aug 08:56:28|pilot.py    | Pilot options:................................................
+25 Aug 08:56:28|pilot.py    | appdir: 
+25 Aug 08:56:28|pilot.py    | debugLevel: 0
+25 Aug 08:56:28|pilot.py    | dq2url: 
+25 Aug 08:56:28|pilot.py    | jobrec: False
+25 Aug 08:56:28|pilot.py    | jobRequestFlag: True
+25 Aug 08:56:28|pilot.py    | jobSchedulerId: aipanda023
+25 Aug 08:56:28|pilot.py    | maxjobrec: 20
+25 Aug 08:56:28|pilot.py    | maxNumberOfRecoveryAttempts: 15
+25 Aug 08:56:28|pilot.py    | pilotId: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out
+25 Aug 08:56:28|pilot.py    | pshttpurl: https://pandaserver.cern.ch
+25 Aug 08:56:28|pilot.py    | psport: 25443
+25 Aug 08:56:28|pilot.py    | queuename: ANALY_INFN-FRASCATI
+25 Aug 08:56:28|pilot.py    | rmwkdir: None
+25 Aug 08:56:28|pilot.py    | sitename: ANALY_INFN-FRASCATI
+25 Aug 08:56:28|pilot.py    | stageinretry: 2
+25 Aug 08:56:28|pilot.py    | stageoutretry: 2
+25 Aug 08:56:28|pilot.py    | uflag: user
+25 Aug 08:56:28|pilot.py    | workdir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987
+25 Aug 08:56:28|pilot.py    | logFileDir: 
+25 Aug 08:56:28|pilot.py    | ..............................................................
+25 Aug 08:56:28|pilot.py    | Entering main pilot loop: multi job disabled
+25 Aug 08:56:28|SiteMover.py| Executing command: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy;. /cvmfs/atlas.cern.ch/repo/sw/arc/client/latest/slc6/x86_64/setup.sh;arcproxy -i vomsACvalidityLeft
+25 Aug 08:56:28|SiteMover.py| ec=0 output=286999
+25 Aug 08:56:28|SiteMover.py| Voms proxy verified (286999s)
+25 Aug 08:56:28|SiteMover.py| Voms proxy verified using arcproxy
+25 Aug 08:56:28|pilot.py    | Collecting WN info from: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987 (again)
+25 Aug 08:56:28|pilot.py    | Got max memory limit: 4000 MB (from queuedata)
+25 Aug 08:56:28|pilot.py    | Max memory limit set to: 4194304000 B
+25 Aug 08:56:28|pilot.py    | Executing command: ulimit -a
+25 Aug 08:56:28|pilot.py    | 
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 191999
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 32768
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 10240
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 191999
+virtual memory          (kbytes, -v) 4096000
+file locks                      (-x) unlimited
+25 Aug 08:56:28|pilot.py    | Local space limit: 5368709120 B
+25 Aug 08:56:28|pilot.py    | Remaining local disk space: 838271500288 B
+25 Aug 08:56:28|pilot.py    | Verifying that pilot TCP server is still alive...
+25 Aug 08:56:28|pilot.py    | ...Pilot TCP server is still running
+25 Aug 08:56:28|pilot.py    | Connected from ('127.0.0.1', 41117)
+25 Aug 08:56:28|pilot.py    | Pilot will attempt single job download for a maximum of 180 seconds
+25 Aug 08:56:28|pilot.py    | --- TCPServer: Message received from child is : ['']
+25 Aug 08:56:28|pUtil.py    | Max input size = 50000 MB (pilot default)
+25 Aug 08:56:28|pilot.py    | Available WN disk space: 799438 MB
+25 Aug 08:56:28|pilot.py    | Sending disk space 50000 MB to dispatcher
+25 Aug 08:56:28|pilot.py    | workerNode.mem=4000
+25 Aug 08:56:28|pilot.py    | Node name: atlaswn031.lnf.infn.it
+25 Aug 08:56:28|pilot.py    | No country group selected
+25 Aug 08:56:28|pilot.py    | No working group selected
+25 Aug 08:56:28|pilot.py    | prodSourceLabel: user
+25 Aug 08:56:28|pilot.py    | Looking for a primary job (contacting server at https://pandaserver.cern.ch:25443/server/panda)
+25 Aug 08:56:28|pUtil.py    | Will not send attemptNr for cmd=getJob
+25 Aug 08:56:28|pUtil.py    | toServer: cmd = getJob
+25 Aug 08:56:28|pUtil.py    | toServer: len(data) = 9
+25 Aug 08:56:28|pUtil.py    | data = {'node': 'atlaswn031.lnf.infn.it', 'mem': 4000, 'getProxyKey': 'False', 'computingElement': 'ANALY_INFN-FRASCATI', 'diskSpace': 50000, 'siteName': 'ANALY_INFN-FRASCATI', 'workingGroup': '', 'cpu': 1600.0, 'prodSourceLabel': 'user'}
+25 Aug 08:56:28|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /etc/grid-security/certificates --cert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --key /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --config /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/curl.config https://pandaserver.cern.ch:25443/server/panda/getJob
+25 Aug 08:56:29|pUtil.py    | Elapsed seconds: 0
+25 Aug 08:56:29|pUtil.py    | Dispatcher response: [('jobsetID', '19907'), ('logGUID', '3c1f6d13-56e3-4c9e-bdac-30021ced3867'), ('cmtConfig', 'x86_64-slc6-gcc48-opt'), ('dispatchDBlockTokenForOut', 'NULL,NULL'), ('destinationDBlockToken', 'NULL,NULL'), ('destinationSE', 'NULL'), ('realDatasets', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root/,user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log/'), ('prodUserID', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461'), ('GUID', '19781dea-7895-43b2-a27b-38efd0d94dff'), ('realDatasetsIn', 'panda.0825084749.206437.lib._4057000'), ('nSent', '0'), ('cloud', 'IT'), ('StatusCode', '0'), ('homepackage', 'NULL'), ('inFiles', 'panda.0825084749.206437.lib._4057000.79520199.lib.tgz'), ('processingType', 'panda-client-0.5.16-jedi-run'), ('fsize', '1587151'), ('fileDestinationSE', 'ANALY_INFN-FRASCATI,ANALY_INFN-FRASCATI'), ('scopeOut', 'user.sblunier'), ('minRamCount', '0'), ('jobDefinitionID', '19919'), ('scopeLog', 'user.sblunier'), ('transformation', 'http://pandaserver.cern.ch:25085/trf/user/runGen-00-00-02'), ('maxDiskCount', '0'), ('coreCount', '1'), ('prodDBlockToken', 'NULL'), ('transferType', 'NULL'), ('destinationDblock', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312,user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.759298_sub0179511314'), ('dispatchDBlockToken', 'NULL'), ('jobPars', '-j "" --sourceURL https://aipanda011.cern.ch:25443 -r . -p "./main.sh%20IT%20ANALY_INFN-FRASCATI%20ttreecache%20xrootd" -l panda.0825084749.206437.lib._4057000.79520199.lib.tgz -o "{\'ANALY_INFN-FRASCATI.root\': \'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root\'}" --rootVer 5.34.19-davix_p1 '), ('attemptNr', '1'), ('swRelease', 'NULL'), ('maxCpuCount', '0'), ('outFiles', 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root,user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz'), ('currentPriority', '956'), ('scopeIn', 'panda'), ('PandaID', '2250110233'), ('dispatchDblock', 'panda.0825084749.206437.lib._4057000'), ('prodSourceLabel', 'user'), ('checksum', 'ad:7f3b4872'), ('jobName', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI/'), ('taskID', '3'), ('logFile', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz')]
+25 Aug 08:56:29|pUtil.py    | Wrote string "0" to file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/STATUSCODE
+25 Aug 08:56:29|pilot.py    | Attempt number from server: 1
+25 Aug 08:56:29|pilot.py    | Job recovery is still switched off after job download
+25 Aug 08:56:29|pilot.py    | Received nSent: 0
+25 Aug 08:56:29|pilot.py    | Job definition stored (for later backup): jobsetID=19907&logGUID=3c1f6d13-56e3-4c9e-bdac-30021ced3867&cmtConfig=x86_64-slc6-gcc48-opt&dispatchDBlockTokenForOut=NULL%2CNULL&destinationDBlockToken=NULL%2CNULL&destinationSE=NULL&realDatasets=user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root%2F%2Cuser.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log%2F&prodUserID=%2FDC%3Dch%2FDC%3Dcern%2FOU%3DOrganic+Units%2FOU%3DUsers%2FCN%3Dsblunier%2FCN%3D757276%2FCN%3DSylvain+Blunier%2FCN%3D51913461&GUID=19781dea-7895-43b2-a27b-38efd0d94dff&realDatasetsIn=panda.0825084749.206437.lib._4057000&nSent=0&cloud=IT&StatusCode=0&homepackage=NULL&inFiles=panda.0825084749.206437.lib._4057000.79520199.lib.tgz&processingType=panda-client-0.5.16-jedi-run&fsize=1587151&fileDestinationSE=ANALY_INFN-FRASCATI%2CANALY_INFN-FRASCATI&scopeOut=user.sblunier&minRamCount=0&jobDefinitionID=19919&scopeLog=user.sblunier&transformation=http%3A%2F%2Fpandaserver.cern.ch%3A25085%2Ftrf%2Fuser%2FrunGen-00-00-02&maxDiskCount=0&coreCount=1&prodDBlockToken=NULL&transferType=NULL&destinationDblock=user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312%2Cuser.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.759298_sub0179511314&dispatchDBlockToken=NULL&jobPars=-j+%22%22+--sourceURL+https%3A%2F%2Faipanda011.cern.ch%3A25443+-r+.+-p+%22.%2Fmain.sh%2520IT%2520ANALY_INFN-FRASCATI%2520ttreecache%2520xrootd%22+-l+panda.0825084749.206437.lib._4057000.79520199.lib.tgz+-o+%22%7B%27ANALY_INFN-FRASCATI.root%27%3A+%27user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root%27%7D%22+--rootVer+5.34.19-davix_p1+&attemptNr=1&swRelease=NULL&maxCpuCount=0&outFiles=user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root%2Cuser.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz&currentPriority=956&scopeIn=panda&PandaID=2250110233&dispatchDblock=panda.0825084749.206437.lib._4057000&prodSourceLabel=user&checksum=ad%3A7f3b4872&jobName=user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI%2F&taskID=3&logFile=user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz
+25 Aug 08:56:29|pilot.py    | prodSourceLabel already set in job def data: user
+25 Aug 08:56:29|SiteInformat| called updateQueuedataFromJobParameters with: -j "" --sourceURL https://aipanda011.cern.ch:25443 -r . -p "./main.sh%20IT%20ANALY_INFN-FRASCATI%20ttreecache%20xrootd" -l panda.0825084749.206437.lib._4057000.79520199.lib.tgz -o "{'ANALY_INFN-FRASCATI.root': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root'}" --rootVer 5.34.19-davix_p1 
+25 Aug 08:56:29|Job.py      | outfList = ['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz']
+25 Aug 08:56:29|Job.py      | outfdbList = ['user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.759298_sub0179511314']
+25 Aug 08:56:29|Job.py      | destinationDBlockToken = ['NULL', 'NULL']
+25 Aug 08:56:29|Job.py      | dispatchDBlockTokenForOut = ['NULL', 'NULL']
+25 Aug 08:56:29|Job.py      | logFileDblock = user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.759298_sub0179511314
+25 Aug 08:56:29|pilot.py    | Got logGUID from server: 3c1f6d13-56e3-4c9e-bdac-30021ced3867
+25 Aug 08:56:29|pilot.py    | New job has prodSourceLabel=user
+25 Aug 08:56:29|pilot.py    | Increased job counter to 1
+25 Aug 08:56:29|pilot.py    | Task ID set to: 3
+25 Aug 08:56:29|pilot.py    | Using job definition id: 19919
+25 Aug 08:56:29|ATLASExperim| Using core count values: 1 (job definition), None (schedconfig)
+25 Aug 08:56:29|pilot.py    | postGetJobActions: OK
+25 Aug 08:56:29|ATLASSiteInf| Set site.appdir to /cvmfs/atlas.cern.ch/repo/sw
+25 Aug 08:56:29|ATLASSiteInf| Software directory /cvmfs/atlas.cern.ch/repo/sw exists
+25 Aug 08:56:29|SiteInformat| Successfully changed appdir to: /cvmfs/atlas.cern.ch/repo/sw
+25 Aug 08:56:29|JobRecovery.| Successfully updated job state file with state: startup
+25 Aug 08:56:29|pUtil.py    | Pilot modules have been copied to /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987
+25 Aug 08:56:29|pilot.py    | Current time :2014-08-25T10:56:29+-100
+25 Aug 08:56:29|pilot.py    | The site this pilot runs on: ANALY_INFN-FRASCATI
+25 Aug 08:56:29|pilot.py    | Pilot executing on host: atlaswn031.lnf.infn.it
+25 Aug 08:56:29|pilot.py    | The workdir this pilot runs on:/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987
+25 Aug 08:56:29|pilot.py    | The dq2url for this site is: 
+25 Aug 08:56:29|pilot.py    | The DQ2 SE has 999999 GB space left (NB: dCache is defaulted to 999999)
+25 Aug 08:56:29|pilot.py    | New job has prodSourceLabel: user
+25 Aug 08:56:29|pilot.py    | Using looping job limit: 10800 s
+25 Aug 08:56:29|pilot.py    | maxCpuCount: 0 s
+25 Aug 08:56:29|pilot.py    | Pilot executing job for user: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461
+25 Aug 08:56:29|pilot.py    | Created job workdir at /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|pUtil.py    | Creating job setup script with stage-in and payload execution commands: job_setup.sh
+25 Aug 08:56:29|pUtil.py    | Updated /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/job_setup.sh: #!/bin/bash
+# job_setup.sh 25 Aug 2014 08:56:29
+
+export VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+if [ -f $VO_ATLAS_SW_DIR/local/setup.sh ]; then
+  source $VO_ATLAS_SW_DIR/local/setup.sh
+fi
+25 Aug 08:56:29|FileState.py| File does not exist: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle (will be created)
+25 Aug 08:56:29|FileState.py| Resetting file list: ['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz']
+25 Aug 08:56:29|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle
+25 Aug 08:56:29|FileState.py| File name  /  File state  /  Registration state
+25 Aug 08:56:29|FileState.py| ----------------------------------------------------------------------------------------------------
+25 Aug 08:56:29|FileState.py| 1. user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root	not_created	not_registered
+25 Aug 08:56:29|FileState.py| 2. user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz	not_created	not_registered
+25 Aug 08:56:29|FileState.py| File does not exist: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-input-2250110233.pickle (will be created)
+25 Aug 08:56:29|FileState.py| Resetting file list: ['panda.0825084749.206437.lib._4057000.79520199.lib.tgz']
+25 Aug 08:56:29|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-input-2250110233.pickle
+25 Aug 08:56:29|FileState.py| File name  /  File state  /  Transfer mode
+25 Aug 08:56:29|FileState.py| ----------------------------------------------------------------------------------------------------
+25 Aug 08:56:29|FileState.py| 1. panda.0825084749.206437.lib._4057000.79520199.lib.tgz	not_transferred	copy_to_scratch
+25 Aug 08:56:29|pUtil.py    | LFN length verified for file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 08:56:29|pUtil.py    | LFN length verified for file user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz
+25 Aug 08:56:29|pilot.py    | LFN length(s) verified, within allowed limit
+25 Aug 08:56:29|Job.py      | Dumping job specifics
+25 Aug 08:56:29|Job.py      | 
+PandaID=2250110233
+AtlasRelease=NULL
+homePackage=NULL
+trfName=http://pandaserver.cern.ch:25085/trf/user/runGen-00-00-02
+inputFiles=['panda.0825084749.206437.lib._4057000.79520199.lib.tgz']
+realDatasetsIn=['panda.0825084749.206437.lib._4057000']
+filesizeIn=['1587151']
+checksumIn=['ad:7f3b4872']
+prodDBlockToken=['NULL']
+dispatchDblock=['panda.0825084749.206437.lib._4057000']
+dispatchDBlockToken=['NULL']
+dispatchDBlockTokenForOut=['NULL', 'NULL']
+destinationDBlockToken=['NULL', 'NULL']
+outputFiles=['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz']
+destinationDblock=['user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312']
+logFile=user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz
+logFileDblock=user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.759298_sub0179511314
+jobPars=-j "" --sourceURL https://aipanda011.cern.ch:25443 -r . -p "./main.sh%20IT%20ANALY_INFN-FRASCATI%20ttreecache%20xrootd" -l panda.0825084749.206437.lib._4057000.79520199.lib.tgz -o "{'ANALY_INFN-FRASCATI.root': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root'}" --rootVer 5.34.19-davix_p1 
+The job state=['starting', 0, 0]
+Job workdir=/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+TarFileGuid=3c1f6d13-56e3-4c9e-bdac-30021ced3867
+outFilesGuids=[]
+destinationSE=NULL
+fileDestinationSE=ANALY_INFN-FRASCATI,ANALY_INFN-FRASCATI
+prodSourceLabel=user
+spsetup=(not defined)
+credname=None
+myproxy=None
+cloud=IT
+taskID=3
+prodUserID=/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461
+debug=False
+transferType=NULL
+25 Aug 08:56:29|PandaServerC| Updating job status in updatePandaServer(): PandaId=2250110233, result=['starting', 0, 0], time=2014-08-25T10:56:29+-100
+25 Aug 08:56:29|PandaServerC| job.prodSourceLabel=user
+25 Aug 08:56:29|PandaServerC| Batch system: Torque
+25 Aug 08:56:29|PandaServerC| Batch system job ID: 6609412.atlasce3.lnf.infn.it
+25 Aug 08:56:29|PandaServerC| Will send batchID: 6609412.atlasce3.lnf.infn.it and pilotID: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o
+25 Aug 08:56:29|PandaServerC| pilotId: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out
+25 Aug 08:56:29|PandaServerC| Job metrics="coreCount=1"
+25 Aug 08:56:29|PandaServerC| getXML called
+25 Aug 08:56:29|PandaServerC| Stdout tail will not be sent (debug=False)
+25 Aug 08:56:29|pUtil.py    | Successfully updated job state file at: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/jobState-2250110233.pickle
+25 Aug 08:56:29|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+25 Aug 08:56:29|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+25 Aug 08:56:29|pUtil.py    | toServer: cmd = updateJob
+25 Aug 08:56:29|pUtil.py    | toServer: len(data) = 15
+25 Aug 08:56:29|pUtil.py    | data = {'node': 'atlaswn031.lnf.infn.it', 'xml': '', 'workdir': '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', 'jobMetrics': 'coreCount=1', 'messageLevel': 'info', 'siteName': 'ANALY_INFN-FRASCATI', 'timestamp': '2014-08-25T10:56:29+-100', 'attemptNr': 1, 'jobId': 2250110233, 'batchID': '6609412.atlasce3.lnf.infn.it', 'remainingSpace': 999999, 'state': 'starting', 'schedulerID': 'aipanda023', 'pilotID': 'http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz 12288 KB'}
+25 Aug 08:56:29|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /etc/grid-security/certificates --cert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --key /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --config /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/curl.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+25 Aug 08:56:29|pUtil.py    | Elapsed seconds: 0
+25 Aug 08:56:29|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+25 Aug 08:56:29|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+25 Aug 08:56:29|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+25 Aug 08:56:29|PandaServerC| jobDispatcher acknowledged with 0
+25 Aug 08:56:29|pilot.py    | Successfully updated panda server at 2014-08-25T10:56:29+-100
+25 Aug 08:56:29|pUtil.py    | Wrote string "6014" to file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PROCESSID
+25 Aug 08:56:29|pilot.py    | Starting child process in dir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|pilot.py    | Launching runJob with options: ['/usr/bin/python', 'runJob.py', '-a', '/cvmfs/atlas.cern.ch/repo/sw', '-d', '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', '-l', '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3', '-q', '', '-p', '9518', '-s', 'ANALY_INFN-FRASCATI', '-o', '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987', '-h', 'ANALY_INFN-FRASCATI', '-i', '3c1f6d13-56e3-4c9e-bdac-30021ced3867', '-b', '0', '-t', 'True', '-k', '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/pilotlog.txt', '-x', '2', '-v', '0', '-g', '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3', '-m', '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3', '-B', 'False', '-E', '2', '-F', 'ATLAS']
+25 Aug 08:56:29|PandaServerC| Updating job status in updatePandaServer(): PandaId=2250110233, result=['running', 0, 0], time=2014-08-25T10:56:29+-100
+25 Aug 08:56:29|PandaServerC| job.prodSourceLabel=user
+25 Aug 08:56:29|PandaServerC| Batch system: Torque
+25 Aug 08:56:29|PandaServerC| Batch system job ID: 6609412.atlasce3.lnf.infn.it
+25 Aug 08:56:29|PandaServerC| Will send batchID: 6609412.atlasce3.lnf.infn.it and pilotID: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o
+25 Aug 08:56:29|PandaServerC| pilotId: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out
+25 Aug 08:56:29|PandaServerC| Job metrics="coreCount=1"
+25 Aug 08:56:29|PandaServerC| getXML called
+25 Aug 08:56:29|PandaServerC| Stdout tail will not be sent (debug=False)
+25 Aug 08:56:29|pUtil.py    | Successfully updated job state file at: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/jobState-2250110233.pickle
+25 Aug 08:56:29|pUtil.py    | Pilot modules have been copied to /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+25 Aug 08:56:29|pilot.py    | Copying job definition (pandaJobData.out) to /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+25 Aug 08:56:29|pilot.py    | Copying job definition (pandaJobData.out) to /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/pandaJobData_1.out
+25 Aug 08:56:29|pUtil.py    | toServer: cmd = updateJob
+25 Aug 08:56:29|pUtil.py    | chdir to: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|pUtil.py    | current dir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|pUtil.py    | toServer: len(data) = 13
+25 Aug 08:56:29|pUtil.py    | data = {'node': 'atlaswn031.lnf.infn.it', 'xml': '', 'workdir': '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', 'jobMetrics': 'coreCount=1', 'siteName': 'ANALY_INFN-FRASCATI', 'timestamp': '2014-08-25T10:56:29+-100', 'attemptNr': 1, 'jobId': 2250110233, 'batchID': '6609412.atlasce3.lnf.infn.it', 'state': 'running', 'schedulerID': 'aipanda023', 'pilotID': 'http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz 12288 KB'}
+25 Aug 08:56:29|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /etc/grid-security/certificates --cert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --key /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --config /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/curl.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+25 Aug 08:56:29|pUtil.py    | Elapsed seconds: 0
+25 Aug 08:56:29|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+25 Aug 08:56:29|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+25 Aug 08:56:29|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+25 Aug 08:56:29|PandaServerC| jobDispatcher acknowledged with 0
+25 Aug 08:56:29|pilot.py    | Successfully updated panda server at 2014-08-25T10:56:29+-100
+25 Aug 08:56:29|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:starting, iteration 1)
+25 Aug 08:56:29|Node.py     | corecount not an integer in queuedata
+25 Aug 08:56:29|Node.py     | Will not set ATHENA_PROC_NUMBER
+25 Aug 08:56:29|Node.py     | Collecting machine features
+25 Aug 08:56:29|Node.py     | $MACHINEFEATURES not defined locally
+25 Aug 08:56:29|Node.py     | $JOBFEATURES not defined locally
+25 Aug 08:56:29|Node.py     | Executing command: hostname -i
+25 Aug 08:56:29|Node.py     | IP number of worker node: 192.84.128.62
+25 Aug 08:56:29|runJob.py   | Current job workdir is: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|runJob.py   | Site workdir is: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|runJob.py   | runJob will serve experiment: ATLAS
+25 Aug 08:56:29|Job.py      | outfList = ['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz']
+25 Aug 08:56:29|Job.py      | outfdbList = ['user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.759298_sub0179511314']
+25 Aug 08:56:29|Job.py      | destinationDBlockToken = ['NULL', 'NULL']
+25 Aug 08:56:29|Job.py      | dispatchDBlockTokenForOut = ['NULL', 'NULL']
+25 Aug 08:56:29|Job.py      | logFileDblock = user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.759298_sub0179511314
+25 Aug 08:56:29|runJob.py   | User analysis job
+25 Aug 08:56:29|runJob.py   | runJob received a job with prodSourceLabel=user
+25 Aug 08:56:29|JobRecovery.| Successfully updated job state file with state: setup
+25 Aug 08:56:29|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+25 Aug 08:56:29|pilot.py    | Connected from ('127.0.0.1', 41130)
+25 Aug 08:56:29|RunJobUtilit| filesAltStageOut not set
+25 Aug 08:56:29|RunJobUtilit| filesNormalStageOut not set
+25 Aug 08:56:29|RunJobUtilit| About to send TCP message to main pilot thread of length = 301
+25 Aug 08:56:29|RunJobUtilit| (Sent)
+25 Aug 08:56:29|pilot.py    | --- TCPServer: Message received from child is : ['jobState=setup', 'pid=6014', 'timeStageIn=0', 'timeExe=0', 'cpuConversionFactor=0', 'vmPeakMax=0', 'cpuUnit=None', 'vmPeakMean=0', 'pilotErrorDiag=None', 'status=setup', 'timeStageOut=0', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=0', 'jobid=2250110233', 'pgrp=6014', 'transecode=0', '']
+25 Aug 08:56:29|pilot.py    | Process groups: 4841 (pilot), 6014 (sub process)
+25 Aug 08:56:29|pUtil.py    | Decoding: None
+25 Aug 08:56:29|pUtil.py    | Empty URL encoded string (Nothing to decode)
+25 Aug 08:56:29|RunJobUtilit| (Received)
+25 Aug 08:56:29|RunJobUtilit| Successfully sent and received TCP message
+25 Aug 08:56:29|RunJobUtilit| Successfully updated local pilot TCP server at 2014-08-25T10:56:29+-100 (Trial 1/2)
+25 Aug 08:56:29|runJob.py   | Number of transformations to process: 1
+25 Aug 08:56:29|RunJobUtilit| Multi-trf verification succeeded (single job)
+25 Aug 08:56:29|runJob.py   | Current job workdir is /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 08:56:29|runJob.py   | Preparing setup 1/1
+25 Aug 08:56:29|Experiment.p| INDS unknown
+25 Aug 08:56:29|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+25 Aug 08:56:29|pUtil.py    | Detected unset (NULL) release/homepackage string
+25 Aug 08:56:29|pUtil.py    | Got a plain appdir from queuedata: /cvmfs/atlas.cern.ch/repo/sw
+25 Aug 08:56:29|ATLASExperim| Local software path: swbase = /cvmfs/atlas.cern.ch/repo/sw/software
+25 Aug 08:56:29|ATLASExperim| Found alternatives to cmtconfig: ['x86_64-slc6-gcc48-opt', 'i686-slc5-gcc43-opt', 'x86_64-slc5-gcc43-opt', 'x86_64-slc6-gcc46-opt', 'x86_64-slc6-gcc47-opt'] (the first item is the default cmtconfig value)
+25 Aug 08:56:29|ATLASExperim| Generic job
+25 Aug 08:56:29|ATLASExperim| Warning: $SITEROOT unknown at this stage (3)
+25 Aug 08:56:29|ATLASExperim| Will use $SITEROOT:  (3)
+25 Aug 08:56:29|pUtil.py    | Detected unset (NULL) release/homepackage string
+25 Aug 08:56:29|ATLASExperim| Using /usr/bin/python
+25 Aug 08:56:29|Experiment.p| trfName = runGen-00-00-02
+25 Aug 08:56:29|Experiment.p| getValidBaseURLs will return: ['http://www.usatlas.bnl.gov', 'https://www.usatlas.bnl.gov', 'http://pandaserver.cern.ch', 'http://atlpan.web.cern.ch/atlpan', 'https://atlpan.web.cern.ch/atlpan', 'http://common-analysis-framework.cern.ch', 'http://classis01.roma1.infn.it', 'http://atlas-install.roma1.infn.it', 'http://homepages.physik.uni-muenchen.de/~Johannes.Ebke']
+25 Aug 08:56:29|Experiment.p| Verified the trf base URL: http://pandaserver.cern.ch
+25 Aug 08:56:29|Experiment.p| getValidBaseURLs will return: ['http://pandaserver.cern.ch', 'http://www.usatlas.bnl.gov', 'https://www.usatlas.bnl.gov', 'http://atlpan.web.cern.ch/atlpan', 'https://atlpan.web.cern.ch/atlpan', 'http://common-analysis-framework.cern.ch', 'http://classis01.roma1.infn.it', 'http://atlas-install.roma1.infn.it', 'http://homepages.physik.uni-muenchen.de/~Johannes.Ebke']
+25 Aug 08:56:29|Experiment.p| Attempting to download trf: http://pandaserver.cern.ch:25085/trf/user/runGen-00-00-02
+25 Aug 08:56:29|Experiment.p| Executing command [Trial 1/3]: wget http://pandaserver.cern.ch:25085/trf/user/runGen-00-00-02
+25 Aug 08:56:30|Experiment.p| wget command returned: --2014-08-25 10:56:29--  http://pandaserver.cern.ch:25085/trf/user/runGen-00-00-02
+Resolving pandaserver.cern.ch... 128.142.200.115, 128.142.202.34, 128.142.144.62, ...
+Connecting to pandaserver.cern.ch|128.142.200.115|:25085... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 77094 (75K) [text/plain]
+Saving to: `runGen-00-00-02'
+
+     0K .......... .......... .......... .......... .......... 66%  877K 0s
+    50K .......... .......... .....                           100% 1.33M=0.08s
+
+2014-08-25 10:56:30 (997 KB/s) - `runGen-00-00-02' saved [77094/77094]
+
+25 Aug 08:56:30|Experiment.p| Successfully downloaded trf
+25 Aug 08:56:30|Experiment.p| Changing permission of runGen-00-00-02 to 0755
+25 Aug 08:56:30|pUtil.py    | directAccess: {'oldPrefix': 'srm://atlasse.lnf.infn.it(:8446/srm/managerv2?SFN=)*', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlasse.lnf.infn.it/'}
+25 Aug 08:56:30|Experiment.p| Forced usePFCTurl (reset old/newPrefix)
+25 Aug 08:56:30|Experiment.p| No setup file in copysetup
+25 Aug 08:56:30|Experiment.p| reset old/newPrefix (forced TURL mode (1))
+25 Aug 08:56:30|pUtil.py    | getSiteInformation: got experiment=ATLAS
+25 Aug 08:56:30|ATLASExperim| JEM is not allowed
+25 Aug 08:56:30|ATLASExperim| 
+Command to run the job is: 
+export FRONTIER_ID="[2250110233]";export CMSSW_VERSION=$FRONTIER_ID;export RUCIO_APPID="panda-client-0.5.16-jedi-run";export RUCIO_ACCOUNT="pilot";export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy;./runGen-00-00-02 -j "" --sourceURL https://aipanda011.cern.ch:25443 -r . -p "./main.sh%20IT%20ANALY_INFN-FRASCATI%20ttreecache%20xrootd" -l panda.0825084749.206437.lib._4057000.79520199.lib.tgz -o "{'ANALY_INFN-FRASCATI.root': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root'}" --rootVer 5.34.19-davix_p1  --usePFCTurl --directIn --inputGUIDs "[]" 1>athena_stdout.txt 2>athena_stderr.txt
+25 Aug 08:56:30|ATLASExperim| ATLAS_PYTHON_PILOT = /usr/bin/python
+25 Aug 08:56:30|runJob.py   | Total setup time: 0 s
+25 Aug 08:56:30|runJob.py   | Setup has finished successfully
+25 Aug 08:56:30|Job.py      | Dumping job specifics
+25 Aug 08:56:30|Job.py      | 
+PandaID=2250110233
+AtlasRelease=NULL
+homePackage=NULL
+trfName=http://pandaserver.cern.ch:25085/trf/user/runGen-00-00-02
+inputFiles=['panda.0825084749.206437.lib._4057000.79520199.lib.tgz']
+realDatasetsIn=['panda.0825084749.206437.lib._4057000']
+filesizeIn=['1587151']
+checksumIn=['ad:7f3b4872']
+prodDBlockToken=['NULL']
+dispatchDblock=['panda.0825084749.206437.lib._4057000']
+dispatchDBlockToken=['NULL']
+dispatchDBlockTokenForOut=['NULL', 'NULL']
+destinationDBlockToken=['NULL', 'NULL']
+outputFiles=['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root']
+destinationDblock=['user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312']
+logFile=user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz
+logFileDblock=user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.759298_sub0179511314
+jobPars=-j "" --sourceURL https://aipanda011.cern.ch:25443 -r . -p "./main.sh%20IT%20ANALY_INFN-FRASCATI%20ttreecache%20xrootd" -l panda.0825084749.206437.lib._4057000.79520199.lib.tgz -o "{'ANALY_INFN-FRASCATI.root': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root'}" --rootVer 5.34.19-davix_p1 
+The job state=['setup', 0, 0]
+Job workdir=/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+TarFileGuid=afcf4a23-44bb-4c38-84da-65179dec41b6
+outFilesGuids=[]
+destinationSE=NULL
+fileDestinationSE=ANALY_INFN-FRASCATI,ANALY_INFN-FRASCATI
+prodSourceLabel=user
+spsetup=(not defined)
+credname=None
+myproxy=None
+cloud=IT
+taskID=3
+prodUserID=/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461
+debug=False
+transferType=NULL
+25 Aug 08:56:30|runJob.py   | Setting stage-in state until all input files have been copied
+25 Aug 08:56:30|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+25 Aug 08:56:30|RunJobUtilit| filesAltStageOut not set
+25 Aug 08:56:30|RunJobUtilit| filesNormalStageOut not set
+25 Aug 08:56:30|RunJobUtilit| About to send TCP message to main pilot thread of length = 302
+25 Aug 08:56:30|pilot.py    | Connected from ('127.0.0.1', 41135)
+25 Aug 08:56:30|RunJobUtilit| (Sent)
+25 Aug 08:56:30|pilot.py    | --- TCPServer: Message received from child is : ['jobState=setup', 'pid=6014', 'timeStageIn=0', 'timeExe=0', 'cpuConversionFactor=0', 'vmPeakMax=0', 'cpuUnit=None', 'vmPeakMean=0', 'pilotErrorDiag=^!^', 'status=stagein', 'timeStageOut=0', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=0', 'jobid=2250110233', 'pgrp=6014', 'transecode=0', '']
+25 Aug 08:56:30|pilot.py    | Process groups: 4841 (pilot), 6014 (sub process)
+25 Aug 08:56:30|pUtil.py    | Decoding: ^!^
+25 Aug 08:56:30|pUtil.py    | Empty URL encoded string (Nothing to decode)
+25 Aug 08:56:30|RunJobUtilit| (Received)
+25 Aug 08:56:30|RunJobUtilit| Successfully sent and received TCP message
+25 Aug 08:56:30|RunJobUtilit| Successfully updated local pilot TCP server at 2014-08-25T10:56:30+-100 (Trial 1/2)
+25 Aug 08:56:30|JobRecovery.| Successfully updated job state file with state: stagein
+25 Aug 08:56:30|runJob.py   | Executing command: ls -lF /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3
+25 Aug 08:56:30|runJob.py   | total 3176
+-rw-r--r-- 1 pilatlas008 pilatlas 107141 May 22 10:21 ATLASExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas  68763 Aug 25 10:56 ATLASExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  25172 Aug 14 11:21 ATLASSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas  18771 Aug 25 10:56 ATLASSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24663 Jul 15  2013 BNLdCacheSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  15995 Aug 25 10:56 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24247 Jul 15  2013 CMSExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8348 Jul 15  2013 CMSSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8487 Aug 25 10:56 CMSSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8427 Jul 15  2013 COGSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   7214 Aug 25 10:56 COGSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    105 Aug 25 10:56 CURRENT_SITEWORKDIR
+-rw-r--r-- 1 pilatlas008 pilatlas  18770 Jul 15  2013 CastorSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11879 Aug 25 10:56 CastorSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  12709 Jul 15  2013 ChirpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9108 Aug 25 10:56 ChirpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  13233 Oct 31  2013 Cleaner.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9454 Aug 25 10:56 Cleaner.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  12301 Jul 15  2013 DBReleaseHandler.py
+-rw-r--r-- 1 pilatlas008 pilatlas    647 Jul 15  2013 Diagnosis.py
+-rw-r--r-- 1 pilatlas008 pilatlas    898 Aug 25 10:56 Diagnosis.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   3120 Jul 15  2013 ErrorDiagnosis.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2957 Aug 25 10:56 ErrorDiagnosis.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  28842 Apr 29 16:21 Experiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas  17551 Aug 25 10:56 Experiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2304 Jul 15  2013 ExperimentFactory.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2020 Aug 25 10:56 ExperimentFactory.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  18312 Dec 10  2013 FAXSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  13551 Aug 25 10:56 FAXSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   5148 Jul 15  2013 FileRegistration.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9699 Jul 15  2013 FileState.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9487 Aug 25 10:56 FileState.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2391 Jul 15  2013 FileStateClient.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2762 Aug 25 10:56 FileStateClient.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24485 Jul 15  2013 GOSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11236 Jul 15  2013 GSIftpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9185 Aug 25 10:56 GSIftpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  11706 Jul 15  2013 HUSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8757 Aug 25 10:56 HUSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  28964 Jan 28  2014 JEMstub.py
+-rw-r--r-- 1 pilatlas008 pilatlas  18506 May 22 10:21 Job.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10668 Aug 25 10:56 Job.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2043 Jul 15  2013 JobInfoXML.py
+-rw-r--r-- 1 pilatlas008 pilatlas  54989 Apr 29 16:21 JobLog.py
+-rw-r--r-- 1 pilatlas008 pilatlas  34328 Aug 25 10:56 JobLog.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  29371 Jul 15  2013 JobRecovery.py
+-rw-r--r-- 1 pilatlas008 pilatlas  21060 Aug 25 10:56 JobRecovery.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  10634 Jul 15  2013 JobState.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8240 Aug 25 10:56 JobState.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  14369 Aug 14 11:21 LocalSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10040 Aug 25 10:56 LocalSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 175586 Aug 14 11:21 Mover.py
+-rw-r--r-- 1 pilatlas008 pilatlas 105532 Aug 25 10:56 Mover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   9274 Apr 29 16:21 Node.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8425 Aug 25 10:56 Node.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8066 Jul 15  2013 NordugridATLASExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6629 Aug 25 10:56 NordugridATLASExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2038 Jul 15  2013 NordugridATLASSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2244 Aug 25 10:56 NordugridATLASSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2678 Jul 15  2013 OtherExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3738 Aug 25 10:56 OtherExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   1991 Jul 15  2013 OtherSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2709 Aug 25 10:56 OtherSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2311 Jul 15  2013 OtherSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas      8 Aug 14 11:21 PILOTVERSION
+-rw-r--r-- 1 pilatlas008 pilatlas  32933 Apr 29 16:21 PandaServerClient.py
+-rw-r--r-- 1 pilatlas008 pilatlas  19959 Aug 25 10:56 PandaServerClient.pyc
+drwxrwx--- 3 pilatlas008 pilatlas   4096 Aug 25 10:56 Panda_Pilot_5455_1408956987/
+-rw-r--r-- 1 pilatlas008 pilatlas  14102 Apr 29 16:21 PilotErrors.py
+-rw-r--r-- 1 pilatlas008 pilatlas  12846 Aug 25 10:56 PilotErrors.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   1717 Jul 15  2013 PilotTCPServer.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2276 Aug 25 10:56 PilotTCPServer.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  13549 Jul 15  2013 PilotUtils.py
+-rw-r--r-- 1 pilatlas008 pilatlas   4281 Jul 15  2013 ProxyGuard.py
+-rw-r--r-- 1 pilatlas008 pilatlas   5241 Aug 25 10:56 ProxyGuard.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas     25 Jul 15  2013 README
+-rw-r--r-- 1 pilatlas008 pilatlas  30467 Feb 13  2014 RunJobUtilities.py
+-rw-r--r-- 1 pilatlas008 pilatlas  24244 Aug 25 10:56 RunJobUtilities.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  14524 Jul 15  2013 SRMSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10559 Aug 25 10:56 SRMSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas      1 Aug 25 10:56 STATUSCODE
+-rw-r--r-- 1 pilatlas008 pilatlas    998 Jul 15  2013 Site.py
+-rw-r--r-- 1 pilatlas008 pilatlas   1411 Aug 25 10:56 Site.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  33806 Apr 29 16:21 SiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas  22469 Aug 25 10:56 SiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2892 Jul 15  2013 SiteInformationFactory.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2280 Aug 25 10:56 SiteInformationFactory.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 137286 Feb 19  2014 SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  94142 Aug 25 10:56 SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8583 Jul 15  2013 SiteMoverFarm.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6454 Aug 25 10:56 SiteMoverFarm.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  23435 Jul 15  2013 UberftpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  14677 Aug 25 10:56 UberftpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   3453 Aug 15  2013 VmPeak.py
+-rw-r--r-- 1 pilatlas008 pilatlas      0 Jul 15  2013 __init__.py
+-rw-r--r-- 1 pilatlas008 pilatlas  31534 May 22 10:21 aria2cSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  20684 Aug 25 10:56 aria2cSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  31374 Oct 31  2013 atlasProdPilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  16969 Jul 15  2013 castorSvcClassSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11731 Aug 25 10:56 castorSvcClassSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    401 Jul 15  2013 config.py
+-rw-r--r-- 1 pilatlas008 pilatlas    638 Aug 25 10:56 config.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    729 Aug 25 10:56 curl.config
+-rw-r--r-- 1 pilatlas008 pilatlas  30366 Jul 15  2013 curlSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  17459 Aug 25 10:56 curlSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  10846 Jul 15  2013 dCacheLFCSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8763 Aug 25 10:56 dCacheLFCSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  30965 Jul 15  2013 dCacheSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  20662 Aug 25 10:56 dCacheSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  34155 Jul 15  2013 dataPilot.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   9189 Jul 15  2013 dq2SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6262 Aug 25 10:56 dq2SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   5451 Jul 15  2013 futil.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6782 Aug 25 10:56 futil.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  26864 Jul 15  2013 globusPilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  28025 Jul 15  2013 lcgcp2SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  15703 Aug 25 10:56 lcgcp2SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  33494 Jul 15  2013 lcgcpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  19088 Aug 25 10:56 lcgcpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  11096 Jul 15  2013 mvSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8904 Aug 25 10:56 mvSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas   9674 Jul 15  2013 myproxyUtils.py*
+-rw-r--r-- 1 pilatlas008 pilatlas 129128 Feb 13  2014 pUtil.py
+-rw-r--r-- 1 pilatlas008 pilatlas 103220 Aug 25 10:56 pUtil.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2061 Aug 25 10:56 pandaJobData_1.out
+-rw-r--r-- 1 pilatlas008 pilatlas 269814 Aug 14 11:21 pilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10249 Aug 25 10:56 pilotlog.out
+-rw-r--r-- 1 pilatlas008 pilatlas   2818 Aug 25 10:56 queuedata.json
+-rw-r--r-- 1 pilatlas008 pilatlas  20033 Jul 15  2013 rfcpLFCSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  13721 Aug 25 10:56 rfcpLFCSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  51399 May 22 10:21 runJob.py
+-rw-r--r-- 1 pilatlas008 pilatlas   4597 Jul 15  2013 stormSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3713 Aug 25 10:56 stormSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas   8743 Jul 15  2013 timed_command.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   6631 Aug 25 10:56 timed_command.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  36996 Apr 29 16:21 xrdcpSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  24276 Aug 25 10:56 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  32697 Feb 19  2014 xrootdSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  21708 Aug 25 10:56 xrootdSiteMover.pyc
+25 Aug 08:56:30|RunJobUtilit| Input file(s): (1 in total)
+25 Aug 08:56:30|pUtil.py    | 1. panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:30|runJob.py   | Preparing for get command
+25 Aug 08:56:30|pUtil.py    | directAccess: {'oldPrefix': 'srm://atlasse.lnf.infn.it(:8446/srm/managerv2?SFN=)*', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlasse.lnf.infn.it/'}
+25 Aug 08:56:30|pUtil.py    | Direct access mode: Copy tool will not be used for stage-in of root files
+25 Aug 08:56:30|Mover.py    | Created dictionary: {'panda.0825084749.206437.lib._4057000.79520199.lib.tgz': 'NULL'}
+25 Aug 08:56:30|Mover.py    | Created dictionary: {'panda.0825084749.206437.lib._4057000.79520199.lib.tgz': 'panda'}
+25 Aug 08:56:30|DBReleaseHan| Local DBRelease path verified: /cvmfs/atlas.cern.ch/repo/sw/database/DBRelease (will attempt to skip DBRelease stage-in)
+25 Aug 08:56:30|Mover.py    | Calling get function with dsname=panda.0825084749.206437.lib._4057000, dsdict={'panda.0825084749.206437.lib._4057000': ['panda.0825084749.206437.lib._4057000.79520199.lib.tgz']}
+25 Aug 08:56:30|Mover.py    | Mover get data started
+25 Aug 08:56:30|Mover.py    | No DBRelease info found in job parameters
+25 Aug 08:56:30|Mover.py    | Job parameters did not specify a DBRelease version (can not verify local availability)
+25 Aug 08:56:30|Mover.py    | Number of locally available DBRelease files = 0 (1 files in total), continue with stage-in
+25 Aug 08:56:30|Mover.py    | Using job definition id: 19919
+25 Aug 08:56:30|Mover.py    | Trying to add additional info to tracing report
+25 Aug 08:56:30|Mover.py    | Tracing report initialised with: {'protocol': None, 'duid': None, 'eventType': 'get_sm_a', 'suspicious': '0', 'timeEnd': None, 'dataset': 'panda.0825084749.206437.lib._4057000', 'catStart': None, 'guid': None, 'transferStart': None, 'hostname': 'atlaswn031.lnf.infn.it', 'remoteSite': 'ANALY_INFN-FRASCATI', 'filename': None, 'version': None, 'filesize': None, 'ip': '192.84.128.62', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461', 'usr': '7010b99c15c65f4d06dcd547ba2ccc71', 'eventVersion': 'pilot3', 'localSite': 'ANALY_INFN-FRASCATI', 'validateStart': None, 'uuid': '38c248e3b21e6d90c6099fa68c751c4e', 'timeStart': 1408956990.1784849, 'relativeStart': None, 'appid': 2250110233, 'clientState': 'INIT_REPORT'}
+25 Aug 08:56:30|Mover.py    | Got copytool lcgcp2 from queuedata file
+25 Aug 08:56:30|Mover.py    | copysetup is:  (file access verified)
+25 Aug 08:56:30|SiteMoverFar| Looking for site mover lcgcp2, setup:, ar:(), kw:{}
+25 Aug 08:56:30|SiteMoverFar| Returning site mover <class 'lcgcp2SiteMover.lcgcp2SiteMover'> (setup: )
+25 Aug 08:56:30|Mover.py    | Preparing to build paths for input files
+25 Aug 08:56:30|pUtil.py    | getSiteInformation: got experiment=ATLAS
+25 Aug 08:56:30|Mover.py    | Guids:
+25 Aug 08:56:30|pUtil.py    | 1. 19781dea-7895-43b2-a27b-38efd0d94dff
+25 Aug 08:56:30|ATLASExperim| Will do file lookups in the LFC
+25 Aug 08:56:30|ATLASExperim| Using file catalog: rucio://atlas-rucio.cern.ch:/grid/atlas
+25 Aug 08:56:30|Mover.py    | Will extend file catalog host list
+25 Aug 08:56:30|ATLASExperim| catalogsTopology=['rucio://atlas-rucio.cern.ch:/grid/atlas']
+25 Aug 08:56:30|ATLASExperim| Extracted file catalog hosts: ['rucio://atlas-rucio.cern.ch:/grid/atlas']
+25 Aug 08:56:30|Mover.py    | File catalog host list: ['rucio://atlas-rucio.cern.ch:/grid/atlas']
+25 Aug 08:56:30|Mover.py    | Attempting replica lookup from host rucio://atlas-rucio.cern.ch:/grid/atlas (#1/1)
+25 Aug 08:56:30|Mover.py    | copyprefixin is not set, trying to use copyprefix instead
+25 Aug 08:56:30|Mover.py    | Read copyprefix: srm://atlasse.lnf.infn.it/^dummy
+25 Aug 08:56:30|Mover.py    | SE list:
+25 Aug 08:56:30|pUtil.py    | 1. token:ATLASSCRATCHDISK:srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=
+25 Aug 08:56:30|Mover.py    | SE list has been stripped to:
+25 Aug 08:56:30|pUtil.py    | 1. srm://atlasse.lnf.infn.it
+25 Aug 08:56:30|ATLASExperim| Using alternative file catalog lookups
+25 Aug 08:56:30|Mover.py    | lfn_dict={'19781dea-7895-43b2-a27b-38efd0d94dff': 'panda.0825084749.206437.lib._4057000.79520199.lib.tgz'}
+25 Aug 08:56:30|Mover.py    | scope_dict={'panda.0825084749.206437.lib._4057000.79520199.lib.tgz': 'panda'}
+25 Aug 08:56:30|Mover.py    | file_dictionary={'19781dea-7895-43b2-a27b-38efd0d94dff': 'panda:panda.0825084749.206437.lib._4057000.79520199.lib.tgz'}
+25 Aug 08:56:31|Mover.py    | rucio_replica_dictionary={'19781dea-7895-43b2-a27b-38efd0d94dff': {'checksum': u'ad:7f3b4872', 'surls': [u'srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz'], 'lfn': u'panda:panda.0825084749.206437.lib._4057000.79520199.lib.tgz', 'fsize': 1587151}}
+25 Aug 08:56:31|Mover.py    | surl_guid_dictionary={'19781dea-7895-43b2-a27b-38efd0d94dff': [u'srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz']}
+25 Aug 08:56:31|Mover.py    | Verifying SURLs
+25 Aug 08:56:31|Mover.py    | GUID=19781dea-7895-43b2-a27b-38efd0d94dff has a valid (set) SURL list
+25 Aug 08:56:31|Mover.py    | guid=19781dea-7895-43b2-a27b-38efd0d94dff
+25 Aug 08:56:31|Mover.py    | surl=srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:31|Mover.py    | replicas_dic={'19781dea-7895-43b2-a27b-38efd0d94dff': [<Mover.replica instance at 0x37b9ab8>]}
+25 Aug 08:56:31|pUtil.py    | Cut away trailing / from srm://atlasse.lnf.infn.it (see copyprefix[in])
+25 Aug 08:56:31|Mover.py    | Copyprefix lists: ['srm://atlasse.lnf.infn.it'], ['dummy']
+25 Aug 08:56:31|Mover.py    | Processing guid 19781dea-7895-43b2-a27b-38efd0d94dff
+25 Aug 08:56:31|Mover.py    | No space token matching
+25 Aug 08:56:31|Mover.py    | Sorted replica list:
+25 Aug 08:56:31|Mover.py    | 1. srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz (fsize: 1587151 fchecksum: ad:7f3b4872)
+25 Aug 08:56:31|Mover.py    | Checking replica srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz for guid 19781dea-7895-43b2-a27b-38efd0d94dff
+25 Aug 08:56:31|Mover.py    | Checking list of SEs
+25 Aug 08:56:31|Mover.py    | Found matched replica: srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz at srm://atlasse.lnf.infn.it
+25 Aug 08:56:31|Mover.py    | Matched replica list:
+25 Aug 08:56:31|pUtil.py    | 1. srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:31|Mover.py    | Will use primary replica: srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:31|Mover.py    | Creating initial replica dictionary
+25 Aug 08:56:31|Mover.py    | Successfully dumped replica dictionary to file /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/matched_replicas.json for guid: 19781dea-7895-43b2-a27b-38efd0d94dff
+25 Aug 08:56:31|Mover.py    | Found all replicas, aborting loop over catalog hosts
+25 Aug 08:56:31|Mover.py    | file_dict = {'19781dea-7895-43b2-a27b-38efd0d94dff': u'srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz'}
+25 Aug 08:56:31|pUtil.py    | <?xml version="1.0" ?>
+<!-- Edited By Panda Pilot3 -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="19781dea-7895-43b2-a27b-38efd0d94dff">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>
+
+25 Aug 08:56:31|pUtil.py    | Created /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/PoolFileCatalog.xml
+25 Aug 08:56:31|Mover.py    | . replicas_dict={'19781dea-7895-43b2-a27b-38efd0d94dff': [<Mover.replica instance at 0x37b9ab8>, <Mover.replica instance at 0x37b9ab8>]}
+25 Aug 08:56:31|Mover.py    | Using XML source LFC
+25 Aug 08:56:31|Mover.py    | lfn=panda.0825084749.206437.lib._4057000.79520199.lib.tgz, fsize=1587151, fchecksum=7f3b4872
+25 Aug 08:56:31|pUtil.py    | directAccess: {'oldPrefix': 'srm://atlasse.lnf.infn.it(:8446/srm/managerv2?SFN=)*', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlasse.lnf.infn.it/'}
+25 Aug 08:56:31|pUtil.py    | Direct access mode: Copy tool will not be used for stage-in of root files
+25 Aug 08:56:31|Mover.py    | Reset old/newPrefix (forced TURL mode)
+25 Aug 08:56:31|Mover.py    | use copytool = False (should be false for file stager)
+25 Aug 08:56:31|Mover.py    | useFileStager = False (should be true for file stager)
+25 Aug 08:56:31|Mover.py    | directIn = True (should be true for file stager)
+25 Aug 08:56:31|Mover.py    | oldPrefix =  (should be empty if TURL based PFC is required)
+25 Aug 08:56:31|Mover.py    | newPrefix =  (should be empty if TURL based PFC is required)
+25 Aug 08:56:31|Mover.py    | TURL based PFC required
+25 Aug 08:56:31|Mover.py    | Performing automatic configuration
+25 Aug 08:56:31|Mover.py    | Built a thinner file dictionary with 1 file(s)
+25 Aug 08:56:31|Mover.py    | Will create a PFC with TURL(s) for the following file(s)
+25 Aug 08:56:31|pUtil.py    | 1. srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:31|pUtil.py    | directAccess: {'oldPrefix': 'srm://atlasse.lnf.infn.it(:8446/srm/managerv2?SFN=)*', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlasse.lnf.infn.it/'}
+25 Aug 08:56:31|pUtil.py    | Direct access mode: Copy tool will not be used for stage-in of root files
+25 Aug 08:56:31|Mover.py    | Will use oldPrefix=srm://atlasse.lnf.infn.it(:8446/srm/managerv2?SFN=)* and newPrefix=root://atlasse.lnf.infn.it/ for SURL to TURL conversion
+25 Aug 08:56:31|Mover.py    | No need to convert SURLs with lcg-getturls (no root files)
+25 Aug 08:56:31|Mover.py    | getTURL returned dictionary: {}
+25 Aug 08:56:31|Mover.py    | PFC cannot be created since no TURL based file dictionary was returned by getTURLs() (not needed)
+25 Aug 08:56:31|Mover.py    | PFC created with TURLs
+25 Aug 08:56:31|Mover.py    | Files will be transferred one by one
+25 Aug 08:56:31|Mover.py    | Will process 1 file(s)
+25 Aug 08:56:31|Mover.py    | Extracted (guid, gpfn, fsize, fchecksum) = (19781dea-7895-43b2-a27b-38efd0d94dff, srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz, 1587151, 7f3b4872)
+25 Aug 08:56:31|Mover.py    | File panda.0825084749.206437.lib._4057000.79520199.lib.tgz belongs to dataset/container panda.0825084749.206437.lib._4057000
+25 Aug 08:56:31|Mover.py    | DQ2 site name: INFN-FRASCATI_SCRATCHDISK
+25 Aug 08:56:31|Mover.py    | (Not a DBRelease file)
+25 Aug 08:56:31|Mover.py    | Mover is preparing to copy file 1/1 (lfn: panda.0825084749.206437.lib._4057000.79520199.lib.tgz guid: 19781dea-7895-43b2-a27b-38efd0d94dff dsname: panda.0825084749.206437.lib._4057000)
+25 Aug 08:56:31|Mover.py    | Copying srm://atlasse.lnf.infn.it/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz to /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989 (LFC checksum: "7f3b4872", fsize: 1587151) using lcg-cp2 ()
+25 Aug 08:56:31|Mover.py    | No special file access
+25 Aug 08:56:31|Mover.py    | Get attempt 1/2
+25 Aug 08:56:31|SiteMover.py| Using envsetup since envsetupin is not set
+25 Aug 08:56:31|pUtil.py    | Will verify: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy;
+25 Aug 08:56:31|pUtil.py    | Nothing to verify in setup: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy; (either empty string or no source command)
+25 Aug 08:56:31|lcgcp2SiteMo| Proxy verification turned off
+25 Aug 08:56:31|lcgcp2SiteMo| Using SE: srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=
+25 Aug 08:56:31|lcgcp2SiteMo| Replaced srm://atlasse.lnf.infn.it with srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN= (from se) in getfile: srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:31|pUtil.py    | directAccess: {'oldPrefix': 'srm://atlasse.lnf.infn.it(:8446/srm/managerv2?SFN=)*', 'useCopyTool': False, 'useFileStager': False, 'directIn': True, 'newPrefix': 'root://atlasse.lnf.infn.it/'}
+25 Aug 08:56:31|lcgcp2SiteMo| Direct access mode has been switched off for this file (will be transferred with the copy tool)
+25 Aug 08:56:31|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-input-2250110233.pickle
+25 Aug 08:56:31|SiteMover.py| export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy; lcg-cp help: usage: lcg-cp [-h,--help] [-c,--config config_file] [-n nbstreams] [-b,--nobdii] [-D,--defaultsetype se|srmv1|srmv2]
+	[-T,--srcsetype se|srmv1|srmv2] [-U,--dstsetype se|srmv1|srmv2] [-s,--sst src_spacetokendesc]
+	[-S,--dst dest_spacetokendesc] [--connect-timeout value] [--sendreceive-timeout value]
+	[--bdii-timeout value] [--srm-timeout value] [--checksum] [--checksum-type type]
+	[-v,--verbose] [-V,--vo vo] [--version]
+	[--src-protocols <protocol1,protocol2,...>]
+	[--dst-protocols <protocol1,protocol2,...>]
+	src_file  dest_file
+25 Aug 08:56:31|lcgcp2SiteMo| Executing command: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy; lcg-cp --verbose --vo atlas -b --srm-timeout=3600 --connect-timeout=300 --sendreceive-timeout=3600 -T srmv2 srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz file:///home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:33|lcgcp2SiteMo| Command finished after 2.550000 s: Using grid catalog type: UNKNOWN
+Using grid catalog : (null)
+VO name: atlas
+Checksum type: None
+Trying SURL srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz ...
+Source SE type: SRMv2
+Source SRM Request Token: 98843fed-927e-411c-8721-d28b6b2f0fd7
+Source URL: srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/panda/ed/63/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+File size: 1587151
+Source URL for copy: gsiftp://atlasdisk6.lnf.infn.it/atlasdisk6.lnf.infn.it:/storE4-4_2/atlas/2014-08-25/panda.0825084749.206437.lib._4057000.79520199.lib.tgz.82956789.0
+Destination URL: file:/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+# streams: 1
+            0 bytes      0.00 KB/sec avg      0.00 KB/sec inst
+            0 bytes      0.00 KB/sec avg      0.00 KB/sec inst
+
+Transfer took 1010 ms
+25 Aug 08:56:33|lcgcp2SiteMo| get_data succeeded
+25 Aug 08:56:33|SiteMover.py| Executing getsize() for file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:33|SiteMover.py| Got file size: 1587151
+25 Aug 08:56:33|SiteMover.py| Executing adler32() for file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:33|SiteMover.py| Got adler32 checksum: 7f3b4872
+25 Aug 08:56:33|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-input-2250110233.pickle
+25 Aug 08:56:33|lcgcp2SiteMo| Updated tracing report: {'protocol': 'lcg2', 'duid': None, 'eventType': 'get_sm_a', 'suspicious': '0', 'timeEnd': 1408956993.8450489, 'dataset': 'panda.0825084749.206437.lib._4057000', 'catStart': 1408956991.2499731, 'guid': '19781dea789543b2a27b38efd0d94dff', 'transferStart': 1408956991.278861, 'hostname': 'atlaswn031.lnf.infn.it', 'remoteSite': 'INFN-FRASCATI_SCRATCHDISK', 'filename': 'panda.0825084749.206437.lib._4057000.79520199.lib.tgz', 'version': None, 'filesize': '1587151', 'ip': '192.84.128.62', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461', 'usr': '7010b99c15c65f4d06dcd547ba2ccc71', 'eventVersion': 'pilot3', 'localSite': 'INFN-FRASCATI_SCRATCHDISK', 'validateStart': 1408956993.831285, 'uuid': '38c248e3b21e6d90c6099fa68c751c4e', 'timeStart': 1408956990.1784849, 'relativeStart': 1408956991.2788579, 'appid': 2250110233, 'clientState': 'DONE'}
+25 Aug 08:56:33|SiteMover.py| Tracing server: https://atlas-ddmtracer.cern.ch:443/dq2/ws_tracer/rpc
+25 Aug 08:56:33|SiteMover.py| Sending tracing report: {'protocol': 'lcg2', 'duid': None, 'eventType': 'get_sm_a', 'suspicious': '0', 'timeEnd': 1408956993.8450489, 'dataset': 'panda.0825084749.206437.lib._4057000', 'catStart': 1408956991.2499731, 'guid': '19781dea789543b2a27b38efd0d94dff', 'transferStart': 1408956991.278861, 'hostname': 'atlaswn031.lnf.infn.it', 'remoteSite': 'INFN-FRASCATI_SCRATCHDISK', 'filename': 'panda.0825084749.206437.lib._4057000.79520199.lib.tgz', 'version': None, 'filesize': '1587151', 'ip': '192.84.128.62', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461', 'usr': '7010b99c15c65f4d06dcd547ba2ccc71', 'eventVersion': 'pilot3', 'localSite': 'INFN-FRASCATI_SCRATCHDISK', 'validateStart': 1408956993.831285, 'uuid': '38c248e3b21e6d90c6099fa68c751c4e', 'timeStart': 1408956990.1784849, 'relativeStart': 1408956991.2788579, 'appid': 2250110233, 'clientState': 'DONE'}
+25 Aug 08:56:33|SiteMover.py| Executing command: curl --connect-timeout 20 --max-time 120 --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy -v -k -d "report=%7B%27protocol%27%3A+%27lcg2%27%2C+%27duid%27%3A+None%2C+%27eventType%27%3A+%27get_sm_a%27%2C+%27suspicious%27%3A+%270%27%2C+%27timeEnd%27%3A+1408956993.8450489%2C+%27dataset%27%3A+%27panda.0825084749.206437.lib._4057000%27%2C+%27catStart%27%3A+1408956991.2499731%2C+%27guid%27%3A+%2719781dea789543b2a27b38efd0d94dff%27%2C+%27transferStart%27%3A+1408956991.278861%2C+%27hostname%27%3A+%27atlaswn031.lnf.infn.it%27%2C+%27remoteSite%27%3A+%27INFN-FRASCATI_SCRATCHDISK%27%2C+%27filename%27%3A+%27panda.0825084749.206437.lib._4057000.79520199.lib.tgz%27%2C+%27version%27%3A+None%2C+%27filesize%27%3A+%271587151%27%2C+%27ip%27%3A+%27192.84.128.62%27%2C+%27usrdn%27%3A+%27%2FDC%3Dch%2FDC%3Dcern%2FOU%3DOrganic+Units%2FOU%3DUsers%2FCN%3Dsblunier%2FCN%3D757276%2FCN%3DSylvain+Blunier%2FCN%3D51913461%27%2C+%27usr%27%3A+%277010b99c15c65f4d06dcd547ba2ccc71%27%2C+%27eventVersion%27%3A+%27pilot3%27%2C+%27localSite%27%3A+%27INFN-FRASCATI_SCRATCHDISK%27%2C+%27validateStart%27%3A+1408956993.831285%2C+%27uuid%27%3A+%2738c248e3b21e6d90c6099fa68c751c4e%27%2C+%27timeStart%27%3A+1408956990.1784849%2C+%27relativeStart%27%3A+1408956991.2788579%2C+%27appid%27%3A+2250110233%2C+%27clientState%27%3A+%27DONE%27%7D&operation=addReport&API=0_3_0" https://atlas-ddmtracer.cern.ch:443/dq2/ws_tracer/rpc
+25 Aug 08:56:34|SiteMover.py| Tracing report sent
+25 Aug 08:56:34|Mover.py    | File transfer finished correctly
+25 Aug 08:56:34|Mover.py    | filelist_fromlfns = ['panda.0825084749.206437.lib._4057000.79520199.lib.tgz']
+25 Aug 08:56:34|Mover.py    | filelist_fromxml = ['panda.0825084749.206437.lib._4057000.79520199.lib.tgz']
+25 Aug 08:56:34|Mover.py    | Verified: PoolFileCatalog.xml contains at least as many files as the initial list
+25 Aug 08:56:34|Mover.py    | Moving /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/PoolFileCatalog.xml to /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/PoolFileCatalog.xml.MOVER
+25 Aug 08:56:34|Mover.py    | Backed up old PFC file used by mover: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/PoolFileCatalog.xml.MOVER
+25 Aug 08:56:34|Mover.py    | !!WARNING!!2997!! Could not rename TURL based PFC: [Errno 2] No such file or directory
+25 Aug 08:56:34|Mover.py    | Creating /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/PoolFileCatalog.xml
+25 Aug 08:56:34|Mover.py    | Processing file: panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:34|Mover.py    | Created PFC for trf/runAthena: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/PoolFileCatalog.xml
+25 Aug 08:56:34|pUtil.py    | Dumping file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/PoolFileCatalog.xml
+25 Aug 08:56:34|pUtil.py    | <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+25 Aug 08:56:34|pUtil.py    | <!-- Edited By POOL -->
+25 Aug 08:56:34|pUtil.py    | <!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+25 Aug 08:56:34|pUtil.py    | <POOLFILECATALOG>
+25 Aug 08:56:34|pUtil.py    | 
+25 Aug 08:56:34|pUtil.py    |   <File ID="19781dea-7895-43b2-a27b-38efd0d94dff">
+25 Aug 08:56:34|pUtil.py    |     <physical>
+25 Aug 08:56:34|pUtil.py    |       <pfn filetype="ROOT_All" name="panda.0825084749.206437.lib._4057000.79520199.lib.tgz"/>
+25 Aug 08:56:34|pUtil.py    |     </physical>
+25 Aug 08:56:34|pUtil.py    |     <logical/>
+25 Aug 08:56:34|pUtil.py    |   </File>
+25 Aug 08:56:34|pUtil.py    | 
+25 Aug 08:56:34|pUtil.py    | </POOLFILECATALOG>
+25 Aug 08:56:34|pUtil.py    | Dumped 13 lines from file /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/PoolFileCatalog.xml
+25 Aug 08:56:34|Mover.py    | Number of identified root files     : 0
+25 Aug 08:56:34|Mover.py    | Number of transferred non-root files: 1
+25 Aug 08:56:34|Mover.py    | Get successful
+25 Aug 08:56:34|Mover.py    | Mover get_data finished
+25 Aug 08:56:34|Mover.py    | Will return exit code = 0, pilotErrorDiag = 
+25 Aug 08:56:34|Mover.py    | Get function finished with exit code 0
+25 Aug 08:56:34|Mover.py    | Input file(s):
+25 Aug 08:56:34|Mover.py    | -rw-r--r-- 1 pilatlas008 pilatlas 1587151 Aug 25 10:56 /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 08:56:34|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-input-2250110233.pickle
+25 Aug 08:56:34|FileState.py| File name  /  File state  /  Transfer mode
+25 Aug 08:56:34|FileState.py| ----------------------------------------------------------------------------------------------------
+25 Aug 08:56:34|FileState.py| 1. panda.0825084749.206437.lib._4057000.79520199.lib.tgz	transferred	copy_to_scratch
+25 Aug 08:56:34|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-input-2250110233.pickle
+25 Aug 08:56:34|FileState.py| filename=panda.0825084749.206437.lib._4057000.79520199.lib.tgz states=['transferred', 'copy_to_scratch']
+25 Aug 08:56:34|RunJobUtilit| There are only copy_to_scratch transfer modes in file state dictionary
+25 Aug 08:56:34|RunJobUtilit| (Removing --directIn instruction from run command since it is not needed)
+25 Aug 08:56:34|RunJobUtilit| Updated run command: export FRONTIER_ID="[2250110233]";export CMSSW_VERSION=$FRONTIER_ID;export RUCIO_APPID="panda-client-0.5.16-jedi-run";export RUCIO_ACCOUNT="pilot";export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy;./runGen-00-00-02 -j "" --sourceURL https://aipanda011.cern.ch:25443 -r . -p "./main.sh%20IT%20ANALY_INFN-FRASCATI%20ttreecache%20xrootd" -l panda.0825084749.206437.lib._4057000.79520199.lib.tgz -o "{'ANALY_INFN-FRASCATI.root': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root'}" --rootVer 5.34.19-davix_p1  --usePFCTurl  --inputGUIDs "[]" 1>athena_stdout.txt 2>athena_stderr.txt
+25 Aug 08:56:34|RunJobUtilit| Dumping final input file states
+25 Aug 08:56:34|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-input-2250110233.pickle
+25 Aug 08:56:34|FileState.py| File name  /  File state  /  Transfer mode
+25 Aug 08:56:34|FileState.py| ----------------------------------------------------------------------------------------------------
+25 Aug 08:56:34|FileState.py| 1. panda.0825084749.206437.lib._4057000.79520199.lib.tgz	transferred	copy_to_scratch
+25 Aug 08:56:34|runJob.py   | Changing to running state since all input files have been staged
+25 Aug 08:56:34|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+25 Aug 08:56:34|RunJobUtilit| filesAltStageOut not set
+25 Aug 08:56:34|pilot.py    | Connected from ('127.0.0.1', 41159)
+25 Aug 08:56:34|RunJobUtilit| filesNormalStageOut not set
+25 Aug 08:56:34|RunJobUtilit| About to send TCP message to main pilot thread of length = 346
+25 Aug 08:56:34|RunJobUtilit| (Sent)
+25 Aug 08:56:34|pilot.py    | --- TCPServer: Message received from child is : ['jobState=stagein', 'pid=6014', 'bytesWithoutFAX=1587151', 'timeStageIn=4', 'filesWithoutFAX=1', 'timeExe=0', 'cpuConversionFactor=0', 'vmPeakMax=0', 'cpuUnit=None', 'vmPeakMean=0', 'pilotErrorDiag=^!^', 'status=running', 'timeStageOut=0', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=0', 'jobid=2250110233', 'pgrp=6014', 'transecode=0', '']
+25 Aug 08:56:34|pilot.py    | Process groups: 4841 (pilot), 6014 (sub process)
+25 Aug 08:56:34|pUtil.py    | Decoding: ^!^
+25 Aug 08:56:34|pUtil.py    | Empty URL encoded string (Nothing to decode)
+25 Aug 08:56:34|RunJobUtilit| (Received)
+25 Aug 08:56:34|RunJobUtilit| Successfully sent and received TCP message
+25 Aug 08:56:34|RunJobUtilit| Successfully updated local pilot TCP server at 2014-08-25T10:56:34+-100 (Trial 1/2)
+25 Aug 08:56:34|JobRecovery.| Successfully updated job state file with state: running
+25 Aug 08:56:34|RunJobUtilit| Note: ATLAS_CONDDB was not set by the pilot wrapper script
+25 Aug 08:56:34|RunJobUtilit| The pilot has set ATLAS_CONDDB to: atlasce3.lnf.infn.it
+25 Aug 08:56:34|RunJobUtilit| Set PANDA_SITE_NAME = ANALY_INFN-FRASCATI
+25 Aug 08:56:34|RunJobUtilit| Set COPY_TOOL = lcgcp2
+25 Aug 08:56:34|pUtil.py    | Updated /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/job_setup.sh: export FRONTIER_ID="[2250110233]";
+export CMSSW_VERSION=$FRONTIER_ID;
+export RUCIO_APPID="panda-client-0.5.16-jedi-run";
+export RUCIO_ACCOUNT="pilot";
+export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy;
+./runGen-00-00-02 -j "" --sourceURL https://aipanda011.cern.ch:25443 -r . -p "./main.sh%20IT%20ANALY_INFN-FRASCATI%20ttreecache%20xrootd" -l panda.0825084749.206437.lib._4057000.79520199.lib.tgz -o "{'ANALY_INFN-FRASCATI.root': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root'}" --rootVer 5.34.19-davix_p1  --usePFCTurl  --inputGUIDs "[]" 1>athena_stdout.txt 2>athena_stderr.txt
+25 Aug 08:56:34|runJob.py   | Executing job command 1/1: export FRONTIER_ID="[2250110233]";export CMSSW_VERSION=$FRONTIER_ID;export RUCIO_APPID="panda-client-0.5.16-jedi-run";export RUCIO_ACCOUNT="pilot";export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy;./runGen-00-00-02 -j "" --sourceURL https://aipanda011.cern.ch:25443 -r . -p "./main.sh%20IT%20ANALY_INFN-FRASCATI%20ttreecache%20xrootd" -l panda.0825084749.206437.lib._4057000.79520199.lib.tgz -o "{'ANALY_INFN-FRASCATI.root': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root'}" --rootVer 5.34.19-davix_p1  --usePFCTurl  --inputGUIDs "[]" 1>athena_stdout.txt 2>athena_stderr.txt
+25 Aug 08:57:29|pilot.py    | Created soft link to athena_stdout.txt in sitedir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/athena_stdout.txt
+25 Aug 08:57:30|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 2)
+25 Aug 08:58:32|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 3)
+25 Aug 08:59:33|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 4)
+25 Aug 09:00:34|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 5)
+25 Aug 09:01:34|pilot.py    | Number of running processes: 9
+25 Aug 09:01:34|pilot.py    | Time passed since pilot startup = 307 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:01:35|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 6)
+25 Aug 09:02:36|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 7)
+25 Aug 09:03:37|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 8)
+25 Aug 09:04:38|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 9)
+25 Aug 09:05:39|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 10)
+25 Aug 09:06:39|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 09:06:39|pilot.py    | Remaining local disk space: 838397329408 B
+25 Aug 09:06:39|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 09:06:39|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 8998912 B (within 54525952000 B limit)
+25 Aug 09:06:40|pilot.py    | Number of running processes: 9
+25 Aug 09:06:40|pilot.py    | Time passed since pilot startup = 613 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:06:40|pilot.py    | Verifying output file sizes
+25 Aug 09:06:40|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 09:06:40|pilot.py    | Completed output file size verification
+25 Aug 09:06:41|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 11)
+25 Aug 09:07:42|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 12)
+25 Aug 09:08:43|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 13)
+25 Aug 09:09:44|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 14)
+25 Aug 09:10:45|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 15)
+25 Aug 09:11:45|pilot.py    | Number of running processes: 9
+25 Aug 09:11:45|pilot.py    | Time passed since pilot startup = 918 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:11:46|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 16)
+25 Aug 09:12:47|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 17)
+25 Aug 09:13:48|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 18)
+25 Aug 09:14:49|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 19)
+25 Aug 09:15:50|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 20)
+25 Aug 09:16:50|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 09:16:50|pilot.py    | Remaining local disk space: 838410960896 B
+25 Aug 09:16:50|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 09:16:50|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9064448 B (within 54525952000 B limit)
+25 Aug 09:16:51|pilot.py    | Number of running processes: 9
+25 Aug 09:16:51|pilot.py    | Time passed since pilot startup = 1224 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:16:51|pilot.py    | Verifying output file sizes
+25 Aug 09:16:51|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 09:16:51|pilot.py    | Completed output file size verification
+25 Aug 09:16:52|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 21)
+25 Aug 09:17:53|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 22)
+25 Aug 09:18:54|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 23)
+25 Aug 09:19:55|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 24)
+25 Aug 09:20:56|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 25)
+25 Aug 09:21:56|pilot.py    | Number of running processes: 9
+25 Aug 09:21:56|pilot.py    | Time passed since pilot startup = 1529 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:21:57|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 26)
+25 Aug 09:22:58|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 27)
+25 Aug 09:23:59|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 28)
+25 Aug 09:25:00|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 29)
+25 Aug 09:26:01|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 30)
+25 Aug 09:27:01|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 09:27:01|pilot.py    | Remaining local disk space: 838523158528 B
+25 Aug 09:27:01|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 09:27:01|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9129984 B (within 54525952000 B limit)
+25 Aug 09:27:02|pilot.py    | Number of running processes: 9
+25 Aug 09:27:02|pilot.py    | Time passed since pilot startup = 1835 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:27:02|pilot.py    | Verifying output file sizes
+25 Aug 09:27:02|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 09:27:02|pilot.py    | Completed output file size verification
+25 Aug 09:27:02|pilot.py    | Checking for looping job
+25 Aug 09:27:02|pilot.py    | Executing command: find /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989 -mmin -180
+25 Aug 09:27:02|pilot.py    | Found 105 files that were recently updated (e.g. file /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/src)
+25 Aug 09:27:02|pilot.py    | int(time.time())=1408958822
+25 Aug 09:27:02|pilot.py    | LastTimeFilesWereModified=1408958822
+25 Aug 09:27:02|pilot.py    | loopingLimit=10800
+25 Aug 09:27:02|pilot.py    | Returning tail stdout dictionary with 1 entries
+25 Aug 09:27:02|PandaServerC| Updating job status in updatePandaServer(): PandaId=2250110233, result=['running', 0, 0], time=2014-08-25T11:27:02+-100
+25 Aug 09:27:02|PandaServerC| job.prodSourceLabel=user
+25 Aug 09:27:02|PandaServerC| Batch system: Torque
+25 Aug 09:27:02|PandaServerC| Batch system job ID: 6609412.atlasce3.lnf.infn.it
+25 Aug 09:27:02|PandaServerC| Will send batchID: 6609412.atlasce3.lnf.infn.it and pilotID: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o
+25 Aug 09:27:02|PandaServerC| pilotId: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out
+25 Aug 09:27:02|PandaServerC| Job metrics="coreCount=1"
+25 Aug 09:27:02|PandaServerC| getXML called
+25 Aug 09:27:02|PandaServerC| Stdout tail will not be sent (debug=False)
+25 Aug 09:27:02|pUtil.py    | Successfully updated job state file at: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/jobState-2250110233.pickle
+25 Aug 09:27:02|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+25 Aug 09:27:02|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+25 Aug 09:27:02|pUtil.py    | toServer: cmd = updateJob
+25 Aug 09:27:02|pUtil.py    | toServer: len(data) = 13
+25 Aug 09:27:02|pUtil.py    | data = {'node': 'atlaswn031.lnf.infn.it', 'xml': '', 'workdir': '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', 'jobMetrics': 'coreCount=1', 'siteName': 'ANALY_INFN-FRASCATI', 'timestamp': '2014-08-25T11:27:02+-100', 'attemptNr': 1, 'jobId': 2250110233, 'batchID': '6609412.atlasce3.lnf.infn.it', 'state': 'running', 'schedulerID': 'aipanda023', 'pilotID': 'http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz 12288 KB'}
+25 Aug 09:27:02|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /etc/grid-security/certificates --cert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --key /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --config /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/curl.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+25 Aug 09:27:02|pUtil.py    | Elapsed seconds: 0
+25 Aug 09:27:02|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+25 Aug 09:27:02|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+25 Aug 09:27:02|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+25 Aug 09:27:02|PandaServerC| jobDispatcher acknowledged with 0
+25 Aug 09:27:02|pilot.py    | Successfully updated panda server at 2014-08-25T11:27:02+-100
+25 Aug 09:27:03|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 31)
+25 Aug 09:28:04|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 32)
+25 Aug 09:29:05|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 33)
+25 Aug 09:30:06|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 34)
+25 Aug 09:31:07|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 35)
+25 Aug 09:32:07|pilot.py    | Number of running processes: 9
+25 Aug 09:32:07|pilot.py    | Time passed since pilot startup = 2140 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:32:08|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 36)
+25 Aug 09:33:09|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 37)
+25 Aug 09:34:11|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 38)
+25 Aug 09:35:12|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 39)
+25 Aug 09:36:13|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 40)
+25 Aug 09:37:13|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 09:37:13|pilot.py    | Remaining local disk space: 838508478464 B
+25 Aug 09:37:13|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 09:37:13|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9187328 B (within 54525952000 B limit)
+25 Aug 09:37:13|pilot.py    | Number of running processes: 9
+25 Aug 09:37:13|pilot.py    | Time passed since pilot startup = 2446 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:37:13|pilot.py    | Verifying output file sizes
+25 Aug 09:37:13|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 09:37:13|pilot.py    | Completed output file size verification
+25 Aug 09:37:14|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 41)
+25 Aug 09:38:15|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 42)
+25 Aug 09:39:16|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 43)
+25 Aug 09:40:17|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 44)
+25 Aug 09:41:18|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 45)
+25 Aug 09:42:19|pilot.py    | Number of running processes: 9
+25 Aug 09:42:19|pilot.py    | Time passed since pilot startup = 2752 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:42:20|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 46)
+25 Aug 09:43:21|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 47)
+25 Aug 09:44:22|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 48)
+25 Aug 09:45:23|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 49)
+25 Aug 09:46:24|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 50)
+25 Aug 09:47:24|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 09:47:24|pilot.py    | Remaining local disk space: 838508478464 B
+25 Aug 09:47:24|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 09:47:24|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9236480 B (within 54525952000 B limit)
+25 Aug 09:47:24|pilot.py    | Number of running processes: 9
+25 Aug 09:47:24|pilot.py    | Time passed since pilot startup = 3057 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:47:24|pilot.py    | Verifying output file sizes
+25 Aug 09:47:24|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 09:47:24|pilot.py    | Completed output file size verification
+25 Aug 09:47:25|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 51)
+25 Aug 09:48:26|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 52)
+25 Aug 09:49:27|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 53)
+25 Aug 09:50:28|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 54)
+25 Aug 09:51:29|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 55)
+25 Aug 09:52:30|pilot.py    | Number of running processes: 9
+25 Aug 09:52:30|pilot.py    | Time passed since pilot startup = 3363 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:52:31|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 56)
+25 Aug 09:53:32|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 57)
+25 Aug 09:54:33|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 58)
+25 Aug 09:55:34|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 59)
+25 Aug 09:56:35|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 60)
+25 Aug 09:57:35|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 09:57:35|pilot.py    | Remaining local disk space: 838654230528 B
+25 Aug 09:57:35|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 09:57:35|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9293824 B (within 54525952000 B limit)
+25 Aug 09:57:35|pilot.py    | Number of running processes: 9
+25 Aug 09:57:35|pilot.py    | Time passed since pilot startup = 3668 s (maximum allowed batch system time = 172800 s)
+25 Aug 09:57:35|pilot.py    | Verifying output file sizes
+25 Aug 09:57:35|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 09:57:35|pilot.py    | Completed output file size verification
+25 Aug 09:57:35|pilot.py    | Checking for looping job
+25 Aug 09:57:35|pilot.py    | Executing command: find /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989 -mmin -180
+25 Aug 09:57:35|pilot.py    | Found 105 files that were recently updated (e.g. file /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/src)
+25 Aug 09:57:35|pilot.py    | int(time.time())=1408960655
+25 Aug 09:57:35|pilot.py    | LastTimeFilesWereModified=1408960655
+25 Aug 09:57:35|pilot.py    | loopingLimit=10800
+25 Aug 09:57:35|pilot.py    | Returning tail stdout dictionary with 1 entries
+25 Aug 09:57:35|PandaServerC| Updating job status in updatePandaServer(): PandaId=2250110233, result=['running', 0, 0], time=2014-08-25T11:57:35+-100
+25 Aug 09:57:35|PandaServerC| job.prodSourceLabel=user
+25 Aug 09:57:35|PandaServerC| Batch system: Torque
+25 Aug 09:57:35|PandaServerC| Batch system job ID: 6609412.atlasce3.lnf.infn.it
+25 Aug 09:57:35|PandaServerC| Will send batchID: 6609412.atlasce3.lnf.infn.it and pilotID: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o
+25 Aug 09:57:35|PandaServerC| pilotId: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out
+25 Aug 09:57:35|PandaServerC| Job metrics="coreCount=1"
+25 Aug 09:57:35|PandaServerC| getXML called
+25 Aug 09:57:35|PandaServerC| Stdout tail will not be sent (debug=False)
+25 Aug 09:57:35|pUtil.py    | Successfully updated job state file at: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/jobState-2250110233.pickle
+25 Aug 09:57:35|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+25 Aug 09:57:35|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+25 Aug 09:57:35|pUtil.py    | toServer: cmd = updateJob
+25 Aug 09:57:35|pUtil.py    | toServer: len(data) = 13
+25 Aug 09:57:35|pUtil.py    | data = {'node': 'atlaswn031.lnf.infn.it', 'xml': '', 'workdir': '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', 'jobMetrics': 'coreCount=1', 'siteName': 'ANALY_INFN-FRASCATI', 'timestamp': '2014-08-25T11:57:35+-100', 'attemptNr': 1, 'jobId': 2250110233, 'batchID': '6609412.atlasce3.lnf.infn.it', 'state': 'running', 'schedulerID': 'aipanda023', 'pilotID': 'http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz 12288 KB'}
+25 Aug 09:57:35|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /etc/grid-security/certificates --cert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --key /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --config /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/curl.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+25 Aug 09:57:36|pUtil.py    | Elapsed seconds: 0
+25 Aug 09:57:36|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+25 Aug 09:57:36|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+25 Aug 09:57:36|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+25 Aug 09:57:36|PandaServerC| jobDispatcher acknowledged with 0
+25 Aug 09:57:36|pilot.py    | Successfully updated panda server at 2014-08-25T11:57:36+-100
+25 Aug 09:57:37|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 61)
+25 Aug 09:58:38|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 62)
+25 Aug 09:59:39|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 63)
+25 Aug 10:00:40|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 64)
+25 Aug 10:01:41|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 65)
+25 Aug 10:02:41|pilot.py    | Number of running processes: 9
+25 Aug 10:02:41|pilot.py    | Time passed since pilot startup = 3974 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:02:42|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 66)
+25 Aug 10:03:43|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 67)
+25 Aug 10:04:44|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 68)
+25 Aug 10:05:45|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 69)
+25 Aug 10:06:47|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 70)
+25 Aug 10:07:47|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 10:07:47|pilot.py    | Remaining local disk space: 838657376256 B
+25 Aug 10:07:47|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 10:07:47|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9351168 B (within 54525952000 B limit)
+25 Aug 10:07:47|pilot.py    | Number of running processes: 9
+25 Aug 10:07:47|pilot.py    | Time passed since pilot startup = 4280 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:07:47|pilot.py    | Verifying output file sizes
+25 Aug 10:07:47|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 10:07:47|pilot.py    | Completed output file size verification
+25 Aug 10:07:48|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 71)
+25 Aug 10:08:49|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 72)
+25 Aug 10:09:50|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 73)
+25 Aug 10:10:51|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 74)
+25 Aug 10:11:52|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 75)
+25 Aug 10:12:52|pilot.py    | Number of running processes: 9
+25 Aug 10:12:52|pilot.py    | Time passed since pilot startup = 4585 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:12:53|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 76)
+25 Aug 10:13:54|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 77)
+25 Aug 10:14:55|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 78)
+25 Aug 10:15:57|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 79)
+25 Aug 10:16:58|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 80)
+25 Aug 10:17:58|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 10:17:58|pilot.py    | Remaining local disk space: 838653181952 B
+25 Aug 10:17:58|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 10:17:58|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9404416 B (within 54525952000 B limit)
+25 Aug 10:17:58|pilot.py    | Number of running processes: 9
+25 Aug 10:17:58|pilot.py    | Time passed since pilot startup = 4891 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:17:58|pilot.py    | Verifying output file sizes
+25 Aug 10:17:58|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 10:17:58|pilot.py    | Completed output file size verification
+25 Aug 10:17:59|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 81)
+25 Aug 10:19:00|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 82)
+25 Aug 10:20:01|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 83)
+25 Aug 10:21:02|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 84)
+25 Aug 10:22:03|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 85)
+25 Aug 10:23:04|pilot.py    | Number of running processes: 9
+25 Aug 10:23:04|pilot.py    | Time passed since pilot startup = 5197 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:23:05|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 86)
+25 Aug 10:24:06|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 87)
+25 Aug 10:25:07|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 88)
+25 Aug 10:26:08|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 89)
+25 Aug 10:27:09|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 90)
+25 Aug 10:28:09|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 10:28:09|pilot.py    | Remaining local disk space: 838653181952 B
+25 Aug 10:28:09|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 10:28:09|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9461760 B (within 54525952000 B limit)
+25 Aug 10:28:09|pilot.py    | Number of running processes: 9
+25 Aug 10:28:09|pilot.py    | Time passed since pilot startup = 5502 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:28:09|pilot.py    | Verifying output file sizes
+25 Aug 10:28:09|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 10:28:09|pilot.py    | Completed output file size verification
+25 Aug 10:28:09|pilot.py    | Checking for looping job
+25 Aug 10:28:09|pilot.py    | Executing command: find /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989 -mmin -180
+25 Aug 10:28:09|pilot.py    | Found 105 files that were recently updated (e.g. file /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/src)
+25 Aug 10:28:09|pilot.py    | int(time.time())=1408962489
+25 Aug 10:28:09|pilot.py    | LastTimeFilesWereModified=1408962489
+25 Aug 10:28:09|pilot.py    | loopingLimit=10800
+25 Aug 10:28:09|pilot.py    | Returning tail stdout dictionary with 1 entries
+25 Aug 10:28:09|PandaServerC| Updating job status in updatePandaServer(): PandaId=2250110233, result=['running', 0, 0], time=2014-08-25T12:28:09+-100
+25 Aug 10:28:09|PandaServerC| job.prodSourceLabel=user
+25 Aug 10:28:09|PandaServerC| Batch system: Torque
+25 Aug 10:28:09|PandaServerC| Batch system job ID: 6609412.atlasce3.lnf.infn.it
+25 Aug 10:28:09|PandaServerC| Will send batchID: 6609412.atlasce3.lnf.infn.it and pilotID: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o
+25 Aug 10:28:09|PandaServerC| pilotId: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out
+25 Aug 10:28:09|PandaServerC| Job metrics="coreCount=1"
+25 Aug 10:28:09|PandaServerC| getXML called
+25 Aug 10:28:09|PandaServerC| Stdout tail will not be sent (debug=False)
+25 Aug 10:28:09|pUtil.py    | Successfully updated job state file at: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/jobState-2250110233.pickle
+25 Aug 10:28:09|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+25 Aug 10:28:09|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+25 Aug 10:28:09|pUtil.py    | toServer: cmd = updateJob
+25 Aug 10:28:09|pUtil.py    | toServer: len(data) = 13
+25 Aug 10:28:09|pUtil.py    | data = {'node': 'atlaswn031.lnf.infn.it', 'xml': '', 'workdir': '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', 'jobMetrics': 'coreCount=1', 'siteName': 'ANALY_INFN-FRASCATI', 'timestamp': '2014-08-25T12:28:09+-100', 'attemptNr': 1, 'jobId': 2250110233, 'batchID': '6609412.atlasce3.lnf.infn.it', 'state': 'running', 'schedulerID': 'aipanda023', 'pilotID': 'http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz 12288 KB'}
+25 Aug 10:28:09|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /etc/grid-security/certificates --cert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --key /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --config /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/curl.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+25 Aug 10:28:09|pUtil.py    | Elapsed seconds: 0
+25 Aug 10:28:09|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+25 Aug 10:28:09|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+25 Aug 10:28:09|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+25 Aug 10:28:09|PandaServerC| jobDispatcher acknowledged with 0
+25 Aug 10:28:09|pilot.py    | Successfully updated panda server at 2014-08-25T12:28:09+-100
+25 Aug 10:28:10|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 91)
+25 Aug 10:29:12|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 92)
+25 Aug 10:30:13|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 93)
+25 Aug 10:31:14|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 94)
+25 Aug 10:32:15|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 95)
+25 Aug 10:33:15|pilot.py    | Number of running processes: 9
+25 Aug 10:33:15|pilot.py    | Time passed since pilot startup = 5808 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:33:16|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 96)
+25 Aug 10:34:17|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 97)
+25 Aug 10:35:18|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 98)
+25 Aug 10:36:19|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 99)
+25 Aug 10:37:20|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 100)
+25 Aug 10:38:20|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 10:38:20|pilot.py    | Remaining local disk space: 838655279104 B
+25 Aug 10:38:20|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 10:38:20|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9515008 B (within 54525952000 B limit)
+25 Aug 10:38:21|pilot.py    | Number of running processes: 9
+25 Aug 10:38:21|pilot.py    | Time passed since pilot startup = 6114 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:38:21|pilot.py    | Verifying output file sizes
+25 Aug 10:38:21|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 10:38:21|pilot.py    | Completed output file size verification
+25 Aug 10:38:22|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 101)
+25 Aug 10:39:23|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 102)
+25 Aug 10:40:24|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 103)
+25 Aug 10:41:25|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 104)
+25 Aug 10:42:26|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 105)
+25 Aug 10:43:26|pilot.py    | Number of running processes: 9
+25 Aug 10:43:26|pilot.py    | Time passed since pilot startup = 6419 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:43:27|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 106)
+25 Aug 10:44:28|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 107)
+25 Aug 10:45:29|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 108)
+25 Aug 10:46:30|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 109)
+25 Aug 10:47:31|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 110)
+25 Aug 10:48:31|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 10:48:31|pilot.py    | Remaining local disk space: 836247748608 B
+25 Aug 10:48:32|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 10:48:32|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9580544 B (within 54525952000 B limit)
+25 Aug 10:48:32|pilot.py    | Number of running processes: 9
+25 Aug 10:48:32|pilot.py    | Time passed since pilot startup = 6725 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:48:32|pilot.py    | Verifying output file sizes
+25 Aug 10:48:32|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 10:48:32|pilot.py    | Completed output file size verification
+25 Aug 10:48:33|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 111)
+25 Aug 10:49:34|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 112)
+25 Aug 10:50:35|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 113)
+25 Aug 10:51:36|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 114)
+25 Aug 10:52:37|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 115)
+25 Aug 10:53:38|pilot.py    | Number of running processes: 9
+25 Aug 10:53:38|pilot.py    | Time passed since pilot startup = 7031 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:53:39|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 116)
+25 Aug 10:54:40|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 117)
+25 Aug 10:55:41|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 118)
+25 Aug 10:56:42|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 119)
+25 Aug 10:57:43|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 120)
+25 Aug 10:58:43|pilot.py    | Payload stdout (athena_stdout.txt) within allowed size limit (2147483648 B): 19232 B
+25 Aug 10:58:43|pilot.py    | Remaining local disk space: 835846144000 B
+25 Aug 10:58:43|pilot.py    | Work directory size check will use 54525952000 B as a max limit (maxwdirsize)
+25 Aug 10:58:43|pilot.py    | Checked size of user analysis work directory /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989: 9633792 B (within 54525952000 B limit)
+25 Aug 10:58:44|pilot.py    | Number of running processes: 9
+25 Aug 10:58:44|pilot.py    | Time passed since pilot startup = 7337 s (maximum allowed batch system time = 172800 s)
+25 Aug 10:58:44|pilot.py    | Verifying output file sizes
+25 Aug 10:58:44|pilot.py    | Could not access file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 
+25 Aug 10:58:44|pilot.py    | Completed output file size verification
+25 Aug 10:58:44|pilot.py    | Checking for looping job
+25 Aug 10:58:44|pilot.py    | Executing command: find /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989 -mmin -180
+25 Aug 10:58:44|pilot.py    | Found 105 files that were recently updated (e.g. file /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/src)
+25 Aug 10:58:44|pilot.py    | int(time.time())=1408964324
+25 Aug 10:58:44|pilot.py    | LastTimeFilesWereModified=1408964324
+25 Aug 10:58:44|pilot.py    | loopingLimit=10800
+25 Aug 10:58:44|pilot.py    | Returning tail stdout dictionary with 1 entries
+25 Aug 10:58:44|PandaServerC| Updating job status in updatePandaServer(): PandaId=2250110233, result=['running', 0, 0], time=2014-08-25T12:58:44+-100
+25 Aug 10:58:44|PandaServerC| job.prodSourceLabel=user
+25 Aug 10:58:44|PandaServerC| Batch system: Torque
+25 Aug 10:58:44|PandaServerC| Batch system job ID: 6609412.atlasce3.lnf.infn.it
+25 Aug 10:58:44|PandaServerC| Will send batchID: 6609412.atlasce3.lnf.infn.it and pilotID: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o
+25 Aug 10:58:44|PandaServerC| pilotId: http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out
+25 Aug 10:58:44|PandaServerC| Job metrics="coreCount=1"
+25 Aug 10:58:44|PandaServerC| getXML called
+25 Aug 10:58:44|PandaServerC| Stdout tail will not be sent (debug=False)
+25 Aug 10:58:44|pUtil.py    | Successfully updated job state file at: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/jobState-2250110233.pickle
+25 Aug 10:58:44|pUtil.py    | HTTP connect using server: https://pandaserver.cern.ch:25443/server/panda
+25 Aug 10:58:44|pUtil.py    | Sending attemptNr=1 for cmd=updateJob
+25 Aug 10:58:44|pUtil.py    | toServer: cmd = updateJob
+25 Aug 10:58:44|pUtil.py    | toServer: len(data) = 13
+25 Aug 10:58:44|pUtil.py    | data = {'node': 'atlaswn031.lnf.infn.it', 'xml': '', 'workdir': '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', 'jobMetrics': 'coreCount=1', 'siteName': 'ANALY_INFN-FRASCATI', 'timestamp': '2014-08-25T12:58:44+-100', 'attemptNr': 1, 'jobId': 2250110233, 'batchID': '6609412.atlasce3.lnf.infn.it', 'state': 'running', 'schedulerID': 'aipanda023', 'pilotID': 'http://aipanda023.cern.ch:25880/2014-08-25/ANALY_INFN-FRASCATI-2195/6341053.1.out|6609412.atlasce3.lnf.infn.it|Torque|PR|SULU 58o', 'cpuConsumptionUnit': 'Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz 12288 KB'}
+25 Aug 10:58:44|pUtil.py    | Executing command: curl --silent --show-error --connect-timeout 100 --max-time 120 --compressed --capath /etc/grid-security/certificates --cert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --key /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy --config /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/curl.config https://pandaserver.cern.ch:25443/server/panda/updateJob
+25 Aug 10:58:44|pUtil.py    | Elapsed seconds: 0
+25 Aug 10:58:44|pUtil.py    | Dispatcher response: [('command', 'NULL'), ('StatusCode', '0')]
+25 Aug 10:58:44|PandaServerC| ret = (0, {'command': 'NULL', 'StatusCode': '0'}, 'command=NULL&StatusCode=0')
+25 Aug 10:58:44|PandaServerC| data = {'command': 'NULL', 'StatusCode': '0'}
+25 Aug 10:58:44|PandaServerC| jobDispatcher acknowledged with 0
+25 Aug 10:58:44|pilot.py    | Successfully updated panda server at 2014-08-25T12:58:44+-100
+25 Aug 10:58:45|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 121)
+25 Aug 10:59:46|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 122)
+25 Aug 11:00:47|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 123)
+25 Aug 11:01:48|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 124)
+25 Aug 11:02:50|pilot.py    | --- Main pilot monitoring loop (job id 2250110233, state:running, iteration 125)
+25 Aug 11:03:28|runJob.py   | Job command 1/1 finished
+25 Aug 11:03:28|runJob.py   | Job CPU usage: 2921 s
+25 Aug 11:03:28|runJob.py   | Job CPU conversion factor: 1.0000000000
+25 Aug 11:03:28|runJob.py   | Original exit code: 0
+25 Aug 11:03:28|runJob.py   | Exit code: 0 (returned from OS)
+25 Aug 11:03:28|runJob.py   | Job report not found: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/jobReport.json
+25 Aug 11:03:28|runJob.py   | NOTE: For athena output, see files athena_stdout.txt, athena_stderr.txt
+25 Aug 11:03:28|pUtil.py    | Removed file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/panda.0825084749.206437.lib._4057000.79520199.lib.tgz
+25 Aug 11:03:28|pUtil.py    | Removed 1/1 file(s)
+25 Aug 11:03:28|runJob.py   | sys.path=['/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', '/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/externals/kerberos/lib.slc6-x86_64-2.6', '/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/externals/kerberos/lib.slc6-i686-2.6', '/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/lib/python2.6/site-packages', '/cvmfs/atlas.cern.ch/repo/sw/ddm/2.5.0/DQ2Clients/opt/dq2/lib', '/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989', '/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.6', '/usr/lib64/python26.zip', '/usr/lib64/python2.6', '/usr/lib64/python2.6/plat-linux2', '/usr/lib64/python2.6/lib-tk', '/usr/lib64/python2.6/lib-old', '/usr/lib64/python2.6/lib-dynload', '/usr/lib64/python2.6/site-packages', '/usr/lib/python2.6/site-packages', '/usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info', '/var/tmp/.dq2pilatlas008/']
+25 Aug 11:03:28|runJob.py   | Executing command: pwd;ls -lF /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3;ls -lF
+25 Aug 11:03:28|runJob.py   | /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+total 3176
+-rw-r--r-- 1 pilatlas008 pilatlas 107141 May 22 10:21 ATLASExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas  68763 Aug 25 10:56 ATLASExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  25172 Aug 14 11:21 ATLASSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas  18771 Aug 25 10:56 ATLASSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24663 Jul 15  2013 BNLdCacheSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  15995 Aug 25 10:56 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24247 Jul 15  2013 CMSExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8348 Jul 15  2013 CMSSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8487 Aug 25 10:56 CMSSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8427 Jul 15  2013 COGSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   7214 Aug 25 10:56 COGSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    105 Aug 25 10:56 CURRENT_SITEWORKDIR
+-rw-r--r-- 1 pilatlas008 pilatlas  18770 Jul 15  2013 CastorSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11879 Aug 25 10:56 CastorSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  12709 Jul 15  2013 ChirpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9108 Aug 25 10:56 ChirpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  13233 Oct 31  2013 Cleaner.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9454 Aug 25 10:56 Cleaner.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  12301 Jul 15  2013 DBReleaseHandler.py
+-rw-r--r-- 1 pilatlas008 pilatlas    647 Jul 15  2013 Diagnosis.py
+-rw-r--r-- 1 pilatlas008 pilatlas    898 Aug 25 10:56 Diagnosis.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   3120 Jul 15  2013 ErrorDiagnosis.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2957 Aug 25 10:56 ErrorDiagnosis.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  28842 Apr 29 16:21 Experiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas  17551 Aug 25 10:56 Experiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2304 Jul 15  2013 ExperimentFactory.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2020 Aug 25 10:56 ExperimentFactory.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  18312 Dec 10  2013 FAXSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  13551 Aug 25 10:56 FAXSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   5148 Jul 15  2013 FileRegistration.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9699 Jul 15  2013 FileState.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9487 Aug 25 10:56 FileState.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2391 Jul 15  2013 FileStateClient.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2762 Aug 25 10:56 FileStateClient.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24485 Jul 15  2013 GOSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11236 Jul 15  2013 GSIftpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9185 Aug 25 10:56 GSIftpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  11706 Jul 15  2013 HUSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8757 Aug 25 10:56 HUSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  28964 Jan 28  2014 JEMstub.py
+-rw-r--r-- 1 pilatlas008 pilatlas  18506 May 22 10:21 Job.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10668 Aug 25 10:56 Job.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2043 Jul 15  2013 JobInfoXML.py
+-rw-r--r-- 1 pilatlas008 pilatlas  54989 Apr 29 16:21 JobLog.py
+-rw-r--r-- 1 pilatlas008 pilatlas  34328 Aug 25 10:56 JobLog.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  29371 Jul 15  2013 JobRecovery.py
+-rw-r--r-- 1 pilatlas008 pilatlas  21060 Aug 25 10:56 JobRecovery.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  10634 Jul 15  2013 JobState.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8240 Aug 25 10:56 JobState.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  14369 Aug 14 11:21 LocalSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10040 Aug 25 10:56 LocalSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 175586 Aug 14 11:21 Mover.py
+-rw-r--r-- 1 pilatlas008 pilatlas 105532 Aug 25 10:56 Mover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   9274 Apr 29 16:21 Node.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8425 Aug 25 10:56 Node.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8066 Jul 15  2013 NordugridATLASExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6629 Aug 25 10:56 NordugridATLASExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2038 Jul 15  2013 NordugridATLASSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2244 Aug 25 10:56 NordugridATLASSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2678 Jul 15  2013 OtherExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3738 Aug 25 10:56 OtherExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   1991 Jul 15  2013 OtherSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2709 Aug 25 10:56 OtherSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2311 Jul 15  2013 OtherSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas      8 Aug 14 11:21 PILOTVERSION
+-rw-r--r-- 1 pilatlas008 pilatlas  32933 Apr 29 16:21 PandaServerClient.py
+-rw-r--r-- 1 pilatlas008 pilatlas  19959 Aug 25 10:56 PandaServerClient.pyc
+drwxrwx--- 3 pilatlas008 pilatlas   4096 Aug 25 10:57 Panda_Pilot_5455_1408956987/
+-rw-r--r-- 1 pilatlas008 pilatlas  14102 Apr 29 16:21 PilotErrors.py
+-rw-r--r-- 1 pilatlas008 pilatlas  12846 Aug 25 10:56 PilotErrors.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   1717 Jul 15  2013 PilotTCPServer.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2276 Aug 25 10:56 PilotTCPServer.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  13549 Jul 15  2013 PilotUtils.py
+-rw-r--r-- 1 pilatlas008 pilatlas   4281 Jul 15  2013 ProxyGuard.py
+-rw-r--r-- 1 pilatlas008 pilatlas   5241 Aug 25 10:56 ProxyGuard.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas     25 Jul 15  2013 README
+-rw-r--r-- 1 pilatlas008 pilatlas  30467 Feb 13  2014 RunJobUtilities.py
+-rw-r--r-- 1 pilatlas008 pilatlas  24244 Aug 25 10:56 RunJobUtilities.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  14524 Jul 15  2013 SRMSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10559 Aug 25 10:56 SRMSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas      1 Aug 25 10:56 STATUSCODE
+-rw-r--r-- 1 pilatlas008 pilatlas    998 Jul 15  2013 Site.py
+-rw-r--r-- 1 pilatlas008 pilatlas   1411 Aug 25 10:56 Site.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  33806 Apr 29 16:21 SiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas  22469 Aug 25 10:56 SiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2892 Jul 15  2013 SiteInformationFactory.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2280 Aug 25 10:56 SiteInformationFactory.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 137286 Feb 19  2014 SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  94142 Aug 25 10:56 SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8583 Jul 15  2013 SiteMoverFarm.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6454 Aug 25 10:56 SiteMoverFarm.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  23435 Jul 15  2013 UberftpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  14677 Aug 25 10:56 UberftpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   3453 Aug 15  2013 VmPeak.py
+-rw-r--r-- 1 pilatlas008 pilatlas      0 Jul 15  2013 __init__.py
+-rw-r--r-- 1 pilatlas008 pilatlas  31534 May 22 10:21 aria2cSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  20684 Aug 25 10:56 aria2cSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  31374 Oct 31  2013 atlasProdPilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  16969 Jul 15  2013 castorSvcClassSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11731 Aug 25 10:56 castorSvcClassSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    401 Jul 15  2013 config.py
+-rw-r--r-- 1 pilatlas008 pilatlas    638 Aug 25 10:56 config.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    729 Aug 25 12:58 curl.config
+-rw-r--r-- 1 pilatlas008 pilatlas  30366 Jul 15  2013 curlSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  17459 Aug 25 10:56 curlSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  10846 Jul 15  2013 dCacheLFCSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8763 Aug 25 10:56 dCacheLFCSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  30965 Jul 15  2013 dCacheSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  20662 Aug 25 10:56 dCacheSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  34155 Jul 15  2013 dataPilot.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   9189 Jul 15  2013 dq2SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6262 Aug 25 10:56 dq2SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   5451 Jul 15  2013 futil.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6782 Aug 25 10:56 futil.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  26864 Jul 15  2013 globusPilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  28025 Jul 15  2013 lcgcp2SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  15703 Aug 25 10:56 lcgcp2SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  33494 Jul 15  2013 lcgcpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  19088 Aug 25 10:56 lcgcpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  11096 Jul 15  2013 mvSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8904 Aug 25 10:56 mvSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas   9674 Jul 15  2013 myproxyUtils.py*
+-rw-r--r-- 1 pilatlas008 pilatlas 129128 Feb 13  2014 pUtil.py
+-rw-r--r-- 1 pilatlas008 pilatlas 103220 Aug 25 10:56 pUtil.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2061 Aug 25 10:56 pandaJobData_1.out
+-rw-r--r-- 1 pilatlas008 pilatlas 269814 Aug 14 11:21 pilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10249 Aug 25 10:56 pilotlog.out
+-rw-r--r-- 1 pilatlas008 pilatlas   2818 Aug 25 10:56 queuedata.json
+-rw-r--r-- 1 pilatlas008 pilatlas  20033 Jul 15  2013 rfcpLFCSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  13721 Aug 25 10:56 rfcpLFCSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  51399 May 22 10:21 runJob.py
+-rw-r--r-- 1 pilatlas008 pilatlas   4597 Jul 15  2013 stormSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3713 Aug 25 10:56 stormSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas   8743 Jul 15  2013 timed_command.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   6631 Aug 25 10:56 timed_command.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  36996 Apr 29 16:21 xrdcpSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  24276 Aug 25 10:56 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  32697 Feb 19  2014 xrootdSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  21708 Aug 25 10:56 xrootdSiteMover.pyc
+total 4044
+-rw-r--r-- 1 pilatlas008 pilatlas 107141 May 22 10:21 ATLASExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas  72834 Aug 25 10:56 ATLASExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  25172 Aug 14 11:21 ATLASSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas  20423 Aug 25 10:56 ATLASSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24663 Jul 15  2013 BNLdCacheSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  16467 Aug 25 10:56 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24247 Jul 15  2013 CMSExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8348 Jul 15  2013 CMSSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9431 Aug 25 10:56 CMSSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8427 Jul 15  2013 COGSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   7745 Aug 25 10:56 COGSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  18770 Jul 15  2013 CastorSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  12351 Aug 25 10:56 CastorSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  12709 Jul 15  2013 ChirpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9462 Aug 25 10:56 ChirpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  13233 Oct 31  2013 Cleaner.py
+-rw-r--r-- 1 pilatlas008 pilatlas  12301 Jul 15  2013 DBReleaseHandler.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11531 Aug 25 10:56 DBReleaseHandler.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    647 Jul 15  2013 Diagnosis.py
+-rw-r--r-- 1 pilatlas008 pilatlas   1075 Aug 25 10:56 Diagnosis.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   3120 Jul 15  2013 ErrorDiagnosis.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3311 Aug 25 10:56 ErrorDiagnosis.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  28842 Apr 29 16:21 Experiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas  19380 Aug 25 10:56 Experiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2304 Jul 15  2013 ExperimentFactory.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2197 Aug 25 10:56 ExperimentFactory.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  18312 Dec 10  2013 FAXSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  14377 Aug 25 10:56 FAXSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   5148 Jul 15  2013 FileRegistration.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9699 Jul 15  2013 FileState.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10254 Aug 25 10:56 FileState.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2391 Jul 15  2013 FileStateClient.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3175 Aug 25 10:56 FileStateClient.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24485 Jul 15  2013 GOSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11236 Jul 15  2013 GSIftpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9775 Aug 25 10:56 GSIftpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  11706 Jul 15  2013 HUSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9288 Aug 25 10:56 HUSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  28964 Jan 28  2014 JEMstub.py
+-rw-r--r-- 1 pilatlas008 pilatlas  29979 Aug 25 13:03 JEMstub.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  18506 May 22 10:21 Job.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11199 Aug 25 10:56 Job.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2043 Jul 15  2013 JobInfoXML.py
+-rw-r--r-- 1 pilatlas008 pilatlas  54989 Apr 29 16:21 JobLog.py
+-rw-r--r-- 1 pilatlas008 pilatlas  29371 Jul 15  2013 JobRecovery.py
+-rw-r--r-- 1 pilatlas008 pilatlas  22417 Aug 25 10:56 JobRecovery.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  10634 Jul 15  2013 JobState.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8889 Aug 25 10:56 JobState.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  14369 Aug 14 11:21 LocalSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10453 Aug 25 10:56 LocalSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 175586 Aug 14 11:21 Mover.py
+-rw-r--r-- 1 pilatlas008 pilatlas 111255 Aug 25 10:56 Mover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   9274 Apr 29 16:21 Node.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9251 Aug 25 10:56 Node.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8066 Jul 15  2013 NordugridATLASExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   7337 Aug 25 10:56 NordugridATLASExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2038 Jul 15  2013 NordugridATLASSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2539 Aug 25 10:56 NordugridATLASSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2678 Jul 15  2013 OtherExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   4446 Aug 25 10:56 OtherExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   1991 Jul 15  2013 OtherSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3240 Aug 25 10:56 OtherSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2311 Jul 15  2013 OtherSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  32933 Apr 29 16:21 PandaServerClient.py
+-rw-r--r-- 1 pilatlas008 pilatlas  14102 Apr 29 16:21 PilotErrors.py
+-rw-r--r-- 1 pilatlas008 pilatlas  13377 Aug 25 10:56 PilotErrors.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   1717 Jul 15  2013 PilotTCPServer.py
+-rw-r--r-- 1 pilatlas008 pilatlas  13549 Jul 15  2013 PilotUtils.py
+-rw-r--r-- 1 pilatlas008 pilatlas    163 Aug 25 13:03 PoolFileCatalog.xml
+-rw-r--r-- 1 pilatlas008 pilatlas    427 Aug 25 10:56 PoolFileCatalog.xml.MOVER
+-rw-r--r-- 1 pilatlas008 pilatlas   4281 Jul 15  2013 ProxyGuard.py
+-rw-r--r-- 1 pilatlas008 pilatlas   5949 Aug 25 10:56 ProxyGuard.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  30467 Feb 13  2014 RunJobUtilities.py
+-rw-r--r-- 1 pilatlas008 pilatlas  25601 Aug 25 10:56 RunJobUtilities.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  14524 Jul 15  2013 SRMSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11149 Aug 25 10:56 SRMSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    998 Jul 15  2013 Site.py
+-rw-r--r-- 1 pilatlas008 pilatlas   1647 Aug 25 10:56 Site.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  33806 Apr 29 16:21 SiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas  24062 Aug 25 10:56 SiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2892 Jul 15  2013 SiteInformationFactory.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2457 Aug 25 10:56 SiteInformationFactory.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 137286 Feb 19  2014 SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas 100632 Aug 25 10:56 SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8583 Jul 15  2013 SiteMoverFarm.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6867 Aug 25 10:56 SiteMoverFarm.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  23435 Jul 15  2013 UberftpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  15149 Aug 25 10:56 UberftpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   3453 Aug 15  2013 VmPeak.py
+-rw-r--r-- 1 pilatlas008 pilatlas      0 Jul 15  2013 __init__.py
+-rw-r--r-- 1 pilatlas008 pilatlas  31534 May 22 10:21 aria2cSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  21451 Aug 25 10:56 aria2cSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas      0 Aug 25 10:56 athena_stderr.txt
+-rw-r--r-- 1 pilatlas008 pilatlas 499306 Aug 25 13:03 athena_stdout.txt
+-rw-r--r-- 1 pilatlas008 pilatlas  31374 Oct 31  2013 atlasProdPilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  16969 Jul 15  2013 castorSvcClassSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  12262 Aug 25 10:56 castorSvcClassSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    401 Jul 15  2013 config.py
+-rw-r--r-- 1 pilatlas008 pilatlas    756 Aug 25 10:56 config.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  30366 Jul 15  2013 curlSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  17990 Aug 25 10:56 curlSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  10846 Jul 15  2013 dCacheLFCSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9235 Aug 25 10:56 dCacheLFCSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  30965 Jul 15  2013 dCacheSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  21370 Aug 25 10:56 dCacheSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  34155 Jul 15  2013 dataPilot.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   9189 Jul 15  2013 dq2SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6616 Aug 25 10:56 dq2SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   5451 Jul 15  2013 futil.py
+-rw-r--r-- 1 pilatlas008 pilatlas   7549 Aug 25 10:56 futil.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  26864 Jul 15  2013 globusPilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas   4734 Aug 25 10:56 jobState-2250110233-test.pickle
+-rw-r--r-- 1 pilatlas008 pilatlas    817 Aug 25 10:56 job_setup.sh
+-rw-r--r-- 1 pilatlas008 pilatlas  28025 Jul 15  2013 lcgcp2SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  16116 Aug 25 10:56 lcgcp2SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  33494 Jul 15  2013 lcgcpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  19678 Aug 25 10:56 lcgcpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    187 Aug 25 10:56 matched_replicas.json
+-rw-r--r-- 1 pilatlas008 pilatlas  11096 Jul 15  2013 mvSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9435 Aug 25 10:56 mvSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas   9674 Jul 15  2013 myproxyUtils.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   2220 Aug 25 10:56 newJobDef.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2699 Aug 25 10:56 newJobDef.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 129128 Feb 13  2014 pUtil.py
+-rw-r--r-- 1 pilatlas008 pilatlas 110772 Aug 25 10:56 pUtil.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2061 Aug 25 10:56 pandaJobData.out
+-rw-r--r-- 1 pilatlas008 pilatlas 237199 Aug 25 13:03 pandatracerlog.txt
+drwxr-xr-x 7 pilatlas008 pilatlas   4096 Aug 25 10:56 pandawnutil/
+-rw-r--r-- 1 pilatlas008 pilatlas 269814 Aug 14 11:21 pilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  20033 Jul 15  2013 rfcpLFCSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  14252 Aug 25 10:56 rfcpLFCSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  77094 Aug 24 21:15 runGen-00-00-02*
+-rwxr-xr-x 1 pilatlas008 pilatlas  31412 Jul 25 17:53 runGen.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  51399 May 22 10:21 runJob.py
+-rw-r--r-- 1 pilatlas008 pilatlas      0 Aug 25 10:56 runjob.stderr
+drwxr-xr-x 9 pilatlas008 pilatlas   4096 Aug 25 10:56 src/
+-rw-r--r-- 1 pilatlas008 pilatlas   4597 Jul 15  2013 stormSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3890 Aug 25 10:56 stormSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas   8743 Jul 15  2013 timed_command.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   6985 Aug 25 10:56 timed_command.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   7420 Aug 25 13:03 user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+-rwxr-xr-x 1 pilatlas008 pilatlas  36996 Apr 29 16:21 xrdcpSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  25279 Aug 25 10:56 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  32697 Feb 19  2014 xrootdSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  22711 Aug 25 10:56 xrootdSiteMover.pyc
+25 Aug 11:03:28|runJob.py   | Attempting to import ErrorDiagnosis
+25 Aug 11:03:28|runJob.py   | Succeeded
+25 Aug 11:03:28|ATLASExperim| Looking for number of processed events (pass 0: metadata.xml)
+25 Aug 11:03:28|ATLASExperim| /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/metadata.xml does not exist
+25 Aug 11:03:28|ATLASExperim| Looking for number of processed events (pass 1: Athena summary file(s))
+25 Aug 11:03:28|ATLASExperim| Did not find any athena summary files
+25 Aug 11:03:28|ATLASExperim| Looking for number of processed events (pass 2: Resorting to brute force grepping of payload stdout)
+25 Aug 11:03:28|ATLASExperim| Processing stdout file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/athena_stdout.txt
+25 Aug 11:03:29|ATLASExperim| Checking for memory errors in stderr
+25 Aug 11:03:29|ATLASExperim| Processing stderr file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/athena_stderr.txt
+25 Aug 11:03:29|ATLASExperim| Checking for memory errors in stdout..
+25 Aug 11:03:29|ATLASExperim| Processing stdout file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/athena_stdout.txt
+25 Aug 11:03:29|pUtil.py    | Executing command:  python VmPeak.py >Pilot_VmPeak.txt (protected by timed_command, timeout: 500 s)
+25 Aug 11:03:29|pUtil.py    | Elapsed time: 0
+25 Aug 11:03:29|RunJobUtilit| Note: File /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/VmPeak_values.txt does not exist
+25 Aug 11:03:29|RunJobUtilit| [VmPeak] vmPeakMax=0
+25 Aug 11:03:29|RunJobUtilit| [VmPeak] vmPeakMean=0
+25 Aug 11:03:29|RunJobUtilit| [VmPeak] RSSMean=0
+25 Aug 11:03:29|JobRecovery.| Successfully updated job state file with state: stageout
+25 Aug 11:03:29|SiteMover.py| Mod time for file /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root: 2014-08-25 01:03:28
+25 Aug 11:03:29|RunJobUtilit| Output file(s):
+25 Aug 11:03:29|RunJobUtilit| -rw-r--r-- 1 pilatlas008 pilatlas 7420 Aug 25 13:03 /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|runJob.py   | outsDict: {'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root': '2014-08-25 01:03:28', 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz': ''}
+25 Aug 11:03:29|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle
+25 Aug 11:03:29|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle
+25 Aug 11:03:29|FileState.py| File name  /  File state  /  Registration state
+25 Aug 11:03:29|FileState.py| ----------------------------------------------------------------------------------------------------
+25 Aug 11:03:29|FileState.py| 1. user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root	created	not_registered
+25 Aug 11:03:29|FileState.py| 2. user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz	not_created	not_registered
+25 Aug 11:03:29|runJob.py   | Dataset dictionary has been verified
+25 Aug 11:03:29|runJob.py   | Warning: Could not open the original /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/metadata.xml file, but harmless, pass it
+25 Aug 11:03:29|runJob.py   | outFiles=['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root']
+25 Aug 11:03:29|SiteMoverFar| Looking for site mover lcgcp2, setup:, ar:(), kw:{}
+25 Aug 11:03:29|SiteMoverFar| Returning site mover <class 'lcgcp2SiteMover.lcgcp2SiteMover'> (setup: )
+25 Aug 11:03:29|pUtil.py    | setting ec=0 (-1)
+25 Aug 11:03:29|SiteMover.py| Executing getsize() for file: user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|SiteMover.py| Got file size: 7420
+25 Aug 11:03:29|SiteMover.py| Executing adler32() for file: user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|SiteMover.py| Got adler32 checksum: f80936ac
+25 Aug 11:03:29|pUtil.py    | Adding 7420,f80936ac for file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root using adler32
+25 Aug 11:03:29|pUtil.py    | going to return 0,,['', '7420'],['', 'f80936ac']
+25 Aug 11:03:29|pUtil.py    | Nothing for prepareMetadata() to do
+25 Aug 11:03:29|pUtil.py    | fnlist = ['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root']
+25 Aug 11:03:29|pUtil.py    | fguids = [None]
+25 Aug 11:03:29|pUtil.py    | Could not locate file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/metadata-2250110233.xml.PAYLOAD
+25 Aug 11:03:29|pUtil.py    | Generated guid: d1057e79-3a27-41de-9b41-c55ac91e817c
+25 Aug 11:03:29|pUtil.py    | Found guid for file: user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root (d1057e79-3a27-41de-9b41-c55ac91e817c)
+25 Aug 11:03:29|pUtil.py    | Dumping file: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/metadata-2250110233.xml
+25 Aug 11:03:29|pUtil.py    | Dumped 21 lines from file /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/metadata-2250110233.xml
+25 Aug 11:03:29|runJob.py   | ..............................................................................................................
+25 Aug 11:03:29|runJob.py   | Created /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/metadata-2250110233.xml with:
+25 Aug 11:03:29|runJob.py   | .. log            : user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz (to be transferred)
+25 Aug 11:03:29|runJob.py   | .. log guid       : 3c1f6d13-56e3-4c9e-bdac-30021ced3867
+25 Aug 11:03:29|runJob.py   | .. out files      : ['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root']
+25 Aug 11:03:29|runJob.py   | .. out file guids : ['d1057e79-3a27-41de-9b41-c55ac91e817c']
+25 Aug 11:03:29|runJob.py   | .. fsize          : ['', '7420']
+25 Aug 11:03:29|runJob.py   | .. checksum       : ['', 'f80936ac']
+25 Aug 11:03:29|runJob.py   | ..............................................................................................................
+25 Aug 11:03:29|runJob.py   | Output file info dictionary created: {'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root': ('7420', 'f80936ac')}
+25 Aug 11:03:29|runJob.py   | Setting stage-out state until all output files have been copied
+25 Aug 11:03:29|pilot.py    | Connected from ('127.0.0.1', 46976)
+25 Aug 11:03:29|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+25 Aug 11:03:29|RunJobUtilit| filesAltStageOut not set
+25 Aug 11:03:29|RunJobUtilit| filesNormalStageOut not set
+25 Aug 11:03:29|RunJobUtilit| About to send TCP message to main pilot thread of length = 353
+25 Aug 11:03:29|pilot.py    | --- TCPServer: Message received from child is : ['jobState=stageout', 'pid=6014', 'bytesWithoutFAX=1587151', 'timeStageIn=4', 'filesWithoutFAX=1', 'timeExe=7613', 'cpuConversionFactor=1.0', 'vmPeakMax=0', 'cpuUnit=s', 'vmPeakMean=0', 'pilotErrorDiag=^!^', 'status=stageout', 'timeStageOut=0', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=2921', 'jobid=2250110233', 'pgrp=6014', 'transecode=0', '']
+25 Aug 11:03:29|pilot.py    | Process groups: 4841 (pilot), 6014 (sub process)
+25 Aug 11:03:29|pUtil.py    | Decoding: ^!^
+25 Aug 11:03:29|pUtil.py    | Empty URL encoded string (Nothing to decode)
+25 Aug 11:03:29|RunJobUtilit| (Sent)
+25 Aug 11:03:29|RunJobUtilit| (Received)
+25 Aug 11:03:29|RunJobUtilit| Successfully sent and received TCP message
+25 Aug 11:03:29|RunJobUtilit| Successfully updated local pilot TCP server at 2014-08-25T13:03:29+-100 (Trial 1/2)
+25 Aug 11:03:29|pUtil.py    | fnlist = ['user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root']
+25 Aug 11:03:29|pUtil.py    | fguids = ['d1057e79-3a27-41de-9b41-c55ac91e817c']
+25 Aug 11:03:29|pUtil.py    | Dumping file: OutPutFileCatalog.xml
+25 Aug 11:03:29|pUtil.py    | Dumped 10 lines from file OutPutFileCatalog.xml
+25 Aug 11:03:29|runJob.py   | Using the newly-generated /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/OutPutFileCatalog.xml for put operation
+25 Aug 11:03:29|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+25 Aug 11:03:29|Mover.py    | Using job definition id: 19919
+25 Aug 11:03:29|Mover.py    | Trying to add additional info to tracing report
+25 Aug 11:03:29|Mover.py    | Tracing report initialised with: {'protocol': None, 'duid': None, 'eventType': 'put_sm_a', 'suspicious': '0', 'timeEnd': None, 'dataset': 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312', 'catStart': None, 'guid': None, 'transferStart': None, 'hostname': 'atlaswn031.lnf.infn.it', 'remoteSite': 'ANALY_INFN-FRASCATI', 'filename': None, 'version': None, 'filesize': None, 'ip': '192.84.128.62', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461', 'usr': '7010b99c15c65f4d06dcd547ba2ccc71', 'eventVersion': 'pilot3', 'localSite': 'ANALY_INFN-FRASCATI', 'validateStart': None, 'uuid': '38c248e3b21e6d90c6099fa68c751c4e', 'timeStart': 1408964609.207005, 'relativeStart': None, 'appid': 2250110233, 'clientState': 'INIT_REPORT'}
+25 Aug 11:03:29|Mover.py    | SE list: ['token:ATLASSCRATCHDISK:srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=']
+25 Aug 11:03:29|Mover.py    | Got copytool lcgcp2 from queuedata file
+25 Aug 11:03:29|Mover.py    | copysetup is: /cvmfs/atlas.cern.ch/repo/sw/local/setup.sh (file access verified)
+25 Aug 11:03:29|Mover.py    | Copy command: lcgcp2
+25 Aug 11:03:29|Mover.py    | Setup: /cvmfs/atlas.cern.ch/repo/sw/local/setup.sh
+25 Aug 11:03:29|SiteMoverFar| Looking for site mover lcgcp2, setup:/cvmfs/atlas.cern.ch/repo/sw/local/setup.sh, ar:(), kw:{}
+25 Aug 11:03:29|SiteMoverFar| Returning site mover <class 'lcgcp2SiteMover.lcgcp2SiteMover'> (setup: /cvmfs/atlas.cern.ch/repo/sw/local/setup.sh)
+25 Aug 11:03:29|Mover.py    | Got site mover: <lcgcp2SiteMover.lcgcp2SiteMover object at 0x2083510>
+25 Aug 11:03:29|pUtil.py    | getSiteInformation: got experiment=ATLAS
+25 Aug 11:03:29|Mover.py    | Initial space token list:
+25 Aug 11:03:29|pUtil.py    | 1. NULL
+25 Aug 11:03:29|pUtil.py    | 2. NULL
+25 Aug 11:03:29|Mover.py    | Found default space token in schedconfig.se: ATLASSCRATCHDISK
+25 Aug 11:03:29|Mover.py    | Replaced NULL value with default space token (ATLASSCRATCHDISK) for output file 1
+25 Aug 11:03:29|Mover.py    | Replaced NULL value with default space token (ATLASSCRATCHDISK) for log file
+25 Aug 11:03:29|Mover.py    | Verified space token: ATLASSCRATCHDISK
+25 Aug 11:03:29|Mover.py    | Verified space token: ATLASSCRATCHDISK
+25 Aug 11:03:29|Mover.py    | Proper space token list:
+25 Aug 11:03:29|pUtil.py    | 1. ATLASSCRATCHDISK
+25 Aug 11:03:29|pUtil.py    | 2. ATLASSCRATCHDISK
+25 Aug 11:03:29|Mover.py    | Preparing copy for /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root to  using lcgcp2
+25 Aug 11:03:29|Mover.py    | Using scope 'user.sblunier' for file number 0
+25 Aug 11:03:29|Mover.py    | scope=user.sblunier
+25 Aug 11:03:29|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle
+25 Aug 11:03:29|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle
+25 Aug 11:03:29|FileState.py| File name  /  File state  /  Registration state
+25 Aug 11:03:29|FileState.py| ----------------------------------------------------------------------------------------------------
+25 Aug 11:03:29|FileState.py| 1. user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root	not_transferred	not_registered
+25 Aug 11:03:29|FileState.py| 2. user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz	not_created	not_registered
+25 Aug 11:03:29|SiteMover.py| Updated dataset name (removed _sub0179511312): user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297
+25 Aug 11:03:29|Mover.py    | File user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root will go to dataset user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297
+25 Aug 11:03:29|Mover.py    | Mover is preparing to copy file 1/1 to space token: ATLASSCRATCHDISK
+25 Aug 11:03:29|Mover.py    | outputFileInfo={'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root': ('7420', 'f80936ac')}
+25 Aug 11:03:29|Mover.py    | Extracted file size 7420 and checksum f80936ac for file user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|Mover.py    | Number of stage-out tries: 2
+25 Aug 11:03:29|Mover.py    | Put attempt 1/2
+25 Aug 11:03:29|pUtil.py    | getSiteInformation: got experiment=ATLAS
+25 Aug 11:03:29|lcgcp2SiteMo| put_data received prodSourceLabel=user
+25 Aug 11:03:29|pUtil.py    | Will verify: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy;
+25 Aug 11:03:29|pUtil.py    | Nothing to verify in setup: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy; (either empty string or no source command)
+25 Aug 11:03:29|SiteMover.py| Executing command: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy;. /cvmfs/atlas.cern.ch/repo/sw/arc/client/latest/slc6/x86_64/setup.sh;arcproxy -i vomsACvalidityLeft
+25 Aug 11:03:29|SiteMover.py| ec=0 output=279378
+25 Aug 11:03:29|SiteMover.py| Voms proxy verified (279378s)
+25 Aug 11:03:29|SiteMover.py| Voms proxy verified using arcproxy
+25 Aug 11:03:29|SiteMover.py| Will use default SE endpoint
+25 Aug 11:03:29|SiteMover.py| Using SE: srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=
+25 Aug 11:03:29|SiteMover.py| Space token ATLASSCRATCHDISK corresponds to path /dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio
+25 Aug 11:03:29|ATLASSiteInf| Going to store job output at: /dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio
+25 Aug 11:03:29|ATLASSiteInf| LFC path = /grid/atlas/users/pathena
+25 Aug 11:03:29|SiteMover.py| SE destination: /dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/xallgrid1015
+25 Aug 11:03:29|SiteMover.py| LFC dir: /grid/atlas/users/pathena/user/sblunier/xallgrid1015/user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297
+25 Aug 11:03:29|SiteMover.py| Space token ATLASSCRATCHDISK corresponds to path /dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio
+25 Aug 11:03:29|SiteMover.py| Extracted spacetoken=ATLASSCRATCHDISK, se=srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=
+25 Aug 11:03:29|SiteMover.py| Full path will use SE: srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=
+25 Aug 11:03:29|SiteMover.py| Full path will use space token descriptor: ATLASSCRATCHDISK
+25 Aug 11:03:29|SiteMover.py| Space token ATLASSCRATCHDISK corresponds to path /dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio
+25 Aug 11:03:29|SiteMover.py| Full path will use source/destination: /dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio
+25 Aug 11:03:29|SiteMover.py| Full path will use path from scope: rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|ATLASSiteInf| SURL = srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|ATLASSiteInf| dst_gpfn = /dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|ATLASSiteInf| lfcdir = /grid/atlas/users/pathena/user/sblunier/xallgrid1015/user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297
+25 Aug 11:03:29|lcgcp2SiteMo| putfile = srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|lcgcp2SiteMo| full_surl = srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:29|lcgcp2SiteMo| DQ2 site name: INFN-FRASCATI_SCRATCHDISK
+25 Aug 11:03:29|SiteMover.py| export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy; lcg-cp help: usage: lcg-cp [-h,--help] [-c,--config config_file] [-n nbstreams] [-b,--nobdii] [-D,--defaultsetype se|srmv1|srmv2]
+	[-T,--srcsetype se|srmv1|srmv2] [-U,--dstsetype se|srmv1|srmv2] [-s,--sst src_spacetokendesc]
+	[-S,--dst dest_spacetokendesc] [--connect-timeout value] [--sendreceive-timeout value]
+	[--bdii-timeout value] [--srm-timeout value] [--checksum] [--checksum-type type]
+	[-v,--verbose] [-V,--vo vo] [--version]
+	[--src-protocols <protocol1,protocol2,...>]
+	[--dst-protocols <protocol1,protocol2,...>]
+	src_file  dest_file
+25 Aug 11:03:29|lcgcp2SiteMo| Executing command: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy; lcg-cp --verbose --vo atlas -b --srm-timeout=3600 --connect-timeout=300 --sendreceive-timeout=3600 -U srmv2 -S ATLASSCRATCHDISK file:///home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:33|lcgcp2SiteMo| Command finished after 4.010000 s
+25 Aug 11:03:33|lcgcp2SiteMo| ec = 0, len(o) = 981
+25 Aug 11:03:33|SiteMover.py| export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy; lcg-get-checksum help: usage: lcg-get-checksum [-h,--help] [-b,--nobdii] [--srm-timeout value] [--connect-timeout value]
+	[--force] [--sendreceive-timeout value] [--bdii-timeout value]
+	[-D,--defaultsetype se|srmv1|srmv2] [-T,--setype se|srmv1|srmv2]
+	[--checksum-type type] [-v,--verbose] [--version] (-f file | surl [...])
+25 Aug 11:03:33|SiteMover.py| Executing command: export X509_USER_PROXY=/home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy; lcg-get-checksum -b -T srmv2 --connect-timeout=300 --sendreceive-timeout=3600 srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:36|SiteMover.py| f80936ac	srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:36|lcgcp2SiteMo| Setting remote file size to None (not needed)
+25 Aug 11:03:36|lcgcp2SiteMo| Remote checksum: f80936ac
+25 Aug 11:03:36|lcgcp2SiteMo| Local checksum: f80936ac
+25 Aug 11:03:36|lcgcp2SiteMo| Remote and local checksums verified
+25 Aug 11:03:36|lcgcp2SiteMo| Skipped secondary checksum test
+25 Aug 11:03:36|lcgcp2SiteMo| Updated tracing report: {'protocol': 'lcg2', 'duid': None, 'eventType': 'put_sm_a', 'suspicious': '0', 'timeEnd': 1408964616.1267011, 'dataset': 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312', 'catStart': 1408964609.273231, 'guid': 'd1057e793a2741de9b41c55ac91e817c', 'transferStart': 1408964609.701967, 'hostname': 'atlaswn031.lnf.infn.it', 'remoteSite': 'INFN-FRASCATI_SCRATCHDISK', 'filename': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root', 'version': None, 'filesize': '7420', 'ip': '192.84.128.62', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461', 'usr': '7010b99c15c65f4d06dcd547ba2ccc71', 'eventVersion': 'pilot3', 'localSite': 'INFN-FRASCATI_SCRATCHDISK', 'validateStart': 1408964613.7138121, 'uuid': '38c248e3b21e6d90c6099fa68c751c4e', 'timeStart': 1408964609.207005, 'relativeStart': 1408964609.7019629, 'appid': 2250110233, 'clientState': 'DONE'}
+25 Aug 11:03:36|SiteMover.py| Tracing server: https://atlas-ddmtracer.cern.ch:443/dq2/ws_tracer/rpc
+25 Aug 11:03:36|SiteMover.py| Sending tracing report: {'protocol': 'lcg2', 'duid': None, 'eventType': 'put_sm_a', 'suspicious': '0', 'timeEnd': 1408964616.1267011, 'dataset': 'user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312', 'catStart': 1408964609.273231, 'guid': 'd1057e793a2741de9b41c55ac91e817c', 'transferStart': 1408964609.701967, 'hostname': 'atlaswn031.lnf.infn.it', 'remoteSite': 'INFN-FRASCATI_SCRATCHDISK', 'filename': 'user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root', 'version': None, 'filesize': '7420', 'ip': '192.84.128.62', 'usrdn': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=51913461', 'usr': '7010b99c15c65f4d06dcd547ba2ccc71', 'eventVersion': 'pilot3', 'localSite': 'INFN-FRASCATI_SCRATCHDISK', 'validateStart': 1408964613.7138121, 'uuid': '38c248e3b21e6d90c6099fa68c751c4e', 'timeStart': 1408964609.207005, 'relativeStart': 1408964609.7019629, 'appid': 2250110233, 'clientState': 'DONE'}
+25 Aug 11:03:36|SiteMover.py| Executing command: curl --connect-timeout 20 --max-time 120 --cacert /home/pilatlas008/home_crce3_679289717/crce3_679289717.proxy -v -k -d "report=%7B%27protocol%27%3A+%27lcg2%27%2C+%27duid%27%3A+None%2C+%27eventType%27%3A+%27put_sm_a%27%2C+%27suspicious%27%3A+%270%27%2C+%27timeEnd%27%3A+1408964616.1267011%2C+%27dataset%27%3A+%27user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI_ANALY_INFN-FRASCATI.root.759297_sub0179511312%27%2C+%27catStart%27%3A+1408964609.273231%2C+%27guid%27%3A+%27d1057e793a2741de9b41c55ac91e817c%27%2C+%27transferStart%27%3A+1408964609.701967%2C+%27hostname%27%3A+%27atlaswn031.lnf.infn.it%27%2C+%27remoteSite%27%3A+%27INFN-FRASCATI_SCRATCHDISK%27%2C+%27filename%27%3A+%27user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root%27%2C+%27version%27%3A+None%2C+%27filesize%27%3A+%277420%27%2C+%27ip%27%3A+%27192.84.128.62%27%2C+%27usrdn%27%3A+%27%2FDC%3Dch%2FDC%3Dcern%2FOU%3DOrganic+Units%2FOU%3DUsers%2FCN%3Dsblunier%2FCN%3D757276%2FCN%3DSylvain+Blunier%2FCN%3D51913461%27%2C+%27usr%27%3A+%277010b99c15c65f4d06dcd547ba2ccc71%27%2C+%27eventVersion%27%3A+%27pilot3%27%2C+%27localSite%27%3A+%27INFN-FRASCATI_SCRATCHDISK%27%2C+%27validateStart%27%3A+1408964613.7138121%2C+%27uuid%27%3A+%2738c248e3b21e6d90c6099fa68c751c4e%27%2C+%27timeStart%27%3A+1408964609.207005%2C+%27relativeStart%27%3A+1408964609.7019629%2C+%27appid%27%3A+2250110233%2C+%27clientState%27%3A+%27DONE%27%7D&operation=addReport&API=0_3_0" https://atlas-ddmtracer.cern.ch:443/dq2/ws_tracer/rpc
+25 Aug 11:03:36|SiteMover.py| Tracing report sent
+25 Aug 11:03:36|Mover.py    | Stage-out returned: s=0, r_gpfn=srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root, r_fsize=7420, r_fchecksum=f80936ac, r_farch=, pilotErrorDiag=
+25 Aug 11:03:36|SiteMover.py| Adding GUID (d1057e79-3a27-41de-9b41-c55ac91e817c) and SURL (srm://atlasse.lnf.infn.it:8446/srm/managerv2?SFN=/dpm/lnf.infn.it/home/atlas/atlasscratchdisk/rucio/user/sblunier/07/ce/user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root) to dictionary
+25 Aug 11:03:36|SiteMover.py| SURL dictionary does not exist: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/surlDictionary-2250110233.json (will be created)
+25 Aug 11:03:36|SiteMover.py| Successfully updated SURL dictionary (which currectly has 1 key(s))
+25 Aug 11:03:36|Mover.py    | Skipped chirp transfer
+25 Aug 11:03:36|Mover.py    | Return code: 0
+25 Aug 11:03:36|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle
+25 Aug 11:03:36|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle
+25 Aug 11:03:36|FileState.py| Using file state dictionary: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/fileState-output-2250110233.pickle
+25 Aug 11:03:36|FileState.py| File name  /  File state  /  Registration state
+25 Aug 11:03:36|FileState.py| ----------------------------------------------------------------------------------------------------
+25 Aug 11:03:36|FileState.py| 1. user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root	transferred	registered
+25 Aug 11:03:36|FileState.py| 2. user.sblunier.xallgrid1015.IT.ANALY_INFN-FRASCATI.log.000001.log.tgz	not_created	not_registered
+25 Aug 11:03:36|Mover.py    | No LFC registration by the pilot
+25 Aug 11:03:36|Mover.py    | Put successful
+25 Aug 11:03:36|runJob.py   | Put function returned code: 0
+25 Aug 11:03:36|pUtil.py    | Lock file created: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/ALLFILESTRANSFERRED
+25 Aug 11:03:36|pUtil.py    | Lock file created: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/ALLFILESTRANSFERRED
+25 Aug 11:03:36|runJob.py   | No LRC file registration since lfchost is set
+25 Aug 11:03:36|pUtil.py    | Will try to use cmtconfig: x86_64-slc6-gcc48-opt (from job definition)
+25 Aug 11:03:36|RunJobUtilit| filesAltStageOut not set
+25 Aug 11:03:36|pilot.py    | Connected from ('127.0.0.1', 46991)
+25 Aug 11:03:36|RunJobUtilit| filesNormalStageOut=1
+25 Aug 11:03:36|RunJobUtilit| Final payload state set to: finished
+25 Aug 11:03:36|RunJobUtilit| About to send TCP message to main pilot thread of length = 416
+25 Aug 11:03:36|RunJobUtilit| (Sent)
+25 Aug 11:03:36|pilot.py    | --- TCPServer: Message received from child is : ['jobState=stageout', 'pid=6014', 'bytesWithoutFAX=1587151', 'timeStageIn=4', 'output_latereg=False', 'filesWithoutFAX=1', 'timeExe=7613', 'cpuConversionFactor=1.0', 'vmPeakMax=0', 'cpuUnit=s', 'finalstate=finished', 'vmPeakMean=0', 'pilotErrorDiag=^!^', 'filesNormalStageOut=1', 'status=finished', 'timeStageOut=7', 'RSSMean=0', 'nEvents=0', 'timeSetup=0', 'JEM=NO', 'nEventsW=0', 'cmtconfig=x86_64-slc6-gcc48-opt', 'pilotecode=0', 'cpuTime=2921', 'jobid=2250110233', 'pgrp=6014', 'transecode=0', '']
+25 Aug 11:03:36|pilot.py    | Process groups: 4841 (pilot), 6014 (sub process)
+25 Aug 11:03:36|pUtil.py    | Decoding: ^!^
+25 Aug 11:03:36|pUtil.py    | Empty URL encoded string (Nothing to decode)
+25 Aug 11:03:36|pilot.py    | got filesNormalStageOut=1
+25 Aug 11:03:36|RunJobUtilit| (Received)
+25 Aug 11:03:36|RunJobUtilit| Successfully sent and received TCP message
+25 Aug 11:03:36|RunJobUtilit| Successfully updated local pilot TCP server at 2014-08-25T13:03:36+-100 (Trial 1/10)
+25 Aug 11:03:36|runJob.py   | ********************************************************
+25 Aug 11:03:36|runJob.py   |  This job ended with (trf,pilot) exit code of (0,0)
+25 Aug 11:03:36|runJob.py   | ********************************************************
+25 Aug 11:03:36|runJob.py   | Executing command: ls -lF /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3
+25 Aug 11:03:36|runJob.py   | total 3176
+-rw-r--r-- 1 pilatlas008 pilatlas 107141 May 22 10:21 ATLASExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas  68763 Aug 25 10:56 ATLASExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  25172 Aug 14 11:21 ATLASSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas  18771 Aug 25 10:56 ATLASSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24663 Jul 15  2013 BNLdCacheSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  15995 Aug 25 10:56 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24247 Jul 15  2013 CMSExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8348 Jul 15  2013 CMSSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8487 Aug 25 10:56 CMSSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8427 Jul 15  2013 COGSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   7214 Aug 25 10:56 COGSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    105 Aug 25 10:56 CURRENT_SITEWORKDIR
+-rw-r--r-- 1 pilatlas008 pilatlas  18770 Jul 15  2013 CastorSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11879 Aug 25 10:56 CastorSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  12709 Jul 15  2013 ChirpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9108 Aug 25 10:56 ChirpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  13233 Oct 31  2013 Cleaner.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9454 Aug 25 10:56 Cleaner.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  12301 Jul 15  2013 DBReleaseHandler.py
+-rw-r--r-- 1 pilatlas008 pilatlas    647 Jul 15  2013 Diagnosis.py
+-rw-r--r-- 1 pilatlas008 pilatlas    898 Aug 25 10:56 Diagnosis.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   3120 Jul 15  2013 ErrorDiagnosis.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2957 Aug 25 10:56 ErrorDiagnosis.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  28842 Apr 29 16:21 Experiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas  17551 Aug 25 10:56 Experiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2304 Jul 15  2013 ExperimentFactory.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2020 Aug 25 10:56 ExperimentFactory.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  18312 Dec 10  2013 FAXSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  13551 Aug 25 10:56 FAXSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   5148 Jul 15  2013 FileRegistration.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9699 Jul 15  2013 FileState.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9487 Aug 25 10:56 FileState.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2391 Jul 15  2013 FileStateClient.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2762 Aug 25 10:56 FileStateClient.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  24485 Jul 15  2013 GOSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11236 Jul 15  2013 GSIftpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   9185 Aug 25 10:56 GSIftpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  11706 Jul 15  2013 HUSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8757 Aug 25 10:56 HUSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  28964 Jan 28  2014 JEMstub.py
+-rw-r--r-- 1 pilatlas008 pilatlas  18506 May 22 10:21 Job.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10668 Aug 25 10:56 Job.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2043 Jul 15  2013 JobInfoXML.py
+-rw-r--r-- 1 pilatlas008 pilatlas  54989 Apr 29 16:21 JobLog.py
+-rw-r--r-- 1 pilatlas008 pilatlas  34328 Aug 25 10:56 JobLog.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  29371 Jul 15  2013 JobRecovery.py
+-rw-r--r-- 1 pilatlas008 pilatlas  21060 Aug 25 10:56 JobRecovery.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  10634 Jul 15  2013 JobState.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8240 Aug 25 10:56 JobState.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  14369 Aug 14 11:21 LocalSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10040 Aug 25 10:56 LocalSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 175586 Aug 14 11:21 Mover.py
+-rw-r--r-- 1 pilatlas008 pilatlas 105532 Aug 25 10:56 Mover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   9274 Apr 29 16:21 Node.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8425 Aug 25 10:56 Node.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8066 Jul 15  2013 NordugridATLASExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6629 Aug 25 10:56 NordugridATLASExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2038 Jul 15  2013 NordugridATLASSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2244 Aug 25 10:56 NordugridATLASSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2678 Jul 15  2013 OtherExperiment.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3738 Aug 25 10:56 OtherExperiment.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   1991 Jul 15  2013 OtherSiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2709 Aug 25 10:56 OtherSiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2311 Jul 15  2013 OtherSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas      8 Aug 14 11:21 PILOTVERSION
+-rw-r--r-- 1 pilatlas008 pilatlas  32933 Apr 29 16:21 PandaServerClient.py
+-rw-r--r-- 1 pilatlas008 pilatlas  19959 Aug 25 10:56 PandaServerClient.pyc
+drwxrwx--- 3 pilatlas008 pilatlas   4096 Aug 25 13:03 Panda_Pilot_5455_1408956987/
+-rw-r--r-- 1 pilatlas008 pilatlas  14102 Apr 29 16:21 PilotErrors.py
+-rw-r--r-- 1 pilatlas008 pilatlas  12846 Aug 25 10:56 PilotErrors.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   1717 Jul 15  2013 PilotTCPServer.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2276 Aug 25 10:56 PilotTCPServer.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  13549 Jul 15  2013 PilotUtils.py
+-rw-r--r-- 1 pilatlas008 pilatlas   4281 Jul 15  2013 ProxyGuard.py
+-rw-r--r-- 1 pilatlas008 pilatlas   5241 Aug 25 10:56 ProxyGuard.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas     25 Jul 15  2013 README
+-rw-r--r-- 1 pilatlas008 pilatlas  30467 Feb 13  2014 RunJobUtilities.py
+-rw-r--r-- 1 pilatlas008 pilatlas  24244 Aug 25 10:56 RunJobUtilities.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  14524 Jul 15  2013 SRMSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10559 Aug 25 10:56 SRMSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas      1 Aug 25 10:56 STATUSCODE
+-rw-r--r-- 1 pilatlas008 pilatlas    998 Jul 15  2013 Site.py
+-rw-r--r-- 1 pilatlas008 pilatlas   1411 Aug 25 10:56 Site.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  33806 Apr 29 16:21 SiteInformation.py
+-rw-r--r-- 1 pilatlas008 pilatlas  22469 Aug 25 10:56 SiteInformation.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2892 Jul 15  2013 SiteInformationFactory.py
+-rw-r--r-- 1 pilatlas008 pilatlas   2280 Aug 25 10:56 SiteInformationFactory.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas 137286 Feb 19  2014 SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  94142 Aug 25 10:56 SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   8583 Jul 15  2013 SiteMoverFarm.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6454 Aug 25 10:56 SiteMoverFarm.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  23435 Jul 15  2013 UberftpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  14677 Aug 25 10:56 UberftpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   3453 Aug 15  2013 VmPeak.py
+-rw-r--r-- 1 pilatlas008 pilatlas      0 Jul 15  2013 __init__.py
+-rw-r--r-- 1 pilatlas008 pilatlas  31534 May 22 10:21 aria2cSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  20684 Aug 25 10:56 aria2cSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  31374 Oct 31  2013 atlasProdPilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  16969 Jul 15  2013 castorSvcClassSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  11731 Aug 25 10:56 castorSvcClassSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    401 Jul 15  2013 config.py
+-rw-r--r-- 1 pilatlas008 pilatlas    638 Aug 25 10:56 config.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas    729 Aug 25 12:58 curl.config
+-rw-r--r-- 1 pilatlas008 pilatlas  30366 Jul 15  2013 curlSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  17459 Aug 25 10:56 curlSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  10846 Jul 15  2013 dCacheLFCSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8763 Aug 25 10:56 dCacheLFCSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  30965 Jul 15  2013 dCacheSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  20662 Aug 25 10:56 dCacheSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  34155 Jul 15  2013 dataPilot.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   9189 Jul 15  2013 dq2SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6262 Aug 25 10:56 dq2SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   5451 Jul 15  2013 futil.py
+-rw-r--r-- 1 pilatlas008 pilatlas   6782 Aug 25 10:56 futil.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  26864 Jul 15  2013 globusPilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  28025 Jul 15  2013 lcgcp2SiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  15703 Aug 25 10:56 lcgcp2SiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  33494 Jul 15  2013 lcgcpSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  19088 Aug 25 10:56 lcgcpSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  11096 Jul 15  2013 mvSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   8904 Aug 25 10:56 mvSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas   9674 Jul 15  2013 myproxyUtils.py*
+-rw-r--r-- 1 pilatlas008 pilatlas 129128 Feb 13  2014 pUtil.py
+-rw-r--r-- 1 pilatlas008 pilatlas 103220 Aug 25 10:56 pUtil.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas   2061 Aug 25 10:56 pandaJobData_1.out
+-rw-r--r-- 1 pilatlas008 pilatlas 269814 Aug 14 11:21 pilot.py
+-rw-r--r-- 1 pilatlas008 pilatlas  10249 Aug 25 10:56 pilotlog.out
+-rw-r--r-- 1 pilatlas008 pilatlas   2818 Aug 25 10:56 queuedata.json
+-rw-r--r-- 1 pilatlas008 pilatlas  20033 Jul 15  2013 rfcpLFCSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas  13721 Aug 25 10:56 rfcpLFCSiteMover.pyc
+-rw-r--r-- 1 pilatlas008 pilatlas  51399 May 22 10:21 runJob.py
+-rw-r--r-- 1 pilatlas008 pilatlas   4597 Jul 15  2013 stormSiteMover.py
+-rw-r--r-- 1 pilatlas008 pilatlas   3713 Aug 25 10:56 stormSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas   8743 Jul 15  2013 timed_command.py*
+-rw-r--r-- 1 pilatlas008 pilatlas   6631 Aug 25 10:56 timed_command.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  36996 Apr 29 16:21 xrdcpSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  24276 Aug 25 10:56 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 pilatlas008 pilatlas  32697 Feb 19  2014 xrootdSiteMover.py*
+-rw-r--r-- 1 pilatlas008 pilatlas  21708 Aug 25 10:56 xrootdSiteMover.pyc
+25 Aug 11:03:36|runJob.py   | Lingering output file removed: user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root
+25 Aug 11:03:36|runJob.py   | Payload cleanup has finished
+25 Aug 11:03:36|runJob.py   | runJob (payload wrapper) has finished
+25 Aug 11:03:50|pilot.py    | Number of running processes: 1
+25 Aug 11:03:50|pilot.py    | Time passed since pilot startup = 7643 s (maximum allowed batch system time = 172800 s)
+25 Aug 11:03:50|pilot.py    | Production job is done
+25 Aug 11:03:50|pilot.py    | Clean up the ended job: [6014, <Job.Job instance at 0x192def0>, 4841]
+25 Aug 11:03:50|pilot.py    | Refreshing tail stdout dictinary prior to finishing the job(s)
+25 Aug 11:03:50|pilot.py    | Returning tail stdout dictionary with 1 entries
+25 Aug 11:03:50|pilot.py    | (2a) Executing command: stat /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987
+25 Aug 11:03:50|pilot.py    | 
+  File: `/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987'
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: fd01h/64769d	Inode: 55386495    Links: 3
+Access: (0770/drwxrwx---)  Uid: (10708/pilatlas008)   Gid: ( 1308/pilatlas)
+Access: 2014-08-25 10:56:28.000000000 +0200
+Modify: 2014-08-25 13:03:36.000000000 +0200
+Change: 2014-08-25 13:03:36.000000000 +0200
+25 Aug 11:03:50|pilot.py    | (2b) Executing command: stat /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3
+25 Aug 11:03:50|pilot.py    | 
+  File: `/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3'
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: fd01h/64769d	Inode: 55386132    Links: 3
+Access: (0755/drwxr-xr-x)  Uid: (10708/pilatlas008)   Gid: ( 1308/pilatlas)
+Access: 2014-08-25 10:56:30.000000000 +0200
+Modify: 2014-08-25 10:56:29.000000000 +0200
+Change: 2014-08-25 10:56:29.000000000 +0200
+25 Aug 11:03:50|JobLog.py   | Post job task (normal mode) using dir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 11:03:50|pUtil.py    | Trying to read metadata-2250110233.xml from dir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 11:03:50|pUtil.py    | Found metadata
+25 Aug 11:03:50|JobLog.py   | Building log extracts..
+25 Aug 11:03:50|JobLog.py   | !!WARNING!!1010!! PandaID=2250110233 had outbound connections
+25 Aug 11:03:50|ATLASExperim| Removing redundant files prior to log creation
+25 Aug 11:03:50|ATLASExperim| To be removed: ['/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/runGen.py']
+25 Aug 11:03:50|ATLASExperim| To be removed: ['/home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989/jobState-2250110233-test.pickle']
+25 Aug 11:03:50|JobLog.py   | Removed soft link: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/athena_stdout.txt
+25 Aug 11:03:50|pUtil.py    | chdir to: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987
+25 Aug 11:03:50|pUtil.py    | current dir: /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987
+25 Aug 11:03:50|pUtil.py    | Could not find trf error file jobInfo.xml in search path /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 11:03:50|pUtil.py    | ..Job report..................................................................................................
+25 Aug 11:03:50|pUtil.py    | . Pilot version             : SULU 58o
+25 Aug 11:03:50|pUtil.py    | . Job id                    : 2250110233
+25 Aug 11:03:50|pUtil.py    | . Current job status        : finished
+25 Aug 11:03:50|pUtil.py    | . Trf job type              : Single trf job
+25 Aug 11:03:50|pUtil.py    | . Final job state           : finished
+25 Aug 11:03:50|pUtil.py    | . All out files transferred : Yes
+25 Aug 11:03:50|pUtil.py    | . Pilot error code          : 0, (no pilot error)
+25 Aug 11:03:50|pUtil.py    | . Length pilot error diag   : 0
+25 Aug 11:03:50|pUtil.py    | . Pilot error diag          : Empty
+25 Aug 11:03:50|pUtil.py    | . Pilot produced stderr     : No
+25 Aug 11:03:50|pUtil.py    | . runJob produced stderr    : No
+25 Aug 11:03:50|pUtil.py    | . Trf error code            : 0
+25 Aug 11:03:50|pUtil.py    | . Trf error diagnosis       : 
+25 Aug 11:03:50|pUtil.py    | . Length log extracts       : 239064 (will be truncated to 2048)
+25 Aug 11:03:50|pUtil.py    | . Payload produced stderr   : No (empty athena_stderr.txt)
+25 Aug 11:03:50|pUtil.py    | . Found core dump in workdir: No
+25 Aug 11:03:50|pUtil.py    | . Job was executed in dir   : /home/pilatlas008/home_crce3_679289717/CREAM679289717/condorg_AfUd60Bz/pilot3/Panda_Pilot_5455_1408956987/PandaJob_2250110233_1408956989
+25 Aug 11:03:50|pUtil.py    | . Error report produced at  : 2014-08-25T13:03:50+-100
+25 Aug 11:03:50|pUtil.py    | ..Time report.................................................................................................
+25 Aug 11:03:50|pUtil.py    | . CPU consumption time      : 2921 s
+25 Aug 11:03:50|pUtil.py    | . Payload execution time    : 7613 s
+25 Aug 11:03:50|pUtil.py    | . GetJob consumption time   : 0 s
+25 Aug 11:03:50|pUtil.py    | . Stage-in consumption time : 4 s
+25 Aug 11:03:50|pUtil.py    | . Stage-out consumption time: 7 s
+25 Aug 11:03:50|pUtil.py    | ..............................................................................................................
+25 Aug 11:03:50|pUtil.py    | !!FINISHED!!0!!Job successfully completed
+25 Aug 11:03:50|JobLog.py   | Removing unwanted files prior to job log creation
+25 Aug 11:03:50|JobLog.py   | No skipped input files (non DBRelease)
+25 Aug 11:03:50|JobLog.py   | Preparing to create log file

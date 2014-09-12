@@ -1,0 +1,588 @@
+=== start ===
+Mon Jun 23 15:52:56 2014
+=== parameters ===
+user.sblunier.0623134700.197121.lib._004026.lib.tgz
+.
+./main.sh ANALY_IFAE
+[]
+
+{'ANALY_IFAE.root': 'user.sblunier.004026._00001.ANALY_IFAE.root'}
+[]
+
+
+False
+False
+prod-lfc-atlas.cern.ch
+False
+
+https://aipanda011.cern.ch:25443
+{}
+False
+
+
+-1
+False
+skipInputByRetry []
+writeInputToTxt 
+rootVer 5.34.18-davix_p6a
+useRootCore False
+givenPFN False
+useMana False
+manaVer 
+===================
+===== PFC from pilot =====
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+
+  <File ID="5b93c728-53cc-4650-9781-c6f2f576ebf0">
+    <physical>
+      <pfn filetype="ROOT_All" name="user.sblunier.0623134700.197121.lib._004026.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+
+</POOLFILECATALOG>
+Running in /home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570
+EsDatadisk.txt
+Makefile
+esAnaly.txt
+getFiles.py
+launch_main.py
+listFilePerSite.txt
+main
+main.C
+main.o
+main.sh
+pandaRootBin/
+pandaRootBin/pandaUseCvmfSetup.sh
+runPrun.sh
+x509up_u68281
+===== make PandaTracer =====
+  m64 succeeded
+  m32 succeeded
+Log -> /home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570/workDir/5034fbf2-034f-4fd7-9c08-176d0fb810a5/pandatracerlog.txt
+
+=== dump ./.rootrc ===
+ProofLite.Workers: 1
+
+
+=== env variables ===
+[1;34mCreated /home/atpilot011/home_cream_183562606/.asetup.  Please look and (optional) edit it.[0m
+************************************************************************
+Setting up ROOT version 5.34.18-davix_p6a-x86_64-slc6-gcc48-opt
+  Current GCC version: gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-3)
+Setting up gcc version gcc481_x86_64_slc6
+  Python version in your path is 2.6.6
+  Python version used to build ROOT is 2.7
+Setting up Python version 2.7.4-x86_64-slc6-gcc48
+  If you need a different gcc/python version:
+    localSetupGcc --gccVersion=<value>
+    localSetupPython --pythonVersion=<version>
+  where the version must exist (showVersions --show=gcc,python)
+Setting up davix from $ALRB_ROOT_DAVIX
+************************************************************************
+ Tip for _this_ standalone ROOT and grid (ie prun) submission:
+  avoid --athenaTag if you do not need athena
+  use --rootVer=5.34.18-davix_p6a --cmtConfig=x86_64-slc6-gcc48-opt
+************************************************************************
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.34/18     14 March 2014   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.34/18 (tags/v5-34-18-davix@v5-34-18-1-ga76f0e5, may 16 2014, 18:10:13 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+
+APF_PYTHON26=1
+ALRB_ROOT_DAVIX=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/davix/build/root
+AtlasSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.config/.asetup.site
+ATLAS_PYTHON_PILOT=/usr/bin/python
+MANPATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/man:/opt/glite/share/man::
+ALRB_cvmfs_CDB=/cvmfs/atlas-condb.cern.ch/repo/conditions
+HOSTNAME=td701.pic.es
+ATLAS_LOCAL_ROOT_PACOPT=
+PBS_VERSION=TORQUE-2.5.13
+PAC_ANCHOR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6
+ATLAS_LOCAL_CERNROOT_VERSION=5.34.18-davix_p6a-x86_64-slc6-gcc48-opt
+GRID_ENV_LOCATION=/usr/libexec
+SHELL=/bin/bash
+HISTSIZE=1000
+ALRB_SHELL=sh
+VO_VO_PIC_ES_SW_DIR=/software/vo.pic.es
+PBS_JOBNAME=cream_183562606
+TMPDIR=/home/tmp/27058867.pbs04.pic.es
+DCACHE_RAHEAD=TRUE
+GCC_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48
+VO_OPS_DEFAULT_SE=srm.pic.es
+LD_PRELOAD=/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570/workDir/5034fbf2-034f-4fd7-9c08-176d0fb810a5/$LIB/wrapper.so
+rootCmtConfig=x86_64-slc6-gcc48-opt
+__delegationProxyCertSandboxPath=gsiftp://ifaece03.pic.es/var/cream_sandbox/atpilot/CN_Robot__ATLAS_Pilot2_CN_531497_CN_atlpilo2_OU_Users_OU_Organic_Units_DC_cern_DC_ch_atlas_Role_pilot_Capability_NULL_atpilot011/proxy/1403483406_225369_12366165120495
+GT_PROXY_MODE=old
+PBS_ENVIRONMENT=PBS_BATCH
+ATLAS_LOCAL_GCC_VERSION=gcc481_x86_64_slc6
+ATLAS_LOCAL_SETUP_OPTIONS=--quiet
+VO_VO_ASTRO_PIC_ES_DEFAULT_SE=srm.pic.es
+VO_VO_PAUS_PIC_ES_SW_DIR=/software/vo.paus.pic.es
+QTDIR=/usr/lib64/qt-3.3
+ALRB_useGridSW=emi
+GLITE_WMS_LOCATION=/usr
+X509_CERT_DIR=/etc/grid-security/certificates
+QTINC=/usr/lib64/qt-3.3/include
+VO_MAGIC_DEFAULT_SE=srm.pic.es
+PBS_O_WORKDIR=/var/tmp
+VO_CDF_DEFAULT_SE=srm.pic.es
+GRIDMAPDIR=/etc/grid-security/gridmapdir
+ALRB_SFT_LCG=/cvmfs/sft.cern.ch/lcg
+COPY_TOOL=dccplfc
+PBS_TASKNUM=1
+USER=atpilot011
+LD_LIBRARY_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/davix/build/root/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2.7.4-x86_64-slc6-gcc48/sw/lcg/external/Python/2.7.4/x86_64-slc6-gcc48-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dcache/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dcache/lib64:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/lib::/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/lib::/cvmfs/atlas.cern.ch/repo/sw/local/x86_64-slc5-gcc43-opt/yampl/1.0/lib
+ALRB_RHVER=6
+GRID_JOBID=N/A
+LFC_CONNTIMEOUT=60
+PBS_O_HOME=/home/atpilot011
+ALRB_SCRATCH=/home/atpilot011/home_cream_183562606/.alrb
+ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
+LCG_LOCATION=/usr
+VO_DTEAM_SW_DIR=/software/dteam/slc4
+ATLAS_LOCAL_GCC_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6
+ALRB_printHelpMain=\n...Type localSetupAGIS to setup AGIS\n...Type localSetupAtlantis to setup Atlantis\n...Type localSetupDQ2Client to use DQ2 Client\n...Type localSetupFAX to use FAX\n...Type localSetupGanga to use Ganga\n...Type localSetupGcc to use alternate gcc\n...Type localSetupPacman to use Pacman\n...Type localSetupPandaClient to use Panda Client\n...Type localSetupPyAMI to setup pyAMI\n...Type localSetupPoD to setup Proof-on-Demand\n...Type localSetupROOT to setup (standalone) ROOT\n...Type localSetupDQ2Wrappers to setup DQ2Wrappers\n...Type localSetupSFT to setup SFT packages\n...Type localSetupXRootD to setup XRootD\n...Type showVersions to show versions of installed software\n...Type asetup to setup a release (changeASetup to change asetup version)\n...Type rcSetup to setup an ASG release (changeRCSetup to change rcSetup ver.)\n...Type diagnostics for diagnostic tools\n...Type helpMe for more help\n...Type printMenu to show this menu
+VO_MAGIC_SW_DIR=/software/magic/sl6
+VO_CDF_SW_DIR=/software/cdf/slc4
+CMTUSERCONTEXT=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt
+ALRB_cvmfs_Athena=/cvmfs/atlas.cern.ch/repo/sw/software
+PBS_WALLTIME=313200
+DQ2_LOCAL_SITE_ID=IFAE_SCRATCHDISK
+AtlasSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V00-03-74/AtlasSetup
+PBS_GPUFILE=/var/spool/pbs/aux//27058867.pbs04.pic.esgpu
+VO_LHCB_DEFAULT_SE=srm.pic.es
+PBS_MOMPORT=15003
+ATLAS_LOCAL_RCSETUP_VERSION=00-01-08
+FRONTIER_ID=[2199268681]
+VO_OPS_SW_DIR=/software/ops/slc4
+ATLAS_LOCAL_ASETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V00-03-74
+VO_ATLAS_DEFAULT_SE=srmifae.pic.es
+GLITE_WMS_JOBID=N/A
+LFC_CONRETRY=2
+ALRB_cvmfs_ALRB_default=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+PBS_O_QUEUE=at2ifae_analy
+FACTORYUSER=apf
+FRONTIER_LOG_LEVEL=warning
+GLOBUS_FTP_CLIENT_GRIDFTP2=true
+APFCID=4120957.12
+PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/davix/build/root/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2.7.4-x86_64-slc6-gcc48/sw/lcg/external/Python/2.7.4/x86_64-slc6-gcc48-opt/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48/bin:.:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/bin:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.5.0/DQ2Clients/opt/dq2/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/atpilot011/bin
+DC_LOCAL_CACHE_BUFFER=1
+VO_BIOMED_DEFAULT_SE=srm.pic.es
+PBS_O_LOGNAME=atpilot011
+MAIL=/var/spool/mail/atpilot011
+PANDA_JSID=aipanda023
+ALRB_OSMAJORVER=6
+PBS_O_LANG=en_US.UTF-8
+DC_LOCAL_CACHE_BLOCK_SIZE=131072
+ALRB_cvmfs_condb_repo=/cvmfs/atlas-condb.cern.ch/repo
+VO_OPS_VO_IBERGRID_EU_SW_DIR=/software/ops.vo.ibergrid.eu
+PBS_JOBCOOKIE=47CB2F8161A1E75153D4F9F654D331E4
+DC_LOCAL_CACHE_MEMORY_PER_FILE=10000000
+ALRB_OSTYPE=Linux
+VO_LHCB_PROXY_URL=http://squid.pic.es:3130
+VO_DTEAM_DEFAULT_SE=srm.pic.es
+RUCIO_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12
+VO_CMS_DEFAULT_SE=srm.pic.es
+PWD=/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570/workDir
+VO_EUCLID_EC_ORG_DEFAULT_SE=srm.pic.es
+ATLAS_RECOVERDIR=/home/recoverypanda/ifae
+GTAG=http://aipanda023.cern.ch:25880/2014-06-23/ANALY_IFAE_T3-1363/4120957.12.out
+PANDA_PRELOAD=/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570/workDir/5034fbf2-034f-4fd7-9c08-176d0fb810a5/$LIB/wrapper.so
+SITE_GIIS_URL=sitebdii-ifae.pic.es
+RUCIO_AUTH_TYPE=x509_proxy
+FACTORYQUEUE=ANALY_IFAE_T3-1363
+ALRB_cvmfs_nightly_repo=/cvmfs/atlas-nightlies.cern.ch/repo
+LANG=C
+PBS_NODENUM=0
+ATLAS_LOCAL_ASETUP_VERSION=V00-03-74
+ALRB_allowSL6onSL5=NO
+LFC_CONRETRYINT=60
+VO_VO_CTA_IN2P3_FR_DEFAULT_SE=srm.pic.es
+PBS_NUM_NODES=1
+ATLAS_LOCAL_PYTHON_VERSION=2.7.4-x86_64-slc6-gcc48
+PandaID=2199268681
+VO_VO_ASTRO_PIC_ES_SW_DIR=/software/vo.astro.pic.es
+ATLAS_POOLCOND_PATH=/cvmfs/atlas.cern.ch/repo/conditions
+MYPROXY_SERVER=myproxy.cern.ch
+PBS_O_SHELL=/sbin/nologin
+DQ2_ENDUSER_SETUP=True
+rcSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/.config/.rcsetup.site
+GLITE_WMS_SEQUENCE_CODE=
+PBS_SERVER=pbs04.pic.es
+ALRBtestPath=,,
+PBS_JOBID=27058867.pbs04.pic.es
+ROOTSYS=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt
+HISTCONTROL=ignoredups
+VO_PHYS_VO_IBERGRID_EU_SW_DIR=/software/phys.vo.ibergrid.eu
+ENVIRONMENT=BATCH
+GLEXEC_LOCATION=/usr
+VO_LHCB_SW_DIR=/cvmfs/lhcb.cern.ch
+CE_ID=ifaece03.pic.es:8443/cream-pbs-at2ifae_analy
+APFFID=aipanda023
+VO_VO_PIC_ES_DEFAULT_SE=srm.pic.es
+SHLVL=7
+HOME=/home/atpilot011/home_cream_183562606
+GLITE_LOCATION_VAR=/var
+CREAM_JOBID=https://ifaece03.pic.es:8443/CREAM183562606
+ATLAS_LOCAL_RCSETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-01-08
+ALRB_SFT_LCGEXT_MAP=/cvmfs/sft.cern.ch/lcg/mapfile.txt
+__copy_proxy_min_retry_wait=60
+__delegationTimeSlot=3600
+X509_USER_PROXY=/home/atpilot011/home_cream_183562606/cream_183562606.proxy
+VO_PHYS_VO_IBERGRID_EU_DEFAULT_SE=srm01.lip.pt
+PilotHomeDir=/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3
+PBS_O_HOST=ifaece03.pic.es
+VO_EUCLID_EC_ORG_SW_DIR=/software/euclid
+RUCIO_ACCOUNT=pilot
+PBS_VNODENUM=0
+GLITE_ENV_SET=TRUE
+VO_ATLAS_NIGHTLIES_DIR=/cvmfs/atlas-nightlies.cern.ch/repo/sw/nightlies
+LOGNAME=atpilot011
+DCACHE_RA_BUFFER=32768
+APFMON=http://apfmon.lancs.ac.uk/api
+PYTHONPATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/externals/kerberos/lib.slc6-x86_64-2.6:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/externals/kerberos/lib.slc6-i686-2.6:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/lib/python2.6/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.5.0/DQ2Clients/opt/dq2/lib::/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.6:/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.6
+CCTOOLS_PATH=/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1
+LCG_GFAL_INFOSYS=topbdii.core.ibergrid.eu:2170,bdii.pic.es:2170,grid01.lal.in2p3.fr:2170
+CVS_RSH=ssh
+QTLIB=/usr/lib64/qt-3.3/lib
+ATLAS_PROXIES=http://atlsquid.pic.es:3128
+ALRB_GPPBINPATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48/bin
+VO_BIOMED_SW_DIR=/software/biomed/slc4
+PBS_QUEUE=at2ifae_analy
+ATLAS_CONDDB=
+TestArea=/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570/workDir
+ATLAS_LOCAL_ROOT_ARCH=x86_64
+PBS_O_MAIL=/var/spool/mail/atpilot011
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+PANDA_SITE_NAME=ANALY_IFAE
+VO_VO_PAUS_PIC_ES_DEFAULT_SE=srm.pic.es
+ALRB_cvmfs_ALRB=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+RUCIO_APPID=prun
+__delegationProxyCertSandboxPathTmp=/tmp/1403483406_225369_12366165120495183562606
+VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+PBS_NP=1
+CVMFSBASE=/cvmfs
+VO_OPS_VO_IBERGRID_EU_DEFAULT_SE=srm.pic.es
+GLITE_LOCATION=/usr
+VO_T2K_ORG_SW_DIR=/software/t2k.org/
+FRONTIER_SERVER=(serverurl=http://ccfrontier.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli02.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli01.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://atlasfrontier.cern.ch:8000/atlr)(serverurl=http://atlasfrontier1.cern.ch:8000/atlr)(serverurl=http://atlasfrontier2.cern.ch:8000/atlr)(proxyurl=http://atlsquid.pic.es:3128)(proxyurl=http://squid04.pic.es:3128)(proxyurl=http://squid02.pic.es:3128)(proxyurl=http://squid03.pic.es:3128)(proxyurl=http://squid01.pic.es:3128)(proxyurl=http://sq5.ific.uv.es:3128)
+PBS_NUM_PPN=1
+PanDA_TaskID=3
+ATLAS_LOCAL_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64
+CMSSW_VERSION=[2199268681]
+SITE_NAME=ifae
+DQ2_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.5.0/DQ2Clients/opt/dq2
+VO_VO_CTA_IN2P3_FR_SW_DIR=/software/vo.cta.in2p3.fr
+ALRB_cvmfs_repo=/cvmfs/atlas.cern.ch/repo
+G_BROKEN_FILENAMES=1
+PBS_NODEFILE=/var/spool/pbs/aux//27058867.pbs04.pic.es
+EDG_WL_NOSETPGRP=1
+VO_T2K_ORG_DEFAULT_SE=srm.pic.es
+GLITE_WMS_LOG_DESTINATION=ifaece03.pic.es
+PBS_O_PATH=/bin:/sbin:/usr/sbin:/usr/bin:/usr/local/sbin:/home/atpilot011/bin
+_=/bin/env
+
+=== ls . ===
+total 132
+drwxr-xr-x 4 atpilot011 atpilot  4096 Jun 23 15:52 5034fbf2-034f-4fd7-9c08-176d0fb810a5
+-rw-r--r-- 1 atpilot011 atpilot   128 Jun 23 15:52 EsDatadisk.txt
+-rw-r--r-- 1 atpilot011 atpilot   673 Jun 23 15:52 Makefile
+-rw-r--r-- 1 atpilot011 atpilot   569 Jun 23 15:53 ROOT.py
+-rw-r--r-- 1 atpilot011 atpilot   104 Jun 23 15:52 esAnaly.txt
+-rw-r--r-- 1 atpilot011 atpilot  1650 Jun 23 15:52 getFiles.py
+-rw-r--r-- 1 atpilot011 atpilot   224 Jun 23 15:52 launch_main.py
+-rw-r--r-- 1 atpilot011 atpilot   733 Jun 23 15:52 listFilePerSite.txt
+-rwxr-xr-x 1 atpilot011 atpilot 27097 Jun 23 15:52 main
+-rw-r--r-- 1 atpilot011 atpilot  4884 Jun 23 15:52 main.C
+-rw-r--r-- 1 atpilot011 atpilot 27856 Jun 23 15:52 main.o
+-rwxr--r-- 1 atpilot011 atpilot   127 Jun 23 15:52 main.sh
+-rw-r--r-- 1 atpilot011 atpilot   436 Jun 23 15:52 outfilename.h
+drwxr-xr-x 2 atpilot011 atpilot  4096 Jun 23 15:52 pandaRootBin
+-rwxr--r-- 1 atpilot011 atpilot   522 Jun 23 15:52 runPrun.sh
+-rw-r--r-- 1 atpilot011 atpilot  6280 Jun 23 15:52 wrapper.o
+-rw------- 1 atpilot011 atpilot  8386 Jun 23 15:52 x509up_u68281
+
+=== execute ===
+export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase; source $ATLAS_LOCAL_ROOT_BASE/user/atlasLocalSetup.sh --quiet; source $ATLAS_LOCAL_ROOT_BASE/packageSetups/atlasLocalROOTSetup.sh --rootVersion=5.34.18-davix_p6a-x86_64-slc6-gcc48-opt --skipConfirm;  root.exe -q;export TestArea=/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570/workDir; export PANDA_PRELOAD=/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570/workDir/5034fbf2-034f-4fd7-9c08-176d0fb810a5/'$LIB'/wrapper.so${LD_PRELOAD:+:$LD_PRELOAD}; export LD_PRELOAD=/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570/workDir/5034fbf2-034f-4fd7-9c08-176d0fb810a5/'$LIB'/wrapper.so${LD_PRELOAD:+:$LD_PRELOAD}; cat trf.0937d2ac-b587-45d3-9156-c2316b699ef4.py;python -u trf.0937d2ac-b587-45d3-9156-c2316b699ef4.py
+************************************************************************
+Setting up ROOT version 5.34.18-davix_p6a-x86_64-slc6-gcc48-opt
+  Current GCC version: gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-3)
+Setting up gcc version gcc481_x86_64_slc6
+  Python version in your path is 2.6.6
+  Python version used to build ROOT is 2.7
+Setting up Python version 2.7.4-x86_64-slc6-gcc48
+  If you need a different gcc/python version:
+    localSetupGcc --gccVersion=<value>
+    localSetupPython --pythonVersion=<version>
+  where the version must exist (showVersions --show=gcc,python)
+Setting up davix from $ALRB_ROOT_DAVIX
+************************************************************************
+ Tip for _this_ standalone ROOT and grid (ie prun) submission:
+  avoid --athenaTag if you do not need athena
+  use --rootVer=5.34.18-davix_p6a --cmtConfig=x86_64-slc6-gcc48-opt
+************************************************************************
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.34/18     14 March 2014   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.34/18 (tags/v5-34-18-davix@v5-34-18-1-ga76f0e5, may 16 2014, 18:10:13 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+
+import os,sys
+status=os.system(r""" ./main.sh ANALY_IFAE""")
+status %= 255
+sys.exit(status)
+
+PIC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343787._000030.root.1?rse=PIC_DATADISK
+EELA-UTFSM_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_HSG2.00830551._000001.root.1?rse=EELA-UTFSM_DATADISK
+IFAE_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343976._019491.root.1?rse=IFAE_DATADISK
+IFIC-LCG2_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01318767._000009.root.1?rse=IFIC-LCG2_DATADISK
+LIP-COIMBRA_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01483458._000001.root.1?rse=LIP-COIMBRA_DATADISK
+NCG-INGRID-PT_DATADISK
+UAM-LCG2_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01272990._000053.root.1?rse=UAM-LCG2_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343787._000030.root.1?rse=PIC_DATADISK
+Error in <DavixOpen>: can not open file with davix: Neon error: SSL handshake failed: SSL error: sslv3 alert unsupported certificate (24)
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343787._000030.root.1?rse=PIC_DATADISK Not opened
+PIC
+Average : 0 Error : 0
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_HSG2.00830551._000001.root.1?rse=EELA-UTFSM_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+Error in <TTree::SetBranchStatus>: unknown branch -> mu_n
+Error in <TTree::SetBranchAddress>: unknown branch -> mu_n
+START reading datas
+Reading 1715131 bytes in 29 transactions
+EELA-UTFSM
+Average : 833 Error : 0
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343976._019491.root.1?rse=IFAE_DATADISK
+Error in <DavixOpen>: can not open file with davix: Neon error: Server certificate verification failed: certificate issued for a different hostname (6)
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343976._019491.root.1?rse=IFAE_DATADISK Not opened
+IFAE
+Average : 0 Error : 0
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01318767._000009.root.1?rse=IFIC-LCG2_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4032397 bytes in 54 transactions
+IFIC-LCG2
+Average : 277 Error : 0
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01483458._000001.root.1?rse=LIP-COIMBRA_DATADISK
+Error in <DavixOpen>: can not open file with davix: Could not connect to server (6)
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01483458._000001.root.1?rse=LIP-COIMBRA_DATADISK Not opened
+LIP-COIMBRA
+Average : 0 Error : 0
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01272990._000053.root.1?rse=UAM-LCG2_DATADISK
+Error in <DavixStat>: can not stat the file with davix: Maximum number of retrial reached. (14)
+Error in <TDavixFile::Init>: cannot stat the file https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01272990._000053.root.1
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01272990._000053.root.1?rse=UAM-LCG2_DATADISK Not opened
+UAM-LCG2
+Average : 0 Error : 0
+
+=== ls . ===
+total 148
+drwxr-xr-x 4 atpilot011 atpilot  4096 Jun 23 15:52 5034fbf2-034f-4fd7-9c08-176d0fb810a5
+-rw-r--r-- 1 atpilot011 atpilot  7441 Jun 23 15:55 ANALY_IFAE.root
+-rw-r--r-- 1 atpilot011 atpilot   128 Jun 23 15:52 EsDatadisk.txt
+-rw-r--r-- 1 atpilot011 atpilot   673 Jun 23 15:52 Makefile
+-rw-r--r-- 1 atpilot011 atpilot   569 Jun 23 15:53 ROOT.py
+-rw-r--r-- 1 atpilot011 atpilot   104 Jun 23 15:52 esAnaly.txt
+-rw-r--r-- 1 atpilot011 atpilot  1650 Jun 23 15:52 getFiles.py
+-rw-r--r-- 1 atpilot011 atpilot   224 Jun 23 15:52 launch_main.py
+-rw-r--r-- 1 atpilot011 atpilot   733 Jun 23 15:53 listFilePerSite.txt
+-rwxr-xr-x 1 atpilot011 atpilot 27097 Jun 23 15:52 main
+-rw-r--r-- 1 atpilot011 atpilot  4884 Jun 23 15:52 main.C
+-rw-r--r-- 1 atpilot011 atpilot 27856 Jun 23 15:52 main.o
+-rwxr-xr-x 1 atpilot011 atpilot   127 Jun 23 15:52 main.sh
+-rw-r--r-- 1 atpilot011 atpilot   436 Jun 23 15:52 outfilename.h
+drwxr-xr-x 2 atpilot011 atpilot  4096 Jun 23 15:52 pandaRootBin
+-rwxr--r-- 1 atpilot011 atpilot   522 Jun 23 15:52 runPrun.sh
+-rw-r--r-- 1 atpilot011 atpilot     0 Jun 23 15:53 tmp.stderr.6689e914-6c2c-412b-8b47-782430176876
+-rw-r--r-- 1 atpilot011 atpilot  3515 Jun 23 15:55 tmp.stdout.56d4e9f1-dd5b-4a2c-9e98-b4dc043296c0
+-rw-r--r-- 1 atpilot011 atpilot    93 Jun 23 15:53 trf.0937d2ac-b587-45d3-9156-c2316b699ef4.py
+-rw-r--r-- 1 atpilot011 atpilot  6280 Jun 23 15:52 wrapper.o
+-rw------- 1 atpilot011 atpilot  8386 Jun 23 15:52 x509up_u68281
+
+
+
+/home/tmp/27058867.pbs04.pic.es/condorg_allUoZ52/pilot3/Panda_Pilot_5259_1403531568/PandaJob_2199268681_1403531570
+total 3308
+-rw-r--r-- 1 atpilot011 atpilot 107141 May 22 10:21 ATLASExperiment.py
+-rw-r--r-- 1 atpilot011 atpilot  71320 Jun 23 15:52 ATLASExperiment.pyc
+-rw-r--r-- 1 atpilot011 atpilot  25106 Apr 29 16:21 ATLASSiteInformation.py
+-rw-r--r-- 1 atpilot011 atpilot  19807 Jun 23 15:52 ATLASSiteInformation.pyc
+-rw-r--r-- 1 atpilot011 atpilot  24663 Apr  2 17:21 BNLdCacheSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  16291 Jun 23 15:52 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  24247 Apr  2 17:21 CMSExperiment.py
+-rw-r--r-- 1 atpilot011 atpilot   8348 Apr  2 17:21 CMSSiteInformation.py
+-rw-r--r-- 1 atpilot011 atpilot   9079 Jun 23 15:52 CMSSiteInformation.pyc
+-rw-r--r-- 1 atpilot011 atpilot   8427 Apr  2 17:21 COGSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot   7547 Jun 23 15:52 COGSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  18770 Apr  2 17:21 CastorSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  12175 Jun 23 15:52 CastorSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  12709 Apr  2 17:21 ChirpSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot   9330 Jun 23 15:52 ChirpSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  13233 Apr  2 17:21 Cleaner.py
+-rw-r--r-- 1 atpilot011 atpilot  12301 Apr  2 17:21 DBReleaseHandler.py
+-rw-r--r-- 1 atpilot011 atpilot  11267 Jun 23 15:52 DBReleaseHandler.pyc
+-rw-r--r-- 1 atpilot011 atpilot    647 Apr  2 17:21 Diagnosis.py
+-rw-r--r-- 1 atpilot011 atpilot   1009 Jun 23 15:52 Diagnosis.pyc
+-rw-r--r-- 1 atpilot011 atpilot   3120 Apr  2 17:21 ErrorDiagnosis.py
+-rw-r--r-- 1 atpilot011 atpilot   3179 Jun 23 15:52 ErrorDiagnosis.pyc
+-rw-r--r-- 1 atpilot011 atpilot  28842 Apr 29 16:21 Experiment.py
+-rw-r--r-- 1 atpilot011 atpilot  18698 Jun 23 15:52 Experiment.pyc
+-rw-r--r-- 1 atpilot011 atpilot   2304 Apr  2 17:21 ExperimentFactory.py
+-rw-r--r-- 1 atpilot011 atpilot   2131 Jun 23 15:52 ExperimentFactory.pyc
+-rwxr-xr-x 1 atpilot011 atpilot  18312 Apr  2 17:21 FAXSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  14069 Jun 23 15:52 FAXSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot   5148 Apr  2 17:21 FileRegistration.py
+-rw-r--r-- 1 atpilot011 atpilot   9699 Apr  2 17:21 FileState.py
+-rw-r--r-- 1 atpilot011 atpilot   9968 Jun 23 15:52 FileState.pyc
+-rw-r--r-- 1 atpilot011 atpilot   2391 Apr  2 17:21 FileStateClient.py
+-rw-r--r-- 1 atpilot011 atpilot   3021 Jun 23 15:52 FileStateClient.pyc
+-rw-r--r-- 1 atpilot011 atpilot  24485 Apr  2 17:21 GOSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  11236 Apr  2 17:21 GSIftpSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot   9555 Jun 23 15:52 GSIftpSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  11706 Apr  2 17:21 HUSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot   9090 Jun 23 15:52 HUSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  28964 Apr  2 17:21 JEMstub.py
+-rw-r--r-- 1 atpilot011 atpilot  18506 May 22 10:21 Job.py
+-rw-r--r-- 1 atpilot011 atpilot  11001 Jun 23 15:52 Job.pyc
+-rw-r--r-- 1 atpilot011 atpilot   2043 Apr  2 17:21 JobInfoXML.py
+-rw-r--r-- 1 atpilot011 atpilot  54989 Apr 29 16:21 JobLog.py
+-rw-r--r-- 1 atpilot011 atpilot  29371 Apr  2 17:21 JobRecovery.py
+-rw-r--r-- 1 atpilot011 atpilot  21911 Jun 23 15:52 JobRecovery.pyc
+-rw-r--r-- 1 atpilot011 atpilot  10634 Apr  2 17:21 JobState.py
+-rw-r--r-- 1 atpilot011 atpilot   8647 Jun 23 15:52 JobState.pyc
+-rw-r--r-- 1 atpilot011 atpilot  14046 Apr  2 17:21 LocalSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  10231 Jun 23 15:52 LocalSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot 174158 May 22 10:21 Mover.py
+-rw-r--r-- 1 atpilot011 atpilot 108457 Jun 23 15:52 Mover.pyc
+-rw-r--r-- 1 atpilot011 atpilot   9274 Apr 29 16:21 Node.py
+-rw-r--r-- 1 atpilot011 atpilot   8943 Jun 23 15:52 Node.pyc
+-rw-r--r-- 1 atpilot011 atpilot   8066 Apr  2 17:21 NordugridATLASExperiment.py
+-rw-r--r-- 1 atpilot011 atpilot   7073 Jun 23 15:52 NordugridATLASExperiment.pyc
+-rw-r--r-- 1 atpilot011 atpilot   2038 Apr  2 17:21 NordugridATLASSiteInformation.py
+-rw-r--r-- 1 atpilot011 atpilot   2429 Jun 23 15:52 NordugridATLASSiteInformation.pyc
+-rw-r--r-- 1 atpilot011 atpilot   2678 Apr  2 17:21 OtherExperiment.py
+-rw-r--r-- 1 atpilot011 atpilot   4182 Jun 23 15:52 OtherExperiment.pyc
+-rw-r--r-- 1 atpilot011 atpilot   1991 Apr  2 17:21 OtherSiteInformation.py
+-rw-r--r-- 1 atpilot011 atpilot   3042 Jun 23 15:52 OtherSiteInformation.pyc
+-rw-r--r-- 1 atpilot011 atpilot   2311 Apr  2 17:21 OtherSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  32933 Apr 29 16:21 PandaServerClient.py
+-rw-r--r-- 1 atpilot011 atpilot  14102 Apr 29 16:21 PilotErrors.py
+-rw-r--r-- 1 atpilot011 atpilot  13179 Jun 23 15:52 PilotErrors.pyc
+-rw-r--r-- 1 atpilot011 atpilot   1717 Apr  2 17:21 PilotTCPServer.py
+-rw-r--r-- 1 atpilot011 atpilot  13549 Apr  2 17:21 PilotUtils.py
+-rw-r--r-- 1 atpilot011 atpilot    163 Jun 23 15:55 PoolFileCatalog.xml
+-rw-r--r-- 1 atpilot011 atpilot    430 Jun 23 15:52 PoolFileCatalog.xml.MOVER
+-rw-r--r-- 1 atpilot011 atpilot   4281 Apr  2 17:21 ProxyGuard.py
+-rw-r--r-- 1 atpilot011 atpilot   5685 Jun 23 15:52 ProxyGuard.pyc
+-rw-r--r-- 1 atpilot011 atpilot  30467 Apr  2 17:21 RunJobUtilities.py
+-rw-r--r-- 1 atpilot011 atpilot  25095 Jun 23 15:52 RunJobUtilities.pyc
+-rw-r--r-- 1 atpilot011 atpilot  14524 Apr  2 17:21 SRMSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  10929 Jun 23 15:52 SRMSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot    998 Apr  2 17:21 Site.py
+-rw-r--r-- 1 atpilot011 atpilot   1559 Jun 23 15:52 Site.pyc
+-rw-r--r-- 1 atpilot011 atpilot  33806 Apr 29 16:21 SiteInformation.py
+-rw-r--r-- 1 atpilot011 atpilot  23468 Jun 23 15:52 SiteInformation.pyc
+-rw-r--r-- 1 atpilot011 atpilot   2892 Apr  2 17:21 SiteInformationFactory.py
+-rw-r--r-- 1 atpilot011 atpilot   2391 Jun 23 15:52 SiteInformationFactory.pyc
+-rw-r--r-- 1 atpilot011 atpilot 137286 Apr  2 17:21 SiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  98212 Jun 23 15:52 SiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot   8583 Apr  2 17:21 SiteMoverFarm.py
+-rw-r--r-- 1 atpilot011 atpilot   6713 Jun 23 15:52 SiteMoverFarm.pyc
+-rw-r--r-- 1 atpilot011 atpilot  23435 Apr  2 17:21 UberftpSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  14973 Jun 23 15:52 UberftpSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot   3453 Apr  2 17:21 VmPeak.py
+-rw-r--r-- 1 atpilot011 atpilot      0 Apr  2 17:21 __init__.py
+-rw-r--r-- 1 atpilot011 atpilot  31534 May 22 10:21 aria2cSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  21165 Jun 23 15:52 aria2cSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  31374 Apr  2 17:21 atlasProdPilot.py
+-rw-r--r-- 1 atpilot011 atpilot  16969 Apr  2 17:21 castorSvcClassSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  12064 Jun 23 15:52 castorSvcClassSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot    401 Apr  2 17:21 config.py
+-rw-r--r-- 1 atpilot011 atpilot    712 Jun 23 15:52 config.pyc
+-rw-r--r-- 1 atpilot011 atpilot  30366 Apr  2 17:21 curlSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  17792 Jun 23 15:52 curlSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  10846 Apr  2 17:21 dCacheLFCSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot   9059 Jun 23 15:52 dCacheLFCSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  30965 Apr  2 17:21 dCacheSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  21106 Jun 23 15:52 dCacheSiteMover.pyc
+-rwxr-xr-x 1 atpilot011 atpilot  34155 Apr  2 17:21 dataPilot.py
+-rw-r--r-- 1 atpilot011 atpilot   9189 Apr  2 17:21 dq2SiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot   6484 Jun 23 15:52 dq2SiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot   5451 Apr  2 17:21 futil.py
+-rw-r--r-- 1 atpilot011 atpilot   7263 Jun 23 15:52 futil.pyc
+-rw-r--r-- 1 atpilot011 atpilot  26864 Apr  2 17:21 globusPilot.py
+-rw-r--r-- 1 atpilot011 atpilot   4463 Jun 23 15:52 jobState-2199268681-test.pickle
+-rw-r--r-- 1 atpilot011 atpilot    803 Jun 23 15:52 job_setup.sh
+-rw-r--r-- 1 atpilot011 atpilot  28025 Apr  2 17:21 lcgcp2SiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  15962 Jun 23 15:52 lcgcp2SiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot  33494 Apr  2 17:21 lcgcpSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  19458 Jun 23 15:52 lcgcpSiteMover.pyc
+-rw-r--r-- 1 atpilot011 atpilot    190 Jun 23 15:52 matched_replicas.json
+-rw-r--r-- 1 atpilot011 atpilot  11096 Apr  2 17:21 mvSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot   9237 Jun 23 15:52 mvSiteMover.pyc
+-rwxr-xr-x 1 atpilot011 atpilot   9674 Apr  2 17:21 myproxyUtils.py
+-rw-r--r-- 1 atpilot011 atpilot   1907 Jun 23 15:52 newJobDef.py
+-rw-r--r-- 1 atpilot011 atpilot   2330 Jun 23 15:52 newJobDef.pyc
+-rw-r--r-- 1 atpilot011 atpilot 129128 Apr  2 17:21 pUtil.py
+-rw-r--r-- 1 atpilot011 atpilot 107956 Jun 23 15:52 pUtil.pyc
+-rw-r--r-- 1 atpilot011 atpilot   1746 Jun 23 15:52 pandaJobData.out
+-rw-r--r-- 1 atpilot011 atpilot   3227 Jun 23 15:55 pandatracerlog.txt
+drwxr-xr-x 7 atpilot011 atpilot   4096 Jun 23 15:52 pandawnutil
+-rw-r--r-- 1 atpilot011 atpilot 269443 May 22 10:21 pilot.py
+-rw-r--r-- 1 atpilot011 atpilot      0 Jun 23 15:52 prun_stderr.txt
+-rw-r--r-- 1 atpilot011 atpilot  23970 Jun 23 15:55 prun_stdout.txt
+-rw-r--r-- 1 atpilot011 atpilot  20033 Apr  2 17:21 rfcpLFCSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  14054 Jun 23 15:52 rfcpLFCSiteMover.pyc
+-rwxr-xr-x 1 atpilot011 atpilot  64847 Jun 21 20:47 runGen-00-00-02
+-rwxr-xr-x 1 atpilot011 atpilot  30746 Dec  9  2013 runGen.py
+-rw-r--r-- 1 atpilot011 atpilot  51399 May 22 10:21 runJob.py
+-rw-r--r-- 1 atpilot011 atpilot      0 Jun 23 15:52 runjob.stderr
+drwxr-xr-x 8 atpilot011 atpilot   4096 Jun 23 15:52 src
+-rw-r--r-- 1 atpilot011 atpilot   4597 Apr  2 17:21 stormSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot   3824 Jun 23 15:52 stormSiteMover.pyc
+-rwxr-xr-x 1 atpilot011 atpilot   8743 Apr  2 17:21 timed_command.py
+-rw-r--r-- 1 atpilot011 atpilot   6853 Jun 23 15:52 timed_command.pyc
+-rw-r--r-- 1 atpilot011 atpilot   7441 Jun 23 15:55 user.sblunier.004026._00001.ANALY_IFAE.root
+-rw-r--r-- 1 atpilot011 atpilot  23403 Jun 23 15:52 user.sblunier.0623134700.197121.lib._004026.lib.tgz
+drwxr-xr-x 4 atpilot011 atpilot   4096 Jun 23 15:55 workDir
+-rwxr-xr-x 1 atpilot011 atpilot  36996 Apr 29 16:21 xrdcpSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  24905 Jun 23 15:52 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 atpilot011 atpilot  32697 Apr  2 17:21 xrootdSiteMover.py
+-rw-r--r-- 1 atpilot011 atpilot  22337 Jun 23 15:52 xrootdSiteMover.pyc
+execute script: Running script was successful

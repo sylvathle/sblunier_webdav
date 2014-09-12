@@ -1,0 +1,97 @@
+\documentclass[a4paper,10pt,fleqn]{article}
+
+\usepackage[dvips]{graphicx}% Include figure files
+\usepackage{wrapfig}
+\usepackage{xspace}
+\usepackage[T1]{fontenc} % Encodage des caractères en sortie.
+\usepackage[USenglish]{babel} % Support de la langue anglaise.
+\usepackage[latin9]{inputenc} % Support de la langue anglaise.
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{slashed}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{pifont}
+
+\usepackage{epstopdf}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{longtable}
+
+
+\setlength{\mathindent}{1pt}
+
+\newlength\tindent
+
+\setlength{\tindent}{\parindent}
+
+\setlength{\parindent}{0pt}
+
+\renewcommand{\indent}{\hspace*{\tindent}}
+
+
+
+\graphicspath{{Img/}}
+
+
+\renewcommand{\arraystretch}{1.4}
+
+
+
+%%%% debut macro %%%%
+
+\newenvironment{changemargin}[2]{\begin{list}{}{%
+
+\addtolength{\leftmargin}{#1}%
+
+\addtolength{\textwidth}{#2}%
+
+}\item }{\end{list}}
+
+%%%% fin macro %%%%
+
+
+
+\addtolength{\hoffset}{-1.5cm}
+
+\addtolength{\textwidth}{3cm}
+
+
+
+\addtolength{\textheight}{3cm}
+
+
+
+\begin{document}
+
+
+
+
+
+\title{Status of the grid for WebDAV/http access} %\\ force le passage a la ligne
+
+\date{\today}
+\maketitle
+
+
+
+\input{testFileIntro}
+\input{testFile}
+%\input{numberFileReadIntro}
+%\input{numberFileRead}
+\input{eventsRatesIntro}
+\input{eventsRates}
+\input{jobStatusIntro}
+\input{jobStatus}
+
+
+
+
+
+\end{document}
+
+%
+
+% ****** End of file report.tex ******

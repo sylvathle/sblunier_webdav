@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="bacd6b4f-9f8e-4b34-ab5a-7d928331a519">
+    <physical>
+      <pfn filetype="ROOT_All" name="user.sblunier.020375._000001.ANALY_ECDF_SL6.root"/>
+    </physical>
+  </File>
+</POOLFILECATALOG>

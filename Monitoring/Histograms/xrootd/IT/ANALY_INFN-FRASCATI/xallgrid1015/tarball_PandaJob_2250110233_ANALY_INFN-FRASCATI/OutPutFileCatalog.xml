@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="d1057e79-3a27-41de-9b41-c55ac91e817c">
+    <physical>
+      <pfn filetype="ROOT_All" name="user.sblunier.019907._000001.ANALY_INFN-FRASCATI.root"/>
+    </physical>
+  </File>
+</POOLFILECATALOG>

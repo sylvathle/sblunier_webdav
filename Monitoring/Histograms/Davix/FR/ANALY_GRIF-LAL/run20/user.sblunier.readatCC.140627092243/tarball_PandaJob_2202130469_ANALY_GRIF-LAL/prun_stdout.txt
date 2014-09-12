@@ -1,0 +1,973 @@
+=== start ===
+Fri Jun 27 09:36:30 2014
+=== parameters ===
+user.sblunier.0627072243.750015.lib._004114.lib.tgz
+.
+./main.sh ANALY_GRIF-LAL
+[]
+
+{'ANALY_GRIF-LAL.root': 'user.sblunier.004114._00001.ANALY_GRIF-LAL.root'}
+[]
+
+
+False
+False
+prod-lfc-atlas.cern.ch
+False
+
+https://aipanda012.cern.ch:25443
+{}
+False
+
+
+-1
+False
+skipInputByRetry []
+writeInputToTxt 
+rootVer 5.34.18-davix_p6a
+useRootCore False
+givenPFN False
+useMana False
+manaVer 
+===================
+===== PFC from pilot =====
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+
+  <File ID="818d49de-7fcc-4e88-9015-dea10971c06c">
+    <physical>
+      <pfn filetype="ROOT_All" name="user.sblunier.0627072243.750015.lib._004114.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+
+</POOLFILECATALOG>
+Running in /var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582
+FrDatadisk.txt
+Makefile
+frAnaly.txt
+getFiles.py
+getFiles.py.onepersite
+launch_main.py
+listFilePerSite.txt
+main
+main.C
+main.o
+main.sh
+pandaRootBin/
+pandaRootBin/pandaUseCvmfSetup.sh
+runPrun.sh
+x509up_u68281
+===== make PandaTracer =====
+  m64 succeeded
+  m32 succeeded
+Log -> /var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582/workDir/18cf059b-1adc-497e-9c33-861241f5321b/pandatracerlog.txt
+
+=== dump ./.rootrc ===
+ProofLite.Workers: 1
+
+
+=== env variables ===
+[1;34mCreated /grid_mnt/vohome/atlas/atlpilot000/home_cream_668076540/.asetup.  Please look and (optional) edit it.[0m
+************************************************************************
+Setting up ROOT version 5.34.18-davix_p6a-x86_64-slc6-gcc48-opt
+  Current GCC version: gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)
+Setting up gcc version gcc481_x86_64_slc6
+  Python version in your path is 2.6.6
+  Python version used to build ROOT is 2.7
+Setting up Python version 2.7.4-x86_64-slc6-gcc48
+  If you need a different gcc/python version:
+    localSetupGcc --gccVersion=<value>
+    localSetupPython --pythonVersion=<version>
+  where the version must exist (showVersions --show=gcc,python)
+Setting up davix from $ALRB_ROOT_DAVIX
+************************************************************************
+ Tip for _this_ standalone ROOT and grid (ie prun) submission:
+  avoid --athenaTag if you do not need athena
+  use --rootVer=5.34.18-davix_p6a --cmtConfig=x86_64-slc6-gcc48-opt
+************************************************************************
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.34/18     14 March 2014   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.34/18 (tags/v5-34-18-davix@v5-34-18-1-ga76f0e5, may 16 2014, 18:10:13 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+
+APF_PYTHON26=1
+ALRB_ROOT_DAVIX=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/davix/build/root
+AtlasSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.config/.asetup.site
+MANPATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/man::/usr/man::/usr/man:/usr/share/man:/usr/share/man
+ATLAS_PYTHON_PILOT=/usr/bin/python
+ALRB_cvmfs_CDB=/cvmfs/atlas-condb.cern.ch/repo/conditions
+HOSTNAME=grid183.lal.in2p3.fr
+ATLAS_LOCAL_ROOT_PACOPT=
+PBS_VERSION=TORQUE-2.5.13
+PAC_ANCHOR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6
+MPI_MPICC_OPTS=-m64
+ATLAS_LOCAL_CERNROOT_VERSION=5.34.18-davix_p6a-x86_64-slc6-gcc48-opt
+VO_VO_HESS_EXPERIMENT_EU_SW_DIR=/swareas/vo.hess-experiment.eu
+VO_VO_IRFU_CEA_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+SHELL=/bin/bash
+MATLAB_R2008B_ROOT=/swareas/matlab/R2008b
+VO_ESR_DEFAULT_SE=grid05.lal.in2p3.fr
+HISTSIZE=1000
+ALRB_SHELL=sh
+PBS_JOBNAME=cream_668076540
+VO_PROACTIVE_DEFAULT_SE=grid05.lal.in2p3.fr
+TMPDIR=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr
+GLOBUS_LOCATION=/usr
+GLOBUS_PATH=/usr
+VO_VO_FRANCE_GRILLES_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+GCC_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48
+VO_HONE_SW_DIR=/swareas/hone
+MPI_SSH_HOST_BASED_AUTH=yes
+VO_FUSION_DEFAULT_SE=grid05.lal.in2p3.fr
+VO_OPS_DEFAULT_SE=grid05.lal.in2p3.fr
+MPI_OPENMPI_PATH=/usr/lib64/openmpi
+VO_VO_IPNO_IN2P3_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+LD_PRELOAD=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582/workDir/18cf059b-1adc-497e-9c33-861241f5321b/$LIB/wrapper.so
+rootCmtConfig=x86_64-slc6-gcc48-opt
+__delegationProxyCertSandboxPath=gsiftp://grid36.lal.in2p3.fr/sandboxes/atlas/CN_Robot__ATLAS_Fr_Factory_1_CN_445173_CN_atlasfr1_OU_Users_OU_Organic_Units_DC_cern_DC_ch_atlas_Role_pilot_Capability_NULL_atlpilot000/proxy/1402909846_162353_12655007729916
+DPM_HOST=grid05.lal.in2p3.fr
+VO_VO_UCAD_SN_DEFAULT_SE=grid05.lal.in2p3.fr
+GT_PROXY_MODE=old
+VO_VO_GRIF_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+LCAS_LOG_LEVEL=1
+PBS_ENVIRONMENT=PBS_BATCH
+EDG_WL_SCRATCH=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr
+ATLAS_LOCAL_GCC_VERSION=gcc481_x86_64_slc6
+ATLAS_LOCAL_SETUP_OPTIONS=--quiet
+QTDIR=/usr/lib64/qt-3.3
+VO_VO_LPNHE_IN2P3_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+VO_VO_APC_UNIV_PARIS7_FR_SW_DIR=/swareas/vo.apc.univ-paris7.fr
+ALRB_useGridSW=emi
+VO_GLAST_ORG_DEFAULT_SE=grid05.lal.in2p3.fr
+GLITE_WMS_LOCATION=/usr
+VO_ASTRO_VO_EU_EGEE_ORG_DEFAULT_SE=grid05.lal.in2p3.fr
+X509_CERT_DIR=/etc/grid-security/certificates
+QTINC=/usr/lib64/qt-3.3/include
+PBS_O_WORKDIR=/var/tmp
+VO_VO_IRFU_CEA_FR_SW_DIR=/swareas/vo.irfu.cea.fr
+VO_VO_LAPP_IN2P3_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+ALRB_SFT_LCG=/cvmfs/sft.cern.ch/lcg
+COPY_TOOL=lcgcp2
+MPI_MPICH2_MPIEXEC=/usr/bin/mpiexec
+GLITE_LOCATION_LOG=/var/log/glite
+PBS_TASKNUM=1
+VO_VO_LLR_IN2P3_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+USER=atlpilot000
+LD_LIBRARY_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/davix/build/root/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2.7.4-x86_64-slc6-gcc48/sw/lcg/external/Python/2.7.4/x86_64-slc6-gcc48-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib:/cvmfs/atlas.cern.ch/repo/sw/local/glite/dpm/lib64:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/lib::/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/lib:/usr/lib64/classads:/usr/lib64:/usr/lib:/usr/lib64/classads:/usr/lib64:/usr/lib:/cvmfs/atlas.cern.ch/repo/sw/local/x86_64-slc5-gcc43-opt/yampl/1.0/lib
+ALRB_RHVER=6
+GRID_JOBID=N/A
+LFC_CONNTIMEOUT=60
+PBS_O_HOME=/vohome/atlas/atlpilot000
+VO_VO_GEAR_CERN_CH_DEFAULT_SE=grid05.lal.in2p3.fr
+ALRB_SCRATCH=/grid_mnt/vohome/atlas/atlpilot000/home_cream_668076540/.alrb
+ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
+VO_DTEAM_SW_DIR=/swareas/dteam
+ATLAS_LOCAL_GCC_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6
+ALRB_printHelpMain=\n...Type localSetupAGIS to setup AGIS\n...Type localSetupAtlantis to setup Atlantis\n...Type localSetupDQ2Client to use DQ2 Client\n...Type localSetupEmi to use emi\n...Type localSetupFAX to use FAX\n...Type localSetupGanga to use Ganga\n...Type localSetupGcc to use alternate gcc\n...Type localSetupPacman to use Pacman\n...Type localSetupPandaClient to use Panda Client\n...Type localSetupPyAMI to setup pyAMI\n...Type localSetupPoD to setup Proof-on-Demand\n...Type localSetupROOT to setup (standalone) ROOT\n...Type localSetupDQ2Wrappers to setup DQ2Wrappers\n...Type localSetupSFT to setup SFT packages\n...Type localSetupXRootD to setup XRootD\n...Type showVersions to show versions of installed software\n...Type asetup to setup a release (changeASetup to change asetup version)\n...Type rcSetup to setup an ASG release (changeRCSetup to change rcSetup ver.)\n...Type diagnostics for diagnostic tools\n...Type helpMe for more help\n...Type printMenu to show this menu
+GLITE_LOCATION_TMP=/tmp
+VO_VO_LAPP_IN2P3_FR_SW_DIR=/swareas/vo.lapp.in2p3.fr
+CMTUSERCONTEXT=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt
+LCMAPS_LOG_LEVEL=1
+VO_DESKTOPGRID_VO_EDGES_GRID_EU_DEFAULT_SE=grid05.lal.in2p3.fr
+ALRB_cvmfs_Athena=/cvmfs/atlas.cern.ch/repo/sw/software
+ATLAS_LOCAL_AREA=/swareas/atlas-local
+VO_ILC_DEFAULT_SE=grid05.lal.in2p3.fr
+PBS_WALLTIME=14400
+VO_COMPCHEM_DEFAULT_SE=grid05.lal.in2p3.fr
+DQ2_LOCAL_SITE_ID=GRIF-LAL_SCRATCHDISK
+AtlasSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V00-03-74/AtlasSetup
+VO_VO_U_PSUD_FR_SW_DIR=/swareas/vo.u-psud.fr
+VO_PLANCK_SW_DIR=/swareas/planck
+PBS_GPUFILE=/var/torque/aux//682934.grid10.lal.in2p3.frgpu
+VO_LHCB_DEFAULT_SE=grid05.lal.in2p3.fr
+PBS_MOMPORT=15003
+ATLAS_LOCAL_RCSETUP_VERSION=00-02-00
+FRONTIER_ID=[2202130469]
+VO_VO_IPNO_IN2P3_FR_SW_DIR=/swareas/vo.ipno.in2p3.fr
+VO_OPS_SW_DIR=/swareas/ops
+VO_FUSION_SW_DIR=/swareas/fusion
+ATLAS_LOCAL_ASETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V00-03-74
+VO_ATLAS_DEFAULT_SE=grid05.lal.in2p3.fr
+GLITE_WMS_JOBID=N/A
+VO_VO_NEUGRID_EU_SW_DIR=/swareas/vo.neugrid.eu
+LFC_CONRETRY=2
+ALRB_cvmfs_ALRB_default=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+VO_DZERO_DEFAULT_SE=grid05.lal.in2p3.fr
+PBS_O_QUEUE=atlasana
+FRONTIER_LOG_LEVEL=warning
+FACTORYUSER=atlassgm
+VO_PROACTIVE_SW_DIR=/swareas/proactive
+VO_VO_FRANCE_GRILLES_FR_SW_DIR=/swareas/vo.france-grilles.fr
+APFCID=1586040.23
+PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/davix/build/root/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2.7.4-x86_64-slc6-gcc48/sw/lcg/external/Python/2.7.4/x86_64-slc6-gcc48-opt/bin:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48/bin:.:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/bin:/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1/x86_64/cctools-3.0.1-x86_64-redhat5/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/bin:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.5.0/DQ2Clients/opt/dq2/bin:/usr/bin:/usr/externals/bin:/usr/sbin:/opt/mpi/bin:/usr/lib64/qt-3.3/bin:/usr/bin:/usr/externals/bin:/usr/sbin:/opt/mpi/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/java/latest/bin:/usr/java/latest/bin
+MPI_MPICXX_OPTS=-m64
+MAIL=/var/spool/mail/atlpilot000
+VO_BIOMED_DEFAULT_SE=grid05.lal.in2p3.fr
+PBS_O_LOGNAME=atlpilot000
+LCMAPS_DEBUG_LEVEL=0
+PANDA_JSID=FR-V2-ccwlcgatlas02
+GLITE_LOCAL_CUSTOMIZATION_DIR=/usr/etc/wms
+ALRB_OSMAJORVER=6
+DPNS_HOST=grid05.lal.in2p3.fr
+VO_DESKTOPGRID_VO_EDGES_GRID_EU_SW_DIR=/swareas/desktopgrid.vo.edges-grid.eu
+PBS_O_LANG=en_US.UTF-8
+ALRB_cvmfs_condb_repo=/cvmfs/atlas-condb.cern.ch/repo
+PBS_JOBCOOKIE=89CF89BA677134E987667C2A6F8F5B9F
+ALRB_OSTYPE=Linux
+RUCIO_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12
+VO_DTEAM_DEFAULT_SE=grid05.lal.in2p3.fr
+MPI_OPENMPI_VERSION=1.6.3
+MPI_MPIF77_OPTS=-m64
+VO_CMS_DEFAULT_SE=polgrid4.in2p3.fr
+PWD=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582/workDir
+VO_CPPM_DEFAULT_SE=grid05.lal.in2p3.fr
+VO_AUGER_DEFAULT_SE=grid05.lal.in2p3.fr
+VO_VO_LLR_IN2P3_FR_SW_DIR=/swareas/vo.llr.in2p3.fr
+GTAG=http://ccwlcgatlas02.in2p3.fr:43210/apflog/2014-06-27/ANALY_GRIF-LAL-1141/1586040.23.out
+PANDA_PRELOAD=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582/workDir/18cf059b-1adc-497e-9c33-861241f5321b/$LIB/wrapper.so
+MPI_SHARED_HOME=/grid_mnt/vohome/atlas/atlpilot000/home_cream_668076540
+RUCIO_AUTH_TYPE=x509_proxy
+FACTORYQUEUE=ANALY_GRIF-LAL-1141
+VO_ESR_SW_DIR=/swareas/esr
+ALRB_cvmfs_nightly_repo=/cvmfs/atlas-nightlies.cern.ch/repo
+LANG=C
+PBS_NODENUM=0
+ATLAS_LOCAL_ASETUP_VERSION=V00-03-74
+ALRB_allowSL6onSL5=NO
+VO_ASTRO_VO_EU_EGEE_ORG_SW_DIR=/swareas/astro.vo.eu-egee.org
+LFC_CONRETRYINT=60
+VO_GLAST_ORG_SW_DIR=/swareas/glast.org
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+VO_VO_CTA_IN2P3_FR_DEFAULT_SE=node12.datagrid.cea.fr
+VO_VO_COMPLEX_SYSTEMS_EU_DEFAULT_SE=grid05.lal.in2p3.fr
+SASL_PATH=/usr/lib/sasl:/usr/lib/sasl
+LOADEDMODULES=
+PBS_NUM_NODES=1
+ATLAS_LOCAL_PYTHON_VERSION=2.7.4-x86_64-slc6-gcc48
+PandaID=2202130469
+MPI_MPIF90_OPTS=-m64
+PBS_O_SHELL=/bin/sh
+ATLAS_POOLCOND_PATH=/cvmfs/atlas.cern.ch/repo/conditions
+MYPROXY_SERVER=myproxy.grif.fr
+VO_VO_LPNHE_IN2P3_FR_SW_DIR=/swareas/vo.lpnhe.in2p3.fr
+DQ2_ENDUSER_SETUP=True
+PERLLIB=/usr/lib64/perl:/usr/lib64/perl
+VO_VO_LAL_IN2P3_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+rcSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/.config/.rcsetup.site
+GLITE_WMS_SEQUENCE_CODE=
+PBS_SERVER=grid10.lal.in2p3.fr
+ALRBtestPath=,,
+VO_VO_UCAD_SN_SW_DIR=/swareas/vo.ucad.sn
+MATLAB_R2008A_ROOT=/swareas/matlab/R2008a
+PBS_JOBID=682934.grid10.lal.in2p3.fr
+VO_VO_GRIF_FR_SW_DIR=/swareas/vo.grif.fr
+ROOTSYS=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt
+HISTCONTROL=ignoredups
+ENVIRONMENT=BATCH
+VO_LHCB_SW_DIR=/cvmfs/lhcb.cern.ch
+CE_ID=grid36.lal.in2p3.fr:8443/cream-pbs-atlasana
+APFFID=FR-V2-ccwlcgatlas02
+SHLVL=7
+HOME=/grid_mnt/vohome/atlas/atlpilot000/home_cream_668076540
+GLITE_LOCATION_VAR=/var/glite
+CREAM_JOBID=https://grid36.lal.in2p3.fr:8443/CREAM668076540
+VO_VO_HESS_EXPERIMENT_EU_DEFAULT_SE=grid05.lal.in2p3.fr
+ATLAS_LOCAL_RCSETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-02-00
+ALRB_SFT_LCGEXT_MAP=/cvmfs/sft.cern.ch/lcg/mapfile.txt
+GLOBUS_TCP_PORT_RANGE=20000,25000
+VO_CALICE_DEFAULT_SE=grid05.lal.in2p3.fr
+__copy_proxy_min_retry_wait=60
+VO_EGEODE_DEFAULT_SE=grid05.lal.in2p3.fr
+__delegationTimeSlot=3600
+X509_USER_PROXY=/grid_mnt/vohome/atlas/atlpilot000/home_cream_668076540/cream_668076540.proxy
+VO_VO_ISCPIF_FR_SW_DIR=/swareas/vo.iscpif.fr
+PilotHomeDir=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3
+PBS_O_HOST=grid36.lal.in2p3.fr
+MPI_MPIEXEC_PATH=/usr/bin/mpiexec
+MPI_MPICH2_PATH=/usr/lib64/mpich2
+VO_SUPERBVO_ORG_SW_DIR=/swareas/superbvo.org
+VO_CPPM_SW_DIR=/swareas/cppm
+VO_AUGER_SW_DIR=/swareas/auger
+RUCIO_ACCOUNT=pilot
+PBS_VNODENUM=0
+MATLAB_ROOT=/swareas/matlab/R2008b
+CCTOOLS_PATH=/cvmfs/atlas.cern.ch/repo/sw/cctools/3.0.1
+VO_ILC_SW_DIR=/cvmfs/ilc.desy.de
+LOGNAME=atlpilot000
+VO_COMPCHEM_SW_DIR=/swareas/compchem
+MPI_MPICH2_VERSION=1.0.4
+VO_ATLAS_NIGHTLIES_DIR=/cvmfs/atlas-nightlies.cern.ch/repo/sw/nightlies
+APFMON=http://apfmon.lancs.ac.uk/api
+PYTHONPATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/5.34.18-davix_p6a-x86_64-slc6-gcc48-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/externals/kerberos/lib.slc6-x86_64-2.6:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/externals/kerberos/lib.slc6-i686-2.6:/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12/lib/python2.6/site-packages:/cvmfs/atlas.cern.ch/repo/sw/ddm/2.5.0/DQ2Clients/opt/dq2/lib:/usr/lib64/python:/usr/lib64/python:/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.6:/cvmfs/atlas.cern.ch/repo/sw/local/noarch/python-yampl/1.0/lib.linux-x86_64-2.6
+LCG_GFAL_INFOSYS=topbdii.grif.fr:2170,cclcgtopbdii01.in2p3.fr:2170
+CVS_RSH=ssh
+QTLIB=/usr/lib64/qt-3.3/lib
+VO_SUPERBVO_ORG_DEFAULT_SE=grid05.lal.in2p3.fr
+VO_VO_ISCPIF_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+I2G_MPI_START=/usr/bin/mpi-start
+ALRB_GPPBINPATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc481_x86_64_slc6/slc6/gcc48/bin
+VO_BIOMED_SW_DIR=/swareas/biomed
+ATLAS_SITE_NAME=GRIF-LAL
+PBS_QUEUE=atlasana
+ATLAS_CONDDB=grid36.lal.in2p3.fr
+VO_CALICE_SW_DIR=/swareas/calice
+VO_SUPERNEMO_VO_EU_EGEE_ORG_DEFAULT_SE=grid05.lal.in2p3.fr
+MPI_MPICH_MPIEXEC=/usr/bin/mpiexec
+VO_EGEODE_SW_DIR=/swareas/egeode
+MODULESHOME=/usr/share/Modules
+TestArea=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582/workDir
+ATLAS_LOCAL_ROOT_ARCH=x86_64
+PBS_O_MAIL=/var/spool/mail/atlpilot000
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+VO_VO_GEAR_CERN_CH_SW_DIR=/swareas/vo.gear.cern.ch
+PANDA_SITE_NAME=ANALY_GRIF-LAL
+LCAS_DEBUG_LEVEL=0
+VO_VO_APC_UNIV_PARIS7_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+ALRB_cvmfs_ALRB=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+RUCIO_APPID=prun
+VO_HONE_DEFAULT_SE=grid05.lal.in2p3.fr
+__delegationProxyCertSandboxPathTmp=/tmp/1402909846_162353_12655007729916668076540
+VO_VO_NEUGRID_EU_DEFAULT_SE=grid05.lal.in2p3.fr
+VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+PBS_NP=1
+CVMFSBASE=/cvmfs
+GLITE_LOCATION=/usr
+FRONTIER_SERVER=(serverurl=http://ccfrontier.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli02.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://ccsqfatlasli01.in2p3.fr:23128/ccin2p3-AtlasFrontier)(serverurl=http://lcgft-atlas.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier03.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier02.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://lcgvo-frontier01.gridpp.rl.ac.uk:3128/frontierATLAS)(proxyurl=http://squid-atlas.grif.fr:3128)(proxyurl=http://ccatlassquid.in2p3.fr:3128)(proxyurl=http://ccsqfatlasli03.in2p3.fr:3128)(proxyurl=http://ccsqfatlasli04.in2p3.fr:3128)
+VO_DEMO_VO_EDGES_GRID_EU_SW_DIR=/swareas/demo.vo.edges-grid.eu
+PBS_NUM_PPN=1
+PanDA_TaskID=3
+ATLAS_LOCAL_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64
+CMSSW_VERSION=[2202130469]
+VO_PLANCK_DEFAULT_SE=grid05.lal.in2p3.fr
+VO_VO_U_PSUD_FR_DEFAULT_SE=grid05.lal.in2p3.fr
+VO_VO_LAL_IN2P3_FR_SW_DIR=/swareas/vo.lal.in2p3.fr
+SITE_NAME=GRIF
+VO_VO_COMPLEX_SYSTEMS_EU_SW_DIR=/swareas/vo.complex-systems.eu
+VO_VO_CTA_IN2P3_FR_SW_DIR=/swareas/vo.cta.in2p3.fr
+DQ2_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/2.5.0/DQ2Clients/opt/dq2
+ALRB_cvmfs_repo=/cvmfs/atlas.cern.ch/repo
+G_BROKEN_FILENAMES=1
+VO_SUPERNEMO_VO_EU_EGEE_ORG_SW_DIR=/swareas/supernemo.vo.eu-egee.org
+PBS_NODEFILE=/var/torque/aux//682934.grid10.lal.in2p3.fr
+VO_DZERO_SW_DIR=/swareas/dzero
+GLITE_WMS_LOG_DESTINATION=grid36.lal.in2p3.fr
+PBS_O_PATH=/usr/lib64/qt-3.3/bin:/usr/bin:/usr/externals/bin:/usr/sbin:/opt/mpi/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/java/latest/bin
+EDG_WL_NOSETPGRP=1
+VO_DEMO_VO_EDGES_GRID_EU_DEFAULT_SE=grid05.lal.in2p3.fr
+module=() {  eval `/usr/bin/modulecmd sh $*`
+}
+_=/usr/bin/env
+
+=== ls . ===
+total 140
+drwxr-xr-x 4 atlpilot000 atlas  4096 Jun 27 09:36 18cf059b-1adc-497e-9c33-861241f5321b
+-rw-r--r-- 1 atlpilot000 atlas   308 Jun 27 09:36 FrDatadisk.txt
+-rw-r--r-- 1 atlpilot000 atlas   673 Jun 27 09:36 Makefile
+-rw-r--r-- 1 atlpilot000 atlas   569 Jun 27 09:36 ROOT.py
+-rw-r--r-- 1 atlpilot000 atlas   207 Jun 27 09:36 frAnaly.txt
+-rw-r--r-- 1 atlpilot000 atlas  1685 Jun 27 09:36 getFiles.py
+-rw-r--r-- 1 atlpilot000 atlas  1653 Jun 27 09:36 getFiles.py.onepersite
+-rw-r--r-- 1 atlpilot000 atlas   224 Jun 27 09:36 launch_main.py
+-rw-r--r-- 1 atlpilot000 atlas   861 Jun 27 09:36 listFilePerSite.txt
+-rwxr-xr-x 1 atlpilot000 atlas 27892 Jun 27 09:36 main
+-rw-r--r-- 1 atlpilot000 atlas  4342 Jun 27 09:36 main.C
+-rw-r--r-- 1 atlpilot000 atlas 29592 Jun 27 09:36 main.o
+-rwxr--r-- 1 atlpilot000 atlas   127 Jun 27 09:36 main.sh
+-rw-r--r-- 1 atlpilot000 atlas   466 Jun 27 09:36 outfilename.h
+drwxr-xr-x 2 atlpilot000 atlas  4096 Jun 27 09:36 pandaRootBin
+-rwxr--r-- 1 atlpilot000 atlas   516 Jun 27 09:36 runPrun.sh
+-rw-r--r-- 1 atlpilot000 atlas  6308 Jun 27 09:36 wrapper.o
+-rw------- 1 atlpilot000 atlas  8382 Jun 27 09:36 x509up_u68281
+
+=== execute ===
+export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase; source $ATLAS_LOCAL_ROOT_BASE/user/atlasLocalSetup.sh --quiet; source $ATLAS_LOCAL_ROOT_BASE/packageSetups/atlasLocalROOTSetup.sh --rootVersion=5.34.18-davix_p6a-x86_64-slc6-gcc48-opt --skipConfirm;  root.exe -q;export TestArea=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582/workDir; export PANDA_PRELOAD=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582/workDir/18cf059b-1adc-497e-9c33-861241f5321b/'$LIB'/wrapper.so${LD_PRELOAD:+:$LD_PRELOAD}; export LD_PRELOAD=/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582/workDir/18cf059b-1adc-497e-9c33-861241f5321b/'$LIB'/wrapper.so${LD_PRELOAD:+:$LD_PRELOAD}; cat trf.04c8cb34-560f-458f-86e7-3a9b10d5cc36.py;python -u trf.04c8cb34-560f-458f-86e7-3a9b10d5cc36.py
+************************************************************************
+Setting up ROOT version 5.34.18-davix_p6a-x86_64-slc6-gcc48-opt
+  Current GCC version: gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)
+Setting up gcc version gcc481_x86_64_slc6
+  Python version in your path is 2.6.6
+  Python version used to build ROOT is 2.7
+Setting up Python version 2.7.4-x86_64-slc6-gcc48
+  If you need a different gcc/python version:
+    localSetupGcc --gccVersion=<value>
+    localSetupPython --pythonVersion=<version>
+  where the version must exist (showVersions --show=gcc,python)
+Setting up davix from $ALRB_ROOT_DAVIX
+************************************************************************
+ Tip for _this_ standalone ROOT and grid (ie prun) submission:
+  avoid --athenaTag if you do not need athena
+  use --rootVer=5.34.18-davix_p6a --cmtConfig=x86_64-slc6-gcc48-opt
+************************************************************************
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.34/18     14 March 2014   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.34/18 (tags/v5-34-18-davix@v5-34-18-1-ga76f0e5, may 16 2014, 18:10:13 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+
+import os,sys
+status=os.system(r""" ./main.sh ANALY_GRIF-LAL""")
+status %= 255
+sys.exit(status)
+
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01435748._000002.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343811._000008.root.2?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01391278._005933.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01469348._000022.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01481268._016780.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343955._001461.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01436175._000007.root.2?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01437498._000429.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01462892._000119.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01478639._001500.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01398826._000719.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01439929._000002.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01388896._000002.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01437483._000010.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01475777._000004.root.1?rse=IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01435748._000002.root.1?rse=IN2P3-CC_DATADISK
+Error in <DavixOpen>: can not open file with davix: Neon error: SSL handshake failed: SSL error: sslv3 alert unsupported certificate (24)
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01435748._000002.root.1?rse=IN2P3-CC_DATADISK Not opened
+createHistogram
+105
+113
+IN2P3-CC
+Average : 0 Error : 0
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343811._000008.root.2?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4042606 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 147 Error : 147
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01391278._005933.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 3927940 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 196 Error : 138.593
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01469348._000022.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4063031 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 220.5 Error : 127.306
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01481268._016780.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4038819 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 229 Error : 115.128
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343955._001461.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4021771 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 239.833 Error : 107.852
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01436175._000007.root.2?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 3993001 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 247.571 Error : 101.635
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01437498._000429.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4112483 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 253.375 Error : 96.3028
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01462892._000119.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4089392 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 257.889 Error : 91.6884
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01478639._001500.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 3993762 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 261.5 Error : 87.6553
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01398826._000719.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 3935048 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 264.455 Error : 84.0967
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01439929._000002.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4039471 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 265.5 Error : 80.591
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01388896._000002.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 3959912 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 266.385 Error : 77.49
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01437483._000010.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4112035 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 267.143 Error : 74.7213
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01475777._000004.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4206935 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 267.8 Error : 72.2294
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01475442._000004.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01435923._000001.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01325806._000001.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01464221._000001.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01464224._000002.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01365204._000006.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01452521._000172.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01436784._000007.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01478647._001359.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343576._000018.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01475702._000001.root.2?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01482296._000371.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01365212._000004.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01349172._000025.root.1?rse=IN2P3-CC_DATADISK
+IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01349166._000025.root.1?rse=IN2P3-CC_DATADISK
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01475442._000004.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4144796 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 267.5 Error : 69.9455
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01435923._000001.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4080042 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 267.235 Error : 67.8654
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01325806._000001.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4099981 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 268.722 Error : 66.2376
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01464221._000001.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4098404 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 270.053 Error : 64.7176
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01464224._000002.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4054880 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 271.25 Error : 63.2945
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01365204._000006.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 3890864 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 272.333 Error : 61.9588
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01452521._000172.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 2936057 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 278.864 Error : 67.5273
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01436784._000007.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 3974954 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 279.522 Error : 66.1151
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01478647._001359.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4042757 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 277.792 Error : 65.2527
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01343576._000018.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4040416 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 278.44 Error : 64.0132
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01475702._000001.root.2?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4185314 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 278.385 Error : 62.7707
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01482296._000371.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4109985 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 278.963 Error : 61.6679
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01365212._000004.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 3924543 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 279.5 Error : 60.6209
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01349172._000025.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4024326 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 280 Error : 59.6253
+https://voatlasrucio-redirect-prod-01.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01349166._000025.root.1?rse=IN2P3-CC_DATADISK
+Warning in <TClass::TClass>: no dictionary for class AttributeListLayout is available
+Warning in <TClass::TClass>: no dictionary for class pair<string,string> is available
+START reading datas
+Reading 4115453 bytes in 7 transactions
+createHistogram
+105
+113
+IN2P3-CC
+Average : 278.6 Error : 59.1059
+
+=== ls . ===
+total 172
+drwxr-xr-x 4 atlpilot000 atlas  4096 Jun 27 09:36 18cf059b-1adc-497e-9c33-861241f5321b
+-rw-r--r-- 1 atlpilot000 atlas  4220 Jun 27 09:54 ANALY_GRIF-LAL.root
+-rw-r--r-- 1 atlpilot000 atlas   308 Jun 27 09:36 FrDatadisk.txt
+-rw-r--r-- 1 atlpilot000 atlas   673 Jun 27 09:36 Makefile
+-rw-r--r-- 1 atlpilot000 atlas   569 Jun 27 09:36 ROOT.py
+-rw-r--r-- 1 atlpilot000 atlas   207 Jun 27 09:36 frAnaly.txt
+-rw-r--r-- 1 atlpilot000 atlas  1685 Jun 27 09:36 getFiles.py
+-rw-r--r-- 1 atlpilot000 atlas  1653 Jun 27 09:36 getFiles.py.onepersite
+-rw-r--r-- 1 atlpilot000 atlas   224 Jun 27 09:36 launch_main.py
+-rw-r--r-- 1 atlpilot000 atlas  1845 Jun 27 09:45 listFilePerSite.txt
+-rwxr-xr-x 1 atlpilot000 atlas 27892 Jun 27 09:36 main
+-rw-r--r-- 1 atlpilot000 atlas  4342 Jun 27 09:36 main.C
+-rw-r--r-- 1 atlpilot000 atlas 29592 Jun 27 09:36 main.o
+-rwxr-xr-x 1 atlpilot000 atlas   127 Jun 27 09:36 main.sh
+-rw-r--r-- 1 atlpilot000 atlas   466 Jun 27 09:36 outfilename.h
+drwxr-xr-x 2 atlpilot000 atlas  4096 Jun 27 09:36 pandaRootBin
+-rwxr--r-- 1 atlpilot000 atlas   516 Jun 27 09:36 runPrun.sh
+-rw-r--r-- 1 atlpilot000 atlas     0 Jun 27 09:36 tmp.stderr.4014783a-59c0-4566-9a4c-5cd26eca9885
+-rw-r--r-- 1 atlpilot000 atlas 16879 Jun 27 09:54 tmp.stdout.083ac520-ead6-45a1-8567-7f6eb538b73c
+-rw-r--r-- 1 atlpilot000 atlas    97 Jun 27 09:36 trf.04c8cb34-560f-458f-86e7-3a9b10d5cc36.py
+-rw-r--r-- 1 atlpilot000 atlas  6308 Jun 27 09:36 wrapper.o
+-rw------- 1 atlpilot000 atlas  8382 Jun 27 09:36 x509up_u68281
+
+
+
+/var/torque/tmpdir/682934.grid10.lal.in2p3.fr/condorg_VjgZz6uS/pilot3/Panda_Pilot_23360_1403854581/PandaJob_2202130469_1403854582
+total 3352
+-rw-r--r-- 1 atlpilot000 atlas 107141 May 22 10:21 ATLASExperiment.py
+-rw-r--r-- 1 atlpilot000 atlas  72355 Jun 27 09:36 ATLASExperiment.pyc
+-rw-r--r-- 1 atlpilot000 atlas  25106 Apr 29 16:21 ATLASSiteInformation.py
+-rw-r--r-- 1 atlpilot000 atlas  20227 Jun 27 09:36 ATLASSiteInformation.pyc
+-rw-r--r-- 1 atlpilot000 atlas  24663 Jul 11  2013 BNLdCacheSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  16411 Jun 27 09:36 BNLdCacheSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  24247 Jul 15  2013 CMSExperiment.py
+-rw-r--r-- 1 atlpilot000 atlas   8348 Jul 15  2013 CMSSiteInformation.py
+-rw-r--r-- 1 atlpilot000 atlas   9319 Jun 27 09:36 CMSSiteInformation.pyc
+-rw-r--r-- 1 atlpilot000 atlas   8427 Jul 11  2013 COGSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas   7682 Jun 27 09:36 COGSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  18770 Jul 11  2013 CastorSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  12295 Jun 27 09:36 CastorSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  12709 Jul 11  2013 ChirpSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas   9420 Jun 27 09:36 ChirpSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  13233 Oct 31  2013 Cleaner.py
+-rw-r--r-- 1 atlpilot000 atlas  12301 Jul 11  2013 DBReleaseHandler.py
+-rw-r--r-- 1 atlpilot000 atlas  11447 Jun 27 09:36 DBReleaseHandler.pyc
+-rw-r--r-- 1 atlpilot000 atlas    647 Jul 11  2013 Diagnosis.py
+-rw-r--r-- 1 atlpilot000 atlas   1054 Jun 27 09:36 Diagnosis.pyc
+-rw-r--r-- 1 atlpilot000 atlas   3120 Jul 15  2013 ErrorDiagnosis.py
+-rw-r--r-- 1 atlpilot000 atlas   3269 Jun 27 09:36 ErrorDiagnosis.pyc
+-rw-r--r-- 1 atlpilot000 atlas  28842 Apr 29 16:21 Experiment.py
+-rw-r--r-- 1 atlpilot000 atlas  19163 Jun 27 09:36 Experiment.pyc
+-rw-r--r-- 1 atlpilot000 atlas   2304 Jul 11  2013 ExperimentFactory.py
+-rw-r--r-- 1 atlpilot000 atlas   2176 Jun 27 09:36 ExperimentFactory.pyc
+-rwxr-xr-x 1 atlpilot000 atlas  18312 Dec 10  2013 FAXSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  14279 Jun 27 09:36 FAXSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas   5148 Jul 11  2013 FileRegistration.py
+-rw-r--r-- 1 atlpilot000 atlas   9699 Jul 11  2013 FileState.py
+-rw-r--r-- 1 atlpilot000 atlas  10163 Jun 27 09:36 FileState.pyc
+-rw-r--r-- 1 atlpilot000 atlas   2391 Jul 11  2013 FileStateClient.py
+-rw-r--r-- 1 atlpilot000 atlas   3126 Jun 27 09:36 FileStateClient.pyc
+-rw-r--r-- 1 atlpilot000 atlas  24485 Jul 11  2013 GOSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  11236 Jul 11  2013 GSIftpSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas   9705 Jun 27 09:36 GSIftpSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  11706 Jul 11  2013 HUSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas   9225 Jun 27 09:36 HUSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  28964 Jan 28 17:21 JEMstub.py
+-rw-r--r-- 1 atlpilot000 atlas  18506 May 22 10:21 Job.py
+-rw-r--r-- 1 atlpilot000 atlas  11136 Jun 27 09:36 Job.pyc
+-rw-r--r-- 1 atlpilot000 atlas   2043 Jul 11  2013 JobInfoXML.py
+-rw-r--r-- 1 atlpilot000 atlas  54989 Apr 29 16:21 JobLog.py
+-rw-r--r-- 1 atlpilot000 atlas  29371 Jul 11  2013 JobRecovery.py
+-rw-r--r-- 1 atlpilot000 atlas  22256 Jun 27 09:36 JobRecovery.pyc
+-rw-r--r-- 1 atlpilot000 atlas  10634 Jul 11  2013 JobState.py
+-rw-r--r-- 1 atlpilot000 atlas   8812 Jun 27 09:36 JobState.pyc
+-rw-r--r-- 1 atlpilot000 atlas  14046 Jul 11  2013 LocalSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  10336 Jun 27 09:36 LocalSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas 174158 May 22 10:21 Mover.py
+-rw-r--r-- 1 atlpilot000 atlas 109897 Jun 27 09:36 Mover.pyc
+-rw-r--r-- 1 atlpilot000 atlas   9274 Apr 29 16:21 Node.py
+-rw-r--r-- 1 atlpilot000 atlas   9153 Jun 27 09:36 Node.pyc
+-rw-r--r-- 1 atlpilot000 atlas   8066 Jul 11  2013 NordugridATLASExperiment.py
+-rw-r--r-- 1 atlpilot000 atlas   7253 Jun 27 09:36 NordugridATLASExperiment.pyc
+-rw-r--r-- 1 atlpilot000 atlas   2038 Jul 11  2013 NordugridATLASSiteInformation.py
+-rw-r--r-- 1 atlpilot000 atlas   2504 Jun 27 09:36 NordugridATLASSiteInformation.pyc
+-rw-r--r-- 1 atlpilot000 atlas   2678 Jul 11  2013 OtherExperiment.py
+-rw-r--r-- 1 atlpilot000 atlas   4362 Jun 27 09:36 OtherExperiment.pyc
+-rw-r--r-- 1 atlpilot000 atlas   1991 Jul 11  2013 OtherSiteInformation.py
+-rw-r--r-- 1 atlpilot000 atlas   3177 Jun 27 09:36 OtherSiteInformation.pyc
+-rw-r--r-- 1 atlpilot000 atlas   2311 Jul 11  2013 OtherSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  32933 Apr 29 16:21 PandaServerClient.py
+-rw-r--r-- 1 atlpilot000 atlas  14102 Apr 29 16:21 PilotErrors.py
+-rw-r--r-- 1 atlpilot000 atlas  13314 Jun 27 09:36 PilotErrors.pyc
+-rw-r--r-- 1 atlpilot000 atlas   1717 Jul 11  2013 PilotTCPServer.py
+-rw-r--r-- 1 atlpilot000 atlas  13549 Jul 11  2013 PilotUtils.py
+-rw-r--r-- 1 atlpilot000 atlas    163 Jun 27 09:54 PoolFileCatalog.xml
+-rw-r--r-- 1 atlpilot000 atlas    434 Jun 27 09:36 PoolFileCatalog.xml.MOVER
+-rw-r--r-- 1 atlpilot000 atlas   4281 Jul 11  2013 ProxyGuard.py
+-rw-r--r-- 1 atlpilot000 atlas   5865 Jun 27 09:36 ProxyGuard.pyc
+-rw-r--r-- 1 atlpilot000 atlas  30467 Feb 13 16:21 RunJobUtilities.py
+-rw-r--r-- 1 atlpilot000 atlas  25440 Jun 27 09:36 RunJobUtilities.pyc
+-rw-r--r-- 1 atlpilot000 atlas  14524 Jul 11  2013 SRMSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  11079 Jun 27 09:36 SRMSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas    998 Jul 11  2013 Site.py
+-rw-r--r-- 1 atlpilot000 atlas   1619 Jun 27 09:36 Site.pyc
+-rw-r--r-- 1 atlpilot000 atlas  33806 Apr 29 16:21 SiteInformation.py
+-rw-r--r-- 1 atlpilot000 atlas  23873 Jun 27 09:36 SiteInformation.pyc
+-rw-r--r-- 1 atlpilot000 atlas   2892 Jul 11  2013 SiteInformationFactory.py
+-rw-r--r-- 1 atlpilot000 atlas   2436 Jun 27 09:36 SiteInformationFactory.pyc
+-rw-r--r-- 1 atlpilot000 atlas 137286 Feb 19 10:21 SiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  99862 Jun 27 09:36 SiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas   8583 Jul 11  2013 SiteMoverFarm.py
+-rw-r--r-- 1 atlpilot000 atlas   6818 Jun 27 09:36 SiteMoverFarm.pyc
+-rw-r--r-- 1 atlpilot000 atlas  23435 Jul 11  2013 UberftpSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  15093 Jun 27 09:36 UberftpSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas   3453 Aug 15  2013 VmPeak.py
+-rw-r--r-- 1 atlpilot000 atlas      0 Jul 11  2013 __init__.py
+-rw-r--r-- 1 atlpilot000 atlas  31534 May 22 10:21 aria2cSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  21360 Jun 27 09:36 aria2cSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  31374 Oct 31  2013 atlasProdPilot.py
+-rw-r--r-- 1 atlpilot000 atlas  16969 Jul 11  2013 castorSvcClassSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  12199 Jun 27 09:36 castorSvcClassSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas    401 Jul 11  2013 config.py
+-rw-r--r-- 1 atlpilot000 atlas    742 Jun 27 09:36 config.pyc
+-rw-r--r-- 1 atlpilot000 atlas  30366 Jul 15  2013 curlSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  17927 Jun 27 09:36 curlSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  10846 Jul 11  2013 dCacheLFCSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas   9179 Jun 27 09:36 dCacheLFCSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  30965 Jul 11  2013 dCacheSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  21286 Jun 27 09:36 dCacheSiteMover.pyc
+-rwxr-xr-x 1 atlpilot000 atlas  34155 Jul 11  2013 dataPilot.py
+-rw-r--r-- 1 atlpilot000 atlas   9189 Jul 11  2013 dq2SiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas   6574 Jun 27 09:36 dq2SiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas   5451 Jul 11  2013 futil.py
+-rw-r--r-- 1 atlpilot000 atlas   7458 Jun 27 09:36 futil.pyc
+-rw-r--r-- 1 atlpilot000 atlas  26864 Jul 11  2013 globusPilot.py
+-rw-r--r-- 1 atlpilot000 atlas   4508 Jun 27 09:36 jobState-2202130469-test.pickle
+-rw-r--r-- 1 atlpilot000 atlas    833 Jun 27 09:36 job_setup.sh
+-rw-r--r-- 1 atlpilot000 atlas  28025 Jul 11  2013 lcgcp2SiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  16067 Jun 27 09:36 lcgcp2SiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas  33494 Jul 11  2013 lcgcpSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  19608 Jun 27 09:36 lcgcpSiteMover.pyc
+-rw-r--r-- 1 atlpilot000 atlas    194 Jun 27 09:36 matched_replicas.json
+-rw-r--r-- 1 atlpilot000 atlas  11096 Jul 11  2013 mvSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas   9372 Jun 27 09:36 mvSiteMover.pyc
+-rwxr-xr-x 1 atlpilot000 atlas   9674 Jul 11  2013 myproxyUtils.py
+-rw-r--r-- 1 atlpilot000 atlas   1944 Jun 27 09:36 newJobDef.py
+-rw-r--r-- 1 atlpilot000 atlas   2391 Jun 27 09:36 newJobDef.pyc
+-rw-r--r-- 1 atlpilot000 atlas 129128 Feb 13 16:21 pUtil.py
+-rw-r--r-- 1 atlpilot000 atlas 109876 Jun 27 09:36 pUtil.pyc
+-rw-r--r-- 1 atlpilot000 atlas   1777 Jun 27 09:36 pandaJobData.out
+-rw-r--r-- 1 atlpilot000 atlas  13723 Jun 27 09:54 pandatracerlog.txt
+drwxr-xr-x 7 atlpilot000 atlas   4096 Jun 27 09:36 pandawnutil
+-rw-r--r-- 1 atlpilot000 atlas 269443 May 22 10:21 pilot.py
+-rw-r--r-- 1 atlpilot000 atlas      0 Jun 27 09:36 prun_stderr.txt
+-rw-r--r-- 1 atlpilot000 atlas  41507 Jun 27 09:54 prun_stdout.txt
+-rw-r--r-- 1 atlpilot000 atlas  20033 Jul 11  2013 rfcpLFCSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  14189 Jun 27 09:36 rfcpLFCSiteMover.pyc
+-rwxr-xr-x 1 atlpilot000 atlas  64847 Jun 25 21:14 runGen-00-00-02
+-rwxr-xr-x 1 atlpilot000 atlas  30746 Dec  9  2013 runGen.py
+-rw-r--r-- 1 atlpilot000 atlas  51399 May 22 10:21 runJob.py
+-rw-r--r-- 1 atlpilot000 atlas      0 Jun 27 09:36 runjob.stderr
+drwxr-xr-x 8 atlpilot000 atlas   4096 Jun 27 09:36 src
+-rw-r--r-- 1 atlpilot000 atlas   4597 Jul 11  2013 stormSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas   3869 Jun 27 09:36 stormSiteMover.pyc
+-rwxr-xr-x 1 atlpilot000 atlas   8743 Jul 11  2013 timed_command.py
+-rw-r--r-- 1 atlpilot000 atlas   6943 Jun 27 09:36 timed_command.pyc
+-rw-r--r-- 1 atlpilot000 atlas   4220 Jun 27 09:54 user.sblunier.004114._00001.ANALY_GRIF-LAL.root
+-rw-r--r-- 1 atlpilot000 atlas  23929 Jun 27 09:36 user.sblunier.0627072243.750015.lib._004114.lib.tgz
+drwxr-xr-x 4 atlpilot000 atlas   4096 Jun 27 09:54 workDir
+-rwxr-xr-x 1 atlpilot000 atlas  36996 Apr 29 16:21 xrdcpSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  25160 Jun 27 09:36 xrdcpSiteMover.pyc
+-rwxr-xr-x 1 atlpilot000 atlas  32697 Feb 19 10:21 xrootdSiteMover.py
+-rw-r--r-- 1 atlpilot000 atlas  22592 Jun 27 09:36 xrootdSiteMover.pyc
+execute script: Running script was successful

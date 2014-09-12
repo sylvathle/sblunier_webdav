@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- Edited By Panda Pilot3 -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="725ba3a1-62ec-4e69-a398-7c5027b50aa2">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://agh3.atlas.unimelb.edu.au/dpm/atlas.unimelb.edu.au/home/atlas/atlasscratchdisk/rucio/user/sblunier/88/b9/user.sblunier.0715064332.242797.lib._005723.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>

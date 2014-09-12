@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- ATLAS file meta-data catalog -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="4d07a382-d529-4188-976b-a55106f262f8">
+    <logical>
+      <lfn name="user.sblunier.mallgrid1030.DE.ANALY_DESY-HH.log.000001.log.tgz"/>
+    </logical>
+    <metadata att_name="surl" att_value="4d07a382-d529-4188-976b-a55106f262f8-surltobeset"/>
+    <metadata att_name="fsize" att_value=""/>
+    <metadata att_name="csumtypetobeset" att_value=""/>
+  </File>
+  <File ID="8fe13bf9-ef19-4264-ac2e-30a786fd2ea3">
+    <logical>
+      <lfn name="user.sblunier.4106731._000001.ANALY_DESY-HH.root"/>
+    </logical>
+    <metadata att_name="surl" att_value="8fe13bf9-ef19-4264-ac2e-30a786fd2ea3-surltobeset"/>
+    <metadata att_name="fsize" att_value="8463"/>
+    <metadata att_name="adler32" att_value="d348b29b"/>
+  </File>
+</POOLFILECATALOG>

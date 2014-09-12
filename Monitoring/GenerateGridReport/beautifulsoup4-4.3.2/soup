@@ -1,0 +1,707 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html><head id="head"><title>Panda   jobs  for user Sylvain Blunier</title>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="noindex,nofollow" name="robots"/>
+<meta content="Panda monitor" name="description"/>
+<meta content="Fri, 11 Jul 2014 07:27:04 GMT" name="date">
+<meta content="text/javascript" http-equiv="Content-Script-Type">
+<link href="http://panda.cern.ch/server/pandamon/query" rel="start" title="Panda monitor home page">
+<style type="text/css">
+/* comment */
+/*
+body {
+  color: black;
+  background-color: #cc9966;
+}
+*/
+  
+td {
+font-family: sans-serif;
+font-size: small;
+}
+
+#tophome{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: small;
+}
+
+#topheader{
+text-align: left;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: small;
+}
+
+#browsertitle{
+ visibility: hidden;
+}
+
+#homeup{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: medium;
+font-weight: bold;
+}
+
+#hometop{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#homedown{
+text-align: center;
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#titleheader{
+text-align: left;
+vertical-align: middle;
+font-family: sans-serif;
+font-size: large;
+font-weight: bold;
+}
+
+#nav{
+vertical-align: middle;
+font-family: sans-serif;
+}
+
+#menu{
+vertical-align: top;
+font-family: sans-serif;
+}
+
+#main{
+text-align: left;
+vertical-align: top;
+font-family: sans-serif;
+}
+
+#foot{
+font-size: small;
+font-family: sans-serif;
+}
+
+.headerbar {
+  background: #ffcccc;
+  font-family: sans-serif;
+}
+
+.menubar {
+  background: #ffcc88;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.overlap {
+  background: #ffccaa;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.mainpage {
+  background: white;
+  font-family: sans-serif;
+  font-size: small;
+}
+.alignRight { 
+  text-align: right; 
+}
+
+table.tt {
+	margin: 0 0;
+	clear: both;
+	width: 80%
+ }
+
+</style>
+<!-- Page-specific header insertion -->
+<!--Load the JQUERY/FLOT -->
+<link href="http://panda.cern.ch/monitor/css/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link href="http://panda.cern.ch/monitor/css/tablesorter/themes/blue/style.css" media="print, projection, screen" rel="stylesheet" type="text/css"/>
+<link href="http://panda.cern.ch/monitor/css/demo_table_jui.css" media="print, projection, screen" rel="stylesheet" type="text/css"/>
+<!--[if IE]><script language="javascript"  src="http://panda.cern.ch/monitor/js/jquery/excanvas.min.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://panda.cern.ch/monitor/js/jquery/jquery.ba-bbq.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script src="http://panda.cern.ch/monitor/js/flot/jquery.flot.js"></script>
+<script src="http://panda.cern.ch/monitor/js/flot/jquery.flot.crosshair.js"></script>
+<script src="http://panda.cern.ch/monitor/js/flot/jquery.flot.stack.js"></script>
+<script src="http://panda.cern.ch/monitor/js/jquery/jquery.tablesorter.js"></script>
+<script src="http://panda.cern.ch/monitor/js/jquery/jquery.tablesorter.pager.js"></script>
+<script src="http://panda.cern.ch/monitor/js/jquery/jquery.uitablefilter.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.1/jquery.dataTables.min.js"></script>
+<script src="http://panda.cern.ch/monitor/js/jquery/jquery.cookie.js"></script>
+<script src="http://panda.cern.ch/monitor/js/date.format.js"></script>
+<!--Load the PANDA API-->
+<!--
+                <script  src='http://panda.cern.ch/monitor/js/PandaMonitorUtils.js'> </script>
+                -->
+<script src="http://pandamon.cern.ch/static/js/PandaMonitorUtils.js"> </script>
+<script src="http://pandamon.cern.ch/static/js/PandaMonitorViews.js"> </script>
+<script src="http://pandamon.cern.ch/static/js/3dparty/state-machine/state-machine.min.js"> </script>
+<script src="http://pandamon.cern.ch/static/js/pmPlot.js"> </script>
+<script src="http://pandamon.cern.ch/static/js/jquery/jquery.unique-element-id.js"> </script>
+<script src="http://pandamon.cern.ch/static/js/core/ajaxrender.js"> </script>
+<!--Load the GOOGLE tracker  -->
+<script type="text/javascript">
+
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-29960515-1']);
+                    _gaq.push(['_trackPageview']);
+
+                    (function() {
+                      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+</script>
+<style>
+.ui-widget {
+  font-size: 9pt;
+}
+</style>
+<script> 
+          document.pandaURL = 'http://panda.cern.ch/monitor/';
+         // JQuery init
+         $(document).ready(function() {
+             utils();
+             var active = $.cookie('#pandaLeftMenuId');
+             if  ( active == undefined ) active = 0;
+             function bindCookiEvent(event, ui) { 
+               $.cookie('#pandaLeftMenuId',ui.options.active,{ expires: 7, path: '/' });
+             }
+             $("#pandaLeftMenuId").accordion({ header: 'h3' ,"active" : parseInt(active, 10), change: bindCookiEvent , autoHeight: false,  clearStyle: true});
+         });
+         </script>
+<!--    <script src="http://tjweb.org/scripts/xml_http_request.js"></script> -->
+<script type="text/javascript">
+        gAnswer = "";  // Global answer
+        // gHTTP = getHTTPObject(); // HTTP object for XMLHttpRequest
+
+        var datael = new Array( );
+        datastate = 0;
+
+        function dataToggle() { if ( datastate == 1 ) { datastate=0;} else {datastate=1;} dataControl(datastate);}
+        function dataControl(state) {
+          for (var el in datael) {
+            setDisplay(datael[el],state)
+          }
+        }
+
+        function pause(numberMillis) {
+          var now = new Date();
+          var exitTime = now.getTime() + numberMillis;
+          while (true) {
+            now = new Date();
+            if (now.getTime() > exitTime)
+            return;
+          }
+        }
+
+        function domDynamicContent(elid,content) {
+          rng = document.createRange();
+          el = document.getElementById(elid);
+          rng.setStartBefore(el);
+          htmlFrag = rng.createContextualFragment(content);
+          while (el.hasChildNodes()) el.removeChild(el.lastChild);
+            el.appendChild(htmlFrag);
+        }
+
+        function fieldContent(elid,content) {
+          rng = document.createRange();
+          el = document.getElementById(elid);
+          rng.setStartBefore(el);
+          htmlFrag = rng.createContextualFragment(content);
+          while (el.hasChildNodes()) el.removeChild(el.lastChild);
+            el.appendChild(htmlFrag);
+        }
+
+        function folderContent(elid,content,folder) {
+          rng = document.createRange();
+          el = document.getElementById(elid);
+          rng.setStartBefore(el);
+          htmlFrag = rng.createContextualFragment(content);
+          while (el.hasChildNodes()) el.removeChild(el.lastChild);
+            el.appendChild(htmlFrag);
+          el = document.getElementById('nav');
+          rng.setStartBefore(el);
+          htmlFrag = rng.createContextualFragment(folder);
+          while (el.hasChildNodes()) el.removeChild(el.lastChild);
+            el.appendChild(htmlFrag);
+        }
+
+        // Retrieve contents of a page element from a URL
+        function getHTTPElement(url,elid) {
+          gHTTP = new XMLHttpRequest(); // HTTP object for XMLHttpRequest
+
+          gHTTP.open("GET",url,false); // Third param means asynch=true. Always use.
+          gHTTP.onreadystatechange=function() {
+            if (gHTTP.readyState==4) {
+              domDynamicContent(elid,gHTTP.responseText);
+              gHTTP = null;
+              delete gHTTP;
+            }
+          }
+          gHTTP.send(null)
+        }
+
+        function getHTTPFolder(url,elid,folder) {
+          gHTTP = new XMLHttpRequest(); // HTTP object for XMLHttpRequest
+
+          gHTTP.open("GET",url,false); // Third param means asynch=true. Always use.
+          gHTTP.onreadystatechange=function() {
+            if (gHTTP.readyState==4) {
+              folderContent(elid,gHTTP.responseText, folder);
+              gHTTP = null;
+              delete gHTTP;
+            }
+          }
+          gHTTP.send(null)
+        }
+
+        function setDisplay(elid,i) {
+          var el = document.getElementById(elid);
+          if (i == 0)
+            el.style.display = "none";
+          else
+            el.style.display = "";
+        }
+
+        function toggleDisplay(elid) {
+          // Use visibility, not this
+          var el = document.getElementById(elid);
+          if (el.style.display=="")
+            el.style.display = "none";
+          else
+            el.style.display = "";
+        }
+        function toggleVisibility(elid) {
+        var el = document.getElementById(elid);
+        if (el.style.visibility=="visible")
+          el.style.visibility = "hidden";
+        else
+          el.style.visibility = "visible";
+        }
+        </script>
+</link></meta></meta></meta></head>
+<noscript>
+JavaScript must be enabled in order for you to use this browser.
+</noscript>
+<body marginwidth="0">
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr height="12px">
+<td width="3px"></td>
+<td class="menubar" id="tophome" style="white-space: nowrap"> <b>       <a href="http://panda.cern.ch/server/pandamon/query?mode=config">Configuration</a> 
+        </b></td><td colspan="2" id="topheader" width="100%"> <a href="http://panda.cern.ch/server/pandamon/query?dash=prod">Production</a>  <a href="http://panda.cern.ch/server/pandamon/query?dash=clouds">Clouds</a>  <a href="http://panda.cern.ch/server/pandamon/query?overview=incidents">Incidents</a>  <a href="http://panda.cern.ch/server/pandamon/query?dash=ddm">DDM</a>  <a href="http://panda.cern.ch/server/pandamon/query?ddm=dash">PandaMover</a>  <a href="http://panda.cern.ch/server/pandamon/query?tp=main">AutoPilot</a>  <a href="http://panda.cern.ch/server/pandamon/query?dash=site">Sites</a>  <a href="http://panda.cern.ch/server/pandamon/query?overview=releaseinfo">Releases</a>  <a href="http://panda.cern.ch/server/pandamon/query?dash=analysis">Analysis</a>  <a href="http://panda.cern.ch/server/pandamon/query?mode=sitestats">Stats</a>  <a href="http://panda.cern.ch/server/pandamon/query?ui=users">Users</a>  <a href="http://panda.cern.ch/server/pandamon/query?dash=physics">Physics data</a>  <a href="http://dashb-atlas-task-prod.cern.ch/templates/task-prod/">ProdTask</a>  <a href="http://dashb-atlas-data.cern.ch/dashboard/ddm2">DDMDash</a>  <a href="http://dashb-atlas-ssb.cern.ch/dashboard/request.py/siteview#currentView=Shifter+view&amp;highlight=false">SSB</a>  </td>
+</tr>
+<tr>
+<td class="headerbar" height="12px"></td>
+<td class="overlap" id="hometop" style="white-space: nowrap">  </td>
+<td align="left" class="headerbar" id="topright" width="75%">   </td>
+<td align="right" class="headerbar" id="topright" style="vertical-align:top">  </td>
+</tr>
+<tr>
+<td class="headerbar" height="40px"></td>
+<td class="overlap" id="homeup" style="white-space: nowrap"> <a href="http://panda.cern.ch/server/pandamon/query">Panda monitor</a><br><b><font size="-1">Times are in UTC</font></b></br></td>
+<td class="headerbar" colspan="2" id="titleheader"> Panda   jobs  for user Sylvain Blunier</td>
+</tr>
+<tr>
+<td class="headerbar" height="20px"></td>
+<td class="overlap" id="homedown" style="white-space: nowrap"> <a href="http://panda.cern.ch/server/pandamon/query?overview=info">Panda info and help</a></td>
+<td align="left" class="headerbar" id="nav"> <b>Selection parameters:</b><br>     <b>days</b>:3    <b>user</b>:Sylvain Blunier    <b>jobsetID</b>:5099   <p><script>function clearHelp() {fieldContent('help',"<div id='help'><a onClick='showHelp()'><font color=blue><u>Click for help</u></font></a></div>")}</script><script>function showHelp() {fieldContent('help',"<a onClick='clearHelp()'><font color=blue><u>Close help</u></font></a><br><tr><td>Note: Seemingly duplicated jobs with different jobStatus may show up briefly as<br>                the jobs move from one state to another. The records with outdated jobStatus will<br>                eventually be removed upon successful transition to the new state.</td></tr><br>                <tr><td>use <b><code>'&walltime=d|t|dt'</code></b> to calculate the distrubution of the job duration or/and the time to transfer the output files back</td></tr>")}</script><div id="help"><a onclick="showHelp()"><font color="blue"><u>Click for help</u></font></a></div></p></br></td>
+<td align="right" class="headerbar" id="nav" style="vertical-align:bottom">  </td>
+</tr>
+<tr>
+<td></td>
+<td class="menubar" id="menu"> <div class="ui-accordion ui-widget" id="pandaLeftMenuId" title="Select the item you need and click to expand"><h3 class="ui-accordion-header"><a href="#"> Jobs
+            <span>   
+            <span onclick="location.href='http://panda.cern.ch/server/pandamon/query?mode=jobquery'" style="text-decoration:underline; color:blue; cursor:pointer" title='Attention: "Long query"! Show "Search job" dialog'>• Search</span></span>
+</a></h3>
+<div class="ui-accordion-content ui-widget-content"><p><b> Summary:</b><table style="padding:0px;margin:0px;"><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?limit=2">All Jobs</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?VO=cms&amp;limit=2">CMS Jobs</a></td><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/cloudsummary?jobtype=analysis">analysis</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/cloudsummary?jobtype=production,test">production,test</a></td></tr><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/cloudsummary?jobtype=jedi&amp;hours=72">jedi</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/cloudsummary?jobtype=&amp;hours=72">all</a></td></tr></tr></table><b> States:</b><table><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=pending&amp;plot=no">pending</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=defined&amp;plot=no">defined</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=waiting&amp;plot=no">waiting</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=assigned&amp;plot=no">assigned</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=activated&amp;plot=no">activated</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=sent&amp;plot=no">sent</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=starting&amp;plot=no">starting</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=running&amp;plot=no">running</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=holding&amp;plot=no">holding</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=transferring&amp;plot=no">transferring</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=finished&amp;plot=no">finished</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=failed&amp;plot=no">failed</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=cancelled&amp;plot=no">cancelled</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobStatus=cancelled&amp;computingSite=NULL&amp;limit=200&amp;plot=no">unassigned</a></td></tr>
+</table></p></div>
+<h3 class="ui-accordion-header"><a href="#"> Job Types</a></h3>
+<div class="ui-accordion-content ui-widget-content"><p><b> Types:</b><table><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=analysis&amp;hours=3&amp;plot=no">analysis</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=production&amp;hours=3&amp;plot=no">production</a>  </td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=prod_test&amp;hours=3&amp;plot=no">prod_test</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=install&amp;hours=3&amp;plot=no">install</a>  </td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=test&amp;hours=3&amp;plot=no">test</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=&amp;jobStatus=retried&amp;plot=no">retried</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=jedi&amp;hours=3&amp;plot=no">jedi</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=&amp;processingType=usermerge&amp;hours=3&amp;plot=no">merging</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobinfo?jobtype=&amp;hours=3&amp;plot=no">all</a>  </td></tr></table></p></div>
+<h3 class="ui-accordion-header"><a href="#"> Jobs' Timing</a></h3>
+<div class="ui-accordion-content ui-widget-content"><p> <a href="https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/PandaPilot#QaPilotTiming" title="Q:Which are the timings in pilotTiming?"><b>Timing:<b></b></b></a><table><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobtiming?jobtype=analysis&amp;hours=3">analysis</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobtiming?jobtype=production&amp;hours=3">production</a>  </td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobtiming?jobtype=prod_test&amp;hours=3">prod_test</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobtiming?jobtype=test&amp;hours=3">test</a>  </td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobtiming?jobtype=jedi&amp;hours=3">jedi</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobtiming?jobtype=&amp;hours=3">all</a>  </td></tr>
+</table></p></div>
+<h3 class="ui-accordion-header"><a href="#"> Jobs' Metrics</a></h3>
+<div class="ui-accordion-content ui-widget-content"><p><b> <a href="https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/PandaPilot#QaJobMetrics" title="Q:What are the jobMetrics?">VM Metrics:</a></b><table><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobram?jobtype=analysis&amp;hours=3">analysis</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobram?jobtype=production&amp;hours=3">production</a>  </td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobram?jobtype=prod_test&amp;hours=3">prod_test</a>  </td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobram?jobtype=jedi&amp;hours=3">jedi</a>  </td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jobs/jobram?jobtype=&amp;hours=3">all</a>  </td></tr></table></p></div>
+<h3 class="ui-accordion-header"><a href="#"> Jedi Tasks</a></h3>
+<div class="ui-accordion-content ui-widget-content"><p><b> Summary:</b><table style="padding:0px;margin:0px;"><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?tasktype=*&amp;limit=2000">All Tasks</a></td><td style="font-size:8pt;"><a href="https://pandamon.cern.ch/jedi/taskinfo?tasktype=analysis&amp;username=auto&amp;hours=24">My Tasks</a></td></tr></table></p></div></div></td></tr></table><b> States:</b><table style="padding:0px;margin:0px;"><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=registered">registered</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=defined">defined</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=waiting">waiting</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=ready">ready</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=pending">pending</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=scouting">scouting</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=running">running</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=holding">holding</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=merging">merging</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=prepared">prepared</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=finished">finished</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=aborting">aborting</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=aborted">aborted</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=finishing">finishing</a></td></tr>
+<tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=broken">broken</a></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/jedi/taskinfo?status=failed">failed</a></td></tr>
+</table></body></html>
+<h3 class="ui-accordion-header"><a href="#"> FAX</a></h3>
+<div class="ui-accordion-content ui-widget-content"><p><b> Summary:</b><table style="padding:0px;margin:0px;"><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/fax/failover">Fail over</a></td></tr><tr><td width="5px"></td><td style="font-size:8pt;"><a href="http://pandamon.cern.ch/fax/map">Configuration</a></td></tr></table></p></div>
+<h3 class="ui-accordion-header"><a href="#"> Quick search</a></h3>
+<div class="ui-accordion-content ui-widget-content"><br><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin-top:0; margin:0; border:0; font-size:8pt;"> Panda job ID <input border="0" maxlength="100" name="job" size="6" style="margin-top:0; margin:0;         border:0; font-size:8pt;" title="Please fill out this field" type="text"/></form><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin-top:0; margin:0; border:0; font-size:8pt;"> Panda id by LFN<input border="0" maxlength="200" name="lfn" size="5" style="margin-top:0; margin:0; border:0; font-size:8pt;" title="Please fill out the filename to find the Job Id" type="text"><input name="overview" type="hidden" value="findfile"><input name="archive" type="hidden" value="yes"><input name="depth" type="hidden" value="fullarchive"/></input></input></input></form><br><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin-top:0; margin:0; border:0; font-size:8pt;"> Batch ID <input border="0" maxlength="200" name="batchID" size="6" style="margin-top:0; margin:0; border:0; font-size:8pt;" title="Please fill out this field" type="text"><input name="job" type="hidden" value="*"/></input></form><form action="http://panda.cern.ch/server/pandamon/query" id="formdsid" method="GET" style="margin-top:0; margin:0; border:0; font-size:8pt;"> Dataset <input border="0" id="informdsid" maxlength="200" name="name" size="6" title="Please fill out this field" tyle="margin-top:0; margin:0; border:0; font-size:8pt;" type="text"><input name="mode" type="hidden" value="dset"/></input></form><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin-top:0; margin:0; border:0; font-size:8pt;"> Task request <input border="0" maxlength="100" name="qTID" size="6" style="margin-top:0; margin:0; border:0;         font-size:8pt;" title="Please fill out this field" type="text"><input name="mode" type="hidden" value="taskquery"><input name="qsubmit" type="hidden" value="QuerySubmit"/></input></input></form><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin-top:0; margin:0; border:0; font-size:8pt;"> Task status <input border="0" maxlength="100" name="taskname" size="6" style="margin-top:0; margin:0; border:0;         font-size:8pt;" title="Please fill out this field" type="text"><input name="overview" type="hidden" value="taskinfo"/></input></form><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin-top:0; margin:0; border:0; font-size:8pt;"> File <input border="0" maxlength="200" name="lfn" size="6" style="margin-top:0; margin:0; border:0; font-size:8pt;" title="Please fill out this field" type="text"><input name="overview" type="hidden" value="findfile"><input name="archive" type="hidden" value="yes"/></input></input></form></br></br></div>
+<h3 class="ui-accordion-header"><a href="#"> Errors</a></h3>
+<div class="ui-accordion-content ui-widget-content"><div style="font-size:8pt;"><p> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=production&amp;item=taskID" title="Error Distribution for the failed production Tasks">Production Tasks</a><br> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=production&amp;item=computingSite&amp;hours=48" title="Site Error Distribution for the failed production Tasks">Production Sites</a><br> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=production&amp;item=prodUserName&amp;hours=48" title="User Error Distribution for the failed production Tasks">Production Users</a><br> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=analysis&amp;item=computingSite&amp;hours=48" title="Site Error Distribution for the failed Analysis Jobs">Analysis Site</a><br> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=analysis&amp;item=prodUserName&amp;hours=48" title="User Error Distribution for the failed Analysis Jobs">Analysis Users</a><br> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=production&amp;item=cloud&amp;hours=48" title="Cloud Error Distribution for the failed production Tasks">Production Cloud</a><br> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=analysis&amp;item=cloud&amp;hours=48" title="Cloud Error Distribution for the failed Analysis Jobs">Analysis Cloud</a><p> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=&amp;item=JediTaskID" title="Error Distribution for the failed Jedi Tasks">JEDI Task</a><br> • <a href="http://pandamon.cern.ch/jobs/joberror?jobtype=analysis&amp;item=computingSite&amp;VO=cms&amp;hours=72" title="Site Error Distribution for the failed CMS Jobs">CMS jobs</a><br> • <a href="https://pandamon.cern.ch/jobs/joberror?jobtype=analysis&amp;item=computingSite&amp;prodUserName=auto&amp;hours=72" title="My Failed Jobs Error Distribution">My Jobs</a></br></br></p></br></br></br></br></br></br></p></div></div>
+<h3 class="ui-accordion-header"><a href="#"> Summaries</a></h3>
+<div class="ui-accordion-content ui-widget-content"><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin:1px; border:0; font-size:8pt;"><br> Blocks: <input border="0" maxlength="3" name="days" size="3" style="margin-top:0; margin:0; border:0;         font-size:8pt;" title="Please fill out this field" type="text"><input name="overview" type="hidden" value="prodlist"> days</input></input></br></form><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin:1px; border:0; font-size:8pt;"> Errors: <input border="0" maxlength="3" name="days" size="3" style="margin-top:0; margin:0; border:0; font-size:8pt;" title="Please fill out this field" type="text"><input name="overview" type="hidden" value="errorlist">         days</input></input></form><form action="http://panda.cern.ch/server/pandamon/query" method="GET" style="margin:1px; border:0; font-size:8pt;"> Nodes: <input border="0" maxlength="3" name="days" size="3" style="margin-top:0; margin:0; border:0; font-size:8pt;" title="Please fill out this field" type="text"><input name="overview" type="hidden" value="wnlist">         days</input></input></form> Usage <a href="http://panda.cern.ch/server/pandamon/query?overview=usage">1</a>, <a href="http://panda.cern.ch/server/pandamon/query?overview=daysusage&amp;days=3">        3</a> days</div>
+<h3 class="ui-accordion-header"><a href="#"> Tasks
+            <span>   
+            <span onclick="location.href='http://panda.cern.ch/server/pandamon/query?mode=taskquery'" style="text-decoration:underline; color:blue; cursor:pointer" title='Show "Task and Tag Query Form"'>• Search</span></span>
+</a></h3>
+<div class="ui-accordion-content ui-widget-content"><div style="font-size:8pt;"><p> <a href="http://panda.cern.ch/server/pandamon/query?mode=reqtask1">Generic Task Req</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=reqtask2&amp;type=evgen">EvGen Task Req</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=reqtask3">HLT Task Req</a><br> <a href="https://pandamon.cern.ch/tasks/listtasks1">Task list</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=defNewTag">New Tag</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listBugReport">Bug Report</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=tinfoSearch">Task overview query</a></br></br></br></br></br></br></p></div><form action="https://pandamon.cern.ch/tasks/clonetask" method="GET" style="margin-top:0; margin:0; border:0; font-size:8pt;"> Clone Task <input border="0" maxlength="7" name="tid" size="6" style="margin-top:0; margin:0; border:1;         font-size:8pt;" title="Please,provide the TaskID to clone" type="text"/></form></div>
+<h3 class="ui-accordion-header"><a href="#"> Datasets
+            <span>   
+            <span onclick="location.href='http://panda.cern.ch/server/pandamon/query?mode=dbquery'" style="text-decoration:underline; color:blue; cursor:pointer" title='Show "Database Query Form"'>• Search</span></span>
+</a></h3>
+<div class="ui-accordion-content ui-widget-content"><div style="font-size:8pt;"><p> <a href="https://bourricot.cern.ch/dq2/share/results/">DQ2 Share Search</a><br> <a href="http://popularity.cern.ch">DQ2 Popularity</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listAbortedDatasetsState">Aborted datasets</a></br></br></p></div></div>
+<h3 class="ui-accordion-header"><a href="#"> Datasets Distribution</a></h3>
+<div class="ui-accordion-content ui-widget-content"><div style="font-size:8pt;"><p><b>DaTRI:</b><br> • <a href="http://panda.cern.ch/server/pandamon/query?mode=ddm_req">Data_Transfer_Request</a> <br> • <a href="http://panda.cern.ch/server/pandamon/query?mode=ddm_req&amp;action=List">List_User_Requests</a><br> • <a href="http://panda.cern.ch/server/pandamon/query?mode=ddm_pathenareq&amp;action=List">List_Pathena_Requests</a><br> • <a href="http://panda.cern.ch/server/pandamon/query?mode=ddm_gangareq&amp;action=List">List_Ganga_Requests</a><br> • <a href="http://panda.cern.ch/server/pandamon/query?mode=ddm_groupreq&amp;action=List">Group_Production</a><p> <a href="http://panda.cern.ch/server/pandamon/query?mode=pd2p">PD2P</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listAODReplications">AODs</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listEVNTReplications">EVNTs</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listConditionsDB">Conditions DS</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listDBRelease">DB Releases</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listPacballs">SIT pacballs</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listValidationReplications">Validation Samples</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listFunctionalTests">Functional Tests</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listCR">ATLAS Data</a><br> <a href="http://panda.cern.ch/server/pandamon/query?mode=listReproDSReplications">Reprocessed_Datasets</a></br></br></br></br></br></br></br></br></br></p></br></br></br></br></br></p></div></div>
+<h3 class="ui-accordion-header"><a href="#"> Logging monitor
+            <span>   
+            <span onclick="location.href='http://panda.cern.ch/server/pandamon/query?mode=mon&amp;hours=6'" style="text-decoration:underline; color:blue; cursor:pointer" title='Show " the logged incidents over last 36 hours "'>• Incidents</span></span>
+</a></h3>
+<div class="ui-accordion-content ui-widget-content"></div>
+<h3 class="ui-accordion-header"><a href="#"> Analytics</a></h3>
+<div class="ui-accordion-content ui-widget-content"><div style="font-size:8pt;">
+<div id="basicppopId" style="display:none">
+<div id="ppopId" style="display:none"></div>
+<div id="ptimesId" style="display:none"></div>
+</div>
+<script>
+         function loadPopularity() {
+            $('#ppopId').html("Downloading the popularity data . . . . Click again.");
+           var aj = new AjaxRender();
+           aj.download('#ppopId',function(tag,main){views().renderPopularity(tag,main);},'ppop',undefined,'atlascloud.org',0);
+         }
+         function loadPTimes() {
+           $('#ptimesId').html("Downloading the analysis timing data . . . . Click again.");
+           var aj = new AjaxRender();
+           aj.download('#ptimesId',function(tag,main){views().renderPtimes(tag,main);    },'ptimes',undefined,'atlascloud.org',0);
+         }
+        $(document).ready( function() { $('#TimingId').click(click2show);  $('#PopularityId').click(click2show); loadPopularity(); loadPTimes(); }  );
+        function click2show(event) {
+            var id = $(this).attr("id");
+            var ppidtxt = (id == 'PopularityId') ? 'ppopId': 'ptimesId';
+            var ppid = $('#' + ppidtxt);
+            event.preventDefault();
+            event.stopPropagation();
+            var phtml = ppid.html();
+            if (phtml.indexOf('Downloading') >=0 ) {
+              $('#main').html(phtml);
+            } else {
+               ppid.attr('id',ppid.guid());
+               $('#main').empty();
+               ppid.appendTo('#main');
+               ppid.show();
+               /* restore ppopId*/
+               $('#basicppopId').append("<div id=" + ppidtxt+ " style='display:none'></div>");
+               if  (id == 'PopularityId') {
+                  loadPopularity();
+               } else {
+                  loadPTimes();
+               }
+            }
+        }
+        </script>
+<br> • <a href="" id="PopularityId">Popularity</a>
+<br> • <a href="" id="TimingId">Analysis Timing</a>
+</br></br></div></div>
+
+<td class="mainpage" colspan="2" id="main"> <br><b>2 jobs.</b> Click job number to see details.<br><b>States: </b> <font color="forestgreen">finished</font>:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;jobStatus=finished" title="1">1</a> <font color="red">failed</font>:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;jobStatus=failed" title="1">1</a> <br><b>Users (1): </b> <a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;ui=user&amp;name=Sylvain%20Blunier">Sylvain Blunier</a>:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;user=Sylvain Blunier" title="2">2</a> <br><b>Processing types (1): </b> prun:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;processingType=prun" title="2">2</a> <br><b>Job types (2): </b> panda:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;prodSourceLabel=panda" title="1">1</a>  user:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;prodSourceLabel=user" title="1">1</a> <br><b>Transformations (2): </b> <a href="http://pandaserver.cern.ch:25080/trf/user/buildGen-00-00-01">buildGen-00-00-01</a>:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;transformation=http://pandaserver.cern.ch:25080/trf/user/buildGen-00-00-01" title="1">1</a>  <a href="http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02">runGen-00-00-02</a>:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;transformation=http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02" title="1">1</a> <br><b>Working groups (1): </b><br><b>Creation Hosts (1):</b> lxplus0248.cern.ch:2 <br><b>Sites (1):</b> FR.ANALY_TOKYO:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;computingSite=ANALY_TOKYO" title="2">2</a> <br><b>Regions (1):</b> FR:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;region=FR" title="2">2</a> <br><b>Clouds (1):</b> FR:<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;cloud=FR" title="2">2</a> <p><p><div id="three"><table><td class="online-navigation"> <td align="left"> <b>Showing 1 jobsets modified from 2014-07-10 10:03 to 2014-07-11 07:27<b> </b></b></td><p><table bgcolor="lightblue" width="100%"><tr><td><b>Job Sets:</b></td></tr></table><table border="1" cellpadding="3" cellspacing="0"><tr align="middle" style="font-weight:bold"><td>User:jobID</td><td>Created</td><td>Latest</td><td>Jobs</td><td>Pre-run</td><td>Running</td><td>Holding</td><td>Finished</td><td>Failed</td><td>Cancelled</td><td>Merging</td><td>buildJob</td><td>Site</td></tr><tr><td align="middle" rowspan="2"><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain Blunier&amp;days=0">Sylvain Blunier:5099</a></td><td align="center" bgcolor="#ffffbb">2014-07-10 09:51</td><td align="center">2014-07-10 09:51</td><td align="center">2</td><td> </td><td><center title="2 jobs (the entire jobset) were completed"><b><font size="-2">end</font><b></b></b></center><img height="10px" src="http://panda.cern.ch/monitor/images/PandaFinishedColor.png" style="padding:0px;" title="About 50% of all jobs Finished " width="50%"><img height="10px" src="http://panda.cern.ch/monitor/images/PandaFailedColor.png" style="padding:0px;" title="About 50% of all jobs Failed " width="50%"/></img></td><td>   </td><td align="center" background="http://panda.cern.ch/monitor/images/PandaFinishedColor.png">1</td><td align="center" bgcolor="#ff6666">1</td><td>   </td><td>   </td><td> </td> <td bgcolor="#ffffbb"><a href="http://panda.cern.ch/server/pandamon/query?tp=pilots&amp;accepts=ANALY_TOKYO">ANALY_TOKYO</a></td>
+</tr><tr><td bgcolor="#ffffbb" colspan="99"><b>Out:</b><a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.FR.testpatch8001/&amp;compsite=ANALY_TOKYO">user.sblunier.FR.testpatch8001/</a> <a href="https://dashb-atlas-task.cern.ch/templates/task-analysis/#task=user.sblunier.FR.testpatch8001/" title="CERN Dashboard Analysis Task Monitor"><b>Monitor</b></a></td></tr></table></p></td></table></div>
+<p><p><table><td class="online-navigation"> <td align="left" title="the reported time range is the min and max of the job last 'modificationTime'. It may  be shifted against the job 'end time' range">
+<b>Showing 2 jobs modified from 2014-07-10 10:03 to 2014-07-11 07:27<b> </b></b></td><tr><td class="online-navigation"> <td>add <b>&amp;nojobs=yes</b> parameter to  your URL to hide this table</td></td></tr></td></table>
+<p><table bgcolor="lightblue" width="100%"><tr><td><b>Jobs:</b></td></tr></table><table border="1" cellpadding="2" cellspacing="0"><tr align="middle" style="font-weight: bold"><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=PandaID&amp;reverse=yes">PandaID</a>, <a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=username">Owner</a>, Working group</td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=jobName">Job</a></td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=jobStatus">Status</a></td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=creationTime">Created</a></td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=tostart">Time to start</a></td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=duration">Duration</a></td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=endt">Ended/ Modified</a></td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=cloud">Cloud</a>/<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=computingSite">Site</a>, <a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=prodSourceLabel">Type</a></td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain%20Blunier&amp;days=3&amp;sort=currentPriority">Priority</a></td><tr><td align="middle" rowspan="3"><a href="#2213760357">2213760357</a><br><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;ui=user&amp;name=Sylvain%20Blunier">Sylvain Blunier</a> </br></td><td>jobsetID=<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain Blunier">5099</a> <a href="http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02">runGen-00-00-02</a></td><td bgcolor="#ff6666">failed</td><td>2014-07-10 09:51</td><td>0:12:47</td><td>0:02:15</td><td>07-10 10:06</td><td><a href="http://panda.cern.ch/server/pandamon/query?dash=clouds#FR">FR</a>/<a href="http://panda.cern.ch/server/pandamon/query?tp=pilots&amp;accepts=ANALY_TOKYO">FR.ANALY_TOKYO</a>, analysis-run</td><td>1000</td></tr>
+<tr></tr></tr></table></p></p></p></p></p></br></br></br></br></br></br></br></br></br></br></br></td><td colspan="11"> <a href="http://panda.cern.ch/server/pandamon/query?job=2213760357#ErrorDetails"><font color="red"><b title="Click to navigate to the Find and View Log Files page">Error details:</b></font></a>
+<div class="ui-icon ui-icon-person" onclick="window.location='https://pandamon.cern.ch/login?'+window.location;" style="cursor:pointer;display:inline-block;" title="Click to login CERN SSO">
+</div>
+<div class="ui-icon ui-icon-mail-closed" onclick="utils().contactUs(2213760357,'5099,Sylvain Blunier',' &lt;b&gt;pilot:&lt;/b&gt; Expected output file user.sblunier.005099._00001.ANALY_TOKYO.root does not exist','aipanda045.cern.ch','2014-07-11 07:26:26')" style="cursor:pointer;display:inline-block;" title="Click to submit help request. You must login to CERN SSO first (person icon to the left)">
+</div><span onclick="utils().contactUs(2213760357,'5099,Sylvain Blunier',' &lt;b&gt;pilot:&lt;/b&gt; Expected output file user.sblunier.005099._00001.ANALY_TOKYO.root does not exist','aipanda045.cern.ch','2014-07-11 07:26:26')" style="cursor:pointer;" title="Click to submit help request. You must login to CERN SSO first (person icon to the left)">  <b>pilot:</b> Expected output file user.sblunier.005099._00001.ANALY_TOKYO.root does not exist</span></td>
+<tr><td bgcolor="#ffffbb" colspan="9"><b>Out:</b> <a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.FR.testpatch8001/&amp;compsite=ANALY_TOKYO">user.sblunier.FR.testpatch8001/</a> <a href="https://dashb-atlas-task.cern.ch/templates/task-analysis/#task=user.sblunier.FR.testpatch8001/" title="CERN Dashboard Analysis Task Monitor"><b>Monitor</b></a></td></tr><tr><td align="middle" rowspan="2"><a href="#2213760356">2213760356</a><br><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;ui=user&amp;name=Sylvain%20Blunier">Sylvain Blunier</a> </br></td><td>jobsetID=<a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;jobsetID=5099&amp;user=Sylvain Blunier">5099</a> <a href="http://pandaserver.cern.ch:25080/trf/user/buildGen-00-00-01">buildGen-00-00-01</a></td><td bgcolor="#00CC00">finished</td><td>2014-07-10 09:51</td><td>0:00:08</td><td>0:02:16</td><td>07-10 09:53</td><td><a href="http://panda.cern.ch/server/pandamon/query?dash=clouds#FR">FR</a>/<a href="http://panda.cern.ch/server/pandamon/query?tp=pilots&amp;accepts=ANALY_TOKYO">FR.ANALY_TOKYO</a>, analysis-build</td><td>2000</td></tr>
+<tr><td bgcolor="#ffffbb" colspan="9"><b>Out:</b> <a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.0710095056.259464.lib._005099&amp;compsite=ANALY_TOKYO">user.sblunier.0710095056.259464.lib._005099</a> <a href="https://dashb-atlas-task.cern.ch/templates/task-analysis/#task=user.sblunier.0710095056.259464.lib._005099" title="CERN Dashboard Analysis Task Monitor"><b>Monitor</b></a></td></tr>
+<p>Associated build job: <p><p><p><a name="2213760357"></a><table bgcolor="lightblue" width="100%"><tr> <td><b>Job 2213760357 details</b></td></tr>
+</table>
+<p><b>3 files for job 2213760357:</b>
+<script> 
+         $(document).ready(function() {
+           utils().datatable('fileNameTableId1' , {"bJQueryUI": true,"bPaginate": false,"bLengthChange": false, "bInfo": false,"aaSorting":[]} ); } );
+        </script>
+<table border="1" cellpadding="2" cellspacing="0" class="display" id="fileNameTableId1">
+<thead><tr><th>Filename</th><th>Type</th><th>Status</th><th>Dataset</th></tr></thead><tbody>
+<tr><td><a href="http://panda.cern.ch/server/pandamon/query?overview=findfile&amp;lfn=user.sblunier.0710095056.259464.lib._005099.lib.tgz&amp;site=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK&amp;dsname=user.sblunier.0710095056.259464.lib._005099&amp;guid=30173082-75e4-4835-b800-bdf26a41a3c8&amp;scope=user.sblunier">user.sblunier.0710095056.259464.lib._005099.lib.tgz</a><br>     guid=<a href="http://dashb-atlas-data.cern.ch/ddm2/#d.guid=30173082-75E4-4835-B800-BDF26A41A3C8&amp;tab=details">30173082-75e4-4835-b800-bdf26a41a3c8</a></br></td><td>input</td><td>ready</td><td><a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.0710095056.259464.lib._005099&amp;compsite=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK">user.sblunier.0710095056.259464.lib._005099</a> </td></tr>
+<tr><td><a href="http://panda.cern.ch/server/pandamon/query?overview=findfile&amp;lfn=user.sblunier.005099._2213760357.log.tgz&amp;site=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK&amp;dsname=user.sblunier.FR.testpatch8001/&amp;guid=0628b0a3-e0db-4e03-a969-f06e20518475&amp;scope=user.sblunier">user.sblunier.005099._2213760357.log.tgz</a><br>     guid=<a href="http://dashb-atlas-data.cern.ch/ddm2/#d.guid=0628B0A3-E0DB-4E03-A969-F06E20518475&amp;tab=details">0628b0a3-e0db-4e03-a969-f06e20518475</a> <br>     Space token TOKYO-LCG2_SCRATCHDISK</br></br></td><td>log</td><td><font color="red">failed</font></td><td><a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.FR.testpatch8001/&amp;compsite=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK">user.sblunier.FR.testpatch8001/</a> <br>(destination block: <a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.FR.testpatch8001.140710115056_sub0173641151&amp;compsite=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK">user.sblunier.FR.testpatch8001.140710115056_sub0173641151</a>)</br></td></tr>
+<tr><td><a href="http://panda.cern.ch/server/pandamon/query?overview=findfile&amp;lfn=user.sblunier.005099._00001.ANALY_TOKYO.root&amp;site=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK&amp;dsname=user.sblunier.FR.testpatch8001/&amp;scope=user.sblunier">user.sblunier.005099._00001.ANALY_TOKYO.root</a> (no guid) <br>     Space token TOKYO-LCG2_SCRATCHDISK</br></td><td>output</td><td><font color="red">failed</font></td><td><a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.FR.testpatch8001/&amp;compsite=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK">user.sblunier.FR.testpatch8001/</a> <br>(destination block: <a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.FR.testpatch8001.140710115056_sub0173641151&amp;compsite=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK">user.sblunier.FR.testpatch8001.140710115056_sub0173641151</a>)</br></td></tr>
+</tbody></table><br>
+<p><a name="ErrorDetails"></a><br><b><a href="http://panda.cern.ch/server/pandamon/query?overview=viewlogfile&amp;nocachemark=yes&amp;guid=0628b0a3-e0db-4e03-a969-f06e20518475&amp;lfn=user.sblunier.005099._2213760357.log.tgz&amp;site=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK&amp;scope=user.sblunier">Find and view log files</a></b><p id="jemInfo_2213760357_ID" style="display:none;"><a href="http://jem.physik.uni-wuppertal.de/JEM/jobid/PanDA.2213760357"><img alt="JEM link" height="16" src="http://jem.physik.uni-wuppertal.de/media/images/fav.ico" width="16"/></a><b><a href="http://jem.physik.uni-wuppertal.de/JEM/jobid/PanDA.2213760357">Job Executiion Monitor - JEM (experimental)</a></b><p>No job log extract found for job 2213760357<p><b><a href="http://panda.cern.ch/server/pandamon/query?mode=mon&amp;name=panda.mon.prod&amp;type=updateJob&amp;PID=2213760357">Look for logging monitor records for job 2213760357</a></b><p>Job failure category: ddm<p><p><b>JobSpecs for job 2213760357:</b><div>
+<script> 
+         $(document).ready(function() {
+           utils().datatable('jobSpecTableID0' , {"bJQueryUI": true,"aaSorting":[]} ); } );
+        </script>
+<table border="0" cellpadding="2" class="display" id="jobSpecTableID0" width="100%">
+<thead><tr><th>Job parameter</th><th>Parameter Value</th></tr></thead><tbody><tr><td>PandaID</td><td>2213760357</td></tr>
+<tr><td>jobDefinitionID</td><td>5100</td></tr>
+<tr><td>schedulerID</td><td>FR-V2-ccwlcgatlas02</td></tr>
+<tr><td>pilotID</td><td><a href="http://ccwlcgatlas02.in2p3.fr:43210/apflog/2014-07-10/ANALY_TOKYO-1036/1690878.18.out"><b>out</b></a>   <a href="http://ccwlcgatlas02.in2p3.fr:43210/apflog/2014-07-10/ANALY_TOKYO-1036/1690878.18.err"><b>err</b></a>    <a href="http://ccwlcgatlas02.in2p3.fr:43210/apflog/2014-07-10/ANALY_TOKYO-1036/1690878.18.log"><b>log</b></a><br> Pilot type: PR<br> Pilot version: SULU 58m<br>BatchID: <a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;batchID=774391.lcg-ce01.icepp.jp">774391.lcg-ce01.icepp.jp</a>
+<br>Batch system type: Torque
+</br></br></br></br></td></tr>
+<tr><td>creationTime</td><td>2014-07-10 09:51:03</td></tr>
+<tr><td>creationHost</td><td>lxplus0248.cern.ch</td></tr>
+<tr><td>modificationTime</td><td>2014-07-10 10:13:36</td></tr>
+<tr><td>modificationHost</td><td>lcg-wn05-07.icepp.jp</td></tr>
+<tr><td>AtlasRelease</td><td>--</td></tr>
+<tr><td>transformation</td><td><a href="http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02">http://pandaserver.cern.ch:25080/trf/user/runGen-00-00-02</a></td></tr>
+<tr><td>homepackage</td><td>--</td></tr>
+<tr><td>prodSeriesLabel</td><td>--</td></tr>
+<tr><td>prodSourceLabel</td><td>user</td></tr>
+<tr><td>prodUserID</td><td>/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy</td></tr>
+<tr><td>assignedPriority</td><td>1000</td></tr>
+<tr><td>currentPriority</td><td>1000</td></tr>
+<tr><td>attemptNr</td><td>--</td></tr>
+<tr><td>maxAttempt</td><td>2</td></tr>
+<tr><td>jobStatus</td><td>failed</td></tr>
+<tr><td>jobName</td><td>prun.bd73eebe-ddc2-49b0-be27-85598121265b</td></tr>
+<tr><td>maxCpuCount</td><td>--</td></tr>
+<tr><td>maxCpuUnit</td><td>--</td></tr>
+<tr><td>maxDiskCount</td><td>--</td></tr>
+<tr><td>maxDiskUnit</td><td>--</td></tr>
+<tr><td>ipConnectivity</td><td>--</td></tr>
+<tr><td>minRamCount</td><td>--</td></tr>
+<tr><td>minRamUnit</td><td>--</td></tr>
+<tr><td>startTime</td><td>2014-07-10 10:03:50</td></tr>
+<tr><td>endTime</td><td>2014-07-10 10:06:05</td></tr>
+<tr><td>cpuConsumptionTime</td><td>4</td></tr>
+<tr><td>cpuConsumptionUnit</td><td>s+Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz 20480 KB</td></tr>
+<tr><td>commandToPilot</td><td>--</td></tr>
+<tr><td>transExitCode</td><td>0</td></tr>
+<tr><td>pilotErrorCode</td><td>1165</td></tr>
+<tr><td>pilotErrorDiag</td><td>Expected output file user.sblunier.005099._00001.ANALY_TOKYO.root does not exist</td></tr>
+<tr><td>exeErrorCode</td><td>--</td></tr>
+<tr><td>exeErrorDiag</td><td>--</td></tr>
+<tr><td>supErrorCode</td><td>--</td></tr>
+<tr><td>supErrorDiag</td><td>--</td></tr>
+<tr><td>ddmErrorCode</td><td>--</td></tr>
+<tr><td>ddmErrorDiag</td><td>--</td></tr>
+<tr><td>brokerageErrorCode</td><td>--</td></tr>
+<tr><td>brokerageErrorDiag</td><td>--</td></tr>
+<tr><td>jobDispatcherErrorCode</td><td>--</td></tr>
+<tr><td>jobDispatcherErrorDiag</td><td>--</td></tr>
+<tr><td>taskBufferErrorCode</td><td>--</td></tr>
+<tr><td>taskBufferErrorDiag</td><td>--</td></tr>
+<tr><td>computingSite</td><td>ANALY_TOKYO</td></tr>
+<tr><td>computingElement</td><td>ANALY_TOKYO</td></tr>
+<tr><td>jobParameters</td><td>-j "" --sourceURL https://aipanda012.cern.ch:25443 --rootVer 5.34.18-davix_p8 -p "./main.sh%20FR%20ANALY_TOKYO" -l user.sblunier.0710095056.259464.lib._005099.lib.tgz -o "{'ANALY_TOKYO.root': 'user.sblunier.005099._00001.ANALY_TOKYO.root'}" -r . </td></tr>
+<tr><td>metadata</td><td>--outDS user.sblunier.FR.testpatch8001 "--rootVer=5.34.18-davix_p8" "--cmtConfig=x86_64-slc6-gcc48-opt" "--extFile=x509up_u68281" "--outputs=ANALY_TOKYO.root" --bexec make --exec "./main.sh FR ANALY_TOKYO" "--site=ANALY_TOKYO"</td></tr>
+<tr><td>prodDBlock</td><td>--</td></tr>
+<tr><td>dispatchDBlock</td><td>--</td></tr>
+<tr><td>destinationDBlock</td><td><a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.FR.testpatch8001/">user.sblunier.FR.testpatch8001/</a></td></tr>
+<tr><td>destinationSE</td><td>ANALY_TOKYO</td></tr>
+<tr><td>nEvents</td><td>--</td></tr>
+<tr><td>grid</td><td>--</td></tr>
+<tr><td>cloud</td><td>FR</td></tr>
+<tr><td>cpuConversion</td><td>--</td></tr>
+<tr><td>sourceSite</td><td>--</td></tr>
+<tr><td>destinationSite</td><td>--</td></tr>
+<tr><td>transferType</td><td>--</td></tr>
+<tr><td>taskID</td><td>3</td></tr>
+<tr><td>cmtConfig</td><td>x86_64-slc6-gcc48-opt</td></tr>
+<tr><td>stateChangeTime</td><td>2014-07-10 10:06:05</td></tr>
+<tr><td>prodDBUpdateTime</td><td>--</td></tr>
+<tr><td>lockedby</td><td>panda-client-0.4.41</td></tr>
+<tr><td>relocationFlag</td><td>1</td></tr>
+<tr><td>jobExecutionID</td><td>--</td></tr>
+<tr><td>VO</td><td>atlas</td></tr>
+<tr><td>pilotTiming</td><td>2|8|79|0|0   execute: 1.3 min    getJob:  2 sec    stagein: 0.1 min    setup:  0 sec    stageout: 0.0 min </td></tr>
+<tr><td>workingGroup</td><td>--</td></tr>
+<tr><td>processingType</td><td>prun</td></tr>
+<tr><td>prodUserName</td><td>Sylvain Blunier</td></tr>
+<tr><td>nInputFiles</td><td>--</td></tr>
+<tr><td>countryGroup</td><td>--</td></tr>
+<tr><td>batchID</td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;batchID=774391.lcg-ce01.icepp.jp">774391.lcg-ce01.icepp.jp</a></td></tr>
+<tr><td>parentID</td><td><a href="http://panda.cern.ch/server/pandamon/query?job=None">None</a></td></tr>
+<tr><td>specialHandling</td><td>--</td></tr>
+<tr><td>jobsetID</td><td>5099</td></tr>
+<tr><td>coreCount</td><td>--</td></tr>
+<tr><td>nInputDataFiles</td><td>--</td></tr>
+<tr><td>inputFileType</td><td>--</td></tr>
+<tr><td>inputFileProject</td><td>--</td></tr>
+<tr><td>inputFileBytes</td><td>--</td></tr>
+<tr><td>nOutputDataFiles</td><td>1</td></tr>
+<tr><td>outputFileBytes</td><td>--</td></tr>
+<tr><td>jobMetrics</td><td>--</td></tr>
+<tr><td>workQueue_ID</td><td>--</td></tr>
+<tr><td>jediTaskID</td><td>?</td></tr>
+<tr><td>jobSubStatus</td><td>--</td></tr>
+</tbody><tfoot><tr><th>Job parameter</th><th>Parameter Value</th></tr></tfoot></table></div><br><hr>
+<p><a name="2213760356"></a><table bgcolor="lightblue" width="100%"><tr> <td><b>Job 2213760356 details</b></td></tr>
+</table>
+<p><b>2 files for job 2213760356:</b>
+<script> 
+         $(document).ready(function() {
+           utils().datatable('fileNameTableId0' , {"bJQueryUI": true,"bPaginate": false,"bLengthChange": false, "bInfo": false,"aaSorting":[]} ); } );
+        </script>
+<table border="1" cellpadding="2" cellspacing="0" class="display" id="fileNameTableId0">
+<thead><tr><th>Filename</th><th>Type</th><th>Status</th><th>Dataset</th></tr></thead><tbody>
+<tr><td><a href="http://panda.cern.ch/server/pandamon/query?overview=findfile&amp;lfn=user.sblunier.0710095056.259464.lib._005099.log.tgz&amp;site=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK&amp;dsname=user.sblunier.0710095056.259464.lib._005099&amp;guid=bdd360ba-5701-4175-912d-71db299eb287&amp;scope=user.sblunier">user.sblunier.0710095056.259464.lib._005099.log.tgz</a><br>     guid=<a href="http://dashb-atlas-data.cern.ch/ddm2/#d.guid=BDD360BA-5701-4175-912D-71DB299EB287&amp;tab=details">bdd360ba-5701-4175-912d-71db299eb287</a> <br>     Space token TOKYO-LCG2_SCRATCHDISK</br></br></td><td>log</td><td>ready</td><td><a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.0710095056.259464.lib._005099&amp;compsite=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK">user.sblunier.0710095056.259464.lib._005099</a> </td></tr>
+<tr><td><a href="http://panda.cern.ch/server/pandamon/query?overview=findfile&amp;lfn=user.sblunier.0710095056.259464.lib._005099.lib.tgz&amp;site=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK&amp;dsname=user.sblunier.0710095056.259464.lib._005099&amp;guid=30173082-75e4-4835-b800-bdf26a41a3c8&amp;scope=user.sblunier">user.sblunier.0710095056.259464.lib._005099.lib.tgz</a><br>     guid=<a href="http://dashb-atlas-data.cern.ch/ddm2/#d.guid=30173082-75E4-4835-B800-BDF26A41A3C8&amp;tab=details">30173082-75e4-4835-b800-bdf26a41a3c8</a> <br>     Space token TOKYO-LCG2_SCRATCHDISK</br></br></td><td>output</td><td>ready</td><td><a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.0710095056.259464.lib._005099&amp;compsite=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK">user.sblunier.0710095056.259464.lib._005099</a> </td></tr>
+</tbody></table><br>
+<p><a name="ErrorDetails"></a><br><b><a href="http://panda.cern.ch/server/pandamon/query?overview=viewlogfile&amp;nocachemark=yes&amp;guid=bdd360ba-5701-4175-912d-71db299eb287&amp;lfn=user.sblunier.0710095056.259464.lib._005099.log.tgz&amp;site=TOKYO-LCG2_SCRATCHDISK,TOKYO-LCG2_LOCALGROUPDISK&amp;scope=user.sblunier">Find and view log files</a></b><p id="jemInfo_2213760356_ID" style="display:none;"><a href="http://jem.physik.uni-wuppertal.de/JEM/jobid/PanDA.2213760356"><img alt="JEM link" height="16" src="http://jem.physik.uni-wuppertal.de/media/images/fav.ico" width="16"/></a><b><a href="http://jem.physik.uni-wuppertal.de/JEM/jobid/PanDA.2213760356">Job Executiion Monitor - JEM (experimental)</a></b>
+<head><script language="javascript" type="text/javascript">function toggle_logtxt() { for (var i=7; i<10; i++){ var el = document.getElementById(i); if ( el.style.display != 'none' ) {  el.style.display = 'none' } else { el.style.display = ''; }  } } </script></head> <div id="7" style="display: inline">
+<p><a onclick="toggle_logtxt()" style="cursor:pointer;"><font color="blue"><u><b>Hide 2213760357 log file extracts</b></u></font></a></p></div>
+<div id="8" style="display: none">
+<p><a onclick="toggle_logtxt()" style="cursor:pointer;"><font color="blue"><u><b>colorShow   2213760357 log file extracts</b></u></font></a></p></div>
+<p><div id="9" style="display: visible"><b>Warning:  2213760357 log file extracts indicate problems</b>
+<pre><font =brown="" size="0">!!WARNING!!1010!! PandaID=2213760357 had outbound connections2014-07-10 10:04:29.732134 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:31.909071 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:32.484998 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:33.060985 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:33.661817 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:34.259567 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:36.538126 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:37.647269 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:38.270280 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:39.923257 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:40.533241 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:41.127249 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:41.773804 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:42.610292 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:43.184948 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:44.287972 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:45.386999 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:45.959038 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:47.067916 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:48.172967 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:48.770964 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:49.647522 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:50.794959 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:51.378222 : INFO    connect: 157.82.117.162:3128  cmd: curl
+2014-07-10 10:04:53.758929 : INFO    connect: 157.82.117.162:3
+
+- Walltime -
+JobRetrival=2, StageIn=8, Execution=79, StageOut=0, CleanUp=9
+</font></pre></div>
+<p><b><a href="http://panda.cern.ch/server/pandamon/query?mode=mon&amp;name=panda.mon.prod&amp;type=updateJob&amp;PID=2213760356">Look for logging monitor records for job 2213760356</a></b><p><b>JobSpecs for job 2213760356:</b><div>
+<script> 
+         $(document).ready(function() {
+           utils().datatable('jobSpecTableID1' , {"bJQueryUI": true,"aaSorting":[]} ); } );
+        </script>
+<table border="0" cellpadding="2" class="display" id="jobSpecTableID1" width="100%">
+<thead><tr><th>Job parameter</th><th>Parameter Value</th></tr></thead><tbody><tr><td>PandaID</td><td>2213760356</td></tr>
+<tr><td>jobDefinitionID</td><td>5100</td></tr>
+<tr><td>schedulerID</td><td>aipanda023</td></tr>
+<tr><td>pilotID</td><td><a href="http://aipanda023.cern.ch:25880/2014-07-10/ANALY_TOKYO-1036/4619545.18.out"><b>out</b></a>   <a href="http://aipanda023.cern.ch:25880/2014-07-10/ANALY_TOKYO-1036/4619545.18.err"><b>err</b></a>    <a href="http://aipanda023.cern.ch:25880/2014-07-10/ANALY_TOKYO-1036/4619545.18.log"><b>log</b></a><br> Pilot type: PR<br> Pilot version: SULU 58m<br>BatchID: <a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;batchID=774274.lcg-ce01.icepp.jp">774274.lcg-ce01.icepp.jp</a>
+<br>Batch system type: Torque
+</br></br></br></br></td></tr>
+<tr><td>creationTime</td><td>2014-07-10 09:51:03</td></tr>
+<tr><td>creationHost</td><td>lxplus0248.cern.ch</td></tr>
+<tr><td>modificationTime</td><td>2014-07-10 09:58:15</td></tr>
+<tr><td>modificationHost</td><td>lcg-wn03-07.icepp.jp</td></tr>
+<tr><td>AtlasRelease</td><td>--</td></tr>
+<tr><td>transformation</td><td><a href="http://pandaserver.cern.ch:25080/trf/user/buildGen-00-00-01">http://pandaserver.cern.ch:25080/trf/user/buildGen-00-00-01</a></td></tr>
+<tr><td>homepackage</td><td>--</td></tr>
+<tr><td>prodSeriesLabel</td><td>--</td></tr>
+<tr><td>prodSourceLabel</td><td>panda</td></tr>
+<tr><td>prodUserID</td><td>/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sblunier/CN=757276/CN=Sylvain Blunier/CN=proxy</td></tr>
+<tr><td>assignedPriority</td><td>2000</td></tr>
+<tr><td>currentPriority</td><td>2000</td></tr>
+<tr><td>attemptNr</td><td>--</td></tr>
+<tr><td>maxAttempt</td><td>2</td></tr>
+<tr><td>jobStatus</td><td>finished</td></tr>
+<tr><td>jobName</td><td>prun.bd73eebe-ddc2-49b0-be27-85598121265b</td></tr>
+<tr><td>maxCpuCount</td><td>--</td></tr>
+<tr><td>maxCpuUnit</td><td>--</td></tr>
+<tr><td>maxDiskCount</td><td>--</td></tr>
+<tr><td>maxDiskUnit</td><td>--</td></tr>
+<tr><td>ipConnectivity</td><td>--</td></tr>
+<tr><td>minRamCount</td><td>--</td></tr>
+<tr><td>minRamUnit</td><td>--</td></tr>
+<tr><td>startTime</td><td>2014-07-10 09:51:11</td></tr>
+<tr><td>endTime</td><td>2014-07-10 09:53:27</td></tr>
+<tr><td>cpuConsumptionTime</td><td>3</td></tr>
+<tr><td>cpuConsumptionUnit</td><td>s+Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz 20480 KB</td></tr>
+<tr><td>commandToPilot</td><td>--</td></tr>
+<tr><td>transExitCode</td><td>0</td></tr>
+<tr><td>pilotErrorCode</td><td>--</td></tr>
+<tr><td>pilotErrorDiag</td><td>--</td></tr>
+<tr><td>exeErrorCode</td><td>--</td></tr>
+<tr><td>exeErrorDiag</td><td>--</td></tr>
+<tr><td>supErrorCode</td><td>--</td></tr>
+<tr><td>supErrorDiag</td><td>--</td></tr>
+<tr><td>ddmErrorCode</td><td>--</td></tr>
+<tr><td>ddmErrorDiag</td><td>--</td></tr>
+<tr><td>brokerageErrorCode</td><td>--</td></tr>
+<tr><td>brokerageErrorDiag</td><td>--</td></tr>
+<tr><td>jobDispatcherErrorCode</td><td>--</td></tr>
+<tr><td>jobDispatcherErrorDiag</td><td>--</td></tr>
+<tr><td>taskBufferErrorCode</td><td>--</td></tr>
+<tr><td>taskBufferErrorDiag</td><td>--</td></tr>
+<tr><td>computingSite</td><td>ANALY_TOKYO</td></tr>
+<tr><td>computingElement</td><td>ANALY_TOKYO</td></tr>
+<tr><td>jobParameters</td><td>-i sources.bccce69e-b895-4623-87d3-5c7f8df79f29.tar.gz -o user.sblunier.0710095056.259464.lib._005099.lib.tgz --bexec "make" -r . --sourceURL https://aipanda012.cern.ch:25443 --rootVer 5.34.18-davix_p8 --cmtConfig x86_64-slc6-gcc48-opt </td></tr>
+<tr><td>metadata</td><td>--outDS user.sblunier.FR.testpatch8001 "--rootVer=5.34.18-davix_p8" "--cmtConfig=x86_64-slc6-gcc48-opt" "--extFile=x509up_u68281" "--outputs=ANALY_TOKYO.root" --bexec make --exec "./main.sh FR ANALY_TOKYO" "--site=ANALY_TOKYO"</td></tr>
+<tr><td>prodDBlock</td><td>--</td></tr>
+<tr><td>dispatchDBlock</td><td>--</td></tr>
+<tr><td>destinationDBlock</td><td><a href="http://panda.cern.ch/server/pandamon/query?dataset=user.sblunier.0710095056.259464.lib._005099">user.sblunier.0710095056.259464.lib._005099</a></td></tr>
+<tr><td>destinationSE</td><td>ANALY_TOKYO</td></tr>
+<tr><td>nEvents</td><td>--</td></tr>
+<tr><td>grid</td><td>--</td></tr>
+<tr><td>cloud</td><td>FR</td></tr>
+<tr><td>cpuConversion</td><td>--</td></tr>
+<tr><td>sourceSite</td><td>--</td></tr>
+<tr><td>destinationSite</td><td>--</td></tr>
+<tr><td>transferType</td><td>--</td></tr>
+<tr><td>taskID</td><td>3</td></tr>
+<tr><td>cmtConfig</td><td>x86_64-slc6-gcc48-opt</td></tr>
+<tr><td>stateChangeTime</td><td>2014-07-10 09:58:15</td></tr>
+<tr><td>prodDBUpdateTime</td><td>--</td></tr>
+<tr><td>lockedby</td><td>panda-client-0.4.41</td></tr>
+<tr><td>relocationFlag</td><td>1</td></tr>
+<tr><td>jobExecutionID</td><td>--</td></tr>
+<tr><td>VO</td><td>atlas</td></tr>
+<tr><td>pilotTiming</td><td>2|0|66|9|0   execute: 1.1 min    getJob:  2 sec    stagein: 0.0 min    setup:  0 sec    stageout: 0.1 min </td></tr>
+<tr><td>workingGroup</td><td>--</td></tr>
+<tr><td>processingType</td><td>prun</td></tr>
+<tr><td>prodUserName</td><td>Sylvain Blunier</td></tr>
+<tr><td>nInputFiles</td><td>--</td></tr>
+<tr><td>countryGroup</td><td>--</td></tr>
+<tr><td>batchID</td><td><a href="http://panda.cern.ch/server/pandamon/query?job=*&amp;batchID=774274.lcg-ce01.icepp.jp">774274.lcg-ce01.icepp.jp</a></td></tr>
+<tr><td>parentID</td><td><a href="http://panda.cern.ch/server/pandamon/query?job=None">None</a></td></tr>
+<tr><td>specialHandling</td><td>--</td></tr>
+<tr><td>jobsetID</td><td>5099</td></tr>
+<tr><td>coreCount</td><td>--</td></tr>
+<tr><td>nInputDataFiles</td><td>--</td></tr>
+<tr><td>inputFileType</td><td>--</td></tr>
+<tr><td>inputFileProject</td><td>--</td></tr>
+<tr><td>inputFileBytes</td><td>--</td></tr>
+<tr><td>nOutputDataFiles</td><td>1</td></tr>
+<tr><td>outputFileBytes</td><td>1546564</td></tr>
+<tr><td>jobMetrics</td><td>--</td></tr>
+<tr><td>workQueue_ID</td><td>--</td></tr>
+<tr><td>jediTaskID</td><td>?</td></tr>
+<tr><td>jobSubStatus</td><td>--</td></tr>
+</tbody><tfoot><tr><th>Job parameter</th><th>Parameter Value</th></tr></tfoot></table></div><br><hr>
+</hr></br></p></p></p></p></br></p></br></p></p></hr></br></p></p></p></p></p></p></br></p></br></p></p></p></p></p>
+
+<div id="foot"><address><br>
+<br>Code Rev: 6670   request: #7  2304:8244 <br>Run by atlpan@aipanda045.cern.ch. To produce this page our server spent: Real time 0:00:00.2, CP time 0.038  at 2014-07-11 07:27:04 UTC. <br><a href="https://savannah.cern.ch/bugs/?func=additem&amp;group=panda"><b>Report a problem. </b></a> Usage questions: <a href="mailto:hn-atlas-dist-analysis-help@cern.ch">distributed analysis help list</a><br><a href="mailto:atlas-adc-pandamon-support@cern.ch"><address><font size="-2">Contact webmaster</font></address></a></br></br></br></br></br></address></div>

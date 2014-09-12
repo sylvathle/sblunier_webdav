@@ -1,0 +1,12 @@
+PIC_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01452411._000012.root.3?rse=PIC_DATADISK
+EELA-UTFSM_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01452394._000095.root.2?rse=EELA-UTFSM_DATADISK
+IFAE_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01344293._000095.root.1?rse=IFAE_DATADISK
+IFIC-LCG2_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01389814._000013.root.1?rse=IFIC-LCG2_DATADISK
+NCG-INGRID-PT_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01325732._000004.root.1?rse=NCG-INGRID-PT_DATADISK
+UAM-LCG2_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01390874._002183.root.1?rse=UAM-LCG2_DATADISK

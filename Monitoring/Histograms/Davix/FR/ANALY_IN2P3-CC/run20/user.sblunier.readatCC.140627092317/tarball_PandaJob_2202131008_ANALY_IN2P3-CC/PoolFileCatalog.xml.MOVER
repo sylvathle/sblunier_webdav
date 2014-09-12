@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- Edited By Panda Pilot3 -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="3bbe3e6e-6584-41a9-b97e-bcb9834c29df">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://ccsrm.in2p3.fr/pnfs/in2p3.fr/data/atlas/atlasscratchdisk/rucio/user/sblunier/5c/71/user.sblunier.0627072317.248035.lib._004116.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>

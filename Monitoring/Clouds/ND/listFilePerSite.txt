@@ -1,0 +1,8 @@
+NDGF-T1_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01281679._000011.root.1?rse=NDGF-T1_DATADISK
+SE-SNIC-T2_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01452394._000171.root.1?rse=SE-SNIC-T2_DATADISK
+UNIBE-LHEP_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01452394._000037.root.1?rse=UNIBE-LHEP_DATADISK
+CERN-PROD_DATADISK
+https://rucio-lb-prod.cern.ch/redirect/mc12_8TeV/NTUP_COMMON.01349021._000006.root.1?rse=CERN-PROD_DATADISK

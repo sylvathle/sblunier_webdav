@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- Edited By Panda Pilot3 -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="0966856e-a239-4e85-bcf3-bfea1e9fb177">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://dcache-se-atlas.desy.de/pnfs/desy.de/atlas/dq2/atlasscratchdisk/rucio/panda/ac/55/panda.0907111348.266648.lib._4106731.113198988.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>

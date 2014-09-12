@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- ATLAS file meta-data catalog -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="6457e26c-a4f5-44f2-81a5-bf201aff5d19">
+    <logical>
+      <lfn name="user.sblunier.003966._2197035542.log.tgz"/>
+    </logical>
+    <metadata att_name="surl" att_value="6457e26c-a4f5-44f2-81a5-bf201aff5d19-surltobeset"/>
+    <metadata att_name="fsize" att_value=""/>
+    <metadata att_name="csumtypetobeset" att_value=""/>
+  </File>
+  <File ID="aa168d39-262e-4764-92c7-710ab3631340">
+    <logical>
+      <lfn name="user.sblunier.003966._00001.ANALY_GLASGOW_SL6.root"/>
+    </logical>
+    <metadata att_name="surl" att_value="aa168d39-262e-4764-92c7-710ab3631340-surltobeset"/>
+    <metadata att_name="fsize" att_value="15572"/>
+    <metadata att_name="adler32" att_value="5189c360"/>
+  </File>
+</POOLFILECATALOG>

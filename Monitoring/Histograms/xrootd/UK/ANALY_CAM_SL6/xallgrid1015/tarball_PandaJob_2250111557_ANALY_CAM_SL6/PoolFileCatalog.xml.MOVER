@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- Edited By Panda Pilot3 -->
+<!DOCTYPE POOLFILECATALOG  SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="30626727-ffca-4131-82d7-237f57a056d3">
+    <physical>
+      <pfn filetype="ROOT_All" name="srm://serv02.hep.phy.cam.ac.uk/dpm/hep.phy.cam.ac.uk/home/atlas/atlasscratchdisk/rucio/panda/b7/fb/panda.0825085146.796155.lib._4057022.79520741.lib.tgz"/>
+    </physical>
+    <logical/>
+  </File>
+</POOLFILECATALOG>

@@ -1,0 +1,15 @@
+\section{The WebDAV events rate}
+
+The objective of this test is to check how many file are successfully opened and read for each SE of the grid.\\
+
+A job is sent to each principal queues of the grid. This jobs repeats 100 times the following steps:
+\begin{itemize}
+        \item A list of file is generated on the same way than for the first test but this time only for sites that belongs to the cloud where is running the job.
+        \item A compiled C++/root program opens the file read all events of the branches \textit{el\_n} and \textit{mu\_n} of tree \textit{physics} and measure the time to complete the reading part.
+        \item Am histogram is filled with the event's rate of the recent read file
+\end{itemize}
+
+In this test we are not interested in the performances of Davix, we just want to know if it's working. The matrix presented in this part are done by cloud (the taiwanees cloud contains only one site to enable remote access it's tested with the US cloud). The X-axe corresponds to the queue where ran the job, the Y-axe corresponds to the Datadisk that contains the file we are trying to access. The number in the box corresponds the rate of file successfully read. When the box is empty is just mean that they all failed. 
+\vspace{1ex}
+
+\vspace{1ex}
